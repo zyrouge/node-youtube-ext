@@ -5,7 +5,7 @@ export interface SearchOptions {
     filterType?: keyof typeof constants.urls.search.filters;
 }
 
-export interface Video {
+export interface SearchVideo {
     title: string;
     id: string;
     url: string;
@@ -33,7 +33,7 @@ export interface Video {
     }[];
 }
 
-export interface Channel {
+export interface SearchChannel {
     name: string;
     id: string;
     url: string;
@@ -49,7 +49,7 @@ export interface Channel {
     }[];
 }
 
-export interface Playlist {
+export interface SearchPlaylist {
     name: string;
     id: string;
     url: string;
@@ -123,18 +123,17 @@ const search = async (terms: string, options: SearchOptions = {}) => {
 
     let contents: unknown[];
     try {
-        contents =
-            data?.contents?.twoColumnSearchResultsRenderer?.primaryContents
-                ?.sectionListRenderer?.contents[0]?.itemSectionRenderer
-                ?.contents;
+        contents = data?.contents?.twoColumnSearchResultsRenderer?.primaryContents?.sectionListRenderer?.contents?.find(
+            (x: any) => x?.itemSectionRenderer
+        )?.itemSectionRenderer?.contents;
     } catch (err) {
         throw new Error(`Failed to get contents from script tag. (${err}`);
     }
 
     const result: {
-        videos: Video[];
-        channels: Channel[];
-        playlists: Playlist[];
+        videos: SearchVideo[];
+        channels: SearchChannel[];
+        playlists: SearchPlaylist[];
     } = {
         videos: [],
         channels: [],
@@ -144,7 +143,7 @@ const search = async (terms: string, options: SearchOptions = {}) => {
     contents
         ?.filter((x: any) => x.videoRenderer)
         ?.forEach(({ videoRenderer: x }: any) => {
-            const video: Video = {
+            const video: SearchVideo = {
                 title: x?.title?.runs[0]?.text,
                 id: x?.videoId,
                 url:
@@ -184,7 +183,7 @@ const search = async (terms: string, options: SearchOptions = {}) => {
     contents
         ?.filter((x: any) => x?.channelRenderer)
         ?.forEach(({ channelRenderer: x }: any) => {
-            const channel: Channel = {
+            const channel: SearchChannel = {
                 name: x?.title?.simpleText,
                 id: x?.channelId,
                 url:
@@ -207,7 +206,7 @@ const search = async (terms: string, options: SearchOptions = {}) => {
     contents
         ?.filter((x: any) => x?.playlistRenderer)
         ?.forEach(({ playlistRenderer: x }: any) => {
-            const playlist: Playlist = {
+            const playlist: SearchPlaylist = {
                 name: x?.title?.simpleText,
                 id: x?.playlistId,
                 url:
