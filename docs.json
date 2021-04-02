@@ -1,0 +1,4251 @@
+{
+	"id": 0,
+	"name": "Genius-Lyrics Documentation",
+	"kind": 0,
+	"kindString": "Project",
+	"flags": {},
+	"children": [
+		{
+			"id": 1,
+			"name": "utils",
+			"kind": 2,
+			"kindString": "Namespace",
+			"flags": {},
+			"children": [
+				{
+					"id": 3,
+					"name": "getData",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "utils.ts",
+							"line": 5,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intersection",
+						"types": [
+							{
+								"type": "reference",
+								"name": "http.IncomingMessage"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 4,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"children": [
+										{
+											"id": 5,
+											"name": "data",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "utils.ts",
+													"line": 5,
+													"character": 51
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"kind": 1024,
+											"children": [
+												5
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "utils.ts",
+											"line": 5,
+											"character": 44
+										}
+									]
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 2,
+					"name": "getOptions",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "utils.ts",
+							"line": 4,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"name": "http.RequestOptions"
+							},
+							{
+								"type": "reference",
+								"name": "https.RequestOptions"
+							}
+						]
+					}
+				},
+				{
+					"id": 10,
+					"name": "constants",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "utils.ts",
+							"line": 30,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 11,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 28,
+									"name": "err",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 29,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 30,
+													"name": "type",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"type": {
+														"type": "reflection",
+														"declaration": {
+															"id": 31,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"signatures": [
+																{
+																	"id": 32,
+																	"name": "__type",
+																	"kind": 4096,
+																	"kindString": "Call signature",
+																	"flags": {},
+																	"parameters": [
+																		{
+																			"id": 33,
+																			"name": "key",
+																			"kind": 32768,
+																			"kindString": "Parameter",
+																			"flags": {},
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			}
+																		},
+																		{
+																			"id": 34,
+																			"name": "expected",
+																			"kind": 32768,
+																			"kindString": "Parameter",
+																			"flags": {},
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			}
+																		},
+																		{
+																			"id": 35,
+																			"name": "received",
+																			"kind": 32768,
+																			"kindString": "Parameter",
+																			"flags": {},
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			}
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																}
+															]
+														}
+													},
+													"defaultValue": "..."
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														30
+													]
+												}
+											]
+										}
+									},
+									"defaultValue": "..."
+								},
+								{
+									"id": 12,
+									"name": "urls",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 13,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 14,
+													"name": "base",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													},
+													"defaultValue": "\"https://www.youtube.com\""
+												},
+												{
+													"id": 15,
+													"name": "search",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"type": {
+														"type": "reflection",
+														"declaration": {
+															"id": 16,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 17,
+																	"name": "base",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "reflection",
+																		"declaration": {
+																			"id": 18,
+																			"name": "__type",
+																			"kind": 65536,
+																			"kindString": "Type literal",
+																			"flags": {},
+																			"signatures": [
+																				{
+																					"id": 19,
+																					"name": "__type",
+																					"kind": 4096,
+																					"kindString": "Call signature",
+																					"flags": {},
+																					"parameters": [
+																						{
+																							"id": 20,
+																							"name": "terms",
+																							"kind": 32768,
+																							"kindString": "Parameter",
+																							"flags": {},
+																							"type": {
+																								"type": "intrinsic",
+																								"name": "string"
+																							}
+																						}
+																					],
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "string"
+																					}
+																				}
+																			]
+																		}
+																	},
+																	"defaultValue": "..."
+																},
+																{
+																	"id": 21,
+																	"name": "filters",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "reflection",
+																		"declaration": {
+																			"id": 22,
+																			"name": "__type",
+																			"kind": 65536,
+																			"kindString": "Type literal",
+																			"flags": {},
+																			"children": [
+																				{
+																					"id": 24,
+																					"name": "channel",
+																					"kind": 1024,
+																					"kindString": "Property",
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "string"
+																					},
+																					"defaultValue": "\"&sp=EgIQAg%253D%253D\""
+																				},
+																				{
+																					"id": 26,
+																					"name": "film",
+																					"kind": 1024,
+																					"kindString": "Property",
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "string"
+																					},
+																					"defaultValue": "\"&sp=EgIQBA%253D%253D\""
+																				},
+																				{
+																					"id": 25,
+																					"name": "playlist",
+																					"kind": 1024,
+																					"kindString": "Property",
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "string"
+																					},
+																					"defaultValue": "\"&sp=EgIQAw%253D%253D\""
+																				},
+																				{
+																					"id": 27,
+																					"name": "programme",
+																					"kind": 1024,
+																					"kindString": "Property",
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "string"
+																					},
+																					"defaultValue": "\"&sp=EgIQBQ%253D%253D\""
+																				},
+																				{
+																					"id": 23,
+																					"name": "video",
+																					"kind": 1024,
+																					"kindString": "Property",
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "string"
+																					},
+																					"defaultValue": "\"&sp=EgIQAQ%253D%253D\""
+																				}
+																			],
+																			"groups": [
+																				{
+																					"title": "Properties",
+																					"kind": 1024,
+																					"children": [
+																						24,
+																						26,
+																						25,
+																						27,
+																						23
+																					]
+																				}
+																			]
+																		}
+																	},
+																	"defaultValue": "..."
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		17,
+																		21
+																	]
+																}
+															]
+														}
+													},
+													"defaultValue": "..."
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														14,
+														15
+													]
+												}
+											]
+										}
+									},
+									"defaultValue": "..."
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										28,
+										12
+									]
+								}
+							]
+						}
+					},
+					"defaultValue": "..."
+				},
+				{
+					"id": 6,
+					"name": "get",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "utils.ts",
+							"line": 7,
+							"character": 16
+						}
+					],
+					"signatures": [
+						{
+							"id": 7,
+							"name": "get",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 8,
+									"name": "url",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 9,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 2,
+										"name": "getOptions"
+									},
+									"defaultValue": "..."
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"id": 3,
+										"name": "getData"
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Type aliases",
+					"kind": 4194304,
+					"children": [
+						3,
+						2
+					]
+				},
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						10
+					]
+				},
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						6
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "utils.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 65,
+			"name": "SearchChannel",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 74,
+					"name": "icons",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 45,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 75,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"children": [
+									{
+										"id": 78,
+										"name": "height",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "search.ts",
+												"line": 48,
+												"character": 14
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									},
+									{
+										"id": 76,
+										"name": "url",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "search.ts",
+												"line": 46,
+												"character": 11
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									},
+									{
+										"id": 77,
+										"name": "width",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "search.ts",
+												"line": 47,
+												"character": 13
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"groups": [
+									{
+										"title": "Properties",
+										"kind": 1024,
+										"children": [
+											78,
+											76,
+											77
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"id": 67,
+					"name": "id",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 38,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 66,
+					"name": "name",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 37,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 69,
+					"name": "subscribers",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 40,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 70,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 72,
+									"name": "pretty",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "search.ts",
+											"line": 42,
+											"character": 14
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 71,
+									"name": "text",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "search.ts",
+											"line": 41,
+											"character": 12
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										72,
+										71
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 68,
+					"name": "url",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 39,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 73,
+					"name": "videoCount",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 44,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						74,
+						67,
+						66,
+						69,
+						68,
+						73
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "search.ts",
+					"line": 36,
+					"character": 30
+				}
+			]
+		},
+		{
+			"id": 36,
+			"name": "SearchOptions",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 38,
+					"name": "filterType",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 5,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": "video"
+							},
+							{
+								"type": "literal",
+								"value": "channel"
+							},
+							{
+								"type": "literal",
+								"value": "playlist"
+							},
+							{
+								"type": "literal",
+								"value": "film"
+							},
+							{
+								"type": "literal",
+								"value": "programme"
+							}
+						]
+					}
+				},
+				{
+					"id": 37,
+					"name": "requestOptions",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 4,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 2,
+						"name": "getOptions"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						38,
+						37
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "search.ts",
+					"line": 3,
+					"character": 30
+				}
+			]
+		},
+		{
+			"id": 79,
+			"name": "SearchPlaylist",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 81,
+					"name": "id",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 54,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 80,
+					"name": "name",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 53,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 89,
+					"name": "published",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 62,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 90,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 91,
+									"name": "pretty",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {
+										"isOptional": true
+									},
+									"sources": [
+										{
+											"fileName": "search.ts",
+											"line": 63,
+											"character": 14
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										91
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 83,
+					"name": "thumbnails",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 56,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 84,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"children": [
+									{
+										"id": 87,
+										"name": "height",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "search.ts",
+												"line": 59,
+												"character": 14
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									},
+									{
+										"id": 85,
+										"name": "url",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "search.ts",
+												"line": 57,
+												"character": 11
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									},
+									{
+										"id": 86,
+										"name": "width",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "search.ts",
+												"line": 58,
+												"character": 13
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"groups": [
+									{
+										"title": "Properties",
+										"kind": 1024,
+										"children": [
+											87,
+											85,
+											86
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"id": 82,
+					"name": "url",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 55,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 88,
+					"name": "videoCount",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 61,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						81,
+						80,
+						89,
+						83,
+						82,
+						88
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "search.ts",
+					"line": 52,
+					"character": 31
+				}
+			]
+		},
+		{
+			"id": 39,
+			"name": "SearchVideo",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 43,
+					"name": "channel",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 12,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 44,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 46,
+									"name": "id",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "search.ts",
+											"line": 14,
+											"character": 10
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 45,
+									"name": "name",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "search.ts",
+											"line": 13,
+											"character": 12
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 47,
+									"name": "url",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "search.ts",
+											"line": 15,
+											"character": 11
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										46,
+										45,
+										47
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 48,
+					"name": "duration",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 17,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 49,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 51,
+									"name": "pretty",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "search.ts",
+											"line": 19,
+											"character": 14
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 50,
+									"name": "text",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "search.ts",
+											"line": 18,
+											"character": 12
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										51,
+										50
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 41,
+					"name": "id",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 10,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 52,
+					"name": "published",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 21,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 53,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 54,
+									"name": "pretty",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "search.ts",
+											"line": 22,
+											"character": 14
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										54
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 60,
+					"name": "thumbnails",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 29,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 61,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"children": [
+									{
+										"id": 64,
+										"name": "height",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "search.ts",
+												"line": 32,
+												"character": 14
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									},
+									{
+										"id": 62,
+										"name": "url",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "search.ts",
+												"line": 30,
+												"character": 11
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									},
+									{
+										"id": 63,
+										"name": "width",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "search.ts",
+												"line": 31,
+												"character": 13
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"groups": [
+									{
+										"title": "Properties",
+										"kind": 1024,
+										"children": [
+											64,
+											62,
+											63
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"id": 40,
+					"name": "title",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 9,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 42,
+					"name": "url",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 11,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 55,
+					"name": "views",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "search.ts",
+							"line": 24,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 56,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 58,
+									"name": "pretty",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "search.ts",
+											"line": 26,
+											"character": 14
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 59,
+									"name": "prettyLong",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "search.ts",
+											"line": 27,
+											"character": 18
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 57,
+									"name": "text",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "search.ts",
+											"line": 25,
+											"character": 12
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										58,
+										59,
+										57
+									]
+								}
+							]
+						}
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						43,
+						48,
+						41,
+						52,
+						60,
+						40,
+						42,
+						55
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "search.ts",
+					"line": 8,
+					"character": 28
+				}
+			]
+		},
+		{
+			"id": 102,
+			"name": "VideoInfo",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 167,
+					"name": "availableCountries",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 72,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					}
+				},
+				{
+					"id": 159,
+					"name": "category",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 64,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 108,
+					"name": "channel",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 13,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 109,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 116,
+									"name": "icons",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 20,
+											"character": 13
+										}
+									],
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reflection",
+											"declaration": {
+												"id": 117,
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"children": [
+													{
+														"id": 120,
+														"name": "height",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 23,
+																"character": 18
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "number"
+														}
+													},
+													{
+														"id": 118,
+														"name": "url",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 21,
+																"character": 15
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 119,
+														"name": "width",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 22,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "number"
+														}
+													}
+												],
+												"groups": [
+													{
+														"title": "Properties",
+														"kind": 1024,
+														"children": [
+															120,
+															118,
+															119
+														]
+													}
+												]
+											}
+										}
+									}
+								},
+								{
+									"id": 111,
+									"name": "id",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 15,
+											"character": 10
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 110,
+									"name": "name",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 14,
+											"character": 12
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 113,
+									"name": "subscribers",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 17,
+											"character": 19
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 114,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 115,
+													"name": "pretty",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "videoInfo.ts",
+															"line": 18,
+															"character": 18
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														115
+													]
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 112,
+									"name": "url",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 16,
+											"character": 11
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										116,
+										111,
+										110,
+										113,
+										112
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 107,
+					"name": "description",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 12,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 121,
+					"name": "duration",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 26,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 122,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 123,
+									"name": "lengthSec",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 27,
+											"character": 17
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										123
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 160,
+					"name": "embed",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 65,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 161,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 166,
+									"name": "flashSecureUrl",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 70,
+											"character": 22
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 163,
+									"name": "flashUrl",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 67,
+											"character": 16
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 164,
+									"name": "height",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 68,
+											"character": 14
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 162,
+									"name": "iframeUrl",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 66,
+											"character": 17
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 165,
+									"name": "width",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 69,
+											"character": 13
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										166,
+										163,
+										164,
+										162,
+										165
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 104,
+					"name": "id",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 9,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 158,
+					"name": "isFamilySafe",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 63,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 156,
+					"name": "isLive",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 61,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 157,
+					"name": "isUnlisted",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 62,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 155,
+					"name": "keywords",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 60,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					}
+				},
+				{
+					"id": 148,
+					"name": "published",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 53,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 149,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 151,
+									"name": "pretty",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 55,
+											"character": 14
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 150,
+									"name": "text",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 54,
+											"character": 12
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										151,
+										150
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 134,
+					"name": "ratings",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 39,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 135,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 140,
+									"name": "dislikes",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 44,
+											"character": 16
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 141,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 143,
+													"name": "pretty",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "videoInfo.ts",
+															"line": 46,
+															"character": 18
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 142,
+													"name": "text",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "videoInfo.ts",
+															"line": 45,
+															"character": 16
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														143,
+														142
+													]
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 136,
+									"name": "likes",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 40,
+											"character": 13
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 137,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 139,
+													"name": "pretty",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "videoInfo.ts",
+															"line": 42,
+															"character": 18
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 138,
+													"name": "text",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "videoInfo.ts",
+															"line": 41,
+															"character": 16
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														139,
+														138
+													]
+												}
+											]
+										}
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										140,
+										136
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 106,
+					"name": "shortDescription",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 11,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 168,
+					"name": "streams",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 73,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 169,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 190,
+									"name": "adaptiveFormats",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 94,
+											"character": 23
+										}
+									],
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reflection",
+											"declaration": {
+												"id": 191,
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"children": [
+													{
+														"id": 213,
+														"name": "approxDurationMs",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 116,
+																"character": 28
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 222,
+														"name": "audioChannels",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {
+															"isOptional": true
+														},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 125,
+																"character": 25
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "number"
+														}
+													},
+													{
+														"id": 220,
+														"name": "audioQuality",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {
+															"isOptional": true
+														},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 123,
+																"character": 24
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 221,
+														"name": "audioSampleRate",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {
+															"isOptional": true
+														},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 124,
+																"character": 27
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 212,
+														"name": "averageBitrate",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 115,
+																"character": 26
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "number"
+														}
+													},
+													{
+														"id": 195,
+														"name": "bitrate",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 98,
+																"character": 19
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "number"
+														}
+													},
+													{
+														"id": 214,
+														"name": "colorInfo",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {
+															"isOptional": true
+														},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 117,
+																"character": 21
+															}
+														],
+														"type": {
+															"type": "reflection",
+															"declaration": {
+																"id": 215,
+																"name": "__type",
+																"kind": 65536,
+																"kindString": "Type literal",
+																"flags": {},
+																"children": [
+																	{
+																		"id": 218,
+																		"name": "matrixCoefficients",
+																		"kind": 1024,
+																		"kindString": "Property",
+																		"flags": {},
+																		"sources": [
+																			{
+																				"fileName": "videoInfo.ts",
+																				"line": 120,
+																				"character": 34
+																			}
+																		],
+																		"type": {
+																			"type": "intrinsic",
+																			"name": "string"
+																		}
+																	},
+																	{
+																		"id": 216,
+																		"name": "primaries",
+																		"kind": 1024,
+																		"kindString": "Property",
+																		"flags": {},
+																		"sources": [
+																			{
+																				"fileName": "videoInfo.ts",
+																				"line": 118,
+																				"character": 25
+																			}
+																		],
+																		"type": {
+																			"type": "intrinsic",
+																			"name": "string"
+																		}
+																	},
+																	{
+																		"id": 217,
+																		"name": "transferCharacteristics",
+																		"kind": 1024,
+																		"kindString": "Property",
+																		"flags": {},
+																		"sources": [
+																			{
+																				"fileName": "videoInfo.ts",
+																				"line": 119,
+																				"character": 39
+																			}
+																		],
+																		"type": {
+																			"type": "intrinsic",
+																			"name": "string"
+																		}
+																	}
+																],
+																"groups": [
+																	{
+																		"title": "Properties",
+																		"kind": 1024,
+																		"children": [
+																			218,
+																			216,
+																			217
+																		]
+																	}
+																]
+															}
+														}
+													},
+													{
+														"id": 207,
+														"name": "contentLength",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 110,
+																"character": 25
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 209,
+														"name": "fps",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {
+															"isOptional": true
+														},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 112,
+																"character": 15
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "number"
+														}
+													},
+													{
+														"id": 197,
+														"name": "height",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {
+															"isOptional": true
+														},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 100,
+																"character": 18
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "number"
+														}
+													},
+													{
+														"id": 219,
+														"name": "highReplication",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {
+															"isOptional": true
+														},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 122,
+																"character": 27
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "boolean"
+														}
+													},
+													{
+														"id": 202,
+														"name": "indexRange",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 105,
+																"character": 22
+															}
+														],
+														"type": {
+															"type": "reflection",
+															"declaration": {
+																"id": 203,
+																"name": "__type",
+																"kind": 65536,
+																"kindString": "Type literal",
+																"flags": {},
+																"children": [
+																	{
+																		"id": 205,
+																		"name": "end",
+																		"kind": 1024,
+																		"kindString": "Property",
+																		"flags": {},
+																		"sources": [
+																			{
+																				"fileName": "videoInfo.ts",
+																				"line": 107,
+																				"character": 19
+																			}
+																		],
+																		"type": {
+																			"type": "intrinsic",
+																			"name": "string"
+																		}
+																	},
+																	{
+																		"id": 204,
+																		"name": "start",
+																		"kind": 1024,
+																		"kindString": "Property",
+																		"flags": {},
+																		"sources": [
+																			{
+																				"fileName": "videoInfo.ts",
+																				"line": 106,
+																				"character": 21
+																			}
+																		],
+																		"type": {
+																			"type": "intrinsic",
+																			"name": "string"
+																		}
+																	}
+																],
+																"groups": [
+																	{
+																		"title": "Properties",
+																		"kind": 1024,
+																		"children": [
+																			205,
+																			204
+																		]
+																	}
+																]
+															}
+														}
+													},
+													{
+														"id": 198,
+														"name": "initRange",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 101,
+																"character": 21
+															}
+														],
+														"type": {
+															"type": "reflection",
+															"declaration": {
+																"id": 199,
+																"name": "__type",
+																"kind": 65536,
+																"kindString": "Type literal",
+																"flags": {},
+																"children": [
+																	{
+																		"id": 201,
+																		"name": "end",
+																		"kind": 1024,
+																		"kindString": "Property",
+																		"flags": {},
+																		"sources": [
+																			{
+																				"fileName": "videoInfo.ts",
+																				"line": 103,
+																				"character": 19
+																			}
+																		],
+																		"type": {
+																			"type": "intrinsic",
+																			"name": "string"
+																		}
+																	},
+																	{
+																		"id": 200,
+																		"name": "start",
+																		"kind": 1024,
+																		"kindString": "Property",
+																		"flags": {},
+																		"sources": [
+																			{
+																				"fileName": "videoInfo.ts",
+																				"line": 102,
+																				"character": 21
+																			}
+																		],
+																		"type": {
+																			"type": "intrinsic",
+																			"name": "string"
+																		}
+																	}
+																],
+																"groups": [
+																	{
+																		"title": "Properties",
+																		"kind": 1024,
+																		"children": [
+																			201,
+																			200
+																		]
+																	}
+																]
+															}
+														}
+													},
+													{
+														"id": 192,
+														"name": "itag",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 95,
+																"character": 16
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "number"
+														}
+													},
+													{
+														"id": 206,
+														"name": "lastModified",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 109,
+																"character": 24
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 223,
+														"name": "loudnessDb",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {
+															"isOptional": true
+														},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 126,
+																"character": 22
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "number"
+														}
+													},
+													{
+														"id": 194,
+														"name": "mimeType",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 97,
+																"character": 20
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 211,
+														"name": "projectionType",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 114,
+																"character": 26
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 208,
+														"name": "quality",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 111,
+																"character": 19
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 210,
+														"name": "qualityLabel",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {
+															"isOptional": true
+														},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 113,
+																"character": 24
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 193,
+														"name": "url",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 96,
+																"character": 15
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 196,
+														"name": "width",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {
+															"isOptional": true
+														},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 99,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "number"
+														}
+													}
+												],
+												"groups": [
+													{
+														"title": "Properties",
+														"kind": 1024,
+														"children": [
+															213,
+															222,
+															220,
+															221,
+															212,
+															195,
+															214,
+															207,
+															209,
+															197,
+															219,
+															202,
+															198,
+															192,
+															206,
+															223,
+															194,
+															211,
+															208,
+															210,
+															193,
+															196
+														]
+													}
+												]
+											}
+										}
+									}
+								},
+								{
+									"id": 170,
+									"name": "expiresInSeconds",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 74,
+											"character": 24
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 171,
+									"name": "formats",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 75,
+											"character": 15
+										}
+									],
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reflection",
+											"declaration": {
+												"id": 172,
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"children": [
+													{
+														"id": 187,
+														"name": "approxDurationMs",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 90,
+																"character": 28
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 189,
+														"name": "audioChannels",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 92,
+																"character": 25
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "number"
+														}
+													},
+													{
+														"id": 186,
+														"name": "audioQuality",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 89,
+																"character": 24
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 188,
+														"name": "audioSampleRate",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 91,
+																"character": 27
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 185,
+														"name": "averageBitrate",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {
+															"isOptional": true
+														},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 88,
+																"character": 26
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "number"
+														}
+													},
+													{
+														"id": 176,
+														"name": "bitrate",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 79,
+																"character": 19
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "number"
+														}
+													},
+													{
+														"id": 180,
+														"name": "contentLength",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {
+															"isOptional": true
+														},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 83,
+																"character": 25
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 182,
+														"name": "fps",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 85,
+																"character": 15
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "number"
+														}
+													},
+													{
+														"id": 178,
+														"name": "height",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 81,
+																"character": 18
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "number"
+														}
+													},
+													{
+														"id": 173,
+														"name": "itag",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 76,
+																"character": 16
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "number"
+														}
+													},
+													{
+														"id": 179,
+														"name": "lastModified",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 82,
+																"character": 24
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 175,
+														"name": "mimeType",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 78,
+																"character": 20
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 184,
+														"name": "projectionType",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 87,
+																"character": 26
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 181,
+														"name": "quality",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 84,
+																"character": 19
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 183,
+														"name": "qualityLabel",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 86,
+																"character": 24
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 174,
+														"name": "url",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 77,
+																"character": 15
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													{
+														"id": 177,
+														"name": "width",
+														"kind": 1024,
+														"kindString": "Property",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "videoInfo.ts",
+																"line": 80,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "number"
+														}
+													}
+												],
+												"groups": [
+													{
+														"title": "Properties",
+														"kind": 1024,
+														"children": [
+															187,
+															189,
+															186,
+															188,
+															185,
+															176,
+															180,
+															182,
+															178,
+															173,
+															179,
+															175,
+															184,
+															181,
+															183,
+															174,
+															177
+														]
+													}
+												]
+											}
+										}
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										190,
+										170,
+										171
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 124,
+					"name": "thumbnails",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 29,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 125,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"children": [
+									{
+										"id": 128,
+										"name": "height",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "videoInfo.ts",
+												"line": 32,
+												"character": 14
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									},
+									{
+										"id": 126,
+										"name": "url",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "videoInfo.ts",
+												"line": 30,
+												"character": 11
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									},
+									{
+										"id": 127,
+										"name": "width",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "videoInfo.ts",
+												"line": 31,
+												"character": 13
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"groups": [
+									{
+										"title": "Properties",
+										"kind": 1024,
+										"children": [
+											128,
+											126,
+											127
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"id": 103,
+					"name": "title",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 8,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 152,
+					"name": "uploaded",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 57,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 153,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 154,
+									"name": "text",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 58,
+											"character": 12
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										154
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 105,
+					"name": "url",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 10,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 144,
+					"name": "views",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 49,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 145,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 147,
+									"name": "pretty",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 51,
+											"character": 14
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 146,
+									"name": "text",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "videoInfo.ts",
+											"line": 50,
+											"character": 12
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										147,
+										146
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 129,
+					"name": "watermarks",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 34,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 130,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"children": [
+									{
+										"id": 133,
+										"name": "height",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "videoInfo.ts",
+												"line": 37,
+												"character": 14
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									},
+									{
+										"id": 131,
+										"name": "url",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "videoInfo.ts",
+												"line": 35,
+												"character": 11
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									},
+									{
+										"id": 132,
+										"name": "width",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "videoInfo.ts",
+												"line": 36,
+												"character": 13
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"groups": [
+									{
+										"title": "Properties",
+										"kind": 1024,
+										"children": [
+											133,
+											131,
+											132
+										]
+									}
+								]
+							}
+						}
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						167,
+						159,
+						108,
+						107,
+						121,
+						160,
+						104,
+						158,
+						156,
+						157,
+						155,
+						148,
+						134,
+						106,
+						168,
+						124,
+						103,
+						152,
+						105,
+						144,
+						129
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "videoInfo.ts",
+					"line": 7,
+					"character": 26
+				}
+			]
+		},
+		{
+			"id": 100,
+			"name": "VideoInfoOptions",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 101,
+					"name": "requestOptions",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "videoInfo.ts",
+							"line": 4,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 2,
+						"name": "getOptions"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						101
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "videoInfo.ts",
+					"line": 3,
+					"character": 33
+				}
+			]
+		},
+		{
+			"id": 92,
+			"name": "search",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "search.ts",
+					"line": 70,
+					"character": 19
+				}
+			],
+			"signatures": [
+				{
+					"id": 93,
+					"name": "search",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "Search for videos, channels, etc..."
+					},
+					"parameters": [
+						{
+							"id": 94,
+							"name": "terms",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 95,
+							"name": "options",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 36,
+								"name": "SearchOptions"
+							},
+							"defaultValue": "..."
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 96,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"children": [
+										{
+											"id": 98,
+											"name": "channels",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "search.ts",
+													"line": 138,
+													"character": 16
+												}
+											],
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"id": 65,
+													"name": "SearchChannel"
+												}
+											}
+										},
+										{
+											"id": 99,
+											"name": "playlists",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "search.ts",
+													"line": 139,
+													"character": 17
+												}
+											],
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"id": 79,
+													"name": "SearchPlaylist"
+												}
+											}
+										},
+										{
+											"id": 97,
+											"name": "videos",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "search.ts",
+													"line": 137,
+													"character": 14
+												}
+											],
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"id": 39,
+													"name": "SearchVideo"
+												}
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"kind": 1024,
+											"children": [
+												98,
+												99,
+												97
+											]
+										}
+									]
+								}
+							}
+						],
+						"name": "Promise"
+					}
+				}
+			]
+		},
+		{
+			"id": 224,
+			"name": "videoInfo",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "videoInfo.ts",
+					"line": 133,
+					"character": 22
+				}
+			],
+			"signatures": [
+				{
+					"id": 225,
+					"name": "videoInfo",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "Get full information about a YouTube video"
+					},
+					"parameters": [
+						{
+							"id": 226,
+							"name": "url",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 227,
+							"name": "options",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 100,
+								"name": "VideoInfoOptions"
+							},
+							"defaultValue": "..."
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"id": 102,
+								"name": "VideoInfo"
+							}
+						],
+						"name": "Promise"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Namespaces",
+			"kind": 2,
+			"children": [
+				1
+			]
+		},
+		{
+			"title": "Interfaces",
+			"kind": 256,
+			"children": [
+				65,
+				36,
+				79,
+				39,
+				102,
+				100
+			]
+		},
+		{
+			"title": "Functions",
+			"kind": 64,
+			"children": [
+				92,
+				224
+			]
+		}
+	],
+	"sources": [
+		{
+			"fileName": "index.ts",
+			"line": 1,
+			"character": 0
+		}
+	]
+}
