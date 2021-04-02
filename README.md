@@ -4,7 +4,7 @@
 
 ## 🤔 Whats is this?
 
-Just a simple [YouTube](https://youtube.com) scrapper. No key needed!
+Just a simple [YouTube](https://youtube.com) scraper. No key needed!
 
 ## 💻 Installation
 
