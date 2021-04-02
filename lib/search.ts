@@ -64,7 +64,10 @@ export interface SearchPlaylist {
     };
 }
 
-const search = async (terms: string, options: SearchOptions = {}) => {
+/**
+ * Search for videos, channels, etc...
+ */
+export const search = async (terms: string, options: SearchOptions = {}) => {
     if (typeof terms !== "string")
         throw new Error(constants.err.type("terms", "string", typeof terms));
 

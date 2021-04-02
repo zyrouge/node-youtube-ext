@@ -127,8 +127,13 @@ export interface VideoInfo {
         }[];
     };
 }
-
-const videoInfo = async (url: string, options: VideoInfoOptions = {}) => {
+/**
+ * Get full information about a YouTube video
+ */
+export const videoInfo = async (
+    url: string,
+    options: VideoInfoOptions = {}
+) => {
     if (typeof url !== "string")
         throw new Error(constants.err.type("url", "string", typeof url));
 
@@ -137,7 +142,7 @@ const videoInfo = async (url: string, options: VideoInfoOptions = {}) => {
             constants.err.type("options", "object", typeof options)
         );
 
-    if (!url.startsWith("http")) url = constants.urls.base + url;
+    if (!url.startsWith("http")) url = `${constants.urls.base}/${url}`;
 
     let res: getData;
     try {
