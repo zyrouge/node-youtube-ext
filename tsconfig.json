@@ -69,7 +69,7 @@
     "forceConsistentCasingInFileNames": true        /* Disallow inconsistently-cased references to the same file. */
   },
   "typedocOptions": {
-    "name": "Genius-Lyrics Documentation",
+    "name": "YouTube Extractor - Documentation",
     "entryPoints": [
       "lib/index.ts"
     ],

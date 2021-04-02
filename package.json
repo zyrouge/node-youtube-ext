@@ -1,5 +1,5 @@
 {
-  "name": "@zyrouge/ytsr",
+  "name": "yt-ext",
   "version": "1.0.0-beta",
   "description": "",
   "main": "dist/index.js",
