@@ -1,5 +1,5 @@
 {
-  "name": "yt-ext",
+  "name": "youtube-ext",
   "version": "1.0.0-beta",
   "description": "",
   "main": "dist/index.js",
@@ -18,14 +18,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zyrouge/yt-ext.git"
+    "url": "git+https://github.com/zyrouge/youtube-ext.git"
   },
   "author": "ZYROUGE",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zyrouge/yt-ext/issues"
+    "url": "https://github.com/zyrouge/youtube-ext/issues"
   },
-  "homepage": "yt-ext.js.org",
+  "homepage": "youtube-ext.js.org",
   "devDependencies": {
     "@types/node": "^14.14.37",
     "rimraf": "^3.0.2",
