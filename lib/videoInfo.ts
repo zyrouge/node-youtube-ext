@@ -1,4 +1,4 @@
-import { get, getOptions, getData, constants } from "./utils";
+import { get, getOptions, getData, constants, mergeObj } from "./utils";
 
 export interface VideoInfoOptions {
     requestOptions?: getOptions;
@@ -142,7 +142,18 @@ export const videoInfo = async (
             constants.err.type("options", "object", typeof options)
         );
 
-    if (!url.startsWith("http")) url = `${constants.urls.base}/${url}`;
+    options = mergeObj(
+        {
+            requestOptions: {
+                headers: {
+                    "User-Agent": constants.headers.userAgent,
+                },
+            },
+        },
+        options
+    );
+
+    if (!url.startsWith("http")) url = constants.urls.video.base(url);
 
     let res: getData;
     try {

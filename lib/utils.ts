@@ -43,9 +43,37 @@ export const constants = {
                 programme: "&sp=EgIQBQ%253D%253D",
             },
         },
+        video: {
+            base: (id: string) =>
+                `${constants.urls.base}watch?v=${encodeURIComponent(id)}`,
+        },
+        playlist: {
+            base: (id: string) =>
+                `${constants.urls.base}playlist?list=${encodeURIComponent(id)}`,
+        },
+    },
+    headers: {
+        userAgent:
+            "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0",
     },
     err: {
         type: (key: string, expected: string, received: string) =>
             `Expected "${key}" to be "${expected}" but received "${received}".`,
     },
+};
+
+const merge2Obj = <T>(one: T, two: T) => {
+    for (const key in two) {
+        if (Object.prototype.hasOwnProperty.call(two, key)) {
+            const ele = two[key];
+            if (typeof ele === "object") one[key] = merge2Obj(one[key], ele);
+            else one[key] = ele;
+        }
+    }
+    return one;
+};
+
+export const mergeObj = <T>(res: T, ...objs: T[]) => {
+    objs.forEach((obj) => merge2Obj(res, obj));
+    return res;
 };

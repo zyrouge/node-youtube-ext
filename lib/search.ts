@@ -1,4 +1,4 @@
-import { getOptions, get, constants, getData } from "./utils";
+import { getOptions, get, constants, getData, mergeObj } from "./utils";
 
 export interface SearchOptions {
     requestOptions?: getOptions;
@@ -75,6 +75,17 @@ export const search = async (terms: string, options: SearchOptions = {}) => {
         throw new Error(
             constants.err.type("options", "object", typeof options)
         );
+
+    options = mergeObj(
+        {
+            requestOptions: {
+                headers: {
+                    "User-Agent": constants.headers.userAgent,
+                },
+            },
+        },
+        options
+    );
 
     let url = constants.urls.search.base(terms);
     if (options.filterType) {
