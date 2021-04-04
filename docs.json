@@ -133,7 +133,7 @@
 							"flags": {},
 							"children": [
 								{
-									"id": 46,
+									"id": 52,
 									"name": "err",
 									"kind": 1024,
 									"kindString": "Property",
@@ -141,14 +141,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 47,
+											"id": 53,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 48,
+													"id": 54,
 													"name": "type",
 													"kind": 1024,
 													"kindString": "Property",
@@ -156,21 +156,21 @@
 													"type": {
 														"type": "reflection",
 														"declaration": {
-															"id": 49,
+															"id": 55,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"signatures": [
 																{
-																	"id": 50,
+																	"id": 56,
 																	"name": "__type",
 																	"kind": 4096,
 																	"kindString": "Call signature",
 																	"flags": {},
 																	"parameters": [
 																		{
-																			"id": 51,
+																			"id": 57,
 																			"name": "key",
 																			"kind": 32768,
 																			"kindString": "Parameter",
@@ -181,7 +181,7 @@
 																			}
 																		},
 																		{
-																			"id": 52,
+																			"id": 58,
 																			"name": "expected",
 																			"kind": 32768,
 																			"kindString": "Parameter",
@@ -192,7 +192,7 @@
 																			}
 																		},
 																		{
-																			"id": 53,
+																			"id": 59,
 																			"name": "received",
 																			"kind": 32768,
 																			"kindString": "Parameter",
@@ -219,7 +219,7 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														48
+														54
 													]
 												}
 											]
@@ -228,7 +228,7 @@
 									"defaultValue": "..."
 								},
 								{
-									"id": 43,
+									"id": 49,
 									"name": "headers",
 									"kind": 1024,
 									"kindString": "Property",
@@ -236,14 +236,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 44,
+											"id": 50,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 45,
+													"id": 51,
 													"name": "userAgent",
 													"kind": 1024,
 													"kindString": "Property",
@@ -260,7 +260,7 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														45
+														51
 													]
 												}
 											]
@@ -294,6 +294,79 @@
 														"name": "string"
 													},
 													"defaultValue": "\"https://www.youtube.com\""
+												},
+												{
+													"id": 43,
+													"name": "channel",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"type": {
+														"type": "reflection",
+														"declaration": {
+															"id": 44,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 45,
+																	"name": "base",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "reflection",
+																		"declaration": {
+																			"id": 46,
+																			"name": "__type",
+																			"kind": 65536,
+																			"kindString": "Type literal",
+																			"flags": {},
+																			"signatures": [
+																				{
+																					"id": 47,
+																					"name": "__type",
+																					"kind": 4096,
+																					"kindString": "Call signature",
+																					"flags": {},
+																					"parameters": [
+																						{
+																							"id": 48,
+																							"name": "id",
+																							"kind": 32768,
+																							"kindString": "Parameter",
+																							"flags": {},
+																							"type": {
+																								"type": "intrinsic",
+																								"name": "string"
+																							}
+																						}
+																					],
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "string"
+																					}
+																				}
+																			]
+																		}
+																	},
+																	"defaultValue": "..."
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		45
+																	]
+																}
+															]
+														}
+													},
+													"defaultValue": "..."
 												},
 												{
 													"id": 35,
@@ -641,6 +714,7 @@
 													"kind": 1024,
 													"children": [
 														15,
+														43,
 														35,
 														16,
 														29
@@ -657,8 +731,8 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										46,
-										43,
+										52,
+										49,
 										13
 									]
 								}
@@ -730,7 +804,7 @@
 					]
 				},
 				{
-					"id": 54,
+					"id": 60,
 					"name": "mergeObj",
 					"kind": 64,
 					"kindString": "Function",
@@ -740,20 +814,20 @@
 					"sources": [
 						{
 							"fileName": "utils.ts",
-							"line": 80,
+							"line": 83,
 							"character": 21
 						}
 					],
 					"signatures": [
 						{
-							"id": 55,
+							"id": 61,
 							"name": "mergeObj",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"typeParameter": [
 								{
-									"id": 56,
+									"id": 62,
 									"name": "T",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -762,7 +836,7 @@
 							],
 							"parameters": [
 								{
-									"id": 57,
+									"id": 63,
 									"name": "res",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -773,7 +847,7 @@
 									}
 								},
 								{
-									"id": 58,
+									"id": 64,
 									"name": "objs",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -818,7 +892,7 @@
 					"kind": 64,
 					"children": [
 						7,
-						54
+						60
 					]
 				}
 			],
@@ -831,14 +905,1265 @@
 			]
 		},
 		{
-			"id": 272,
+			"id": 321,
+			"name": "ChannelInfo",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 355,
+					"name": "availableCountries",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 69,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					}
+				},
+				{
+					"id": 353,
+					"name": "badges",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 67,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					}
+				},
+				{
+					"id": 338,
+					"name": "banner",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 52,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 339,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"children": [
+									{
+										"id": 342,
+										"name": "height",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "channelInfo.ts",
+												"line": 55,
+												"character": 14
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									},
+									{
+										"id": 340,
+										"name": "url",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "channelInfo.ts",
+												"line": 53,
+												"character": 11
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									},
+									{
+										"id": 341,
+										"name": "width",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "channelInfo.ts",
+												"line": 54,
+												"character": 13
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"groups": [
+									{
+										"title": "Properties",
+										"kind": 1024,
+										"children": [
+											342,
+											340,
+											341
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"id": 327,
+					"name": "description",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 41,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 357,
+					"name": "familySafe",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 71,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 323,
+					"name": "id",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 37,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 348,
+					"name": "mobileBanner",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 62,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 349,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"children": [
+									{
+										"id": 352,
+										"name": "height",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "channelInfo.ts",
+												"line": 65,
+												"character": 14
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									},
+									{
+										"id": 350,
+										"name": "url",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "channelInfo.ts",
+												"line": 63,
+												"character": 11
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									},
+									{
+										"id": 351,
+										"name": "width",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "channelInfo.ts",
+												"line": 64,
+												"character": 13
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"groups": [
+									{
+										"title": "Properties",
+										"kind": 1024,
+										"children": [
+											352,
+											350,
+											351
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"id": 322,
+					"name": "name",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 36,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 326,
+					"name": "rssUrl",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 40,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 328,
+					"name": "subscribers",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 42,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 329,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 330,
+									"name": "pretty",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "channelInfo.ts",
+											"line": 43,
+											"character": 14
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 331,
+									"name": "text",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "channelInfo.ts",
+											"line": 44,
+											"character": 12
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										330,
+										331
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 354,
+					"name": "tags",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 68,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					}
+				},
+				{
+					"id": 333,
+					"name": "thumbnails",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 47,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 334,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"children": [
+									{
+										"id": 337,
+										"name": "height",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "channelInfo.ts",
+												"line": 50,
+												"character": 14
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									},
+									{
+										"id": 335,
+										"name": "url",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "channelInfo.ts",
+												"line": 48,
+												"character": 11
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									},
+									{
+										"id": 336,
+										"name": "width",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "channelInfo.ts",
+												"line": 49,
+												"character": 13
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"groups": [
+									{
+										"title": "Properties",
+										"kind": 1024,
+										"children": [
+											337,
+											335,
+											336
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"id": 343,
+					"name": "tvBanner",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 57,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 344,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"children": [
+									{
+										"id": 347,
+										"name": "height",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "channelInfo.ts",
+												"line": 60,
+												"character": 14
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									},
+									{
+										"id": 345,
+										"name": "url",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "channelInfo.ts",
+												"line": 58,
+												"character": 11
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									},
+									{
+										"id": 346,
+										"name": "width",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "channelInfo.ts",
+												"line": 59,
+												"character": 13
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"groups": [
+									{
+										"title": "Properties",
+										"kind": 1024,
+										"children": [
+											347,
+											345,
+											346
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"id": 356,
+					"name": "unlisted",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 70,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 324,
+					"name": "url",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 38,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 325,
+					"name": "vanityUrl",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 39,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 332,
+					"name": "videos",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 46,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 295,
+							"name": "ChannelVideo"
+						}
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						355,
+						353,
+						338,
+						327,
+						357,
+						323,
+						348,
+						322,
+						326,
+						328,
+						354,
+						333,
+						343,
+						356,
+						324,
+						325,
+						332
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "channelInfo.ts",
+					"line": 35,
+					"character": 28
+				}
+			]
+		},
+		{
+			"id": 293,
+			"name": "ChannelInfoOptions",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 294,
+					"name": "requestOptions",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 4,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 3,
+						"name": "getOptions"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						294
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "channelInfo.ts",
+					"line": 3,
+					"character": 35
+				}
+			]
+		},
+		{
+			"id": 295,
+			"name": "ChannelVideo",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 299,
+					"name": "channel",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 11,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 300,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 302,
+									"name": "id",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "channelInfo.ts",
+											"line": 13,
+											"character": 10
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 301,
+									"name": "name",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "channelInfo.ts",
+											"line": 12,
+											"character": 12
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 303,
+									"name": "url",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "channelInfo.ts",
+											"line": 14,
+											"character": 11
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										302,
+										301,
+										303
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 309,
+					"name": "duration",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 21,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 310,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 311,
+									"name": "pretty",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "channelInfo.ts",
+											"line": 22,
+											"character": 14
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 312,
+									"name": "text",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "channelInfo.ts",
+											"line": 23,
+											"character": 12
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										311,
+										312
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 297,
+					"name": "id",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 9,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 318,
+					"name": "published",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 30,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 319,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 320,
+									"name": "text",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "channelInfo.ts",
+											"line": 31,
+											"character": 12
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										320
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 304,
+					"name": "thumbnails",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 16,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 305,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"children": [
+									{
+										"id": 308,
+										"name": "height",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "channelInfo.ts",
+												"line": 19,
+												"character": 14
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									},
+									{
+										"id": 306,
+										"name": "url",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "channelInfo.ts",
+												"line": 17,
+												"character": 11
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									},
+									{
+										"id": 307,
+										"name": "width",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "channelInfo.ts",
+												"line": 18,
+												"character": 13
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"groups": [
+									{
+										"title": "Properties",
+										"kind": 1024,
+										"children": [
+											308,
+											306,
+											307
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"id": 296,
+					"name": "title",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 8,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 298,
+					"name": "url",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 10,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 313,
+					"name": "views",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "channelInfo.ts",
+							"line": 25,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 314,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 316,
+									"name": "pretty",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "channelInfo.ts",
+											"line": 27,
+											"character": 14
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 317,
+									"name": "simpleText",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "channelInfo.ts",
+											"line": 28,
+											"character": 18
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 315,
+									"name": "text",
+									"kind": 1024,
+									"kindString": "Property",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "channelInfo.ts",
+											"line": 26,
+											"character": 12
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"kind": 1024,
+									"children": [
+										316,
+										317,
+										315
+									]
+								}
+							]
+						}
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						299,
+						309,
+						297,
+						318,
+						304,
+						296,
+						298,
+						313
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "channelInfo.ts",
+					"line": 7,
+					"character": 29
+				}
+			]
+		},
+		{
+			"id": 278,
 			"name": "PlaylistInfo",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 276,
+					"id": 282,
 					"name": "description",
 					"kind": 1024,
 					"kindString": "Property",
@@ -856,7 +2181,7 @@
 					}
 				},
 				{
-					"id": 274,
+					"id": 280,
 					"name": "id",
 					"kind": 1024,
 					"kindString": "Property",
@@ -874,7 +2199,7 @@
 					}
 				},
 				{
-					"id": 278,
+					"id": 284,
 					"name": "thumbnails",
 					"kind": 1024,
 					"kindString": "Property",
@@ -891,14 +2216,14 @@
 						"elementType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 279,
+								"id": 285,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
 								"flags": {},
 								"children": [
 									{
-										"id": 282,
+										"id": 288,
 										"name": "height",
 										"kind": 1024,
 										"kindString": "Property",
@@ -916,7 +2241,7 @@
 										}
 									},
 									{
-										"id": 280,
+										"id": 286,
 										"name": "url",
 										"kind": 1024,
 										"kindString": "Property",
@@ -934,7 +2259,7 @@
 										}
 									},
 									{
-										"id": 281,
+										"id": 287,
 										"name": "width",
 										"kind": 1024,
 										"kindString": "Property",
@@ -957,9 +2282,9 @@
 										"title": "Properties",
 										"kind": 1024,
 										"children": [
-											282,
-											280,
-											281
+											288,
+											286,
+											287
 										]
 									}
 								]
@@ -968,7 +2293,7 @@
 					}
 				},
 				{
-					"id": 273,
+					"id": 279,
 					"name": "title",
 					"kind": 1024,
 					"kindString": "Property",
@@ -986,7 +2311,7 @@
 					}
 				},
 				{
-					"id": 275,
+					"id": 281,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1004,7 +2329,7 @@
 					}
 				},
 				{
-					"id": 277,
+					"id": 283,
 					"name": "videos",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1020,7 +2345,7 @@
 						"type": "array",
 						"elementType": {
 							"type": "reference",
-							"id": 253,
+							"id": 259,
 							"name": "PlaylistVideo"
 						}
 					}
@@ -1031,12 +2356,12 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						276,
-						274,
-						278,
-						273,
-						275,
-						277
+						282,
+						280,
+						284,
+						279,
+						281,
+						283
 					]
 				}
 			],
@@ -1049,14 +2374,14 @@
 			]
 		},
 		{
-			"id": 251,
+			"id": 257,
 			"name": "PlaylistInfoOptions",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 252,
+					"id": 258,
 					"name": "requestOptions",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1082,7 +2407,7 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						252
+						258
 					]
 				}
 			],
@@ -1095,14 +2420,14 @@
 			]
 		},
 		{
-			"id": 253,
+			"id": 259,
 			"name": "PlaylistVideo",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 257,
+					"id": 263,
 					"name": "channel",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1117,14 +2442,14 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 258,
+							"id": 264,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 260,
+									"id": 266,
 									"name": "id",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1142,7 +2467,7 @@
 									}
 								},
 								{
-									"id": 259,
+									"id": 265,
 									"name": "name",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1160,7 +2485,7 @@
 									}
 								},
 								{
-									"id": 261,
+									"id": 267,
 									"name": "url",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1183,9 +2508,9 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										260,
-										259,
-										261
+										266,
+										265,
+										267
 									]
 								}
 							]
@@ -1193,7 +2518,7 @@
 					}
 				},
 				{
-					"id": 267,
+					"id": 273,
 					"name": "duration",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1208,14 +2533,14 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 268,
+							"id": 274,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 271,
+									"id": 277,
 									"name": "lengthSec",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1233,7 +2558,7 @@
 									}
 								},
 								{
-									"id": 269,
+									"id": 275,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1251,7 +2576,7 @@
 									}
 								},
 								{
-									"id": 270,
+									"id": 276,
 									"name": "text",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1274,9 +2599,9 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										271,
-										269,
-										270
+										277,
+										275,
+										276
 									]
 								}
 							]
@@ -1284,7 +2609,7 @@
 					}
 				},
 				{
-					"id": 255,
+					"id": 261,
 					"name": "id",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1302,7 +2627,7 @@
 					}
 				},
 				{
-					"id": 262,
+					"id": 268,
 					"name": "thumbnails",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1319,14 +2644,14 @@
 						"elementType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 263,
+								"id": 269,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
 								"flags": {},
 								"children": [
 									{
-										"id": 266,
+										"id": 272,
 										"name": "height",
 										"kind": 1024,
 										"kindString": "Property",
@@ -1344,7 +2669,7 @@
 										}
 									},
 									{
-										"id": 264,
+										"id": 270,
 										"name": "url",
 										"kind": 1024,
 										"kindString": "Property",
@@ -1362,7 +2687,7 @@
 										}
 									},
 									{
-										"id": 265,
+										"id": 271,
 										"name": "width",
 										"kind": 1024,
 										"kindString": "Property",
@@ -1385,9 +2710,9 @@
 										"title": "Properties",
 										"kind": 1024,
 										"children": [
-											266,
-											264,
-											265
+											272,
+											270,
+											271
 										]
 									}
 								]
@@ -1396,7 +2721,7 @@
 					}
 				},
 				{
-					"id": 254,
+					"id": 260,
 					"name": "title",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1414,7 +2739,7 @@
 					}
 				},
 				{
-					"id": 256,
+					"id": 262,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1437,12 +2762,12 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						257,
-						267,
-						255,
-						262,
-						254,
-						256
+						263,
+						273,
+						261,
+						268,
+						260,
+						262
 					]
 				}
 			],
@@ -1455,14 +2780,14 @@
 			]
 		},
 		{
-			"id": 88,
+			"id": 94,
 			"name": "SearchChannel",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 97,
+					"id": 103,
 					"name": "icons",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1479,14 +2804,14 @@
 						"elementType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 98,
+								"id": 104,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
 								"flags": {},
 								"children": [
 									{
-										"id": 101,
+										"id": 107,
 										"name": "height",
 										"kind": 1024,
 										"kindString": "Property",
@@ -1504,7 +2829,7 @@
 										}
 									},
 									{
-										"id": 99,
+										"id": 105,
 										"name": "url",
 										"kind": 1024,
 										"kindString": "Property",
@@ -1522,7 +2847,7 @@
 										}
 									},
 									{
-										"id": 100,
+										"id": 106,
 										"name": "width",
 										"kind": 1024,
 										"kindString": "Property",
@@ -1545,9 +2870,9 @@
 										"title": "Properties",
 										"kind": 1024,
 										"children": [
-											101,
-											99,
-											100
+											107,
+											105,
+											106
 										]
 									}
 								]
@@ -1556,7 +2881,7 @@
 					}
 				},
 				{
-					"id": 90,
+					"id": 96,
 					"name": "id",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1574,7 +2899,7 @@
 					}
 				},
 				{
-					"id": 89,
+					"id": 95,
 					"name": "name",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1592,7 +2917,7 @@
 					}
 				},
 				{
-					"id": 92,
+					"id": 98,
 					"name": "subscribers",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1607,14 +2932,14 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 93,
+							"id": 99,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 95,
+									"id": 101,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1632,7 +2957,7 @@
 									}
 								},
 								{
-									"id": 94,
+									"id": 100,
 									"name": "text",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1655,8 +2980,8 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										95,
-										94
+										101,
+										100
 									]
 								}
 							]
@@ -1664,7 +2989,7 @@
 					}
 				},
 				{
-					"id": 91,
+					"id": 97,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1682,7 +3007,7 @@
 					}
 				},
 				{
-					"id": 96,
+					"id": 102,
 					"name": "videoCount",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1705,12 +3030,12 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
+						103,
+						96,
+						95,
+						98,
 						97,
-						90,
-						89,
-						92,
-						91,
-						96
+						102
 					]
 				}
 			],
@@ -1723,14 +3048,14 @@
 			]
 		},
 		{
-			"id": 59,
+			"id": 65,
 			"name": "SearchOptions",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 61,
+					"id": 67,
 					"name": "filterType",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1771,7 +3096,7 @@
 					}
 				},
 				{
-					"id": 60,
+					"id": 66,
 					"name": "requestOptions",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1797,8 +3122,8 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						61,
-						60
+						67,
+						66
 					]
 				}
 			],
@@ -1811,14 +3136,14 @@
 			]
 		},
 		{
-			"id": 102,
+			"id": 108,
 			"name": "SearchPlaylist",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 104,
+					"id": 110,
 					"name": "id",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1836,7 +3161,7 @@
 					}
 				},
 				{
-					"id": 103,
+					"id": 109,
 					"name": "name",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1854,7 +3179,7 @@
 					}
 				},
 				{
-					"id": 112,
+					"id": 118,
 					"name": "published",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1869,14 +3194,14 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 113,
+							"id": 119,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 114,
+									"id": 120,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1901,7 +3226,7 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										114
+										120
 									]
 								}
 							]
@@ -1909,7 +3234,7 @@
 					}
 				},
 				{
-					"id": 106,
+					"id": 112,
 					"name": "thumbnails",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1926,14 +3251,14 @@
 						"elementType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 107,
+								"id": 113,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
 								"flags": {},
 								"children": [
 									{
-										"id": 110,
+										"id": 116,
 										"name": "height",
 										"kind": 1024,
 										"kindString": "Property",
@@ -1951,7 +3276,7 @@
 										}
 									},
 									{
-										"id": 108,
+										"id": 114,
 										"name": "url",
 										"kind": 1024,
 										"kindString": "Property",
@@ -1969,7 +3294,7 @@
 										}
 									},
 									{
-										"id": 109,
+										"id": 115,
 										"name": "width",
 										"kind": 1024,
 										"kindString": "Property",
@@ -1992,9 +3317,9 @@
 										"title": "Properties",
 										"kind": 1024,
 										"children": [
-											110,
-											108,
-											109
+											116,
+											114,
+											115
 										]
 									}
 								]
@@ -2003,7 +3328,7 @@
 					}
 				},
 				{
-					"id": 105,
+					"id": 111,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2021,7 +3346,7 @@
 					}
 				},
 				{
-					"id": 111,
+					"id": 117,
 					"name": "videoCount",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2044,12 +3369,12 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						104,
-						103,
+						110,
+						109,
+						118,
 						112,
-						106,
-						105,
-						111
+						111,
+						117
 					]
 				}
 			],
@@ -2062,14 +3387,14 @@
 			]
 		},
 		{
-			"id": 62,
+			"id": 68,
 			"name": "SearchVideo",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 66,
+					"id": 72,
 					"name": "channel",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2084,14 +3409,14 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 67,
+							"id": 73,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 69,
+									"id": 75,
 									"name": "id",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2109,7 +3434,7 @@
 									}
 								},
 								{
-									"id": 68,
+									"id": 74,
 									"name": "name",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2127,7 +3452,7 @@
 									}
 								},
 								{
-									"id": 70,
+									"id": 76,
 									"name": "url",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2150,9 +3475,9 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										69,
-										68,
-										70
+										75,
+										74,
+										76
 									]
 								}
 							]
@@ -2160,7 +3485,7 @@
 					}
 				},
 				{
-					"id": 71,
+					"id": 77,
 					"name": "duration",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2175,14 +3500,14 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 72,
+							"id": 78,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 74,
+									"id": 80,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2200,7 +3525,7 @@
 									}
 								},
 								{
-									"id": 73,
+									"id": 79,
 									"name": "text",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2223,8 +3548,8 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										74,
-										73
+										80,
+										79
 									]
 								}
 							]
@@ -2232,7 +3557,7 @@
 					}
 				},
 				{
-					"id": 64,
+					"id": 70,
 					"name": "id",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2250,7 +3575,7 @@
 					}
 				},
 				{
-					"id": 75,
+					"id": 81,
 					"name": "published",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2265,14 +3590,14 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 76,
+							"id": 82,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 77,
+									"id": 83,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2295,7 +3620,7 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										77
+										83
 									]
 								}
 							]
@@ -2303,7 +3628,7 @@
 					}
 				},
 				{
-					"id": 83,
+					"id": 89,
 					"name": "thumbnails",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2320,14 +3645,14 @@
 						"elementType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 84,
+								"id": 90,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
 								"flags": {},
 								"children": [
 									{
-										"id": 87,
+										"id": 93,
 										"name": "height",
 										"kind": 1024,
 										"kindString": "Property",
@@ -2345,7 +3670,7 @@
 										}
 									},
 									{
-										"id": 85,
+										"id": 91,
 										"name": "url",
 										"kind": 1024,
 										"kindString": "Property",
@@ -2363,7 +3688,7 @@
 										}
 									},
 									{
-										"id": 86,
+										"id": 92,
 										"name": "width",
 										"kind": 1024,
 										"kindString": "Property",
@@ -2386,9 +3711,9 @@
 										"title": "Properties",
 										"kind": 1024,
 										"children": [
-											87,
-											85,
-											86
+											93,
+											91,
+											92
 										]
 									}
 								]
@@ -2397,7 +3722,7 @@
 					}
 				},
 				{
-					"id": 63,
+					"id": 69,
 					"name": "title",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2415,7 +3740,7 @@
 					}
 				},
 				{
-					"id": 65,
+					"id": 71,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2433,7 +3758,7 @@
 					}
 				},
 				{
-					"id": 78,
+					"id": 84,
 					"name": "views",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2448,14 +3773,14 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 79,
+							"id": 85,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 81,
+									"id": 87,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2473,7 +3798,7 @@
 									}
 								},
 								{
-									"id": 82,
+									"id": 88,
 									"name": "prettyLong",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2491,7 +3816,7 @@
 									}
 								},
 								{
-									"id": 80,
+									"id": 86,
 									"name": "text",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2514,9 +3839,9 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										81,
-										82,
-										80
+										87,
+										88,
+										86
 									]
 								}
 							]
@@ -2529,14 +3854,14 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						66,
+						72,
+						77,
+						70,
+						81,
+						89,
+						69,
 						71,
-						64,
-						75,
-						83,
-						63,
-						65,
-						78
+						84
 					]
 				}
 			],
@@ -2549,14 +3874,14 @@
 			]
 		},
 		{
-			"id": 125,
+			"id": 131,
 			"name": "VideoInfo",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 190,
+					"id": 196,
 					"name": "availableCountries",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2577,7 +3902,7 @@
 					}
 				},
 				{
-					"id": 182,
+					"id": 188,
 					"name": "category",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2595,7 +3920,7 @@
 					}
 				},
 				{
-					"id": 131,
+					"id": 137,
 					"name": "channel",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2610,14 +3935,14 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 132,
+							"id": 138,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 139,
+									"id": 145,
 									"name": "icons",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2634,14 +3959,14 @@
 										"elementType": {
 											"type": "reflection",
 											"declaration": {
-												"id": 140,
+												"id": 146,
 												"name": "__type",
 												"kind": 65536,
 												"kindString": "Type literal",
 												"flags": {},
 												"children": [
 													{
-														"id": 143,
+														"id": 149,
 														"name": "height",
 														"kind": 1024,
 														"kindString": "Property",
@@ -2659,7 +3984,7 @@
 														}
 													},
 													{
-														"id": 141,
+														"id": 147,
 														"name": "url",
 														"kind": 1024,
 														"kindString": "Property",
@@ -2677,7 +4002,7 @@
 														}
 													},
 													{
-														"id": 142,
+														"id": 148,
 														"name": "width",
 														"kind": 1024,
 														"kindString": "Property",
@@ -2700,9 +4025,9 @@
 														"title": "Properties",
 														"kind": 1024,
 														"children": [
-															143,
-															141,
-															142
+															149,
+															147,
+															148
 														]
 													}
 												]
@@ -2711,7 +4036,7 @@
 									}
 								},
 								{
-									"id": 134,
+									"id": 140,
 									"name": "id",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2729,7 +4054,7 @@
 									}
 								},
 								{
-									"id": 133,
+									"id": 139,
 									"name": "name",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2747,7 +4072,7 @@
 									}
 								},
 								{
-									"id": 136,
+									"id": 142,
 									"name": "subscribers",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2762,14 +4087,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 137,
+											"id": 143,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 138,
+													"id": 144,
 													"name": "pretty",
 													"kind": 1024,
 													"kindString": "Property",
@@ -2792,7 +4117,7 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														138
+														144
 													]
 												}
 											]
@@ -2800,7 +4125,7 @@
 									}
 								},
 								{
-									"id": 135,
+									"id": 141,
 									"name": "url",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2823,11 +4148,11 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
+										145,
+										140,
 										139,
-										134,
-										133,
-										136,
-										135
+										142,
+										141
 									]
 								}
 							]
@@ -2835,7 +4160,7 @@
 					}
 				},
 				{
-					"id": 130,
+					"id": 136,
 					"name": "description",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2853,7 +4178,7 @@
 					}
 				},
 				{
-					"id": 144,
+					"id": 150,
 					"name": "duration",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2868,14 +4193,14 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 145,
+							"id": 151,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 146,
+									"id": 152,
 									"name": "lengthSec",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2898,7 +4223,7 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										146
+										152
 									]
 								}
 							]
@@ -2906,7 +4231,7 @@
 					}
 				},
 				{
-					"id": 183,
+					"id": 189,
 					"name": "embed",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2921,14 +4246,14 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 184,
+							"id": 190,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 189,
+									"id": 195,
 									"name": "flashSecureUrl",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2946,7 +4271,7 @@
 									}
 								},
 								{
-									"id": 186,
+									"id": 192,
 									"name": "flashUrl",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2964,7 +4289,7 @@
 									}
 								},
 								{
-									"id": 187,
+									"id": 193,
 									"name": "height",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2982,7 +4307,7 @@
 									}
 								},
 								{
-									"id": 185,
+									"id": 191,
 									"name": "iframeUrl",
 									"kind": 1024,
 									"kindString": "Property",
@@ -3000,7 +4325,7 @@
 									}
 								},
 								{
-									"id": 188,
+									"id": 194,
 									"name": "width",
 									"kind": 1024,
 									"kindString": "Property",
@@ -3023,11 +4348,11 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										189,
-										186,
-										187,
-										185,
-										188
+										195,
+										192,
+										193,
+										191,
+										194
 									]
 								}
 							]
@@ -3035,7 +4360,7 @@
 					}
 				},
 				{
-					"id": 127,
+					"id": 133,
 					"name": "id",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3053,7 +4378,7 @@
 					}
 				},
 				{
-					"id": 181,
+					"id": 187,
 					"name": "isFamilySafe",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3071,7 +4396,7 @@
 					}
 				},
 				{
-					"id": 179,
+					"id": 185,
 					"name": "isLive",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3089,7 +4414,7 @@
 					}
 				},
 				{
-					"id": 180,
+					"id": 186,
 					"name": "isUnlisted",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3107,7 +4432,7 @@
 					}
 				},
 				{
-					"id": 178,
+					"id": 184,
 					"name": "keywords",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3128,7 +4453,7 @@
 					}
 				},
 				{
-					"id": 171,
+					"id": 177,
 					"name": "published",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3143,14 +4468,14 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 172,
+							"id": 178,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 174,
+									"id": 180,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -3168,7 +4493,7 @@
 									}
 								},
 								{
-									"id": 173,
+									"id": 179,
 									"name": "text",
 									"kind": 1024,
 									"kindString": "Property",
@@ -3191,8 +4516,8 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										174,
-										173
+										180,
+										179
 									]
 								}
 							]
@@ -3200,7 +4525,7 @@
 					}
 				},
 				{
-					"id": 157,
+					"id": 163,
 					"name": "ratings",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3215,14 +4540,14 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 158,
+							"id": 164,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 163,
+									"id": 169,
 									"name": "dislikes",
 									"kind": 1024,
 									"kindString": "Property",
@@ -3237,14 +4562,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 164,
+											"id": 170,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 166,
+													"id": 172,
 													"name": "pretty",
 													"kind": 1024,
 													"kindString": "Property",
@@ -3262,7 +4587,7 @@
 													}
 												},
 												{
-													"id": 165,
+													"id": 171,
 													"name": "text",
 													"kind": 1024,
 													"kindString": "Property",
@@ -3285,8 +4610,8 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														166,
-														165
+														172,
+														171
 													]
 												}
 											]
@@ -3294,7 +4619,7 @@
 									}
 								},
 								{
-									"id": 159,
+									"id": 165,
 									"name": "likes",
 									"kind": 1024,
 									"kindString": "Property",
@@ -3309,14 +4634,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 160,
+											"id": 166,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 162,
+													"id": 168,
 													"name": "pretty",
 													"kind": 1024,
 													"kindString": "Property",
@@ -3334,7 +4659,7 @@
 													}
 												},
 												{
-													"id": 161,
+													"id": 167,
 													"name": "text",
 													"kind": 1024,
 													"kindString": "Property",
@@ -3357,8 +4682,8 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														162,
-														161
+														168,
+														167
 													]
 												}
 											]
@@ -3371,8 +4696,8 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										163,
-										159
+										169,
+										165
 									]
 								}
 							]
@@ -3380,7 +4705,7 @@
 					}
 				},
 				{
-					"id": 129,
+					"id": 135,
 					"name": "shortDescription",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3398,7 +4723,7 @@
 					}
 				},
 				{
-					"id": 191,
+					"id": 197,
 					"name": "streams",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3413,14 +4738,14 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 192,
+							"id": 198,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 213,
+									"id": 219,
 									"name": "adaptiveFormats",
 									"kind": 1024,
 									"kindString": "Property",
@@ -3437,14 +4762,14 @@
 										"elementType": {
 											"type": "reflection",
 											"declaration": {
-												"id": 214,
+												"id": 220,
 												"name": "__type",
 												"kind": 65536,
 												"kindString": "Type literal",
 												"flags": {},
 												"children": [
 													{
-														"id": 236,
+														"id": 242,
 														"name": "approxDurationMs",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3462,7 +4787,7 @@
 														}
 													},
 													{
-														"id": 245,
+														"id": 251,
 														"name": "audioChannels",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3482,7 +4807,7 @@
 														}
 													},
 													{
-														"id": 243,
+														"id": 249,
 														"name": "audioQuality",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3502,7 +4827,7 @@
 														}
 													},
 													{
-														"id": 244,
+														"id": 250,
 														"name": "audioSampleRate",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3522,7 +4847,7 @@
 														}
 													},
 													{
-														"id": 235,
+														"id": 241,
 														"name": "averageBitrate",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3540,7 +4865,7 @@
 														}
 													},
 													{
-														"id": 218,
+														"id": 224,
 														"name": "bitrate",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3558,7 +4883,7 @@
 														}
 													},
 													{
-														"id": 237,
+														"id": 243,
 														"name": "colorInfo",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3575,14 +4900,14 @@
 														"type": {
 															"type": "reflection",
 															"declaration": {
-																"id": 238,
+																"id": 244,
 																"name": "__type",
 																"kind": 65536,
 																"kindString": "Type literal",
 																"flags": {},
 																"children": [
 																	{
-																		"id": 241,
+																		"id": 247,
 																		"name": "matrixCoefficients",
 																		"kind": 1024,
 																		"kindString": "Property",
@@ -3600,7 +4925,7 @@
 																		}
 																	},
 																	{
-																		"id": 239,
+																		"id": 245,
 																		"name": "primaries",
 																		"kind": 1024,
 																		"kindString": "Property",
@@ -3618,7 +4943,7 @@
 																		}
 																	},
 																	{
-																		"id": 240,
+																		"id": 246,
 																		"name": "transferCharacteristics",
 																		"kind": 1024,
 																		"kindString": "Property",
@@ -3641,9 +4966,9 @@
 																		"title": "Properties",
 																		"kind": 1024,
 																		"children": [
-																			241,
-																			239,
-																			240
+																			247,
+																			245,
+																			246
 																		]
 																	}
 																]
@@ -3651,7 +4976,7 @@
 														}
 													},
 													{
-														"id": 230,
+														"id": 236,
 														"name": "contentLength",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3669,7 +4994,7 @@
 														}
 													},
 													{
-														"id": 232,
+														"id": 238,
 														"name": "fps",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3689,7 +5014,7 @@
 														}
 													},
 													{
-														"id": 220,
+														"id": 226,
 														"name": "height",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3709,7 +5034,7 @@
 														}
 													},
 													{
-														"id": 242,
+														"id": 248,
 														"name": "highReplication",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3729,7 +5054,7 @@
 														}
 													},
 													{
-														"id": 225,
+														"id": 231,
 														"name": "indexRange",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3744,14 +5069,14 @@
 														"type": {
 															"type": "reflection",
 															"declaration": {
-																"id": 226,
+																"id": 232,
 																"name": "__type",
 																"kind": 65536,
 																"kindString": "Type literal",
 																"flags": {},
 																"children": [
 																	{
-																		"id": 228,
+																		"id": 234,
 																		"name": "end",
 																		"kind": 1024,
 																		"kindString": "Property",
@@ -3769,7 +5094,7 @@
 																		}
 																	},
 																	{
-																		"id": 227,
+																		"id": 233,
 																		"name": "start",
 																		"kind": 1024,
 																		"kindString": "Property",
@@ -3792,8 +5117,8 @@
 																		"title": "Properties",
 																		"kind": 1024,
 																		"children": [
-																			228,
-																			227
+																			234,
+																			233
 																		]
 																	}
 																]
@@ -3801,7 +5126,7 @@
 														}
 													},
 													{
-														"id": 221,
+														"id": 227,
 														"name": "initRange",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3816,14 +5141,14 @@
 														"type": {
 															"type": "reflection",
 															"declaration": {
-																"id": 222,
+																"id": 228,
 																"name": "__type",
 																"kind": 65536,
 																"kindString": "Type literal",
 																"flags": {},
 																"children": [
 																	{
-																		"id": 224,
+																		"id": 230,
 																		"name": "end",
 																		"kind": 1024,
 																		"kindString": "Property",
@@ -3841,7 +5166,7 @@
 																		}
 																	},
 																	{
-																		"id": 223,
+																		"id": 229,
 																		"name": "start",
 																		"kind": 1024,
 																		"kindString": "Property",
@@ -3864,8 +5189,8 @@
 																		"title": "Properties",
 																		"kind": 1024,
 																		"children": [
-																			224,
-																			223
+																			230,
+																			229
 																		]
 																	}
 																]
@@ -3873,7 +5198,7 @@
 														}
 													},
 													{
-														"id": 215,
+														"id": 221,
 														"name": "itag",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3891,7 +5216,7 @@
 														}
 													},
 													{
-														"id": 229,
+														"id": 235,
 														"name": "lastModified",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3909,7 +5234,7 @@
 														}
 													},
 													{
-														"id": 246,
+														"id": 252,
 														"name": "loudnessDb",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3929,7 +5254,7 @@
 														}
 													},
 													{
-														"id": 217,
+														"id": 223,
 														"name": "mimeType",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3947,7 +5272,7 @@
 														}
 													},
 													{
-														"id": 234,
+														"id": 240,
 														"name": "projectionType",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3965,7 +5290,7 @@
 														}
 													},
 													{
-														"id": 231,
+														"id": 237,
 														"name": "quality",
 														"kind": 1024,
 														"kindString": "Property",
@@ -3983,7 +5308,7 @@
 														}
 													},
 													{
-														"id": 233,
+														"id": 239,
 														"name": "qualityLabel",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4003,7 +5328,7 @@
 														}
 													},
 													{
-														"id": 216,
+														"id": 222,
 														"name": "url",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4021,7 +5346,7 @@
 														}
 													},
 													{
-														"id": 219,
+														"id": 225,
 														"name": "width",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4046,28 +5371,28 @@
 														"title": "Properties",
 														"kind": 1024,
 														"children": [
-															236,
-															245,
-															243,
-															244,
-															235,
-															218,
-															237,
-															230,
-															232,
-															220,
 															242,
-															225,
-															221,
-															215,
-															229,
-															246,
-															217,
-															234,
+															251,
+															249,
+															250,
+															241,
+															224,
+															243,
+															236,
+															238,
+															226,
+															248,
 															231,
-															233,
-															216,
-															219
+															227,
+															221,
+															235,
+															252,
+															223,
+															240,
+															237,
+															239,
+															222,
+															225
 														]
 													}
 												]
@@ -4076,7 +5401,7 @@
 									}
 								},
 								{
-									"id": 193,
+									"id": 199,
 									"name": "expiresInSeconds",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4094,7 +5419,7 @@
 									}
 								},
 								{
-									"id": 194,
+									"id": 200,
 									"name": "formats",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4111,14 +5436,14 @@
 										"elementType": {
 											"type": "reflection",
 											"declaration": {
-												"id": 195,
+												"id": 201,
 												"name": "__type",
 												"kind": 65536,
 												"kindString": "Type literal",
 												"flags": {},
 												"children": [
 													{
-														"id": 210,
+														"id": 216,
 														"name": "approxDurationMs",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4136,7 +5461,7 @@
 														}
 													},
 													{
-														"id": 212,
+														"id": 218,
 														"name": "audioChannels",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4154,7 +5479,7 @@
 														}
 													},
 													{
-														"id": 209,
+														"id": 215,
 														"name": "audioQuality",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4172,7 +5497,7 @@
 														}
 													},
 													{
-														"id": 211,
+														"id": 217,
 														"name": "audioSampleRate",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4190,7 +5515,7 @@
 														}
 													},
 													{
-														"id": 208,
+														"id": 214,
 														"name": "averageBitrate",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4210,7 +5535,7 @@
 														}
 													},
 													{
-														"id": 199,
+														"id": 205,
 														"name": "bitrate",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4228,7 +5553,7 @@
 														}
 													},
 													{
-														"id": 203,
+														"id": 209,
 														"name": "contentLength",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4248,7 +5573,7 @@
 														}
 													},
 													{
-														"id": 205,
+														"id": 211,
 														"name": "fps",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4266,7 +5591,7 @@
 														}
 													},
 													{
-														"id": 201,
+														"id": 207,
 														"name": "height",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4284,7 +5609,7 @@
 														}
 													},
 													{
-														"id": 196,
+														"id": 202,
 														"name": "itag",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4302,7 +5627,7 @@
 														}
 													},
 													{
-														"id": 202,
+														"id": 208,
 														"name": "lastModified",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4320,7 +5645,7 @@
 														}
 													},
 													{
-														"id": 198,
+														"id": 204,
 														"name": "mimeType",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4338,7 +5663,7 @@
 														}
 													},
 													{
-														"id": 207,
+														"id": 213,
 														"name": "projectionType",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4356,7 +5681,7 @@
 														}
 													},
 													{
-														"id": 204,
+														"id": 210,
 														"name": "quality",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4374,7 +5699,7 @@
 														}
 													},
 													{
-														"id": 206,
+														"id": 212,
 														"name": "qualityLabel",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4392,7 +5717,7 @@
 														}
 													},
 													{
-														"id": 197,
+														"id": 203,
 														"name": "url",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4410,7 +5735,7 @@
 														}
 													},
 													{
-														"id": 200,
+														"id": 206,
 														"name": "width",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4433,23 +5758,23 @@
 														"title": "Properties",
 														"kind": 1024,
 														"children": [
-															210,
-															212,
+															216,
+															218,
+															215,
+															217,
+															214,
+															205,
 															209,
 															211,
-															208,
-															199,
-															203,
-															205,
-															201,
-															196,
-															202,
-															198,
 															207,
+															202,
+															208,
 															204,
-															206,
-															197,
-															200
+															213,
+															210,
+															212,
+															203,
+															206
 														]
 													}
 												]
@@ -4463,9 +5788,9 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										213,
-										193,
-										194
+										219,
+										199,
+										200
 									]
 								}
 							]
@@ -4473,7 +5798,7 @@
 					}
 				},
 				{
-					"id": 147,
+					"id": 153,
 					"name": "thumbnails",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4490,14 +5815,14 @@
 						"elementType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 148,
+								"id": 154,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
 								"flags": {},
 								"children": [
 									{
-										"id": 151,
+										"id": 157,
 										"name": "height",
 										"kind": 1024,
 										"kindString": "Property",
@@ -4515,7 +5840,7 @@
 										}
 									},
 									{
-										"id": 149,
+										"id": 155,
 										"name": "url",
 										"kind": 1024,
 										"kindString": "Property",
@@ -4533,7 +5858,7 @@
 										}
 									},
 									{
-										"id": 150,
+										"id": 156,
 										"name": "width",
 										"kind": 1024,
 										"kindString": "Property",
@@ -4556,9 +5881,9 @@
 										"title": "Properties",
 										"kind": 1024,
 										"children": [
-											151,
-											149,
-											150
+											157,
+											155,
+											156
 										]
 									}
 								]
@@ -4567,7 +5892,7 @@
 					}
 				},
 				{
-					"id": 126,
+					"id": 132,
 					"name": "title",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4585,7 +5910,7 @@
 					}
 				},
 				{
-					"id": 175,
+					"id": 181,
 					"name": "uploaded",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4600,14 +5925,14 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 176,
+							"id": 182,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 177,
+									"id": 183,
 									"name": "text",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4630,7 +5955,7 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										177
+										183
 									]
 								}
 							]
@@ -4638,7 +5963,7 @@
 					}
 				},
 				{
-					"id": 128,
+					"id": 134,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4656,7 +5981,7 @@
 					}
 				},
 				{
-					"id": 167,
+					"id": 173,
 					"name": "views",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4671,14 +5996,14 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 168,
+							"id": 174,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 170,
+									"id": 176,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4696,7 +6021,7 @@
 									}
 								},
 								{
-									"id": 169,
+									"id": 175,
 									"name": "text",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4719,8 +6044,8 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										170,
-										169
+										176,
+										175
 									]
 								}
 							]
@@ -4728,7 +6053,7 @@
 					}
 				},
 				{
-					"id": 152,
+					"id": 158,
 					"name": "watermarks",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4745,14 +6070,14 @@
 						"elementType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 153,
+								"id": 159,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
 								"flags": {},
 								"children": [
 									{
-										"id": 156,
+										"id": 162,
 										"name": "height",
 										"kind": 1024,
 										"kindString": "Property",
@@ -4770,7 +6095,7 @@
 										}
 									},
 									{
-										"id": 154,
+										"id": 160,
 										"name": "url",
 										"kind": 1024,
 										"kindString": "Property",
@@ -4788,7 +6113,7 @@
 										}
 									},
 									{
-										"id": 155,
+										"id": 161,
 										"name": "width",
 										"kind": 1024,
 										"kindString": "Property",
@@ -4811,9 +6136,9 @@
 										"title": "Properties",
 										"kind": 1024,
 										"children": [
-											156,
-											154,
-											155
+											162,
+											160,
+											161
 										]
 									}
 								]
@@ -4827,27 +6152,27 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						190,
-						182,
-						131,
-						130,
-						144,
-						183,
-						127,
+						196,
+						188,
+						137,
+						136,
+						150,
+						189,
+						133,
+						187,
+						185,
+						186,
+						184,
+						177,
+						163,
+						135,
+						197,
+						153,
+						132,
 						181,
-						179,
-						180,
-						178,
-						171,
-						157,
-						129,
-						191,
-						147,
-						126,
-						175,
-						128,
-						167,
-						152
+						134,
+						173,
+						158
 					]
 				}
 			],
@@ -4860,14 +6185,14 @@
 			]
 		},
 		{
-			"id": 123,
+			"id": 129,
 			"name": "VideoInfoOptions",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 124,
+					"id": 130,
 					"name": "requestOptions",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4893,7 +6218,7 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						124
+						130
 					]
 				}
 			],
@@ -4916,7 +6241,7 @@
 			"sources": [
 				{
 					"fileName": "index.ts",
-					"line": 6,
+					"line": 7,
 					"character": 20
 				}
 			],
@@ -4927,7 +6252,69 @@
 			"defaultValue": "..."
 		},
 		{
-			"id": 283,
+			"id": 358,
+			"name": "channelInfo",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "channelInfo.ts",
+					"line": 74,
+					"character": 24
+				}
+			],
+			"signatures": [
+				{
+					"id": 359,
+					"name": "channelInfo",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"parameters": [
+						{
+							"id": 360,
+							"name": "url",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 361,
+							"name": "options",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 293,
+								"name": "ChannelInfoOptions"
+							},
+							"defaultValue": "{}"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"id": 321,
+								"name": "ChannelInfo"
+							}
+						],
+						"name": "Promise"
+					}
+				}
+			]
+		},
+		{
+			"id": 289,
 			"name": "playlistInfo",
 			"kind": 64,
 			"kindString": "Function",
@@ -4943,14 +6330,14 @@
 			],
 			"signatures": [
 				{
-					"id": 284,
+					"id": 290,
 					"name": "playlistInfo",
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
 					"parameters": [
 						{
-							"id": 285,
+							"id": 291,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -4961,14 +6348,14 @@
 							}
 						},
 						{
-							"id": 286,
+							"id": 292,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 251,
+								"id": 257,
 								"name": "PlaylistInfoOptions"
 							},
 							"defaultValue": "{}"
@@ -4979,7 +6366,7 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"id": 272,
+								"id": 278,
 								"name": "PlaylistInfo"
 							}
 						],
@@ -4989,7 +6376,7 @@
 			]
 		},
 		{
-			"id": 115,
+			"id": 121,
 			"name": "search",
 			"kind": 64,
 			"kindString": "Function",
@@ -5005,7 +6392,7 @@
 			],
 			"signatures": [
 				{
-					"id": 116,
+					"id": 122,
 					"name": "search",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5015,7 +6402,7 @@
 					},
 					"parameters": [
 						{
-							"id": 117,
+							"id": 123,
 							"name": "terms",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5026,14 +6413,14 @@
 							}
 						},
 						{
-							"id": 118,
+							"id": 124,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 59,
+								"id": 65,
 								"name": "SearchOptions"
 							},
 							"defaultValue": "{}"
@@ -5045,14 +6432,14 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 119,
+									"id": 125,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
 									"flags": {},
 									"children": [
 										{
-											"id": 121,
+											"id": 127,
 											"name": "channels",
 											"kind": 1024,
 											"kindString": "Property",
@@ -5068,13 +6455,13 @@
 												"type": "array",
 												"elementType": {
 													"type": "reference",
-													"id": 88,
+													"id": 94,
 													"name": "SearchChannel"
 												}
 											}
 										},
 										{
-											"id": 122,
+											"id": 128,
 											"name": "playlists",
 											"kind": 1024,
 											"kindString": "Property",
@@ -5090,13 +6477,13 @@
 												"type": "array",
 												"elementType": {
 													"type": "reference",
-													"id": 102,
+													"id": 108,
 													"name": "SearchPlaylist"
 												}
 											}
 										},
 										{
-											"id": 120,
+											"id": 126,
 											"name": "videos",
 											"kind": 1024,
 											"kindString": "Property",
@@ -5112,7 +6499,7 @@
 												"type": "array",
 												"elementType": {
 													"type": "reference",
-													"id": 62,
+													"id": 68,
 													"name": "SearchVideo"
 												}
 											}
@@ -5123,9 +6510,9 @@
 											"title": "Properties",
 											"kind": 1024,
 											"children": [
-												121,
-												122,
-												120
+												127,
+												128,
+												126
 											]
 										}
 									]
@@ -5138,7 +6525,7 @@
 			]
 		},
 		{
-			"id": 247,
+			"id": 253,
 			"name": "videoInfo",
 			"kind": 64,
 			"kindString": "Function",
@@ -5154,7 +6541,7 @@
 			],
 			"signatures": [
 				{
-					"id": 248,
+					"id": 254,
 					"name": "videoInfo",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5164,7 +6551,7 @@
 					},
 					"parameters": [
 						{
-							"id": 249,
+							"id": 255,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5175,14 +6562,14 @@
 							}
 						},
 						{
-							"id": 250,
+							"id": 256,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 123,
+								"id": 129,
 								"name": "VideoInfoOptions"
 							},
 							"defaultValue": "{}"
@@ -5193,7 +6580,7 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"id": 125,
+								"id": 131,
 								"name": "VideoInfo"
 							}
 						],
@@ -5215,15 +6602,18 @@
 			"title": "Interfaces",
 			"kind": 256,
 			"children": [
-				272,
-				251,
-				253,
-				88,
-				59,
-				102,
-				62,
-				125,
-				123
+				321,
+				293,
+				295,
+				278,
+				257,
+				259,
+				94,
+				65,
+				108,
+				68,
+				131,
+				129
 			]
 		},
 		{
@@ -5237,9 +6627,10 @@
 			"title": "Functions",
 			"kind": 64,
 			"children": [
-				283,
-				115,
-				247
+				358,
+				289,
+				121,
+				253
 			]
 		}
 	],
