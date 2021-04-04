@@ -13,8 +13,12 @@
   "keywords": [
     "youtube",
     "scrape",
-    "ytdl",
-    "yt-api"
+    "yt",
+    "api",
+    "search",
+    "video",
+    "playlist",
+    "promise"
   ],
   "repository": {
     "type": "git",
