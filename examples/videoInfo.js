@@ -11,4 +11,6 @@ const main = async () => {
     }
 }
 
-main();
+module.exports = main;
+
+if (process.env.NODE_ENV !== "test") main();
