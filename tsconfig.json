@@ -69,7 +69,7 @@
     "forceConsistentCasingInFileNames": true        /* Disallow inconsistently-cased references to the same file. */
   },
   "typedocOptions": {
-    "name": "YouTube Extractor - Documentation",
+    "name": "YouTube Extractor",
     "entryPoints": [
       "lib/index.ts"
     ],
