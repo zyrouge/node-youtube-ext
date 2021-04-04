@@ -11,6 +11,7 @@ Just a simple [YouTube](https://youtube.com) scraper. No key needed!
 -   Supports YouTube search
 -   Supports YouTube video information
 -   Supports YouTube playlist information
+-   Supports YouTube channel information
 -   Lightweight, zero-deps
 -   No key needed
 
