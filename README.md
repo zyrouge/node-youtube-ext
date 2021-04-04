@@ -1,6 +1,6 @@
 # (WIP) YouTube Extractor 📼
 
-[![Documentation](https://github.com/zyrouge/ytsr/actions/workflows/docs.yml/badge.svg)](https://github.com/zyrouge/ytsr/actions/workflows/docs.yml) [![CI](https://github.com/zyrouge/youtube-ext/actions/workflows/docs.yml/badge.svg)](https://github.com/zyrouge/youtube-ext/actions/workflows/docs.yml)
+[![CI](https://github.com/zyrouge/youtube-ext/actions/workflows/ci.yml/badge.svg)](https://github.com/zyrouge/youtube-ext/actions/workflows/ci.yml) [![Documentation](https://github.com/zyrouge/youtube-ext/actions/workflows/docs.yml/badge.svg)](https://github.com/zyrouge/youtube-ext/actions/workflows/docs.yml)
 
 ## 🤔 Whats is this?
 
