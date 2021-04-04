@@ -55,6 +55,9 @@ export const constants = {
             baseUrlRegex: /^(http|https:\/\/).*\/playlist?.*list=\w+/,
             getIdRegex: /^(http|https:\/\/).*list=(\w+)/,
         },
+        channel: {
+            base: (id: string) => `${constants.urls.base}/channel/${id}`,
+        },
     },
     headers: {
         userAgent:
