@@ -61,6 +61,11 @@ export const playlistInfo = async (
         options
     );
 
+    if (!constants.urls.playlist.baseUrlRegex.test(url)) {
+        const id = url.match(constants.urls.playlist.getIdRegex);
+        if (id && id[2]) url = id[2];
+    }
+
     if (!url.startsWith("http")) url = constants.urls.playlist.base(url);
 
     let res: getData;

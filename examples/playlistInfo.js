@@ -1,6 +1,6 @@
 const { playlistInfo } = require("../dist");
 
-const query = "https://www.youtube.com/playlist?list=PLzkuLC6Yvumv_Rd5apfPRWEcjf9b1JRnq";
+const query = "https://www.youtube.com/playlist?list=PLzkuLC6Yvumv_Rd5apfPRWEcjf9b1JRnq&index=1";
 
 const main = async () => {
     try {

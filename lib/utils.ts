@@ -45,11 +45,15 @@ export const constants = {
         },
         video: {
             base: (id: string) =>
-                `${constants.urls.base}watch?v=${encodeURIComponent(id)}`,
+                `${constants.urls.base}/watch?v=${encodeURIComponent(id)}`,
         },
         playlist: {
             base: (id: string) =>
-                `${constants.urls.base}playlist?list=${encodeURIComponent(id)}`,
+                `${constants.urls.base}/playlist?list=${encodeURIComponent(
+                    id
+                )}`,
+            baseUrlRegex: /^(http|https:\/\/).*\/playlist?.*list=\w+/,
+            getIdRegex: /^(http|https:\/\/).*list=(\w+)/,
         },
     },
     headers: {
