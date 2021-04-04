@@ -70,6 +70,9 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface"><a href="interfaces/playlistinfo.html" class="tsd-kind-icon">Playlist<wbr>Info</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/playlistinfooptions.html" class="tsd-kind-icon">Playlist<wbr>Info<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/playlistvideo.html" class="tsd-kind-icon">Playlist<wbr>Video</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/searchchannel.html" class="tsd-kind-icon">Search<wbr>Channel</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/searchoptions.html" class="tsd-kind-icon">Search<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/searchplaylist.html" class="tsd-kind-icon">Search<wbr>Playlist</a></li>
@@ -87,6 +90,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="modules.html#playlistinfo" class="tsd-kind-icon">playlist<wbr>Info</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#search" class="tsd-kind-icon">search</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#videoinfo" class="tsd-kind-icon">video<wbr>Info</a></li>
 							</ul>
@@ -102,13 +106,39 @@
 					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/149d685/lib/index.ts#L5">index.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/6231f9d/lib/index.ts#L6">index.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="playlistinfo" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> playlist<wbr>Info</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">playlist<wbr>Info<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="interfaces/playlistinfooptions.html" class="tsd-signature-type" data-tsd-kind="Interface">PlaylistInfoOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/playlistinfo.html" class="tsd-signature-type" data-tsd-kind="Interface">PlaylistInfo</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/6231f9d/lib/playlistInfo.ts#L41">playlistInfo.ts:41</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>url: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>options: <a href="interfaces/playlistinfooptions.html" class="tsd-signature-type" data-tsd-kind="Interface">PlaylistInfoOptions</a><span class="tsd-signature-symbol"> = {}</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/playlistinfo.html" class="tsd-signature-type" data-tsd-kind="Interface">PlaylistInfo</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="search" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> search</h3>
@@ -119,7 +149,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/149d685/lib/search.ts#L70">search.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/6231f9d/lib/search.ts#L70">search.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -133,7 +163,7 @@
 									<h5>terms: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>options: <a href="interfaces/searchoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchOptions</a><span class="tsd-signature-symbol"> = ...</span></h5>
+									<h5>options: <a href="interfaces/searchoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchOptions</a><span class="tsd-signature-symbol"> = {}</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>channels<span class="tsd-signature-symbol">: </span><a href="interfaces/searchchannel.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchChannel</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>playlists<span class="tsd-signature-symbol">: </span><a href="interfaces/searchplaylist.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchPlaylist</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>videos<span class="tsd-signature-symbol">: </span><a href="interfaces/searchvideo.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchVideo</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -150,7 +180,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/149d685/lib/videoInfo.ts#L133">videoInfo.ts:133</a></li>
+									<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/6231f9d/lib/videoInfo.ts#L133">videoInfo.ts:133</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -164,7 +194,7 @@
 									<h5>url: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>options: <a href="interfaces/videoinfooptions.html" class="tsd-signature-type" data-tsd-kind="Interface">VideoInfoOptions</a><span class="tsd-signature-symbol"> = ...</span></h5>
+									<h5>options: <a href="interfaces/videoinfooptions.html" class="tsd-signature-type" data-tsd-kind="Interface">VideoInfoOptions</a><span class="tsd-signature-symbol"> = {}</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/videoinfo.html" class="tsd-signature-type" data-tsd-kind="Interface">VideoInfo</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -187,6 +217,15 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/playlistinfo.html" class="tsd-kind-icon">Playlist<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/playlistinfooptions.html" class="tsd-kind-icon">Playlist<wbr>Info<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/playlistvideo.html" class="tsd-kind-icon">Playlist<wbr>Video</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/searchchannel.html" class="tsd-kind-icon">Search<wbr>Channel</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -206,6 +245,9 @@
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="modules.html#version" class="tsd-kind-icon">version</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#playlistinfo" class="tsd-kind-icon">playlist<wbr>Info</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#search" class="tsd-kind-icon">search</a>
