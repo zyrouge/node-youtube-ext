@@ -6,6 +6,14 @@
 
 Just a simple [YouTube](https://youtube.com) scraper. No key needed!
 
+## ✨ Features
+
+-   Supports YouTube search
+-   Supports YouTube video information
+-   Supports YouTube playlist information
+-   Lightweight, zero-deps
+-   No key needed
+
 ## 💻 Installation
 
 ```bash
