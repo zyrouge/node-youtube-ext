@@ -130,7 +130,7 @@ export interface getReadableStreamOptions {
 
 /**
  * Returns a YouTube stream
- * **Info:** Install "m3u8stream" using `npm install m3u8stream` for livestream support
+ * **Info:** Install "m3u8stream" using ` npm install m3u8stream ` for livestream support
  */
 export const getReadableStream = async (
     streams: { url: string },

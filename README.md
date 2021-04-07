@@ -28,7 +28,7 @@ npm install youtube-ext
 const ytext = require("youtube-ext");
 ```
 
-Examples can be found [here](https://github.com/zyrouge/ytsr/tree/main/examples)
+Examples can be found [here](https://github.com/zyrouge/ytsr/tree/main/examples)!
 
 ## 📎 Links
 
