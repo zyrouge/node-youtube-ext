@@ -50,7 +50,7 @@ const main = async () => {
             });
         }
     } catch (err) {
-        console.log(`No result were found for ${query}`);
+        console.log(`No result were found for ${query} (${err})`);
     }
 }
 

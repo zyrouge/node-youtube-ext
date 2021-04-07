@@ -1,7 +1,57 @@
-import { get, getOptions, getData, constants, mergeObj } from "./utils";
+import { get, getOptions, constants, mergeObj } from "./utils";
 
 export interface VideoInfoOptions {
     requestOptions?: getOptions;
+}
+
+export interface VideoStreamEntity {
+    itag?: number;
+    url: string;
+    mimeType?: string;
+    bitrate?: number;
+    width?: number;
+    height?: number;
+    initRange?: {
+        start: string;
+        end: string;
+    };
+    indexRange?: {
+        start: string;
+        end: string;
+    };
+    lastModified?: string;
+    contentLength?: string;
+    quality?: string;
+    fps?: number;
+    qualityLabel?: string;
+    projectionType?: string;
+    averageBitrate?: number;
+    approxDurationMs?: string;
+    colorInfo?: {
+        primaries: string;
+        transferCharacteristics: string;
+        matrixCoefficients: string;
+    };
+    highReplication?: boolean;
+    audioQuality?: string;
+    audioSampleRate?: string;
+    audioChannels?: number;
+    loudnessDb?: number;
+    targetDurationSec?: number;
+    maxDvrDurationSec?: number;
+    signatureCipher?: string;
+    isLive?: boolean;
+}
+
+export interface VideoStream {
+    expiresInSeconds: string;
+    formats: VideoStreamEntity[];
+    adaptiveFormats: VideoStreamEntity[];
+    dashManifestUrl?: string;
+    hlsManifestUrl?: string;
+    player?: {
+        url: string;
+    };
 }
 
 export interface VideoInfo {
@@ -70,62 +120,7 @@ export interface VideoInfo {
         flashSecureUrl: string;
     };
     availableCountries: string[];
-    streams: {
-        expiresInSeconds: number;
-        formats: {
-            itag: number;
-            url: string;
-            mimeType: string;
-            bitrate: number;
-            width: number;
-            height: number;
-            lastModified: string;
-            contentLength?: string;
-            quality: string;
-            fps: number;
-            qualityLabel: string;
-            projectionType: string;
-            averageBitrate?: number;
-            audioQuality: string;
-            approxDurationMs: string;
-            audioSampleRate: string;
-            audioChannels: number;
-        }[];
-        adaptiveFormats: {
-            itag: number;
-            url: string;
-            mimeType: string;
-            bitrate: number;
-            width?: number;
-            height?: number;
-            initRange: {
-                start: string;
-                end: string;
-            };
-            indexRange: {
-                start: string;
-                end: string;
-            };
-            lastModified: string;
-            contentLength: string;
-            quality: string;
-            fps?: number;
-            qualityLabel?: string;
-            projectionType: string;
-            averageBitrate: number;
-            approxDurationMs: string;
-            colorInfo?: {
-                primaries: string;
-                transferCharacteristics: string;
-                matrixCoefficients: string;
-            };
-            highReplication?: boolean;
-            audioQuality?: string;
-            audioSampleRate?: string;
-            audioChannels?: number;
-            loudnessDb?: number;
-        }[];
-    };
+    streams: VideoStream;
 }
 /**
  * Get full information about a YouTube video
@@ -155,16 +150,17 @@ export const videoInfo = async (
 
     if (!url.startsWith("http")) url = constants.urls.video.base(url);
 
-    let res: getData;
+    let res: string;
     try {
-        res = await get(url);
+        const gres = await get(url);
+        res = await gres.text();
     } catch (err) {
         throw new Error(`Failed to fetch site. (${err})`);
     }
 
     let scriptInitialData: string = "";
     try {
-        scriptInitialData = res.data
+        scriptInitialData = res
             .split("var ytInitialData = ")[1]
             .split(";</script>")[0];
     } catch (err) {}
@@ -178,7 +174,7 @@ export const videoInfo = async (
 
     let scriptInitialPlayer: string = "";
     try {
-        scriptInitialPlayer = res.data
+        scriptInitialPlayer = res
             .split("var ytInitialPlayerResponse = ")[1]
             .split(";</script>")[0];
     } catch (err) {}
@@ -310,6 +306,13 @@ export const videoInfo = async (
         availableCountries: playerMicroformat?.availableCountries,
         streams: initialPlayer?.streamingData,
     };
+
+    const playerJsURL = res?.split('"PLAYER_JS_URL":"')[1]?.split('"')[0];
+    if (playerJsURL) {
+        info.streams.player = {
+            url: constants.urls.base + playerJsURL,
+        };
+    }
 
     return info;
 };

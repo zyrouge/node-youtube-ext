@@ -77,7 +77,7 @@ export const playlistInfo = async (
 
     let script: string;
     try {
-        script = res.data
+        script = (await res.text())
             .split("var ytInitialData = ")[1]
             .split(";</script>")[0];
     } catch (err) {

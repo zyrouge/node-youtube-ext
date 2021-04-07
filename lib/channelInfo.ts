@@ -105,7 +105,7 @@ export const channelInfo = async (
 
     let script: string;
     try {
-        script = res.data
+        script = (await res.text())
             .split("var ytInitialData = ")[1]
             .split(";</script>")[0];
     } catch (err) {
@@ -168,7 +168,6 @@ export const channelInfo = async (
         )
         ?.itemSectionRenderer?.contents[0]?.shelfRenderer?.content?.horizontalListRenderer?.items?.forEach(
             ({ gridVideoRenderer: x }: any) => {
-                console.log("here");
                 const video: ChannelVideo = {
                     title: x?.title?.simpleText,
                     id: x?.videoId,

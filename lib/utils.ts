@@ -1,8 +1,13 @@
 import http from "http";
 import https from "https";
 
+export interface getProps {
+    text(): Promise<string>;
+    json(): Promise<any>;
+}
+
 export type getOptions = http.RequestOptions | https.RequestOptions;
-export type getData = http.IncomingMessage & { data: string };
+export type getData = http.IncomingMessage & getProps;
 
 export const get = (url: string, options: getOptions = {}) =>
     new Promise<getData>(async (resolve, reject) => {
@@ -13,16 +18,32 @@ export const get = (url: string, options: getOptions = {}) =>
                         `Request failed with status code ${res.statusCode}`
                     );
 
-                let data = "";
-                res.setEncoding("utf8");
+                const props: getProps = {
+                    text() {
+                        return new Promise<string>((tres, trej) => {
+                            let data: string;
+                            res.setEncoding("utf8");
 
-                res.on("data", (chunk) => {
-                    data += chunk;
-                });
+                            res.on("data", (chunk) => {
+                                data += chunk;
+                            });
 
-                res.on("end", () => {
-                    resolve(Object.assign(res, { data }));
-                });
+                            res.on("end", () => {
+                                tres(data);
+                            });
+
+                            res.on("error", (err) => {
+                                trej(err);
+                            });
+                        });
+                    },
+                    async json(parser: (data: string) => any = JSON.parse) {
+                        const data = await this.text();
+                        return parser(data);
+                    },
+                };
+
+                resolve(Object.assign(res, props));
             })
             .on("error", reject);
     });

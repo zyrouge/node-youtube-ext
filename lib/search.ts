@@ -121,7 +121,7 @@ export const search = async (terms: string, options: SearchOptions = {}) => {
 
     let script: string;
     try {
-        script = res.data
+        script = (await res.text())
             .split("var ytInitialData = ")[1]
             .split(";</script>")[0];
     } catch (err) {
