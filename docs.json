@@ -6477,7 +6477,7 @@
 					"kindString": "Call signature",
 					"flags": {},
 					"comment": {
-						"shortText": "Returns a YouTube stream\n**Info:** Install \"m3u8stream\" using `npm install m3u8stream` for livestream support"
+						"shortText": "Returns a YouTube stream\n**Info:** Install \"m3u8stream\" using ` npm install m3u8stream ` for livestream support"
 					},
 					"parameters": [
 						{
