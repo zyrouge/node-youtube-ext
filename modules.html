@@ -73,6 +73,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/channelinfo.html" class="tsd-kind-icon">Channel<wbr>Info</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/channelinfooptions.html" class="tsd-kind-icon">Channel<wbr>Info<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/channelvideo.html" class="tsd-kind-icon">Channel<wbr>Video</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/filterformatsoptions.html" class="tsd-kind-icon">Filter<wbr>Formats<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/playlistinfo.html" class="tsd-kind-icon">Playlist<wbr>Info</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/playlistinfooptions.html" class="tsd-kind-icon">Playlist<wbr>Info<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/playlistvideo.html" class="tsd-kind-icon">Playlist<wbr>Video</a></li>
@@ -82,6 +83,9 @@
 								<li class="tsd-kind-interface"><a href="interfaces/searchvideo.html" class="tsd-kind-icon">Search<wbr>Video</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/videoinfo.html" class="tsd-kind-icon">Video<wbr>Info</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/videoinfooptions.html" class="tsd-kind-icon">Video<wbr>Info<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/videostream.html" class="tsd-kind-icon">Video<wbr>Stream</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/videostreamentity.html" class="tsd-kind-icon">Video<wbr>Stream<wbr>Entity</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/getreadablestreamoptions.html" class="tsd-kind-icon">get<wbr>Readable<wbr>Stream<wbr>Options</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -94,6 +98,8 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#channelinfo" class="tsd-kind-icon">channel<wbr>Info</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#filterformats" class="tsd-kind-icon">filter<wbr>Formats</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#getreadablestream" class="tsd-kind-icon">get<wbr>Readable<wbr>Stream</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#playlistinfo" class="tsd-kind-icon">playlist<wbr>Info</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#search" class="tsd-kind-icon">search</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#videoinfo" class="tsd-kind-icon">video<wbr>Info</a></li>
@@ -110,9 +116,14 @@
 					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/983f4d2/lib/index.ts#L7">index.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/60738c8/lib/index.ts#L11">index.ts:11</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Package version</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -127,9 +138,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/983f4d2/lib/channelInfo.ts#L74">channelInfo.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/60738c8/lib/channelInfo.ts#L77">channelInfo.ts:77</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get full information about a YouTube channel</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -144,6 +160,74 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="filterformats" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> filter<wbr>Formats</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">filter<wbr>Formats<span class="tsd-signature-symbol">(</span>formats<span class="tsd-signature-symbol">: </span><a href="interfaces/videostream.html" class="tsd-signature-type" data-tsd-kind="Interface">VideoStream</a>, options<span class="tsd-signature-symbol">?: </span><a href="interfaces/filterformatsoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FilterFormatsOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/videostreamentity.html" class="tsd-signature-type" data-tsd-kind="Interface">VideoStreamEntity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/60738c8/lib/generateStream.ts#L13">generateStream.ts:13</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Filters and generates Stream URL(s). Always filter before generating streams!</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>formats: <a href="interfaces/videostream.html" class="tsd-signature-type" data-tsd-kind="Interface">VideoStream</a></h5>
+								</li>
+								<li>
+									<h5>options: <a href="interfaces/filterformatsoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FilterFormatsOptions</a><span class="tsd-signature-symbol"> = {}</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/videostreamentity.html" class="tsd-signature-type" data-tsd-kind="Interface">VideoStreamEntity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="getreadablestream" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Readable<wbr>Stream</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Readable<wbr>Stream<span class="tsd-signature-symbol">(</span>streams<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span>, options<span class="tsd-signature-symbol">?: </span><a href="interfaces/getreadablestreamoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">getReadableStreamOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="modules/utils.html#getdata" class="tsd-signature-type" data-tsd-kind="Type alias">getData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Stream</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/60738c8/lib/generateStream.ts#L135">generateStream.ts:135</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a YouTube stream
+									<strong>Info:</strong> Install &quot;m3u8stream&quot; using <code>npm install m3u8stream</code> for livestream support</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>streams: <span class="tsd-signature-symbol">{ </span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>options: <a href="interfaces/getreadablestreamoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">getReadableStreamOptions</a><span class="tsd-signature-symbol"> = {}</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="modules/utils.html#getdata" class="tsd-signature-type" data-tsd-kind="Type alias">getData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Stream</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="playlistinfo" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> playlist<wbr>Info</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -153,9 +237,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/983f4d2/lib/playlistInfo.ts#L41">playlistInfo.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/60738c8/lib/playlistInfo.ts#L44">playlistInfo.ts:44</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get full information about a YouTube playlist</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -179,12 +268,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/983f4d2/lib/search.ts#L70">search.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/60738c8/lib/search.ts#L70">search.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Search for videos, channels, etc...</p>
+									<p>Search for videos, channels, playlists, etc...</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -210,7 +299,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/983f4d2/lib/videoInfo.ts#L133">videoInfo.ts:133</a></li>
+									<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/60738c8/lib/videoInfo.ts#L129">videoInfo.ts:129</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -256,6 +345,9 @@
 						<a href="interfaces/channelvideo.html" class="tsd-kind-icon">Channel<wbr>Video</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/filterformatsoptions.html" class="tsd-kind-icon">Filter<wbr>Formats<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/playlistinfo.html" class="tsd-kind-icon">Playlist<wbr>Info</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -282,11 +374,26 @@
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/videoinfooptions.html" class="tsd-kind-icon">Video<wbr>Info<wbr>Options</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/videostream.html" class="tsd-kind-icon">Video<wbr>Stream</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/videostreamentity.html" class="tsd-kind-icon">Video<wbr>Stream<wbr>Entity</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getreadablestreamoptions.html" class="tsd-kind-icon">get<wbr>Readable<wbr>Stream<wbr>Options</a>
+					</li>
 					<li class=" tsd-kind-variable">
 						<a href="modules.html#version" class="tsd-kind-icon">version</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#channelinfo" class="tsd-kind-icon">channel<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#filterformats" class="tsd-kind-icon">filter<wbr>Formats</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getreadablestream" class="tsd-kind-icon">get<wbr>Readable<wbr>Stream</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#playlistinfo" class="tsd-kind-icon">playlist<wbr>Info</a>
