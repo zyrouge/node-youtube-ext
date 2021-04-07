@@ -7,6 +7,9 @@ export interface FilterFormatsOptions {
     filterBy?: () => ReturnType<typeof filterFormats>;
 }
 
+/**
+ * Filters and generates Stream URL(s). Always filter before generating streams!
+ */
 export const filterFormats = async (
     formats: VideoStream,
     options: FilterFormatsOptions = {}
@@ -125,6 +128,10 @@ export interface getReadableStreamOptions {
     requestOptions?: getOptions;
 }
 
+/**
+ * Returns a YouTube stream
+ * **Info:** Install "m3u8stream" using `npm install m3u8stream` for livestream support
+ */
 export const getReadableStream = async (
     streams: { url: string },
     options: getReadableStreamOptions = {}

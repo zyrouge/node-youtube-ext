@@ -71,6 +71,9 @@ export interface ChannelInfo {
     familySafe: boolean;
 }
 
+/**
+ * Get full information about a YouTube channel
+ */
 export const channelInfo = async (
     url: string,
     options: ChannelInfoOptions = {}

@@ -122,6 +122,7 @@ export interface VideoInfo {
     availableCountries: string[];
     streams: VideoStream;
 }
+
 /**
  * Get full information about a YouTube video
  */

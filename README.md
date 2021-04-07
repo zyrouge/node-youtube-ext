@@ -8,6 +8,7 @@ Just a simple [YouTube](https://youtube.com) scraper. No key needed!
 
 ## ✨ Features
 
+-   Supports YouTube stream generation
 -   Supports YouTube search
 -   Supports YouTube video information
 -   Supports YouTube playlist information
@@ -18,7 +19,7 @@ Just a simple [YouTube](https://youtube.com) scraper. No key needed!
 ## 💻 Installation
 
 ```bash
-npm install genius-lyrics
+npm install youtube-ext
 ```
 
 ## ⚙️ Usage

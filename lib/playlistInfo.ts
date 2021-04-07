@@ -38,6 +38,9 @@ export interface PlaylistInfo {
     }[];
 }
 
+/**
+ * Get full information about a YouTube playlist
+ */
 export const playlistInfo = async (
     url: string,
     options: PlaylistInfoOptions = {}

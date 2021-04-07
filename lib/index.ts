@@ -5,4 +5,7 @@ export * from "./channelInfo";
 export * from "./generateStream";
 export * as utils from "./utils";
 
+/**
+ * Package version
+ */
 export const version: string = require("../package.json").version;

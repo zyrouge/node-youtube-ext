@@ -65,7 +65,7 @@ export interface SearchPlaylist {
 }
 
 /**
- * Search for videos, channels, etc...
+ * Search for videos, channels, playlists, etc...
  */
 export const search = async (terms: string, options: SearchOptions = {}) => {
     if (typeof terms !== "string")
