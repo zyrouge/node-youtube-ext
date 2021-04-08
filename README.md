@@ -1,4 +1,8 @@
-# (WIP) YouTube Extractor 📼
+<p align="center">
+    <img src="https://raw.githubusercontent.com/zyrouge/youtube-ext/main/media/imgs/logo.png">
+</p>
+
+# YouTube Extractor 📼
 
 [![CI](https://github.com/zyrouge/youtube-ext/actions/workflows/ci.yml/badge.svg)](https://github.com/zyrouge/youtube-ext/actions/workflows/ci.yml) [![Documentation](https://github.com/zyrouge/youtube-ext/actions/workflows/docs.yml/badge.svg)](https://github.com/zyrouge/youtube-ext/actions/workflows/docs.yml)
 
@@ -8,6 +12,7 @@ Just a simple [YouTube](https://youtube.com) scraper. No key needed!
 
 ## ✨ Features
 
+-   Faster than others! Compare [here](https://runkit.com/zyrouge/606dd634af4a29001a4be694)
 -   Supports YouTube stream generation
 -   Supports YouTube search
 -   Supports YouTube video information
