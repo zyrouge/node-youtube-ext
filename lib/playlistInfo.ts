@@ -64,12 +64,10 @@ export const playlistInfo = async (
         options
     );
 
-    if (!constants.urls.playlist.baseUrlRegex.test(url)) {
-        const id = url.match(constants.urls.playlist.getIdRegex);
-        if (id && id[2]) url = id[2];
-    }
-
-    if (!url.startsWith("http")) url = constants.urls.playlist.base(url);
+    const id = constants.urls.playlist.baseUrlRegex.test(url)
+        ? url.match(constants.urls.playlist.getIdRegex)?.[2] || url
+        : url;
+    if (!url.startsWith("http")) url = constants.urls.playlist.base(id);
 
     let res: getData;
     try {
@@ -78,51 +76,38 @@ export const playlistInfo = async (
         throw new Error(`Failed to fetch site. (${err})`);
     }
 
-    let script: string;
+    const script = (await res.text()).match(
+        /var ytInitialData = (.*);<\/script>/
+    )?.[1];
+    if (!script) throw new Error("Failed to parse data from script tag.");
+
+    let contents: any;
     try {
-        script = (await res.text())
-            .split("var ytInitialData = ")[1]
-            .split(";</script>")[0];
+        contents = JSON.parse(
+            script.match(
+                /"playlistVideoListRenderer":{"contents":(.*),"playlistId".*"targetId"/
+            )?.[1] || ""
+        );
     } catch (err) {
-        throw new Error(`Failed to scrape script tag. (${err})`);
+        throw new Error(`Failed to parse contents from script tag. (${err}`);
     }
 
-    let data: any;
+    let microformat: any;
     try {
-        data = JSON.parse(script);
+        microformat = JSON.parse(
+            script.match(/"microformat":(.*),"sidebar"/)?.[1] || ""
+        );
     } catch (err) {
-        throw new Error(`Failed to parse script tag content. (${err}`);
-    }
-
-    let listRenderer: any;
-    try {
-        listRenderer = data?.contents?.twoColumnBrowseResultsRenderer?.tabs
-            ?.find((x: any) => x?.tabRenderer)
-            ?.tabRenderer?.content?.sectionListRenderer?.contents?.find(
-                (x: any) => x?.itemSectionRenderer
-            )
-            ?.itemSectionRenderer?.contents?.find(
-                (x: any) => x?.playlistVideoListRenderer
-            )?.playlistVideoListRenderer;
-    } catch (err) {
-        throw new Error(`Failed to get contents from script tag. (${err}`);
-    }
-
-    let contents: unknown[];
-    try {
-        contents = listRenderer?.contents;
-    } catch (err) {
-        throw new Error(`Failed to get contents from script tag. (${err}`);
+        throw new Error(`Failed to parse contents from script tag. (${err}`);
     }
 
     const playlist: PlaylistInfo = {
-        title: data?.microformat?.microformatDataRenderer?.title,
-        id: listRenderer?.playlistId,
-        url: data?.microformat?.microformatDataRenderer?.urlCanonical,
-        description: data?.microformat?.microformatDataRenderer?.description,
+        title: microformat?.microformatDataRenderer?.title,
+        id,
+        url: microformat?.microformatDataRenderer?.urlCanonical,
+        description: microformat?.microformatDataRenderer?.description,
         videos: [],
-        thumbnails:
-            data?.microformat?.microformatDataRenderer?.thumbnail?.thumbnails,
+        thumbnails: microformat?.microformatDataRenderer?.thumbnail?.thumbnails,
     };
 
     contents

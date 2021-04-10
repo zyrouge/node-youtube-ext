@@ -159,13 +159,8 @@ export const videoInfo = async (
         throw new Error(`Failed to fetch site. (${err})`);
     }
 
-    let scriptInitialData: string = "";
-    try {
-        scriptInitialData = res
-            .split("var ytInitialData = ")[1]
-            .split(";</script>")[0];
-    } catch (err) {}
-
+    const scriptInitialData =
+        res.match(/var ytInitialData = (.*);<\/script>/)?.[1] || "";
     let initialData: any;
     try {
         if (scriptInitialData) initialData = JSON.parse(scriptInitialData);
@@ -173,13 +168,8 @@ export const videoInfo = async (
         throw new Error(`Failed to parse script tag content. (${err}`);
     }
 
-    let scriptInitialPlayer: string = "";
-    try {
-        scriptInitialPlayer = res
-            .split("var ytInitialPlayerResponse = ")[1]
-            .split(";</script>")[0];
-    } catch (err) {}
-
+    const scriptInitialPlayer =
+        res.match(/var ytInitialPlayerResponse = (.*);<\/script>/)?.[1] || "";
     let initialPlayer: any = {};
     try {
         if (scriptInitialPlayer)
