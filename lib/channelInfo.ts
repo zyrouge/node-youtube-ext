@@ -106,14 +106,10 @@ export const channelInfo = async (
         throw new Error(`Failed to fetch site. (${err})`);
     }
 
-    let script: string;
-    try {
-        script = (await res.text())
-            .split("var ytInitialData = ")[1]
-            .split(";</script>")[0];
-    } catch (err) {
-        throw new Error(`Failed to scrape script tag. (${err})`);
-    }
+    const script = (await res.text()).match(
+        /var ytInitialData = (.*);<\/script>/
+    )?.[1];
+    if (!script) throw new Error("Failed to parse data from script tag.");
 
     let data: any;
     try {

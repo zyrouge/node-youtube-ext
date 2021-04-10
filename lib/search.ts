@@ -119,29 +119,20 @@ export const search = async (terms: string, options: SearchOptions = {}) => {
         throw new Error(`Failed to fetch site. (${err})`);
     }
 
-    let script: string;
-    try {
-        script = (await res.text())
-            .split("var ytInitialData = ")[1]
-            .split(";</script>")[0];
-    } catch (err) {
-        throw new Error(`Failed to scrape script tag. (${err})`);
-    }
+    const script = (await res.text()).match(
+        /var ytInitialData = (.*);<\/script>/
+    )?.[1];
+    if (!script) throw new Error("Failed to parse data from script tag.");
 
-    let data: any;
+    let contents: any;
     try {
-        data = JSON.parse(script);
+        contents = JSON.parse(
+            script.match(
+                /"sectionListRenderer":{"contents":\[{"itemSectionRenderer":(.*)},{"continuationItemRenderer"/
+            )?.[1] || ""
+        )?.contents;
     } catch (err) {
-        throw new Error(`Failed to parse script tag content. (${err}`);
-    }
-
-    let contents: unknown[];
-    try {
-        contents = data?.contents?.twoColumnSearchResultsRenderer?.primaryContents?.sectionListRenderer?.contents?.find(
-            (x: any) => x?.itemSectionRenderer
-        )?.itemSectionRenderer?.contents;
-    } catch (err) {
-        throw new Error(`Failed to get contents from script tag. (${err}`);
+        throw new Error(`Failed to parse contents from script tag. (${err}`);
     }
 
     const result: {

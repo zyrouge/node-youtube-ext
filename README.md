@@ -12,7 +12,7 @@ Just a simple [YouTube](https://youtube.com) scraper. No key needed!
 
 ## ✨ Features
 
--   Faster and Better [Comparison](https://runkit.com/zyrouge/606dd634af4a29001a4be694)
+-   Faster and Better ([comparison](https://runkit.com/zyrouge/606dd634af4a29001a4be694))
 -   Supports YouTube stream generation
 -   Supports YouTube search
 -   Supports YouTube video information
