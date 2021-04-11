@@ -69,24 +69,28 @@ export const playlistInfo = async (
         : url;
     if (!url.startsWith("http")) url = constants.urls.playlist.base(id);
 
-    let res: getData;
+    let res: string;
     try {
-        res = await get(url, options.requestOptions);
+        const gres = await get(url, options.requestOptions);
+        res = await gres.text();
     } catch (err) {
         throw new Error(`Failed to fetch site. (${err})`);
     }
 
-    const script = (await res.text()).match(
-        /var ytInitialData = (.*);<\/script>/
-    )?.[1];
+    const script = res.substring(
+        res.lastIndexOf("var ytInitialData = ") + 20,
+        res.lastIndexOf("}}};</script>") + 3
+    );
     if (!script) throw new Error("Failed to parse data from script tag.");
 
     let contents: any;
     try {
         contents = JSON.parse(
-            script.match(
-                /"playlistVideoListRenderer":{"contents":(.*),"playlistId".*"targetId"/
-            )?.[1] || ""
+            script.substring(
+                script.lastIndexOf('"playlistVideoListRenderer":{"contents":') +
+                    40,
+                script.lastIndexOf('],"playlistId"') + 1
+            )
         );
     } catch (err) {
         throw new Error(`Failed to parse contents from script tag. (${err}`);
@@ -95,7 +99,10 @@ export const playlistInfo = async (
     let microformat: any;
     try {
         microformat = JSON.parse(
-            script.match(/"microformat":(.*),"sidebar"/)?.[1] || ""
+            script.substring(
+                script.lastIndexOf('"microformat":') + 14,
+                script.lastIndexOf(',"sidebar"')
+            )
         );
     } catch (err) {
         throw new Error(`Failed to parse contents from script tag. (${err}`);

@@ -13,19 +13,6 @@ const main = async () => {
             `\nSubscribers: ${info.subscribers.pretty}`,
             "\n"
         );
-
-        if (info.videos.length) {
-            console.log("-> Videos <-\n");
-            info.videos.forEach((x, i) => {
-                console.log(
-                    `${i + 1}.`,
-                    `\n   Title: ${x.title}`,
-                    `\n   Channel: ${x.channel.name}`,
-                    `\n   URL: ${x.url}`,
-                    "\n"
-                );
-            });
-        }
     } catch (err) {
         console.log(`No result were found for ${query} (${err})`);
     }
