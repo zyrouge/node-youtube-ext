@@ -9,7 +9,7 @@
   "scripts": {
     "build": "rimraf dist && tsc",
     "docs": "typedoc && node ./media/scripts/docs",
-    "test": "node media/scripts/test"
+    "test": "npm run build && node media/scripts/test"
   },
   "keywords": [
     "youtube",
