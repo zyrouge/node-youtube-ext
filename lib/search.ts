@@ -1,4 +1,4 @@
-import { getOptions, get, constants, getData, mergeObj } from "./utils";
+import { getOptions, get, constants, mergeObj } from "./utils";
 
 export interface SearchOptions {
     requestOptions?: getOptions;
@@ -112,24 +112,29 @@ export const search = async (terms: string, options: SearchOptions = {}) => {
         url += constants.urls.search.filters[options.filterType];
     }
 
-    let res: getData;
+    let res: string;
     try {
-        res = await get(url, options.requestOptions);
+        const gres = await get(url, options.requestOptions);
+        res = await gres.text();
     } catch (err) {
         throw new Error(`Failed to fetch site. (${err})`);
     }
 
-    const script = (await res.text()).match(
-        /var ytInitialData = (.*);<\/script>/
-    )?.[1];
+    const script = res.substring(
+        res.lastIndexOf("var ytInitialData = ") + 20,
+        res.lastIndexOf("]};</script>") + 2
+    );
     if (!script) throw new Error("Failed to parse data from script tag.");
 
     let contents: any;
     try {
         contents = JSON.parse(
-            script.match(
-                /"sectionListRenderer":{"contents":\[{"itemSectionRenderer":(.*)},{"continuationItemRenderer"/
-            )?.[1] || ""
+            script.substring(
+                script.lastIndexOf(
+                    '"sectionListRenderer":{"contents":[{"itemSectionRenderer":'
+                ) + 58,
+                script.lastIndexOf('},{"continuationItemRenderer"')
+            )
         )?.contents;
     } catch (err) {
         throw new Error(`Failed to parse contents from script tag. (${err}`);

@@ -81,11 +81,6 @@ export interface VideoInfo {
         width: number;
         height: number;
     }[];
-    watermarks: {
-        url: string;
-        width: number;
-        height: number;
-    }[];
     ratings: {
         likes: {
             text: string;
@@ -159,24 +154,22 @@ export const videoInfo = async (
         throw new Error(`Failed to fetch site. (${err})`);
     }
 
-    const scriptInitialData =
-        res.match(/var ytInitialData = (.*);<\/script>/)?.[1] || "";
     let initialData: any;
     try {
-        if (scriptInitialData) initialData = JSON.parse(scriptInitialData);
+        initialData = JSON.parse(
+            res.substring(
+                res.lastIndexOf("var ytInitialData = ") + 20,
+                res.lastIndexOf("}}}}}}};</script>") + 7
+            )
+        );
     } catch (err) {
         throw new Error(`Failed to parse script tag content. (${err}`);
     }
 
-    const scriptInitialPlayer =
-        res.match(/var ytInitialPlayerResponse = (.*);<\/script>/)?.[1] || "";
-    let initialPlayer: any = {};
-    try {
-        if (scriptInitialPlayer)
-            initialPlayer = JSON.parse(scriptInitialPlayer);
-    } catch (err) {
-        throw new Error(`Failed to parse script tag content. (${err}`);
-    }
+    const initialPlayer = res.substring(
+        res.lastIndexOf("var ytInitialPlayerResponse = ") + 30,
+        res.lastIndexOf("}}}]};</script>") + 5
+    );
 
     let contents: any[];
     try {
@@ -201,13 +194,36 @@ export const videoInfo = async (
 
     let details: any;
     try {
-        details = initialPlayer?.videoDetails;
+        details = JSON.parse(
+            initialPlayer.substring(
+                initialPlayer.lastIndexOf('"videoDetails":') + 15,
+                initialPlayer.lastIndexOf(',"annotations"')
+            )
+        );
     } catch (err) {}
 
     let playerMicroformat: any;
     try {
-        playerMicroformat =
-            initialPlayer?.microformat?.playerMicroformatRenderer;
+        const partialMicroFormat = initialPlayer.substring(
+            initialPlayer.lastIndexOf('"playerMicroformatRenderer":') + 28,
+            initialPlayer.lastIndexOf(',"attestation":{')
+        );
+        playerMicroformat = JSON.parse(
+            partialMicroFormat.substring(
+                0,
+                partialMicroFormat.lastIndexOf('},"trackingParams"')
+            )
+        );
+    } catch (err) {}
+
+    let streamingData: any;
+    try {
+        streamingData = JSON.parse(
+            initialPlayer.substring(
+                initialPlayer.lastIndexOf('"streamingData":') + 16,
+                initialPlayer.lastIndexOf(',"playerAds"')
+            )
+        );
     } catch (err) {}
 
     const info: VideoInfo = {
@@ -241,10 +257,6 @@ export const videoInfo = async (
             lengthSec: details?.lengthSeconds,
         },
         thumbnails: details?.thumbnail?.thumbnails,
-        watermarks: initialPlayer?.annotations?.find(
-            (x: any) => x?.playerAnnotationsExpandedRenderer
-        )?.playerAnnotationsExpandedRenderer?.featuredChannel?.watermark
-            ?.thumbnails,
         ratings: {
             likes: {
                 text: primary?.videoActions?.menuRenderer?.topLevelButtons?.find(
@@ -295,7 +307,7 @@ export const videoInfo = async (
         category: playerMicroformat?.category,
         embed: playerMicroformat?.embed,
         availableCountries: playerMicroformat?.availableCountries,
-        streams: initialPlayer?.streamingData,
+        streams: streamingData,
     };
 
     const playerJsURL = res?.split('"PLAYER_JS_URL":"')[1]?.split('"')[0];
