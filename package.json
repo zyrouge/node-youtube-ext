@@ -1,6 +1,6 @@
 {
   "name": "youtube-ext",
-  "version": "1.0.4-beta",
+  "version": "1.0.5-beta",
   "description": "📼 Simple YouTube scraper and downloader. No key needed!",
   "main": "dist/index.js",
   "files": [
