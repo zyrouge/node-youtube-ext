@@ -114,7 +114,6 @@ export interface VideoInfo {
         width: number;
         flashSecureUrl: string;
     };
-    availableCountries: string[];
     streams: VideoStream;
 }
 
@@ -306,7 +305,6 @@ export const videoInfo = async (
         isFamilySafe: playerMicroformat?.isFamilySafe,
         category: playerMicroformat?.category,
         embed: playerMicroformat?.embed,
-        availableCountries: playerMicroformat?.availableCountries,
         streams: streamingData,
     };
 

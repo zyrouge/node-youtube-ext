@@ -1,13 +1,13 @@
 const fs = require("fs");
 const path = require("path");
-const { videoInfo, filterFormats, getReadableStream } = require("../dist");
+const { videoInfo, getFormats, getReadableStream } = require("../dist");
 
 const query = "https://www.youtube.com/watch?v=jzJE2ZSH6Dk";
 
-const main = async () => {
+const main = () => new Promise(async (resolve) => {
     try {
         const info = await videoInfo(query);
-        const formats = await filterFormats(info.streams);
+        const formats = await getFormats(info.streams);
         // Dont use this condition for livestreams
         const format = formats.find(x => x.fps && x.audioChannels);
         const stream = await getReadableStream(format);
@@ -28,11 +28,13 @@ const main = async () => {
 
         stream.on("end", () => {
             console.log(`Downloaded in ${(Date.now() - started) / 1000} seconds!`);
+            return resolve();
         });
     } catch (err) {
         console.log(`No result were found for ${query} (${err})`);
+        return resolve();
     }
-}
+});
 
 module.exports = main;
 
