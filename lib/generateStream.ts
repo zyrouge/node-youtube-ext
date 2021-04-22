@@ -2,17 +2,17 @@ import type m3u8stream from "m3u8stream";
 import { get, constants, getOptions, mergeObj } from "./utils";
 import { VideoStream, VideoStreamEntity } from "./videoInfo";
 
-export interface FilterFormatsOptions {
+export interface GetFormatsOptions {
     requestOptions?: getOptions;
-    filterBy?: () => ReturnType<typeof filterFormats>;
+    filterBy?: VideoStreamEntity[]["filter"];
 }
 
 /**
- * Filters and generates Stream URL(s). Always filter before generating streams!
+ * Generates Stream URL(s). Always use this to get streams before getting readable streams!
  */
-export const filterFormats = async (
+export const getFormats = async (
     formats: VideoStream,
-    options: FilterFormatsOptions = {}
+    options: GetFormatsOptions = {}
 ) => {
     if (typeof formats !== "object")
         throw new Error(
@@ -48,7 +48,7 @@ export const filterFormats = async (
 
     if (options.filterBy) {
         if (typeof options.filterBy === "function") {
-            streams = streams.filter(options.filterBy);
+            streams = streams.filter(options.filterBy as any);
         } else
             throw new Error(
                 constants.err.type(
@@ -130,6 +130,7 @@ export interface getReadableStreamOptions {
 
 /**
  * Returns a YouTube stream
+ *
  * **Info:** Install "m3u8stream" using ` npm install m3u8stream ` for livestream support
  */
 export const getReadableStream = async (

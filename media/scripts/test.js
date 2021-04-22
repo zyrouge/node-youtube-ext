@@ -9,7 +9,7 @@ const start = async () => {
     process.env.NODE_ENV = "test";
 
     const examples = path.join(root, "examples");
-    for (const pth of fs.readdirSync(examples)) {
+    for (const pth of fs.readdirSync(examples).filter(x => x.endsWith(".js"))) {
         const file = require(path.join(examples, pth));
         try {
             await file();
