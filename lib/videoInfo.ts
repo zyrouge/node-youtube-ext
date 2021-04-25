@@ -153,7 +153,7 @@ export const videoInfo = async (
         throw new Error(`Failed to fetch site. (${err})`);
     }
 
-    let initialData: any;
+    let initialData: any, initialPlayer: any;
     try {
         initialData = JSON.parse(
             res.substring(
@@ -161,14 +161,15 @@ export const videoInfo = async (
                 res.lastIndexOf("}}}}}}};</script>") + 7
             )
         );
+        initialPlayer = JSON.parse(
+            res.substring(
+                res.lastIndexOf("var ytInitialPlayerResponse = ") + 30,
+                res.lastIndexOf("}}}]};</script>") + 5
+            )
+        );
     } catch (err) {
-        throw new Error(`Failed to parse script tag content. (${err}`);
+        throw new Error(`Failed to parse script tag content. (${err})`);
     }
-
-    const initialPlayer = res.substring(
-        res.lastIndexOf("var ytInitialPlayerResponse = ") + 30,
-        res.lastIndexOf("}}}]};</script>") + 5
-    );
 
     let contents: any[];
     try {
@@ -176,7 +177,7 @@ export const videoInfo = async (
             initialData?.contents?.twoColumnWatchNextResults?.results?.results
                 ?.contents;
     } catch (err) {
-        throw new Error(`Failed to get contents from script tag. (${err}`);
+        throw new Error(`Failed to get contents from script tag. (${err})`);
     }
 
     let primary: any;
@@ -191,40 +192,6 @@ export const videoInfo = async (
             ?.videoSecondaryInfoRenderer;
     } catch (err) {}
 
-    let details: any;
-    try {
-        details = JSON.parse(
-            initialPlayer.substring(
-                initialPlayer.lastIndexOf('"videoDetails":') + 15,
-                initialPlayer.lastIndexOf(',"annotations"')
-            )
-        );
-    } catch (err) {}
-
-    let playerMicroformat: any;
-    try {
-        const partialMicroFormat = initialPlayer.substring(
-            initialPlayer.lastIndexOf('"playerMicroformatRenderer":') + 28,
-            initialPlayer.lastIndexOf(',"attestation":{')
-        );
-        playerMicroformat = JSON.parse(
-            partialMicroFormat.substring(
-                0,
-                partialMicroFormat.lastIndexOf('},"trackingParams"')
-            )
-        );
-    } catch (err) {}
-
-    let streamingData: any;
-    try {
-        streamingData = JSON.parse(
-            initialPlayer.substring(
-                initialPlayer.lastIndexOf('"streamingData":') + 16,
-                initialPlayer.lastIndexOf(',"playerAds"')
-            )
-        );
-    } catch (err) {}
-
     const info: VideoInfo = {
         title: primary?.title?.runs[0]?.text,
         id: initialData?.currentVideoEndpoint?.watchEndpoint?.videoId,
@@ -232,7 +199,7 @@ export const videoInfo = async (
             constants.urls.base +
             initialData?.currentVideoEndpoint?.commandMetadata
                 ?.webCommandMetadata?.url,
-        shortDescription: details?.shortDescription,
+        shortDescription: initialPlayer?.videoDetails?.shortDescription,
         description: secondary?.description?.runs
             ?.map((x: any) => x?.text)
             ?.join(""),
@@ -253,9 +220,9 @@ export const videoInfo = async (
             icons: secondary?.owner?.videoOwnerRenderer?.thumbnail?.thumbnails,
         },
         duration: {
-            lengthSec: details?.lengthSeconds,
+            lengthSec: initialPlayer?.videoDetails?.lengthSeconds,
         },
-        thumbnails: details?.thumbnail?.thumbnails,
+        thumbnails: initialPlayer?.videoDetails?.thumbnail?.thumbnails,
         ratings: {
             likes: {
                 text: primary?.videoActions?.menuRenderer?.topLevelButtons?.find(
@@ -294,18 +261,25 @@ export const videoInfo = async (
         },
         published: {
             pretty: primary?.dateText?.simpleText,
-            text: playerMicroformat?.publishDate,
+            text:
+                initialPlayer?.microformat?.playerMicroformatRenderer
+                    ?.publishDate,
         },
         uploaded: {
-            text: playerMicroformat?.uploadDate,
+            text:
+                initialPlayer?.microformat?.playerMicroformatRenderer
+                    ?.uploadDate,
         },
-        keywords: details?.keywords,
-        isLive: details?.isLiveContent,
-        isUnlisted: playerMicroformat?.isUnlisted,
-        isFamilySafe: playerMicroformat?.isFamilySafe,
-        category: playerMicroformat?.category,
-        embed: playerMicroformat?.embed,
-        streams: streamingData,
+        keywords: initialPlayer?.videoDetails?.keywords,
+        isLive: initialPlayer?.videoDetails?.isLiveContent,
+        isUnlisted:
+            initialPlayer?.microformat?.playerMicroformatRenderer?.isUnlisted,
+        isFamilySafe:
+            initialPlayer?.microformat?.playerMicroformatRenderer?.isFamilySafe,
+        category:
+            initialPlayer?.microformat?.playerMicroformatRenderer?.category,
+        embed: initialPlayer?.microformat?.playerMicroformatRenderer?.embed,
+        streams: initialPlayer?.streamingData,
     };
 
     const playerJsURL = res?.split('"PLAYER_JS_URL":"')[1]?.split('"')[0];
