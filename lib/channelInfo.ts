@@ -111,10 +111,7 @@ export const channelInfo = async (
     let initialData: any;
     try {
         initialData = JSON.parse(
-            res.substring(
-                res.lastIndexOf("var ytInitialData = ") + 20,
-                res.lastIndexOf("]}}};</script>") + 4
-            )
+            res.split("var ytInitialData = ")[1]?.split(";</script>")[0]
         );
     } catch (err) {
         throw new Error(`Failed to parse data from script tag. (${err})`);

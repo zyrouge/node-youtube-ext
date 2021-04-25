@@ -77,10 +77,7 @@ export const playlistInfo = async (
         throw new Error(`Failed to fetch site. (${err})`);
     }
 
-    const script = res.substring(
-        res.lastIndexOf("var ytInitialData = ") + 20,
-        res.lastIndexOf("}}};</script>") + 3
-    );
+    const script = res.split("var ytInitialData = ")[1]?.split(";</script>")[0];
     if (!script) throw new Error("Failed to parse data from script tag.");
 
     let contents: any;
