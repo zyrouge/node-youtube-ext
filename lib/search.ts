@@ -120,24 +120,18 @@ export const search = async (terms: string, options: SearchOptions = {}) => {
         throw new Error(`Failed to fetch site. (${err})`);
     }
 
-    const script = res.substring(
-        res.lastIndexOf("var ytInitialData = ") + 20,
-        res.lastIndexOf("]};</script>") + 2
-    );
-    if (!script) throw new Error("Failed to parse data from script tag.");
-
     let contents: any;
     try {
         contents = JSON.parse(
-            script.substring(
-                script.lastIndexOf(
+            res.substring(
+                res.lastIndexOf(
                     '"sectionListRenderer":{"contents":[{"itemSectionRenderer":'
                 ) + 58,
-                script.lastIndexOf('},{"continuationItemRenderer"')
+                res.lastIndexOf('},{"continuationItemRenderer"')
             )
         )?.contents;
     } catch (err) {
-        throw new Error(`Failed to parse contents from script tag. (${err}`);
+        throw new Error(`Failed to parse contents from script tag. (${err})`);
     }
 
     const result: {

@@ -93,7 +93,7 @@ export const playlistInfo = async (
             )
         );
     } catch (err) {
-        throw new Error(`Failed to parse contents from script tag. (${err}`);
+        throw new Error(`Failed to parse contents from script tag. (${err})`);
     }
 
     let microformat: any;
@@ -105,7 +105,7 @@ export const playlistInfo = async (
             )
         );
     } catch (err) {
-        throw new Error(`Failed to parse contents from script tag. (${err}`);
+        throw new Error(`Failed to parse contents from script tag. (${err})`);
     }
 
     const playlist: PlaylistInfo = {
@@ -145,6 +145,7 @@ export const playlistInfo = async (
                     lengthSec: x?.lengthSeconds,
                 },
             };
+
             playlist.videos.push(video);
         });
 

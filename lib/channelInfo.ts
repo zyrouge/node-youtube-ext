@@ -2,6 +2,35 @@ import { get, constants, getOptions, mergeObj } from "./utils";
 
 export interface ChannelInfoOptions {
     requestOptions?: getOptions;
+    includeVideos?: boolean;
+}
+
+export interface ChannelVideo {
+    title: string;
+    id: string;
+    url: string;
+    channel: {
+        name: string;
+        id: string;
+        url: string;
+    };
+    thumbnails: {
+        url: string;
+        width: number;
+        height: number;
+    }[];
+    duration: {
+        pretty: string;
+        text: string;
+    };
+    views: {
+        text: string;
+        pretty: string;
+        simpleText: string;
+    };
+    published: {
+        text: string;
+    };
 }
 
 export interface ChannelInfo {
@@ -9,6 +38,7 @@ export interface ChannelInfo {
     id: string;
     url: string;
     rssUrl: string;
+    vanityUrl: string;
     description: string;
     subscribers: {
         pretty: string;
@@ -24,8 +54,20 @@ export interface ChannelInfo {
         width: number;
         height: number;
     }[];
+    tvBanner: {
+        url: string;
+        width: number;
+        height: number;
+    }[];
+    mobileBanner: {
+        url: string;
+        width: number;
+        height: number;
+    }[];
     badges: string[];
     tags: string[];
+    videos: ChannelVideo[];
+    unlisted: boolean;
     familySafe: boolean;
 }
 
@@ -51,6 +93,7 @@ export const channelInfo = async (
                     "User-Agent": constants.headers.userAgent,
                 },
             },
+            includeVideos: false,
         },
         options
     );
@@ -65,60 +108,105 @@ export const channelInfo = async (
         throw new Error(`Failed to fetch site. (${err})`);
     }
 
-    const script = res.substring(
-        res.lastIndexOf("var ytInitialData = ") + 20,
-        res.lastIndexOf("]}}};</script>") + 4
-    );
-    if (!script) throw new Error("Failed to parse data from script tag.");
-
-    let channelMetadataRenderer: any = {};
+    let initialData: any;
     try {
-        channelMetadataRenderer = JSON.parse(
-            script.substring(
-                script.lastIndexOf('"channelMetadataRenderer":') + 26,
-                script.lastIndexOf(',"availableCountryCodes"')
-            ) + "}"
-        );
-    } catch (err) {}
-
-    let c4TabbedHeaderRenderer: any = {};
-    try {
-        c4TabbedHeaderRenderer = JSON.parse(
-            script.substring(
-                script.lastIndexOf('"c4TabbedHeaderRenderer":') + 25,
-                script.lastIndexOf(',"headerLinks"')
-            ) + "}"
-        );
-    } catch (err) {}
-
-    let subscriberCountText: any = {};
-    try {
-        subscriberCountText = JSON.parse(
-            script.substring(
-                script.lastIndexOf('"subscriberCountText":') + 22,
-                script.lastIndexOf(',"tvBanner"')
+        initialData = JSON.parse(
+            res.substring(
+                res.lastIndexOf("var ytInitialData = ") + 20,
+                res.lastIndexOf("]}}};</script>") + 4
             )
         );
-    } catch (err) {}
+    } catch (err) {
+        throw new Error(`Failed to parse data from script tag. (${err})`);
+    }
 
     const channel: ChannelInfo = {
-        name: channelMetadataRenderer?.title,
-        id: channelMetadataRenderer?.externalId,
-        url: channelMetadataRenderer?.channelUrl,
-        rssUrl: channelMetadataRenderer?.rssUrl,
-        description: channelMetadataRenderer?.description,
+        name: initialData?.metadata?.channelMetadataRenderer?.title,
+        id: initialData?.metadata?.channelMetadataRenderer?.externalId,
+        url: initialData?.metadata?.channelMetadataRenderer?.channelUrl,
+        rssUrl: initialData?.metadata?.channelMetadataRenderer?.rssUrl,
+        vanityUrl:
+            initialData?.microformat?.microformatDataRenderer?.vanityChannelUrl,
+        description:
+            initialData?.metadata?.channelMetadataRenderer?.description,
         subscribers: {
-            pretty: subscriberCountText?.simpleText,
-            text: subscriberCountText?.accessibility?.accessibilityData?.label,
+            pretty:
+                initialData?.header?.c4TabbedHeaderRenderer?.subscriberCountText
+                    ?.simpleText,
+            text:
+                initialData?.header?.c4TabbedHeaderRenderer?.subscriberCountText
+                    ?.accessibility?.accessibilityData?.label,
         },
-        banner: c4TabbedHeaderRenderer?.banner?.thumbnails,
-        badges: c4TabbedHeaderRenderer?.badges
+        banner: initialData?.header?.c4TabbedHeaderRenderer?.banner?.thumbnails,
+        tvBanner:
+            initialData?.header?.c4TabbedHeaderRenderer?.tvBanner?.thumbnails,
+        mobileBanner:
+            initialData?.header?.c4TabbedHeaderRenderer?.mobileBanner
+                ?.thumbnails,
+        badges: initialData?.header?.c4TabbedHeaderRenderer?.badges
             ?.map((x: any) => x?.metadataBadgeRenderer?.tooltip)
             ?.filter((x: string) => x),
-        thumbnails: channelMetadataRenderer?.avatar?.thumbnails,
-        tags: channelMetadataRenderer?.keywords.split(" "),
-        familySafe: channelMetadataRenderer?.isFamilySafe,
+        thumbnails:
+            initialData?.metadata?.channelMetadataRenderer?.avatar?.thumbnails,
+        tags: initialData?.metadata?.channelMetadataRenderer?.keywords.split(
+            " "
+        ),
+        videos: [],
+        unlisted: initialData?.microformat?.microformatDataRenderer?.unlisted,
+        familySafe:
+            initialData?.metadata?.channelMetadataRenderer?.isFamilySafe,
     };
+
+    if (options.includeVideos) {
+        initialData?.contents?.twoColumnBrowseResultsRenderer?.tabs
+            ?.find((x: any) => x?.tabRenderer?.title === "Home")
+            ?.tabRenderer?.content?.sectionListRenderer?.contents?.find(
+                (x: any) =>
+                    x?.itemSectionRenderer?.contents[0]?.shelfRenderer?.content
+                        ?.horizontalListRenderer?.items
+            )
+            ?.itemSectionRenderer?.contents[0]?.shelfRenderer?.content?.horizontalListRenderer?.items?.forEach(
+                ({ gridVideoRenderer: x }: any) => {
+                    const video: ChannelVideo = {
+                        title: x?.title?.simpleText,
+                        id: x?.videoId,
+                        url:
+                            constants.urls.base +
+                            x?.navigationEndpoint?.commandMetadata
+                                ?.webCommandMetadata?.url,
+                        channel: {
+                            name: channel?.name,
+                            id: channel?.id,
+                            url: channel?.url,
+                        },
+                        thumbnails: x?.thumbnail?.thumbnails,
+                        duration: {
+                            pretty: x?.thumbnailOverlays?.find(
+                                (x: any) =>
+                                    x?.thumbnailOverlayTimeStatusRenderer
+                            )?.thumbnailOverlayTimeStatusRenderer?.text
+                                ?.simpleText,
+                            text: x?.thumbnailOverlays?.find(
+                                (x: any) =>
+                                    x?.thumbnailOverlayTimeStatusRenderer
+                            )?.thumbnailOverlayTimeStatusRenderer?.text
+                                ?.accessibility?.accessibilityData?.label,
+                        },
+                        views: {
+                            pretty: x?.shortViewCountText?.simpleText,
+                            text:
+                                x?.shortViewCountText?.accessibility
+                                    ?.accessibilityData?.label,
+                            simpleText: x?.viewCountText?.simpleText,
+                        },
+                        published: {
+                            text: x?.publishedTimeText?.simpleText,
+                        },
+                    };
+                    channel.videos.push(video);
+                }
+            );
+    }
 
     return channel;
 };
