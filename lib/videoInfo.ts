@@ -156,16 +156,12 @@ export const videoInfo = async (
     let initialData: any, initialPlayer: any;
     try {
         initialData = JSON.parse(
-            res.substring(
-                res.lastIndexOf("var ytInitialData = ") + 20,
-                res.lastIndexOf("}}}}}}};</script>") + 7
-            )
+            res.split("var ytInitialData = ")[1].split(";</script>")[0]
         );
         initialPlayer = JSON.parse(
-            res.substring(
-                res.lastIndexOf("var ytInitialPlayerResponse = ") + 30,
-                res.lastIndexOf("}}}]};</script>") + 5
-            )
+            res
+                .split("var ytInitialPlayerResponse = ")[1]
+                .split(";</script>")[0]
         );
     } catch (err) {
         throw new Error(`Failed to parse script tag content. (${err})`);
