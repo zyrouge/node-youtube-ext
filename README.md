@@ -40,3 +40,14 @@ Examples can be found [here](https://github.com/zyrouge/ytsr/tree/main/examples)
 -   [Documentation](https://youtube-ext.js.org)
 -   [NPM](https://npmjs.com/package/youtube-ext)
 -   [GitHub](https://github.com/zyrouge/youtube-ext)
+
+## 🧪 Similar Packages
+
+- [youtube-dl](https://www.npmjs.com/package/youtube-sr) (Faster and better search and info scraping)
+- [ytdl-core](https://www.npmjs.com/package/ytdl-core) (YouTube Downloader)
+- [discord-player](https://www.npmjs.com/package/discord-player) (Discord music framework)
+- [discord-ytdl-core](https://www.npmjs.com/package/discord-ytdl-core) (Ytdl-core with ffmpeg args support)
+
+## 📃 License
+
+MIT
