@@ -50,4 +50,4 @@ Examples can be found [here](https://github.com/zyrouge/ytsr/tree/main/examples)
 
 ## 📃 License
 
-MIT
+MIT ([View](./LICENSE))
