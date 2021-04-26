@@ -158,7 +158,6 @@ export const videoInfo = async (
         throw new Error(`Failed to fetch site. (${err})`);
     }
 
-    require("fs").writeFileSync("kek.html", res);
     let initialData: any, initialPlayer: any;
     try {
         initialData = JSON.parse(
