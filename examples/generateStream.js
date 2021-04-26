@@ -31,8 +31,11 @@ const main = () => new Promise(async (resolve) => {
             return resolve();
         });
     } catch (err) {
-        console.log(`No result were found for ${query} (${err})`);
-        return resolve();
+        if (process.env.NODE_ENV !== "test") {
+            console.log(`No result were found for ${query} (${err})`);
+            return resolve();
+        }
+        throw err;
     }
 });
 

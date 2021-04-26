@@ -1,7 +1,8 @@
-import { get, getData, constants, getOptions, mergeObj } from "./utils";
+import axios, { AxiosRequestConfig } from "axios";
+import { constants, mergeObj } from "./utils";
 
 export interface PlaylistInfoOptions {
-    requestOptions?: getOptions;
+    requestOptions?: AxiosRequestConfig;
 }
 
 export interface PlaylistVideo {
@@ -71,8 +72,12 @@ export const playlistInfo = async (
 
     let res: string;
     try {
-        const gres = await get(url, options.requestOptions);
-        res = await gres.text();
+        res = (
+            await axios.get<string>(url, {
+                ...options.requestOptions,
+                responseType: "text",
+            })
+        ).data;
     } catch (err) {
         throw new Error(`Failed to fetch site. (${err})`);
     }

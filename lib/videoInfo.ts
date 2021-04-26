@@ -1,7 +1,8 @@
-import { get, getOptions, constants, mergeObj } from "./utils";
+import axios, { AxiosRequestConfig } from "axios";
+import { constants, mergeObj } from "./utils";
 
 export interface VideoInfoOptions {
-    requestOptions?: getOptions;
+    requestOptions?: AxiosRequestConfig;
 }
 
 export interface VideoStreamEntity {
@@ -147,12 +148,17 @@ export const videoInfo = async (
 
     let res: string;
     try {
-        const gres = await get(url);
-        res = await gres.text();
+        res = (
+            await axios.get<string>(url, {
+                ...options.requestOptions,
+                responseType: "text",
+            })
+        ).data;
     } catch (err) {
         throw new Error(`Failed to fetch site. (${err})`);
     }
 
+    require("fs").writeFileSync("kek.html", res);
     let initialData: any, initialPlayer: any;
     try {
         initialData = JSON.parse(
@@ -161,7 +167,7 @@ export const videoInfo = async (
         initialPlayer = JSON.parse(
             res
                 .split("var ytInitialPlayerResponse = ")[1]
-                .split(";</script>")[0]
+                .split(";var meta = ")[0]
         );
     } catch (err) {
         throw new Error(`Failed to parse script tag content. (${err})`);

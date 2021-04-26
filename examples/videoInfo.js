@@ -7,7 +7,8 @@ const main = async () => {
         const info = await videoInfo(query);
         console.log(JSON.stringify(info, null, 4));
     } catch (err) {
-        console.log(`No result were found for ${query} (${err})`);
+        if (process.env.NODE_ENV !== "test") return console.log(`No result were found for ${query} (${err})`);
+        throw err;
     }
 }
 

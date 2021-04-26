@@ -1,9 +1,10 @@
+import axios, { AxiosRequestConfig } from "axios";
 import type m3u8stream from "m3u8stream";
-import { get, constants, getOptions, mergeObj } from "./utils";
+import { constants, mergeObj } from "./utils";
 import { VideoStream, VideoStreamEntity } from "./videoInfo";
 
 export interface GetFormatsOptions {
-    requestOptions?: getOptions;
+    requestOptions?: AxiosRequestConfig;
     filterBy?: VideoStreamEntity[]["filter"];
 }
 
@@ -83,7 +84,12 @@ export const getFormats = async (
     }
 
     if (formats.hlsManifestUrl) {
-        const lvstsraw = await (await get(formats.hlsManifestUrl)).text();
+        const lvstsraw: string = (
+            await axios.get<string>(formats.hlsManifestUrl, {
+                ...options.requestOptions,
+                responseType: "text",
+            })
+        ).data;
         const ifrstart = "EXT-X-STREAM-INF:";
         const lvstscont = lvstsraw
             .split("#")
@@ -125,7 +131,7 @@ export const getFormats = async (
 };
 
 export interface getReadableStreamOptions {
-    requestOptions?: getOptions;
+    requestOptions?: AxiosRequestConfig & m3u8stream.Options["requestOptions"];
 }
 
 /**
@@ -173,16 +179,21 @@ export const getReadableStream = async (
         });
     }
 
-    return get(streams.url, options.requestOptions);
+    return (
+        await axios.get<any>(streams.url, {
+            ...options.requestOptions,
+            responseType: "stream",
+        })
+    ).data;
 };
 
 const getCipherFunction = async (
     url: string,
     options: {
-        requestOptions?: getOptions;
+        requestOptions?: AxiosRequestConfig;
     } = {}
 ) => {
-    const res = await (await get(url, options.requestOptions)).text();
+    const res: string = (await axios.get(url, options.requestOptions)).data;
 
     const mfuncstart = 'a=a.split("")';
     const mfuncend = "};";

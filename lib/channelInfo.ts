@@ -1,7 +1,8 @@
-import { get, constants, getOptions, mergeObj } from "./utils";
+import axios, { AxiosRequestConfig } from "axios";
+import { constants, mergeObj } from "./utils";
 
 export interface ChannelInfoOptions {
-    requestOptions?: getOptions;
+    requestOptions?: AxiosRequestConfig;
     includeVideos?: boolean;
 }
 
@@ -102,8 +103,12 @@ export const channelInfo = async (
 
     let res: string;
     try {
-        const gres = await get(url, options.requestOptions);
-        res = await gres.text();
+        res = (
+            await axios.get<string>(url, {
+                ...options.requestOptions,
+                responseType: "text",
+            })
+        ).data;
     } catch (err) {
         throw new Error(`Failed to fetch site. (${err})`);
     }

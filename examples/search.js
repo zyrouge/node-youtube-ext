@@ -50,7 +50,8 @@ const main = async () => {
             });
         }
     } catch (err) {
-        console.log(`No result were found for ${query} (${err})`);
+        if (process.env.NODE_ENV !== "test") return console.log(`No result were found for ${query} (${err})`);
+        throw err;
     }
 }
 
