@@ -1,7 +1,3 @@
-<p align="center">
-    <img src="./media/logo.png">
-</p>
-
 # YouTube Extractor
 
 A simple [YouTube](https://youtube.com) scraper.
