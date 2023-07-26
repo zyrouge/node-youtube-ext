@@ -1,4 +1,5 @@
 import type { PassThrough } from "stream";
+import vm from "vm";
 import axios, { AxiosRequestConfig } from "axios";
 import type m3u8stream from "m3u8stream";
 import {
@@ -204,5 +205,5 @@ const getCipherFunction = async (
     const bFunc = bVarStart + bFuncBody + bVarEnd;
 
     const decoder = aFunc + "\n" + bFunc;
-    return eval(decoder) as (a: string) => string;
+    return vm.runInNewContext(decoder) as (a: string) => string;
 };
