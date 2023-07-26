@@ -116,7 +116,8 @@ export const channelInfo = async (
     let initialData: any;
     try {
         initialData = JSON.parse(
-            res.split("var ytInitialData = ")[1]?.split(";</script>")[0]
+            // TODO
+            res.split("var ytInitialData = ")[1]?.split(";</script>")[0]!
         );
     } catch (err) {
         throw new Error(`Failed to parse data from script tag. (${err})`);
@@ -132,12 +133,10 @@ export const channelInfo = async (
         description:
             initialData?.metadata?.channelMetadataRenderer?.description,
         subscribers: {
-            pretty:
-                initialData?.header?.c4TabbedHeaderRenderer?.subscriberCountText
-                    ?.simpleText,
-            text:
-                initialData?.header?.c4TabbedHeaderRenderer?.subscriberCountText
-                    ?.accessibility?.accessibilityData?.label,
+            pretty: initialData?.header?.c4TabbedHeaderRenderer
+                ?.subscriberCountText?.simpleText,
+            text: initialData?.header?.c4TabbedHeaderRenderer
+                ?.subscriberCountText?.accessibility?.accessibilityData?.label,
         },
         banner: initialData?.header?.c4TabbedHeaderRenderer?.banner?.thumbnails,
         tvBanner:
@@ -196,9 +195,8 @@ export const channelInfo = async (
                         },
                         views: {
                             pretty: x?.shortViewCountText?.simpleText,
-                            text:
-                                x?.shortViewCountText?.accessibility
-                                    ?.accessibilityData?.label,
+                            text: x?.shortViewCountText?.accessibility
+                                ?.accessibilityData?.label,
                             simpleText: x?.viewCountText?.simpleText,
                         },
                         published: {

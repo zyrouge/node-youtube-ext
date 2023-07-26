@@ -60,14 +60,16 @@ export const getFormats = async (
             );
     }
 
-    let decodeSignature: ((sig: string) => string) | null = null;
+    let decodeSignature: ((sig: string) => string) | undefined;
     for (const i in streams) {
-        let str = streams[i];
+        // TODO
+        let str = streams[i]!;
         if (formats.player?.url && str.signatureCipher) {
-            if (!decodeSignature)
+            if (!decodeSignature) {
                 decodeSignature = await getCipherFunction(formats.player.url, {
                     requestOptions: options.requestOptions,
-                });
+                })!;
+            }
 
             const cipData: any = {};
             str.signatureCipher?.split("&")?.forEach((x) => {
@@ -75,9 +77,10 @@ export const getFormats = async (
                 cipData[k] = v;
             });
 
+            // TODO
             str.url = `${decodeURIComponent(cipData.url)}&${
                 cipData.sp
-            }=${decodeSignature(decodeURIComponent(cipData.s))}`;
+            }=${decodeSignature!(decodeURIComponent(cipData.s))}`;
         }
         str.isLive = !!formats.hlsManifestUrl;
         streams[i] = str;
@@ -97,29 +100,34 @@ export const getFormats = async (
             .map((x) => x.split("\n").filter((x) => x.length));
 
         for (const lvstr of lvstscont) {
-            const ifr = lvstr[0]
+            // TODO
+            if (!lvstr.length) continue;
+            const ifr = lvstr[0]!
                 .replace(ifrstart, "")
                 .split(/,(?=([^\"]*\"[^\"]*\")*[^\"]*$)/g)
                 .filter((x) => x)
                 .map((x) => x.split("="));
 
             const res = ifr.find((x) => x[0] === "RESOLUTION");
-            const [width, height] = res
-                ? res[1]?.split("x").map((x) => +x)
+            if (!res) continue;
+            const [width, height] = res[1]
+                ? res[1].split("x").map((x) => parseInt(x))
                 : [0, 0];
 
             const fps = ifr.find((x) => x[0] === "FRAME-RATE");
             const bandwidth = ifr.find((x) => x[0] === "BANDWIDTH");
             const codecs = ifr.find((x) => x[0] === "CODECS");
 
+            // TODO
             const url = lvstr[1];
+            if (!url) continue;
             const itag = url.match(/itag\/(\d+)\//);
 
             streams.push({
-                itag: itag ? +itag[1] : 0,
+                itag: itag ? parseInt(itag[1]!) : 0,
                 mimeType: codecs ? `codes=${codecs[1]}` : "",
                 contentLength: bandwidth ? bandwidth[1] : "0",
-                fps: fps ? +fps[1] : 0,
+                fps: fps ? parseInt(fps[1]!) : 0,
                 height,
                 width,
                 url,
@@ -198,12 +206,17 @@ const getCipherFunction = async (
     const mfuncstart = 'a=a.split("")';
     const mfuncend = "};";
     const mfunccont = res?.split(mfuncstart)[1]?.split(mfuncend)[0];
+    if (!mfunccont) return;
     const mfunc = "(a) => {" + mfuncstart + mfunccont + mfuncend;
 
-    const secvarstart = "var " + mfunccont.split(".")[0]?.replace(";", "");
+    // TODO
+    const secvarstart =
+        "var " + mfunccont.split(".")[0]?.replace(";", "") + "=";
     const secvarend = "}};";
-    const secfunccont = res?.split(secvarstart)[1].split(secvarend)[0];
+    const secfunccont = res?.split(secvarstart)[1]?.split(secvarend)[0];
+    if (!secfunccont) return;
     const secfunc = secvarstart + secfunccont + secvarend;
+    console.log(secfunc);
 
     const decoder = secfunc + "\n" + mfunc;
     return eval(decoder) as (a: string) => string;

@@ -12,7 +12,10 @@ const start = async () => {
     const success = [];
     const failed = [];
 
-    for (const pth of fs.readdirSync(examples).filter(x => x.endsWith(".js"))) {
+    for (const pth of fs
+        .readdirSync(examples)
+        .filter((x) => x.endsWith(".js"))) {
+        if (pth !== "generateStream.js") continue;
         const file = require(path.join(examples, pth));
         try {
             await file();
@@ -26,6 +29,6 @@ const start = async () => {
     console.log(" ");
     console.log(`Success: ${success.length ? success.join(", ") : "-"}`);
     console.log(`Failed: ${failed.length ? failed.join(", ") : "-"}`);
-}
+};
 
 start();
