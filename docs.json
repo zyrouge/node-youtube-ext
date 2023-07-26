@@ -14,139 +14,6 @@
 			"children": [
 				{
 					"id": 3,
-					"name": "getProps",
-					"kind": 256,
-					"kindString": "Interface",
-					"flags": {},
-					"children": [
-						{
-							"id": 6,
-							"name": "json",
-							"kind": 2048,
-							"kindString": "Method",
-							"flags": {},
-							"signatures": [
-								{
-									"id": 7,
-									"name": "json",
-									"kind": 4096,
-									"kindString": "Call signature",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "intrinsic",
-												"name": "any"
-											}
-										],
-										"name": "Promise"
-									}
-								}
-							]
-						},
-						{
-							"id": 4,
-							"name": "text",
-							"kind": 2048,
-							"kindString": "Method",
-							"flags": {},
-							"signatures": [
-								{
-									"id": 5,
-									"name": "text",
-									"kind": 4096,
-									"kindString": "Call signature",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "intrinsic",
-												"name": "string"
-											}
-										],
-										"name": "Promise"
-									}
-								}
-							]
-						}
-					],
-					"groups": [
-						{
-							"title": "Methods",
-							"kind": 2048,
-							"children": [
-								6,
-								4
-							]
-						}
-					],
-					"sources": [
-						{
-							"fileName": "lib/utils.ts",
-							"line": 4,
-							"character": 25
-						}
-					]
-				},
-				{
-					"id": 9,
-					"name": "getData",
-					"kind": 4194304,
-					"kindString": "Type alias",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "lib/utils.ts",
-							"line": 10,
-							"character": 19
-						}
-					],
-					"type": {
-						"type": "intersection",
-						"types": [
-							{
-								"type": "reference",
-								"name": "http.IncomingMessage"
-							},
-							{
-								"type": "reference",
-								"id": 3,
-								"name": "getProps"
-							}
-						]
-					}
-				},
-				{
-					"id": 8,
-					"name": "getOptions",
-					"kind": 4194304,
-					"kindString": "Type alias",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "lib/utils.ts",
-							"line": 9,
-							"character": 22
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "reference",
-								"name": "http.RequestOptions"
-							},
-							{
-								"type": "reference",
-								"name": "https.RequestOptions"
-							}
-						]
-					}
-				},
-				{
-					"id": 14,
 					"name": "constants",
 					"kind": 32,
 					"kindString": "Variable",
@@ -156,21 +23,21 @@
 					"sources": [
 						{
 							"fileName": "lib/utils.ts",
-							"line": 51,
+							"line": 1,
 							"character": 22
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 15,
+							"id": 4,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 55,
+									"id": 44,
 									"name": "err",
 									"kind": 1024,
 									"kindString": "Property",
@@ -178,14 +45,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 56,
+											"id": 45,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 57,
+													"id": 46,
 													"name": "type",
 													"kind": 1024,
 													"kindString": "Property",
@@ -193,21 +60,21 @@
 													"type": {
 														"type": "reflection",
 														"declaration": {
-															"id": 58,
+															"id": 47,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"signatures": [
 																{
-																	"id": 59,
+																	"id": 48,
 																	"name": "__type",
 																	"kind": 4096,
 																	"kindString": "Call signature",
 																	"flags": {},
 																	"parameters": [
 																		{
-																			"id": 60,
+																			"id": 49,
 																			"name": "key",
 																			"kind": 32768,
 																			"kindString": "Parameter",
@@ -218,7 +85,7 @@
 																			}
 																		},
 																		{
-																			"id": 61,
+																			"id": 50,
 																			"name": "expected",
 																			"kind": 32768,
 																			"kindString": "Parameter",
@@ -229,7 +96,7 @@
 																			}
 																		},
 																		{
-																			"id": 62,
+																			"id": 51,
 																			"name": "received",
 																			"kind": 32768,
 																			"kindString": "Parameter",
@@ -256,7 +123,7 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														57
+														46
 													]
 												}
 											]
@@ -265,7 +132,7 @@
 									"defaultValue": "..."
 								},
 								{
-									"id": 52,
+									"id": 41,
 									"name": "headers",
 									"kind": 1024,
 									"kindString": "Property",
@@ -273,14 +140,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 53,
+											"id": 42,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 54,
+													"id": 43,
 													"name": "userAgent",
 													"kind": 1024,
 													"kindString": "Property",
@@ -297,7 +164,7 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														54
+														43
 													]
 												}
 											]
@@ -306,7 +173,7 @@
 									"defaultValue": "..."
 								},
 								{
-									"id": 16,
+									"id": 5,
 									"name": "urls",
 									"kind": 1024,
 									"kindString": "Property",
@@ -314,14 +181,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 17,
+											"id": 6,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 18,
+													"id": 7,
 													"name": "base",
 													"kind": 1024,
 													"kindString": "Property",
@@ -333,7 +200,7 @@
 													"defaultValue": "\"https://www.youtube.com\""
 												},
 												{
-													"id": 46,
+													"id": 35,
 													"name": "channel",
 													"kind": 1024,
 													"kindString": "Property",
@@ -341,14 +208,14 @@
 													"type": {
 														"type": "reflection",
 														"declaration": {
-															"id": 47,
+															"id": 36,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"children": [
 																{
-																	"id": 48,
+																	"id": 37,
 																	"name": "base",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -356,21 +223,21 @@
 																	"type": {
 																		"type": "reflection",
 																		"declaration": {
-																			"id": 49,
+																			"id": 38,
 																			"name": "__type",
 																			"kind": 65536,
 																			"kindString": "Type literal",
 																			"flags": {},
 																			"signatures": [
 																				{
-																					"id": 50,
+																					"id": 39,
 																					"name": "__type",
 																					"kind": 4096,
 																					"kindString": "Call signature",
 																					"flags": {},
 																					"parameters": [
 																						{
-																							"id": 51,
+																							"id": 40,
 																							"name": "id",
 																							"kind": 32768,
 																							"kindString": "Parameter",
@@ -397,7 +264,7 @@
 																	"title": "Properties",
 																	"kind": 1024,
 																	"children": [
-																		48
+																		37
 																	]
 																}
 															]
@@ -406,7 +273,7 @@
 													"defaultValue": "..."
 												},
 												{
-													"id": 38,
+													"id": 27,
 													"name": "playlist",
 													"kind": 1024,
 													"kindString": "Property",
@@ -414,14 +281,14 @@
 													"type": {
 														"type": "reflection",
 														"declaration": {
-															"id": 39,
+															"id": 28,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"children": [
 																{
-																	"id": 40,
+																	"id": 29,
 																	"name": "base",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -429,21 +296,21 @@
 																	"type": {
 																		"type": "reflection",
 																		"declaration": {
-																			"id": 41,
+																			"id": 30,
 																			"name": "__type",
 																			"kind": 65536,
 																			"kindString": "Type literal",
 																			"flags": {},
 																			"signatures": [
 																				{
-																					"id": 42,
+																					"id": 31,
 																					"name": "__type",
 																					"kind": 4096,
 																					"kindString": "Call signature",
 																					"flags": {},
 																					"parameters": [
 																						{
-																							"id": 43,
+																							"id": 32,
 																							"name": "id",
 																							"kind": 32768,
 																							"kindString": "Parameter",
@@ -465,7 +332,7 @@
 																	"defaultValue": "..."
 																},
 																{
-																	"id": 44,
+																	"id": 33,
 																	"name": "baseUrlRegex",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -477,7 +344,7 @@
 																	"defaultValue": "..."
 																},
 																{
-																	"id": 45,
+																	"id": 34,
 																	"name": "getIdRegex",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -494,9 +361,9 @@
 																	"title": "Properties",
 																	"kind": 1024,
 																	"children": [
-																		40,
-																		44,
-																		45
+																		29,
+																		33,
+																		34
 																	]
 																}
 															]
@@ -505,7 +372,7 @@
 													"defaultValue": "..."
 												},
 												{
-													"id": 19,
+													"id": 8,
 													"name": "search",
 													"kind": 1024,
 													"kindString": "Property",
@@ -513,14 +380,14 @@
 													"type": {
 														"type": "reflection",
 														"declaration": {
-															"id": 20,
+															"id": 9,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"children": [
 																{
-																	"id": 21,
+																	"id": 10,
 																	"name": "base",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -528,21 +395,21 @@
 																	"type": {
 																		"type": "reflection",
 																		"declaration": {
-																			"id": 22,
+																			"id": 11,
 																			"name": "__type",
 																			"kind": 65536,
 																			"kindString": "Type literal",
 																			"flags": {},
 																			"signatures": [
 																				{
-																					"id": 23,
+																					"id": 12,
 																					"name": "__type",
 																					"kind": 4096,
 																					"kindString": "Call signature",
 																					"flags": {},
 																					"parameters": [
 																						{
-																							"id": 24,
+																							"id": 13,
 																							"name": "terms",
 																							"kind": 32768,
 																							"kindString": "Parameter",
@@ -564,7 +431,7 @@
 																	"defaultValue": "..."
 																},
 																{
-																	"id": 25,
+																	"id": 14,
 																	"name": "filters",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -572,14 +439,14 @@
 																	"type": {
 																		"type": "reflection",
 																		"declaration": {
-																			"id": 26,
+																			"id": 15,
 																			"name": "__type",
 																			"kind": 65536,
 																			"kindString": "Type literal",
 																			"flags": {},
 																			"children": [
 																				{
-																					"id": 28,
+																					"id": 17,
 																					"name": "channel",
 																					"kind": 1024,
 																					"kindString": "Property",
@@ -591,7 +458,7 @@
 																					"defaultValue": "\"&sp=EgIQAg%253D%253D\""
 																				},
 																				{
-																					"id": 30,
+																					"id": 19,
 																					"name": "film",
 																					"kind": 1024,
 																					"kindString": "Property",
@@ -603,7 +470,7 @@
 																					"defaultValue": "\"&sp=EgIQBA%253D%253D\""
 																				},
 																				{
-																					"id": 29,
+																					"id": 18,
 																					"name": "playlist",
 																					"kind": 1024,
 																					"kindString": "Property",
@@ -615,7 +482,7 @@
 																					"defaultValue": "\"&sp=EgIQAw%253D%253D\""
 																				},
 																				{
-																					"id": 31,
+																					"id": 20,
 																					"name": "programme",
 																					"kind": 1024,
 																					"kindString": "Property",
@@ -627,7 +494,7 @@
 																					"defaultValue": "\"&sp=EgIQBQ%253D%253D\""
 																				},
 																				{
-																					"id": 27,
+																					"id": 16,
 																					"name": "video",
 																					"kind": 1024,
 																					"kindString": "Property",
@@ -644,11 +511,11 @@
 																					"title": "Properties",
 																					"kind": 1024,
 																					"children": [
-																						28,
-																						30,
-																						29,
-																						31,
-																						27
+																						17,
+																						19,
+																						18,
+																						20,
+																						16
 																					]
 																				}
 																			]
@@ -662,8 +529,8 @@
 																	"title": "Properties",
 																	"kind": 1024,
 																	"children": [
-																		21,
-																		25
+																		10,
+																		14
 																	]
 																}
 															]
@@ -672,7 +539,7 @@
 													"defaultValue": "..."
 												},
 												{
-													"id": 32,
+													"id": 21,
 													"name": "video",
 													"kind": 1024,
 													"kindString": "Property",
@@ -680,14 +547,14 @@
 													"type": {
 														"type": "reflection",
 														"declaration": {
-															"id": 33,
+															"id": 22,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"children": [
 																{
-																	"id": 34,
+																	"id": 23,
 																	"name": "base",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -695,21 +562,21 @@
 																	"type": {
 																		"type": "reflection",
 																		"declaration": {
-																			"id": 35,
+																			"id": 24,
 																			"name": "__type",
 																			"kind": 65536,
 																			"kindString": "Type literal",
 																			"flags": {},
 																			"signatures": [
 																				{
-																					"id": 36,
+																					"id": 25,
 																					"name": "__type",
 																					"kind": 4096,
 																					"kindString": "Call signature",
 																					"flags": {},
 																					"parameters": [
 																						{
-																							"id": 37,
+																							"id": 26,
 																							"name": "id",
 																							"kind": 32768,
 																							"kindString": "Parameter",
@@ -736,7 +603,7 @@
 																	"title": "Properties",
 																	"kind": 1024,
 																	"children": [
-																		34
+																		23
 																	]
 																}
 															]
@@ -750,11 +617,11 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														18,
-														46,
-														38,
-														19,
-														32
+														7,
+														35,
+														27,
+														8,
+														21
 													]
 												}
 											]
@@ -768,9 +635,9 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										55,
-										52,
-										16
+										44,
+										41,
+										5
 									]
 								}
 							]
@@ -779,69 +646,7 @@
 					"defaultValue": "..."
 				},
 				{
-					"id": 10,
-					"name": "get",
-					"kind": 64,
-					"kindString": "Function",
-					"flags": {
-						"isConst": true
-					},
-					"sources": [
-						{
-							"fileName": "lib/utils.ts",
-							"line": 12,
-							"character": 16
-						}
-					],
-					"signatures": [
-						{
-							"id": 11,
-							"name": "get",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 12,
-									"name": "url",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "string"
-									}
-								},
-								{
-									"id": 13,
-									"name": "options",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"id": 8,
-										"name": "getOptions"
-									},
-									"defaultValue": "{}"
-								}
-							],
-							"type": {
-								"type": "reference",
-								"typeArguments": [
-									{
-										"type": "reference",
-										"id": 9,
-										"name": "getData"
-									}
-								],
-								"name": "Promise"
-							}
-						}
-					]
-				},
-				{
-					"id": 63,
+					"id": 52,
 					"name": "mergeObj",
 					"kind": 64,
 					"kindString": "Function",
@@ -851,20 +656,20 @@
 					"sources": [
 						{
 							"fileName": "lib/utils.ts",
-							"line": 104,
+							"line": 54,
 							"character": 21
 						}
 					],
 					"signatures": [
 						{
-							"id": 64,
+							"id": 53,
 							"name": "mergeObj",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"typeParameter": [
 								{
-									"id": 65,
+									"id": 54,
 									"name": "T",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -873,7 +678,7 @@
 							],
 							"parameters": [
 								{
-									"id": 66,
+									"id": 55,
 									"name": "res",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -884,7 +689,7 @@
 									}
 								},
 								{
-									"id": 67,
+									"id": 56,
 									"name": "objs",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -910,33 +715,17 @@
 			],
 			"groups": [
 				{
-					"title": "Interfaces",
-					"kind": 256,
-					"children": [
-						3
-					]
-				},
-				{
-					"title": "Type aliases",
-					"kind": 4194304,
-					"children": [
-						9,
-						8
-					]
-				},
-				{
 					"title": "Variables",
 					"kind": 32,
 					"children": [
-						14
+						3
 					]
 				},
 				{
 					"title": "Functions",
 					"kind": 64,
 					"children": [
-						10,
-						63
+						52
 					]
 				}
 			],
@@ -949,14 +738,14 @@
 			]
 		},
 		{
-			"id": 310,
+			"id": 299,
 			"name": "ChannelInfo",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 341,
+					"id": 330,
 					"name": "badges",
 					"kind": 1024,
 					"kindString": "Property",
@@ -964,7 +753,7 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 67,
+							"line": 68,
 							"character": 10
 						}
 					],
@@ -977,7 +766,7 @@
 					}
 				},
 				{
-					"id": 326,
+					"id": 315,
 					"name": "banner",
 					"kind": 1024,
 					"kindString": "Property",
@@ -985,7 +774,7 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 52,
+							"line": 53,
 							"character": 10
 						}
 					],
@@ -994,14 +783,14 @@
 						"elementType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 327,
+								"id": 316,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
 								"flags": {},
 								"children": [
 									{
-										"id": 330,
+										"id": 319,
 										"name": "height",
 										"kind": 1024,
 										"kindString": "Property",
@@ -1009,7 +798,7 @@
 										"sources": [
 											{
 												"fileName": "lib/channelInfo.ts",
-												"line": 55,
+												"line": 56,
 												"character": 14
 											}
 										],
@@ -1019,26 +808,8 @@
 										}
 									},
 									{
-										"id": 328,
+										"id": 317,
 										"name": "url",
-										"kind": 1024,
-										"kindString": "Property",
-										"flags": {},
-										"sources": [
-											{
-												"fileName": "lib/channelInfo.ts",
-												"line": 53,
-												"character": 11
-											}
-										],
-										"type": {
-											"type": "intrinsic",
-											"name": "string"
-										}
-									},
-									{
-										"id": 329,
-										"name": "width",
 										"kind": 1024,
 										"kindString": "Property",
 										"flags": {},
@@ -1046,136 +817,6 @@
 											{
 												"fileName": "lib/channelInfo.ts",
 												"line": 54,
-												"character": 13
-											}
-										],
-										"type": {
-											"type": "intrinsic",
-											"name": "number"
-										}
-									}
-								],
-								"groups": [
-									{
-										"title": "Properties",
-										"kind": 1024,
-										"children": [
-											330,
-											328,
-											329
-										]
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"id": 316,
-					"name": "description",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "lib/channelInfo.ts",
-							"line": 42,
-							"character": 15
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 345,
-					"name": "familySafe",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "lib/channelInfo.ts",
-							"line": 71,
-							"character": 14
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
-				},
-				{
-					"id": 312,
-					"name": "id",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "lib/channelInfo.ts",
-							"line": 38,
-							"character": 6
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 336,
-					"name": "mobileBanner",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "lib/channelInfo.ts",
-							"line": 62,
-							"character": 16
-						}
-					],
-					"type": {
-						"type": "array",
-						"elementType": {
-							"type": "reflection",
-							"declaration": {
-								"id": 337,
-								"name": "__type",
-								"kind": 65536,
-								"kindString": "Type literal",
-								"flags": {},
-								"children": [
-									{
-										"id": 340,
-										"name": "height",
-										"kind": 1024,
-										"kindString": "Property",
-										"flags": {},
-										"sources": [
-											{
-												"fileName": "lib/channelInfo.ts",
-												"line": 65,
-												"character": 14
-											}
-										],
-										"type": {
-											"type": "intrinsic",
-											"name": "number"
-										}
-									},
-									{
-										"id": 338,
-										"name": "url",
-										"kind": 1024,
-										"kindString": "Property",
-										"flags": {},
-										"sources": [
-											{
-												"fileName": "lib/channelInfo.ts",
-												"line": 63,
 												"character": 11
 											}
 										],
@@ -1185,7 +826,7 @@
 										}
 									},
 									{
-										"id": 339,
+										"id": 318,
 										"name": "width",
 										"kind": 1024,
 										"kindString": "Property",
@@ -1193,7 +834,7 @@
 										"sources": [
 											{
 												"fileName": "lib/channelInfo.ts",
-												"line": 64,
+												"line": 55,
 												"character": 13
 											}
 										],
@@ -1208,9 +849,9 @@
 										"title": "Properties",
 										"kind": 1024,
 										"children": [
-											340,
-											338,
-											339
+											319,
+											317,
+											318
 										]
 									}
 								]
@@ -1219,44 +860,8 @@
 					}
 				},
 				{
-					"id": 311,
-					"name": "name",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "lib/channelInfo.ts",
-							"line": 37,
-							"character": 8
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 314,
-					"name": "rssUrl",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "lib/channelInfo.ts",
-							"line": 40,
-							"character": 10
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 317,
-					"name": "subscribers",
+					"id": 305,
+					"name": "description",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
@@ -1268,16 +873,200 @@
 						}
 					],
 					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 334,
+					"name": "familySafe",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/channelInfo.ts",
+							"line": 72,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 301,
+					"name": "id",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/channelInfo.ts",
+							"line": 39,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 325,
+					"name": "mobileBanner",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/channelInfo.ts",
+							"line": 63,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 326,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"children": [
+									{
+										"id": 329,
+										"name": "height",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "lib/channelInfo.ts",
+												"line": 66,
+												"character": 14
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									},
+									{
+										"id": 327,
+										"name": "url",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "lib/channelInfo.ts",
+												"line": 64,
+												"character": 11
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									},
+									{
+										"id": 328,
+										"name": "width",
+										"kind": 1024,
+										"kindString": "Property",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "lib/channelInfo.ts",
+												"line": 65,
+												"character": 13
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								],
+								"groups": [
+									{
+										"title": "Properties",
+										"kind": 1024,
+										"children": [
+											329,
+											327,
+											328
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"id": 300,
+					"name": "name",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/channelInfo.ts",
+							"line": 38,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 303,
+					"name": "rssUrl",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/channelInfo.ts",
+							"line": 41,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 306,
+					"name": "subscribers",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/channelInfo.ts",
+							"line": 44,
+							"character": 15
+						}
+					],
+					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 318,
+							"id": 307,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 319,
+									"id": 308,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1285,7 +1074,7 @@
 									"sources": [
 										{
 											"fileName": "lib/channelInfo.ts",
-											"line": 44,
+											"line": 45,
 											"character": 14
 										}
 									],
@@ -1295,7 +1084,7 @@
 									}
 								},
 								{
-									"id": 320,
+									"id": 309,
 									"name": "text",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1303,7 +1092,7 @@
 									"sources": [
 										{
 											"fileName": "lib/channelInfo.ts",
-											"line": 45,
+											"line": 46,
 											"character": 12
 										}
 									],
@@ -1318,8 +1107,8 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										319,
-										320
+										308,
+										309
 									]
 								}
 							]
@@ -1327,7 +1116,7 @@
 					}
 				},
 				{
-					"id": 342,
+					"id": 331,
 					"name": "tags",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1335,7 +1124,7 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 68,
+							"line": 69,
 							"character": 8
 						}
 					],
@@ -1348,7 +1137,7 @@
 					}
 				},
 				{
-					"id": 321,
+					"id": 310,
 					"name": "thumbnails",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1356,7 +1145,7 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 47,
+							"line": 48,
 							"character": 14
 						}
 					],
@@ -1365,14 +1154,14 @@
 						"elementType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 322,
+								"id": 311,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
 								"flags": {},
 								"children": [
 									{
-										"id": 325,
+										"id": 314,
 										"name": "height",
 										"kind": 1024,
 										"kindString": "Property",
@@ -1380,7 +1169,7 @@
 										"sources": [
 											{
 												"fileName": "lib/channelInfo.ts",
-												"line": 50,
+												"line": 51,
 												"character": 14
 											}
 										],
@@ -1390,7 +1179,7 @@
 										}
 									},
 									{
-										"id": 323,
+										"id": 312,
 										"name": "url",
 										"kind": 1024,
 										"kindString": "Property",
@@ -1398,7 +1187,7 @@
 										"sources": [
 											{
 												"fileName": "lib/channelInfo.ts",
-												"line": 48,
+												"line": 49,
 												"character": 11
 											}
 										],
@@ -1408,7 +1197,7 @@
 										}
 									},
 									{
-										"id": 324,
+										"id": 313,
 										"name": "width",
 										"kind": 1024,
 										"kindString": "Property",
@@ -1416,7 +1205,7 @@
 										"sources": [
 											{
 												"fileName": "lib/channelInfo.ts",
-												"line": 49,
+												"line": 50,
 												"character": 13
 											}
 										],
@@ -1431,9 +1220,9 @@
 										"title": "Properties",
 										"kind": 1024,
 										"children": [
-											325,
-											323,
-											324
+											314,
+											312,
+											313
 										]
 									}
 								]
@@ -1442,7 +1231,7 @@
 					}
 				},
 				{
-					"id": 331,
+					"id": 320,
 					"name": "tvBanner",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1450,7 +1239,7 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 57,
+							"line": 58,
 							"character": 12
 						}
 					],
@@ -1459,14 +1248,14 @@
 						"elementType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 332,
+								"id": 321,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
 								"flags": {},
 								"children": [
 									{
-										"id": 335,
+										"id": 324,
 										"name": "height",
 										"kind": 1024,
 										"kindString": "Property",
@@ -1474,7 +1263,7 @@
 										"sources": [
 											{
 												"fileName": "lib/channelInfo.ts",
-												"line": 60,
+												"line": 61,
 												"character": 14
 											}
 										],
@@ -1484,7 +1273,7 @@
 										}
 									},
 									{
-										"id": 333,
+										"id": 322,
 										"name": "url",
 										"kind": 1024,
 										"kindString": "Property",
@@ -1492,7 +1281,7 @@
 										"sources": [
 											{
 												"fileName": "lib/channelInfo.ts",
-												"line": 58,
+												"line": 59,
 												"character": 11
 											}
 										],
@@ -1502,7 +1291,7 @@
 										}
 									},
 									{
-										"id": 334,
+										"id": 323,
 										"name": "width",
 										"kind": 1024,
 										"kindString": "Property",
@@ -1510,7 +1299,7 @@
 										"sources": [
 											{
 												"fileName": "lib/channelInfo.ts",
-												"line": 59,
+												"line": 60,
 												"character": 13
 											}
 										],
@@ -1525,9 +1314,9 @@
 										"title": "Properties",
 										"kind": 1024,
 										"children": [
-											335,
-											333,
-											334
+											324,
+											322,
+											323
 										]
 									}
 								]
@@ -1536,7 +1325,7 @@
 					}
 				},
 				{
-					"id": 344,
+					"id": 333,
 					"name": "unlisted",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1544,7 +1333,7 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 70,
+							"line": 71,
 							"character": 12
 						}
 					],
@@ -1554,7 +1343,7 @@
 					}
 				},
 				{
-					"id": 313,
+					"id": 302,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1562,7 +1351,7 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 39,
+							"line": 40,
 							"character": 7
 						}
 					],
@@ -1572,7 +1361,7 @@
 					}
 				},
 				{
-					"id": 315,
+					"id": 304,
 					"name": "vanityUrl",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1580,7 +1369,7 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 41,
+							"line": 42,
 							"character": 13
 						}
 					],
@@ -1590,7 +1379,7 @@
 					}
 				},
 				{
-					"id": 343,
+					"id": 332,
 					"name": "videos",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1598,7 +1387,7 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 69,
+							"line": 70,
 							"character": 10
 						}
 					],
@@ -1606,7 +1395,7 @@
 						"type": "array",
 						"elementType": {
 							"type": "reference",
-							"id": 284,
+							"id": 273,
 							"name": "ChannelVideo"
 						}
 					}
@@ -1617,42 +1406,42 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						341,
-						326,
-						316,
-						345,
-						312,
-						336,
-						311,
-						314,
-						317,
-						342,
-						321,
-						331,
-						344,
-						313,
+						330,
 						315,
-						343
+						305,
+						334,
+						301,
+						325,
+						300,
+						303,
+						306,
+						331,
+						310,
+						320,
+						333,
+						302,
+						304,
+						332
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "lib/channelInfo.ts",
-					"line": 36,
+					"line": 37,
 					"character": 28
 				}
 			]
 		},
 		{
-			"id": 281,
+			"id": 270,
 			"name": "ChannelInfoOptions",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 283,
+					"id": 272,
 					"name": "includeVideos",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1662,7 +1451,7 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 5,
+							"line": 6,
 							"character": 17
 						}
 					],
@@ -1672,7 +1461,7 @@
 					}
 				},
 				{
-					"id": 282,
+					"id": 271,
 					"name": "requestOptions",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1682,14 +1471,13 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 4,
+							"line": 5,
 							"character": 18
 						}
 					],
 					"type": {
 						"type": "reference",
-						"id": 8,
-						"name": "getOptions"
+						"name": "AxiosRequestConfig"
 					}
 				}
 			],
@@ -1698,28 +1486,28 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						283,
-						282
+						272,
+						271
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "lib/channelInfo.ts",
-					"line": 3,
+					"line": 4,
 					"character": 35
 				}
 			]
 		},
 		{
-			"id": 284,
+			"id": 273,
 			"name": "ChannelVideo",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 288,
+					"id": 277,
 					"name": "channel",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1727,21 +1515,21 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 12,
+							"line": 13,
 							"character": 11
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 289,
+							"id": 278,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 291,
+									"id": 280,
 									"name": "id",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1749,7 +1537,7 @@
 									"sources": [
 										{
 											"fileName": "lib/channelInfo.ts",
-											"line": 14,
+											"line": 15,
 											"character": 10
 										}
 									],
@@ -1759,7 +1547,7 @@
 									}
 								},
 								{
-									"id": 290,
+									"id": 279,
 									"name": "name",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1767,7 +1555,7 @@
 									"sources": [
 										{
 											"fileName": "lib/channelInfo.ts",
-											"line": 13,
+											"line": 14,
 											"character": 12
 										}
 									],
@@ -1777,7 +1565,7 @@
 									}
 								},
 								{
-									"id": 292,
+									"id": 281,
 									"name": "url",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1785,7 +1573,7 @@
 									"sources": [
 										{
 											"fileName": "lib/channelInfo.ts",
-											"line": 15,
+											"line": 16,
 											"character": 11
 										}
 									],
@@ -1800,9 +1588,9 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										291,
-										290,
-										292
+										280,
+										279,
+										281
 									]
 								}
 							]
@@ -1810,7 +1598,7 @@
 					}
 				},
 				{
-					"id": 298,
+					"id": 287,
 					"name": "duration",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1818,21 +1606,21 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 22,
+							"line": 23,
 							"character": 12
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 299,
+							"id": 288,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 300,
+									"id": 289,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1840,7 +1628,7 @@
 									"sources": [
 										{
 											"fileName": "lib/channelInfo.ts",
-											"line": 23,
+											"line": 24,
 											"character": 14
 										}
 									],
@@ -1850,7 +1638,7 @@
 									}
 								},
 								{
-									"id": 301,
+									"id": 290,
 									"name": "text",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1858,7 +1646,7 @@
 									"sources": [
 										{
 											"fileName": "lib/channelInfo.ts",
-											"line": 24,
+											"line": 25,
 											"character": 12
 										}
 									],
@@ -1873,8 +1661,8 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										300,
-										301
+										289,
+										290
 									]
 								}
 							]
@@ -1882,7 +1670,7 @@
 					}
 				},
 				{
-					"id": 286,
+					"id": 275,
 					"name": "id",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1890,7 +1678,7 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 10,
+							"line": 11,
 							"character": 6
 						}
 					],
@@ -1900,7 +1688,7 @@
 					}
 				},
 				{
-					"id": 307,
+					"id": 296,
 					"name": "published",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1908,21 +1696,21 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 31,
+							"line": 32,
 							"character": 13
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 308,
+							"id": 297,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 309,
+									"id": 298,
 									"name": "text",
 									"kind": 1024,
 									"kindString": "Property",
@@ -1930,7 +1718,7 @@
 									"sources": [
 										{
 											"fileName": "lib/channelInfo.ts",
-											"line": 32,
+											"line": 33,
 											"character": 12
 										}
 									],
@@ -1945,7 +1733,7 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										309
+										298
 									]
 								}
 							]
@@ -1953,7 +1741,7 @@
 					}
 				},
 				{
-					"id": 293,
+					"id": 282,
 					"name": "thumbnails",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1961,7 +1749,7 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 17,
+							"line": 18,
 							"character": 14
 						}
 					],
@@ -1970,14 +1758,14 @@
 						"elementType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 294,
+								"id": 283,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
 								"flags": {},
 								"children": [
 									{
-										"id": 297,
+										"id": 286,
 										"name": "height",
 										"kind": 1024,
 										"kindString": "Property",
@@ -1985,7 +1773,7 @@
 										"sources": [
 											{
 												"fileName": "lib/channelInfo.ts",
-												"line": 20,
+												"line": 21,
 												"character": 14
 											}
 										],
@@ -1995,7 +1783,7 @@
 										}
 									},
 									{
-										"id": 295,
+										"id": 284,
 										"name": "url",
 										"kind": 1024,
 										"kindString": "Property",
@@ -2003,7 +1791,7 @@
 										"sources": [
 											{
 												"fileName": "lib/channelInfo.ts",
-												"line": 18,
+												"line": 19,
 												"character": 11
 											}
 										],
@@ -2013,7 +1801,7 @@
 										}
 									},
 									{
-										"id": 296,
+										"id": 285,
 										"name": "width",
 										"kind": 1024,
 										"kindString": "Property",
@@ -2021,7 +1809,7 @@
 										"sources": [
 											{
 												"fileName": "lib/channelInfo.ts",
-												"line": 19,
+												"line": 20,
 												"character": 13
 											}
 										],
@@ -2036,9 +1824,9 @@
 										"title": "Properties",
 										"kind": 1024,
 										"children": [
-											297,
-											295,
-											296
+											286,
+											284,
+											285
 										]
 									}
 								]
@@ -2047,7 +1835,7 @@
 					}
 				},
 				{
-					"id": 285,
+					"id": 274,
 					"name": "title",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2055,7 +1843,7 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 9,
+							"line": 10,
 							"character": 9
 						}
 					],
@@ -2065,7 +1853,7 @@
 					}
 				},
 				{
-					"id": 287,
+					"id": 276,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2073,7 +1861,7 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 11,
+							"line": 12,
 							"character": 7
 						}
 					],
@@ -2083,7 +1871,7 @@
 					}
 				},
 				{
-					"id": 302,
+					"id": 291,
 					"name": "views",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2091,21 +1879,21 @@
 					"sources": [
 						{
 							"fileName": "lib/channelInfo.ts",
-							"line": 26,
+							"line": 27,
 							"character": 9
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 303,
+							"id": 292,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 305,
+									"id": 294,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2113,7 +1901,7 @@
 									"sources": [
 										{
 											"fileName": "lib/channelInfo.ts",
-											"line": 28,
+											"line": 29,
 											"character": 14
 										}
 									],
@@ -2123,7 +1911,7 @@
 									}
 								},
 								{
-									"id": 306,
+									"id": 295,
 									"name": "simpleText",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2131,7 +1919,7 @@
 									"sources": [
 										{
 											"fileName": "lib/channelInfo.ts",
-											"line": 29,
+											"line": 30,
 											"character": 18
 										}
 									],
@@ -2141,7 +1929,7 @@
 									}
 								},
 								{
-									"id": 304,
+									"id": 293,
 									"name": "text",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2149,7 +1937,7 @@
 									"sources": [
 										{
 											"fileName": "lib/channelInfo.ts",
-											"line": 27,
+											"line": 28,
 											"character": 12
 										}
 									],
@@ -2164,9 +1952,9 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										305,
-										306,
-										304
+										294,
+										295,
+										293
 									]
 								}
 							]
@@ -2179,34 +1967,34 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						288,
-						298,
-						286,
-						307,
-						293,
-						285,
+						277,
 						287,
-						302
+						275,
+						296,
+						282,
+						274,
+						276,
+						291
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "lib/channelInfo.ts",
-					"line": 8,
+					"line": 9,
 					"character": 29
 				}
 			]
 		},
 		{
-			"id": 350,
+			"id": 339,
 			"name": "GetFormatsOptions",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 352,
+					"id": 341,
 					"name": "filterBy",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2216,21 +2004,21 @@
 					"sources": [
 						{
 							"fileName": "lib/generateStream.ts",
-							"line": 7,
+							"line": 8,
 							"character": 12
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 353,
+							"id": 342,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 354,
+									"id": 343,
 									"name": "__type",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -2240,21 +2028,21 @@
 									},
 									"typeParameter": [
 										{
-											"id": 355,
+											"id": 344,
 											"name": "S",
 											"kind": 131072,
 											"kindString": "Type parameter",
 											"flags": {},
 											"type": {
 												"type": "reference",
-												"id": 134,
+												"id": 123,
 												"name": "VideoStreamEntity"
 											}
 										}
 									],
 									"parameters": [
 										{
-											"id": 356,
+											"id": 345,
 											"name": "predicate",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -2265,33 +2053,33 @@
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 357,
+													"id": 346,
 													"name": "__type",
 													"kind": 65536,
 													"kindString": "Type literal",
 													"flags": {},
 													"signatures": [
 														{
-															"id": 358,
+															"id": 347,
 															"name": "__type",
 															"kind": 4096,
 															"kindString": "Call signature",
 															"flags": {},
 															"parameters": [
 																{
-																	"id": 359,
+																	"id": 348,
 																	"name": "value",
 																	"kind": 32768,
 																	"kindString": "Parameter",
 																	"flags": {},
 																	"type": {
 																		"type": "reference",
-																		"id": 134,
+																		"id": 123,
 																		"name": "VideoStreamEntity"
 																	}
 																},
 																{
-																	"id": 360,
+																	"id": 349,
 																	"name": "index",
 																	"kind": 32768,
 																	"kindString": "Parameter",
@@ -2302,7 +2090,7 @@
 																	}
 																},
 																{
-																	"id": 361,
+																	"id": 350,
 																	"name": "array",
 																	"kind": 32768,
 																	"kindString": "Parameter",
@@ -2311,7 +2099,7 @@
 																		"type": "array",
 																		"elementType": {
 																			"type": "reference",
-																			"id": 134,
+																			"id": 123,
 																			"name": "VideoStreamEntity"
 																		}
 																	}
@@ -2332,7 +2120,7 @@
 											}
 										},
 										{
-											"id": 362,
+											"id": 351,
 											"name": "thisArg",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -2357,7 +2145,7 @@
 									}
 								},
 								{
-									"id": 363,
+									"id": 352,
 									"name": "__type",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -2367,7 +2155,7 @@
 									},
 									"parameters": [
 										{
-											"id": 364,
+											"id": 353,
 											"name": "predicate",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -2378,33 +2166,33 @@
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 365,
+													"id": 354,
 													"name": "__type",
 													"kind": 65536,
 													"kindString": "Type literal",
 													"flags": {},
 													"signatures": [
 														{
-															"id": 366,
+															"id": 355,
 															"name": "__type",
 															"kind": 4096,
 															"kindString": "Call signature",
 															"flags": {},
 															"parameters": [
 																{
-																	"id": 367,
+																	"id": 356,
 																	"name": "value",
 																	"kind": 32768,
 																	"kindString": "Parameter",
 																	"flags": {},
 																	"type": {
 																		"type": "reference",
-																		"id": 134,
+																		"id": 123,
 																		"name": "VideoStreamEntity"
 																	}
 																},
 																{
-																	"id": 368,
+																	"id": 357,
 																	"name": "index",
 																	"kind": 32768,
 																	"kindString": "Parameter",
@@ -2415,7 +2203,7 @@
 																	}
 																},
 																{
-																	"id": 369,
+																	"id": 358,
 																	"name": "array",
 																	"kind": 32768,
 																	"kindString": "Parameter",
@@ -2424,7 +2212,7 @@
 																		"type": "array",
 																		"elementType": {
 																			"type": "reference",
-																			"id": 134,
+																			"id": 123,
 																			"name": "VideoStreamEntity"
 																		}
 																	}
@@ -2440,7 +2228,7 @@
 											}
 										},
 										{
-											"id": 370,
+											"id": 359,
 											"name": "thisArg",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -2460,7 +2248,7 @@
 										"type": "array",
 										"elementType": {
 											"type": "reference",
-											"id": 134,
+											"id": 123,
 											"name": "VideoStreamEntity"
 										}
 									}
@@ -2470,7 +2258,7 @@
 					}
 				},
 				{
-					"id": 351,
+					"id": 340,
 					"name": "requestOptions",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2480,14 +2268,13 @@
 					"sources": [
 						{
 							"fileName": "lib/generateStream.ts",
-							"line": 6,
+							"line": 7,
 							"character": 18
 						}
 					],
 					"type": {
 						"type": "reference",
-						"id": 8,
-						"name": "getOptions"
+						"name": "AxiosRequestConfig"
 					}
 				}
 			],
@@ -2496,28 +2283,28 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						352,
-						351
+						341,
+						340
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "lib/generateStream.ts",
-					"line": 5,
+					"line": 6,
 					"character": 34
 				}
 			]
 		},
 		{
-			"id": 266,
+			"id": 255,
 			"name": "PlaylistInfo",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 270,
+					"id": 259,
 					"name": "description",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2525,7 +2312,7 @@
 					"sources": [
 						{
 							"fileName": "lib/playlistInfo.ts",
-							"line": 32,
+							"line": 33,
 							"character": 15
 						}
 					],
@@ -2535,7 +2322,7 @@
 					}
 				},
 				{
-					"id": 268,
+					"id": 257,
 					"name": "id",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2543,7 +2330,7 @@
 					"sources": [
 						{
 							"fileName": "lib/playlistInfo.ts",
-							"line": 30,
+							"line": 31,
 							"character": 6
 						}
 					],
@@ -2553,7 +2340,7 @@
 					}
 				},
 				{
-					"id": 272,
+					"id": 261,
 					"name": "thumbnails",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2561,7 +2348,7 @@
 					"sources": [
 						{
 							"fileName": "lib/playlistInfo.ts",
-							"line": 34,
+							"line": 35,
 							"character": 14
 						}
 					],
@@ -2570,14 +2357,14 @@
 						"elementType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 273,
+								"id": 262,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
 								"flags": {},
 								"children": [
 									{
-										"id": 276,
+										"id": 265,
 										"name": "height",
 										"kind": 1024,
 										"kindString": "Property",
@@ -2585,7 +2372,7 @@
 										"sources": [
 											{
 												"fileName": "lib/playlistInfo.ts",
-												"line": 37,
+												"line": 38,
 												"character": 14
 											}
 										],
@@ -2595,7 +2382,7 @@
 										}
 									},
 									{
-										"id": 274,
+										"id": 263,
 										"name": "url",
 										"kind": 1024,
 										"kindString": "Property",
@@ -2603,7 +2390,7 @@
 										"sources": [
 											{
 												"fileName": "lib/playlistInfo.ts",
-												"line": 35,
+												"line": 36,
 												"character": 11
 											}
 										],
@@ -2613,7 +2400,7 @@
 										}
 									},
 									{
-										"id": 275,
+										"id": 264,
 										"name": "width",
 										"kind": 1024,
 										"kindString": "Property",
@@ -2621,7 +2408,7 @@
 										"sources": [
 											{
 												"fileName": "lib/playlistInfo.ts",
-												"line": 36,
+												"line": 37,
 												"character": 13
 											}
 										],
@@ -2636,9 +2423,9 @@
 										"title": "Properties",
 										"kind": 1024,
 										"children": [
-											276,
-											274,
-											275
+											265,
+											263,
+											264
 										]
 									}
 								]
@@ -2647,7 +2434,7 @@
 					}
 				},
 				{
-					"id": 267,
+					"id": 256,
 					"name": "title",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2655,7 +2442,7 @@
 					"sources": [
 						{
 							"fileName": "lib/playlistInfo.ts",
-							"line": 29,
+							"line": 30,
 							"character": 9
 						}
 					],
@@ -2665,7 +2452,7 @@
 					}
 				},
 				{
-					"id": 269,
+					"id": 258,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2673,7 +2460,7 @@
 					"sources": [
 						{
 							"fileName": "lib/playlistInfo.ts",
-							"line": 31,
+							"line": 32,
 							"character": 7
 						}
 					],
@@ -2683,7 +2470,7 @@
 					}
 				},
 				{
-					"id": 271,
+					"id": 260,
 					"name": "videos",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2691,7 +2478,7 @@
 					"sources": [
 						{
 							"fileName": "lib/playlistInfo.ts",
-							"line": 33,
+							"line": 34,
 							"character": 10
 						}
 					],
@@ -2699,7 +2486,7 @@
 						"type": "array",
 						"elementType": {
 							"type": "reference",
-							"id": 247,
+							"id": 236,
 							"name": "PlaylistVideo"
 						}
 					}
@@ -2710,32 +2497,32 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						270,
-						268,
-						272,
-						267,
-						269,
-						271
+						259,
+						257,
+						261,
+						256,
+						258,
+						260
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "lib/playlistInfo.ts",
-					"line": 28,
+					"line": 29,
 					"character": 29
 				}
 			]
 		},
 		{
-			"id": 245,
+			"id": 234,
 			"name": "PlaylistInfoOptions",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 246,
+					"id": 235,
 					"name": "requestOptions",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2745,14 +2532,13 @@
 					"sources": [
 						{
 							"fileName": "lib/playlistInfo.ts",
-							"line": 4,
+							"line": 5,
 							"character": 18
 						}
 					],
 					"type": {
 						"type": "reference",
-						"id": 8,
-						"name": "getOptions"
+						"name": "AxiosRequestConfig"
 					}
 				}
 			],
@@ -2761,27 +2547,27 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						246
+						235
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "lib/playlistInfo.ts",
-					"line": 3,
+					"line": 4,
 					"character": 36
 				}
 			]
 		},
 		{
-			"id": 247,
+			"id": 236,
 			"name": "PlaylistVideo",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 251,
+					"id": 240,
 					"name": "channel",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2789,21 +2575,21 @@
 					"sources": [
 						{
 							"fileName": "lib/playlistInfo.ts",
-							"line": 11,
+							"line": 12,
 							"character": 11
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 252,
+							"id": 241,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 254,
+									"id": 243,
 									"name": "id",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2811,7 +2597,7 @@
 									"sources": [
 										{
 											"fileName": "lib/playlistInfo.ts",
-											"line": 13,
+											"line": 14,
 											"character": 10
 										}
 									],
@@ -2821,7 +2607,7 @@
 									}
 								},
 								{
-									"id": 253,
+									"id": 242,
 									"name": "name",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2829,7 +2615,7 @@
 									"sources": [
 										{
 											"fileName": "lib/playlistInfo.ts",
-											"line": 12,
+											"line": 13,
 											"character": 12
 										}
 									],
@@ -2839,7 +2625,7 @@
 									}
 								},
 								{
-									"id": 255,
+									"id": 244,
 									"name": "url",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2847,7 +2633,7 @@
 									"sources": [
 										{
 											"fileName": "lib/playlistInfo.ts",
-											"line": 14,
+											"line": 15,
 											"character": 11
 										}
 									],
@@ -2862,9 +2648,9 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										254,
-										253,
-										255
+										243,
+										242,
+										244
 									]
 								}
 							]
@@ -2872,7 +2658,7 @@
 					}
 				},
 				{
-					"id": 261,
+					"id": 250,
 					"name": "duration",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2880,21 +2666,21 @@
 					"sources": [
 						{
 							"fileName": "lib/playlistInfo.ts",
-							"line": 21,
+							"line": 22,
 							"character": 12
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 262,
+							"id": 251,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 265,
+									"id": 254,
 									"name": "lengthSec",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2902,7 +2688,7 @@
 									"sources": [
 										{
 											"fileName": "lib/playlistInfo.ts",
-											"line": 24,
+											"line": 25,
 											"character": 17
 										}
 									],
@@ -2912,7 +2698,7 @@
 									}
 								},
 								{
-									"id": 263,
+									"id": 252,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2920,7 +2706,7 @@
 									"sources": [
 										{
 											"fileName": "lib/playlistInfo.ts",
-											"line": 22,
+											"line": 23,
 											"character": 14
 										}
 									],
@@ -2930,7 +2716,7 @@
 									}
 								},
 								{
-									"id": 264,
+									"id": 253,
 									"name": "text",
 									"kind": 1024,
 									"kindString": "Property",
@@ -2938,7 +2724,7 @@
 									"sources": [
 										{
 											"fileName": "lib/playlistInfo.ts",
-											"line": 23,
+											"line": 24,
 											"character": 12
 										}
 									],
@@ -2953,9 +2739,9 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										265,
-										263,
-										264
+										254,
+										252,
+										253
 									]
 								}
 							]
@@ -2963,7 +2749,7 @@
 					}
 				},
 				{
-					"id": 249,
+					"id": 238,
 					"name": "id",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2971,7 +2757,7 @@
 					"sources": [
 						{
 							"fileName": "lib/playlistInfo.ts",
-							"line": 9,
+							"line": 10,
 							"character": 6
 						}
 					],
@@ -2981,7 +2767,7 @@
 					}
 				},
 				{
-					"id": 256,
+					"id": 245,
 					"name": "thumbnails",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2989,7 +2775,7 @@
 					"sources": [
 						{
 							"fileName": "lib/playlistInfo.ts",
-							"line": 16,
+							"line": 17,
 							"character": 14
 						}
 					],
@@ -2998,14 +2784,14 @@
 						"elementType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 257,
+								"id": 246,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
 								"flags": {},
 								"children": [
 									{
-										"id": 260,
+										"id": 249,
 										"name": "height",
 										"kind": 1024,
 										"kindString": "Property",
@@ -3013,7 +2799,7 @@
 										"sources": [
 											{
 												"fileName": "lib/playlistInfo.ts",
-												"line": 19,
+												"line": 20,
 												"character": 14
 											}
 										],
@@ -3023,7 +2809,7 @@
 										}
 									},
 									{
-										"id": 258,
+										"id": 247,
 										"name": "url",
 										"kind": 1024,
 										"kindString": "Property",
@@ -3031,7 +2817,7 @@
 										"sources": [
 											{
 												"fileName": "lib/playlistInfo.ts",
-												"line": 17,
+												"line": 18,
 												"character": 11
 											}
 										],
@@ -3041,7 +2827,7 @@
 										}
 									},
 									{
-										"id": 259,
+										"id": 248,
 										"name": "width",
 										"kind": 1024,
 										"kindString": "Property",
@@ -3049,7 +2835,7 @@
 										"sources": [
 											{
 												"fileName": "lib/playlistInfo.ts",
-												"line": 18,
+												"line": 19,
 												"character": 13
 											}
 										],
@@ -3064,9 +2850,9 @@
 										"title": "Properties",
 										"kind": 1024,
 										"children": [
-											260,
-											258,
-											259
+											249,
+											247,
+											248
 										]
 									}
 								]
@@ -3075,7 +2861,7 @@
 					}
 				},
 				{
-					"id": 248,
+					"id": 237,
 					"name": "title",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3083,7 +2869,7 @@
 					"sources": [
 						{
 							"fileName": "lib/playlistInfo.ts",
-							"line": 8,
+							"line": 9,
 							"character": 9
 						}
 					],
@@ -3093,7 +2879,7 @@
 					}
 				},
 				{
-					"id": 250,
+					"id": 239,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3101,7 +2887,7 @@
 					"sources": [
 						{
 							"fileName": "lib/playlistInfo.ts",
-							"line": 10,
+							"line": 11,
 							"character": 7
 						}
 					],
@@ -3116,32 +2902,32 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						251,
-						261,
-						249,
-						256,
-						248,
-						250
+						240,
+						250,
+						238,
+						245,
+						237,
+						239
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "lib/playlistInfo.ts",
-					"line": 7,
+					"line": 8,
 					"character": 30
 				}
 			]
 		},
 		{
-			"id": 97,
+			"id": 86,
 			"name": "SearchChannel",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 106,
+					"id": 95,
 					"name": "icons",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3149,7 +2935,7 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 45,
+							"line": 46,
 							"character": 9
 						}
 					],
@@ -3158,14 +2944,14 @@
 						"elementType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 107,
+								"id": 96,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
 								"flags": {},
 								"children": [
 									{
-										"id": 110,
+										"id": 99,
 										"name": "height",
 										"kind": 1024,
 										"kindString": "Property",
@@ -3173,7 +2959,7 @@
 										"sources": [
 											{
 												"fileName": "lib/search.ts",
-												"line": 48,
+												"line": 49,
 												"character": 14
 											}
 										],
@@ -3183,7 +2969,7 @@
 										}
 									},
 									{
-										"id": 108,
+										"id": 97,
 										"name": "url",
 										"kind": 1024,
 										"kindString": "Property",
@@ -3191,7 +2977,7 @@
 										"sources": [
 											{
 												"fileName": "lib/search.ts",
-												"line": 46,
+												"line": 47,
 												"character": 11
 											}
 										],
@@ -3201,7 +2987,7 @@
 										}
 									},
 									{
-										"id": 109,
+										"id": 98,
 										"name": "width",
 										"kind": 1024,
 										"kindString": "Property",
@@ -3209,7 +2995,7 @@
 										"sources": [
 											{
 												"fileName": "lib/search.ts",
-												"line": 47,
+												"line": 48,
 												"character": 13
 											}
 										],
@@ -3224,9 +3010,9 @@
 										"title": "Properties",
 										"kind": 1024,
 										"children": [
-											110,
-											108,
-											109
+											99,
+											97,
+											98
 										]
 									}
 								]
@@ -3235,7 +3021,7 @@
 					}
 				},
 				{
-					"id": 99,
+					"id": 88,
 					"name": "id",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3243,7 +3029,7 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 38,
+							"line": 39,
 							"character": 6
 						}
 					],
@@ -3253,7 +3039,7 @@
 					}
 				},
 				{
-					"id": 98,
+					"id": 87,
 					"name": "name",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3261,7 +3047,7 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 37,
+							"line": 38,
 							"character": 8
 						}
 					],
@@ -3271,7 +3057,7 @@
 					}
 				},
 				{
-					"id": 101,
+					"id": 90,
 					"name": "subscribers",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3279,21 +3065,21 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 40,
+							"line": 41,
 							"character": 15
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 102,
+							"id": 91,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 104,
+									"id": 93,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -3301,7 +3087,7 @@
 									"sources": [
 										{
 											"fileName": "lib/search.ts",
-											"line": 42,
+											"line": 43,
 											"character": 14
 										}
 									],
@@ -3311,7 +3097,7 @@
 									}
 								},
 								{
-									"id": 103,
+									"id": 92,
 									"name": "text",
 									"kind": 1024,
 									"kindString": "Property",
@@ -3319,7 +3105,7 @@
 									"sources": [
 										{
 											"fileName": "lib/search.ts",
-											"line": 41,
+											"line": 42,
 											"character": 12
 										}
 									],
@@ -3334,8 +3120,8 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										104,
-										103
+										93,
+										92
 									]
 								}
 							]
@@ -3343,7 +3129,7 @@
 					}
 				},
 				{
-					"id": 100,
+					"id": 89,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3351,7 +3137,7 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 39,
+							"line": 40,
 							"character": 7
 						}
 					],
@@ -3361,7 +3147,7 @@
 					}
 				},
 				{
-					"id": 105,
+					"id": 94,
 					"name": "videoCount",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3369,7 +3155,7 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 44,
+							"line": 45,
 							"character": 14
 						}
 					],
@@ -3384,32 +3170,32 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						106,
-						99,
-						98,
-						101,
-						100,
-						105
+						95,
+						88,
+						87,
+						90,
+						89,
+						94
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "lib/search.ts",
-					"line": 36,
+					"line": 37,
 					"character": 30
 				}
 			]
 		},
 		{
-			"id": 68,
+			"id": 57,
 			"name": "SearchOptions",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 70,
+					"id": 59,
 					"name": "filterType",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3419,7 +3205,7 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 5,
+							"line": 6,
 							"character": 14
 						}
 					],
@@ -3450,7 +3236,7 @@
 					}
 				},
 				{
-					"id": 69,
+					"id": 58,
 					"name": "requestOptions",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3460,14 +3246,13 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 4,
+							"line": 5,
 							"character": 18
 						}
 					],
 					"type": {
 						"type": "reference",
-						"id": 8,
-						"name": "getOptions"
+						"name": "AxiosRequestConfig"
 					}
 				}
 			],
@@ -3476,28 +3261,28 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						70,
-						69
+						59,
+						58
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "lib/search.ts",
-					"line": 3,
+					"line": 4,
 					"character": 30
 				}
 			]
 		},
 		{
-			"id": 111,
+			"id": 100,
 			"name": "SearchPlaylist",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 113,
+					"id": 102,
 					"name": "id",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3505,7 +3290,7 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 54,
+							"line": 55,
 							"character": 6
 						}
 					],
@@ -3515,7 +3300,7 @@
 					}
 				},
 				{
-					"id": 112,
+					"id": 101,
 					"name": "name",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3523,7 +3308,7 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 53,
+							"line": 54,
 							"character": 8
 						}
 					],
@@ -3533,7 +3318,7 @@
 					}
 				},
 				{
-					"id": 121,
+					"id": 110,
 					"name": "published",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3541,21 +3326,21 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 62,
+							"line": 63,
 							"character": 13
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 122,
+							"id": 111,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 123,
+									"id": 112,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -3565,7 +3350,7 @@
 									"sources": [
 										{
 											"fileName": "lib/search.ts",
-											"line": 63,
+											"line": 64,
 											"character": 14
 										}
 									],
@@ -3580,7 +3365,7 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										123
+										112
 									]
 								}
 							]
@@ -3588,7 +3373,7 @@
 					}
 				},
 				{
-					"id": 115,
+					"id": 104,
 					"name": "thumbnails",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3596,7 +3381,7 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 56,
+							"line": 57,
 							"character": 14
 						}
 					],
@@ -3605,14 +3390,14 @@
 						"elementType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 116,
+								"id": 105,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
 								"flags": {},
 								"children": [
 									{
-										"id": 119,
+										"id": 108,
 										"name": "height",
 										"kind": 1024,
 										"kindString": "Property",
@@ -3620,7 +3405,7 @@
 										"sources": [
 											{
 												"fileName": "lib/search.ts",
-												"line": 59,
+												"line": 60,
 												"character": 14
 											}
 										],
@@ -3630,7 +3415,7 @@
 										}
 									},
 									{
-										"id": 117,
+										"id": 106,
 										"name": "url",
 										"kind": 1024,
 										"kindString": "Property",
@@ -3638,7 +3423,7 @@
 										"sources": [
 											{
 												"fileName": "lib/search.ts",
-												"line": 57,
+												"line": 58,
 												"character": 11
 											}
 										],
@@ -3648,7 +3433,7 @@
 										}
 									},
 									{
-										"id": 118,
+										"id": 107,
 										"name": "width",
 										"kind": 1024,
 										"kindString": "Property",
@@ -3656,7 +3441,7 @@
 										"sources": [
 											{
 												"fileName": "lib/search.ts",
-												"line": 58,
+												"line": 59,
 												"character": 13
 											}
 										],
@@ -3671,9 +3456,9 @@
 										"title": "Properties",
 										"kind": 1024,
 										"children": [
-											119,
-											117,
-											118
+											108,
+											106,
+											107
 										]
 									}
 								]
@@ -3682,7 +3467,7 @@
 					}
 				},
 				{
-					"id": 114,
+					"id": 103,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3690,7 +3475,7 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 55,
+							"line": 56,
 							"character": 7
 						}
 					],
@@ -3700,7 +3485,7 @@
 					}
 				},
 				{
-					"id": 120,
+					"id": 109,
 					"name": "videoCount",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3708,7 +3493,7 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 61,
+							"line": 62,
 							"character": 14
 						}
 					],
@@ -3723,32 +3508,32 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						113,
-						112,
-						121,
-						115,
-						114,
-						120
+						102,
+						101,
+						110,
+						104,
+						103,
+						109
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "lib/search.ts",
-					"line": 52,
+					"line": 53,
 					"character": 31
 				}
 			]
 		},
 		{
-			"id": 71,
+			"id": 60,
 			"name": "SearchVideo",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 75,
+					"id": 64,
 					"name": "channel",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3756,21 +3541,21 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 12,
+							"line": 13,
 							"character": 11
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 76,
+							"id": 65,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 78,
+									"id": 67,
 									"name": "id",
 									"kind": 1024,
 									"kindString": "Property",
@@ -3778,7 +3563,7 @@
 									"sources": [
 										{
 											"fileName": "lib/search.ts",
-											"line": 14,
+											"line": 15,
 											"character": 10
 										}
 									],
@@ -3788,7 +3573,7 @@
 									}
 								},
 								{
-									"id": 77,
+									"id": 66,
 									"name": "name",
 									"kind": 1024,
 									"kindString": "Property",
@@ -3796,7 +3581,7 @@
 									"sources": [
 										{
 											"fileName": "lib/search.ts",
-											"line": 13,
+											"line": 14,
 											"character": 12
 										}
 									],
@@ -3806,7 +3591,7 @@
 									}
 								},
 								{
-									"id": 79,
+									"id": 68,
 									"name": "url",
 									"kind": 1024,
 									"kindString": "Property",
@@ -3814,7 +3599,7 @@
 									"sources": [
 										{
 											"fileName": "lib/search.ts",
-											"line": 15,
+											"line": 16,
 											"character": 11
 										}
 									],
@@ -3829,9 +3614,9 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										78,
-										77,
-										79
+										67,
+										66,
+										68
 									]
 								}
 							]
@@ -3839,7 +3624,7 @@
 					}
 				},
 				{
-					"id": 80,
+					"id": 69,
 					"name": "duration",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3847,21 +3632,21 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 17,
+							"line": 18,
 							"character": 12
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 81,
+							"id": 70,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 83,
+									"id": 72,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -3869,7 +3654,7 @@
 									"sources": [
 										{
 											"fileName": "lib/search.ts",
-											"line": 19,
+											"line": 20,
 											"character": 14
 										}
 									],
@@ -3879,7 +3664,7 @@
 									}
 								},
 								{
-									"id": 82,
+									"id": 71,
 									"name": "text",
 									"kind": 1024,
 									"kindString": "Property",
@@ -3887,7 +3672,7 @@
 									"sources": [
 										{
 											"fileName": "lib/search.ts",
-											"line": 18,
+											"line": 19,
 											"character": 12
 										}
 									],
@@ -3902,8 +3687,8 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										83,
-										82
+										72,
+										71
 									]
 								}
 							]
@@ -3911,7 +3696,7 @@
 					}
 				},
 				{
-					"id": 73,
+					"id": 62,
 					"name": "id",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3919,7 +3704,7 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 10,
+							"line": 11,
 							"character": 6
 						}
 					],
@@ -3929,7 +3714,7 @@
 					}
 				},
 				{
-					"id": 84,
+					"id": 73,
 					"name": "published",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3937,21 +3722,21 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 21,
+							"line": 22,
 							"character": 13
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 85,
+							"id": 74,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 86,
+									"id": 75,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -3959,7 +3744,7 @@
 									"sources": [
 										{
 											"fileName": "lib/search.ts",
-											"line": 22,
+											"line": 23,
 											"character": 14
 										}
 									],
@@ -3974,7 +3759,7 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										86
+										75
 									]
 								}
 							]
@@ -3982,7 +3767,7 @@
 					}
 				},
 				{
-					"id": 92,
+					"id": 81,
 					"name": "thumbnails",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3990,7 +3775,7 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 29,
+							"line": 30,
 							"character": 14
 						}
 					],
@@ -3999,14 +3784,14 @@
 						"elementType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 93,
+								"id": 82,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
 								"flags": {},
 								"children": [
 									{
-										"id": 96,
+										"id": 85,
 										"name": "height",
 										"kind": 1024,
 										"kindString": "Property",
@@ -4014,7 +3799,7 @@
 										"sources": [
 											{
 												"fileName": "lib/search.ts",
-												"line": 32,
+												"line": 33,
 												"character": 14
 											}
 										],
@@ -4024,7 +3809,7 @@
 										}
 									},
 									{
-										"id": 94,
+										"id": 83,
 										"name": "url",
 										"kind": 1024,
 										"kindString": "Property",
@@ -4032,7 +3817,7 @@
 										"sources": [
 											{
 												"fileName": "lib/search.ts",
-												"line": 30,
+												"line": 31,
 												"character": 11
 											}
 										],
@@ -4042,7 +3827,7 @@
 										}
 									},
 									{
-										"id": 95,
+										"id": 84,
 										"name": "width",
 										"kind": 1024,
 										"kindString": "Property",
@@ -4050,7 +3835,7 @@
 										"sources": [
 											{
 												"fileName": "lib/search.ts",
-												"line": 31,
+												"line": 32,
 												"character": 13
 											}
 										],
@@ -4065,9 +3850,9 @@
 										"title": "Properties",
 										"kind": 1024,
 										"children": [
-											96,
-											94,
-											95
+											85,
+											83,
+											84
 										]
 									}
 								]
@@ -4076,7 +3861,7 @@
 					}
 				},
 				{
-					"id": 72,
+					"id": 61,
 					"name": "title",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4084,7 +3869,7 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 9,
+							"line": 10,
 							"character": 9
 						}
 					],
@@ -4094,7 +3879,7 @@
 					}
 				},
 				{
-					"id": 74,
+					"id": 63,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4102,7 +3887,7 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 11,
+							"line": 12,
 							"character": 7
 						}
 					],
@@ -4112,7 +3897,7 @@
 					}
 				},
 				{
-					"id": 87,
+					"id": 76,
 					"name": "views",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4120,21 +3905,21 @@
 					"sources": [
 						{
 							"fileName": "lib/search.ts",
-							"line": 24,
+							"line": 25,
 							"character": 9
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 88,
+							"id": 77,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 90,
+									"id": 79,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4142,7 +3927,7 @@
 									"sources": [
 										{
 											"fileName": "lib/search.ts",
-											"line": 26,
+											"line": 27,
 											"character": 14
 										}
 									],
@@ -4152,7 +3937,7 @@
 									}
 								},
 								{
-									"id": 91,
+									"id": 80,
 									"name": "prettyLong",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4160,7 +3945,7 @@
 									"sources": [
 										{
 											"fileName": "lib/search.ts",
-											"line": 27,
+											"line": 28,
 											"character": 18
 										}
 									],
@@ -4170,7 +3955,7 @@
 									}
 								},
 								{
-									"id": 89,
+									"id": 78,
 									"name": "text",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4178,7 +3963,7 @@
 									"sources": [
 										{
 											"fileName": "lib/search.ts",
-											"line": 25,
+											"line": 26,
 											"character": 12
 										}
 									],
@@ -4193,9 +3978,9 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										90,
-										91,
-										89
+										79,
+										80,
+										78
 									]
 								}
 							]
@@ -4208,34 +3993,34 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						75,
-						80,
+						64,
+						69,
+						62,
 						73,
-						84,
-						92,
-						72,
-						74,
-						87
+						81,
+						61,
+						63,
+						76
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "lib/search.ts",
-					"line": 8,
+					"line": 9,
 					"character": 28
 				}
 			]
 		},
 		{
-			"id": 180,
+			"id": 169,
 			"name": "VideoInfo",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 232,
+					"id": 221,
 					"name": "category",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4243,7 +4028,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 109,
+							"line": 110,
 							"character": 12
 						}
 					],
@@ -4253,7 +4038,7 @@
 					}
 				},
 				{
-					"id": 186,
+					"id": 175,
 					"name": "channel",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4261,21 +4046,21 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 63,
+							"line": 64,
 							"character": 11
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 187,
+							"id": 176,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 194,
+									"id": 183,
 									"name": "icons",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4283,7 +4068,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 70,
+											"line": 71,
 											"character": 13
 										}
 									],
@@ -4292,14 +4077,14 @@
 										"elementType": {
 											"type": "reflection",
 											"declaration": {
-												"id": 195,
+												"id": 184,
 												"name": "__type",
 												"kind": 65536,
 												"kindString": "Type literal",
 												"flags": {},
 												"children": [
 													{
-														"id": 198,
+														"id": 187,
 														"name": "height",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4307,7 +4092,7 @@
 														"sources": [
 															{
 																"fileName": "lib/videoInfo.ts",
-																"line": 73,
+																"line": 74,
 																"character": 18
 															}
 														],
@@ -4317,7 +4102,7 @@
 														}
 													},
 													{
-														"id": 196,
+														"id": 185,
 														"name": "url",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4325,7 +4110,7 @@
 														"sources": [
 															{
 																"fileName": "lib/videoInfo.ts",
-																"line": 71,
+																"line": 72,
 																"character": 15
 															}
 														],
@@ -4335,7 +4120,7 @@
 														}
 													},
 													{
-														"id": 197,
+														"id": 186,
 														"name": "width",
 														"kind": 1024,
 														"kindString": "Property",
@@ -4343,7 +4128,7 @@
 														"sources": [
 															{
 																"fileName": "lib/videoInfo.ts",
-																"line": 72,
+																"line": 73,
 																"character": 17
 															}
 														],
@@ -4358,9 +4143,9 @@
 														"title": "Properties",
 														"kind": 1024,
 														"children": [
-															198,
-															196,
-															197
+															187,
+															185,
+															186
 														]
 													}
 												]
@@ -4369,7 +4154,7 @@
 									}
 								},
 								{
-									"id": 189,
+									"id": 178,
 									"name": "id",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4377,7 +4162,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 65,
+											"line": 66,
 											"character": 10
 										}
 									],
@@ -4387,7 +4172,7 @@
 									}
 								},
 								{
-									"id": 188,
+									"id": 177,
 									"name": "name",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4395,7 +4180,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 64,
+											"line": 65,
 											"character": 12
 										}
 									],
@@ -4405,7 +4190,7 @@
 									}
 								},
 								{
-									"id": 191,
+									"id": 180,
 									"name": "subscribers",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4413,21 +4198,21 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 67,
+											"line": 68,
 											"character": 19
 										}
 									],
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 192,
+											"id": 181,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 193,
+													"id": 182,
 													"name": "pretty",
 													"kind": 1024,
 													"kindString": "Property",
@@ -4435,7 +4220,7 @@
 													"sources": [
 														{
 															"fileName": "lib/videoInfo.ts",
-															"line": 68,
+															"line": 69,
 															"character": 18
 														}
 													],
@@ -4450,7 +4235,7 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														193
+														182
 													]
 												}
 											]
@@ -4458,7 +4243,7 @@
 									}
 								},
 								{
-									"id": 190,
+									"id": 179,
 									"name": "url",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4466,7 +4251,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 66,
+											"line": 67,
 											"character": 11
 										}
 									],
@@ -4481,11 +4266,11 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										194,
-										189,
-										188,
-										191,
-										190
+										183,
+										178,
+										177,
+										180,
+										179
 									]
 								}
 							]
@@ -4493,7 +4278,7 @@
 					}
 				},
 				{
-					"id": 185,
+					"id": 174,
 					"name": "description",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4501,7 +4286,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 62,
+							"line": 63,
 							"character": 15
 						}
 					],
@@ -4511,7 +4296,7 @@
 					}
 				},
 				{
-					"id": 199,
+					"id": 188,
 					"name": "duration",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4519,21 +4304,21 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 76,
+							"line": 77,
 							"character": 12
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 200,
+							"id": 189,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 201,
+									"id": 190,
 									"name": "lengthSec",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4541,7 +4326,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 77,
+											"line": 78,
 											"character": 17
 										}
 									],
@@ -4556,7 +4341,7 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										201
+										190
 									]
 								}
 							]
@@ -4564,7 +4349,7 @@
 					}
 				},
 				{
-					"id": 233,
+					"id": 222,
 					"name": "embed",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4572,21 +4357,21 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 110,
+							"line": 111,
 							"character": 9
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 234,
+							"id": 223,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 239,
+									"id": 228,
 									"name": "flashSecureUrl",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4594,7 +4379,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 115,
+											"line": 116,
 											"character": 22
 										}
 									],
@@ -4604,7 +4389,7 @@
 									}
 								},
 								{
-									"id": 236,
+									"id": 225,
 									"name": "flashUrl",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4612,7 +4397,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 112,
+											"line": 113,
 											"character": 16
 										}
 									],
@@ -4622,7 +4407,7 @@
 									}
 								},
 								{
-									"id": 237,
+									"id": 226,
 									"name": "height",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4630,7 +4415,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 113,
+											"line": 114,
 											"character": 14
 										}
 									],
@@ -4640,7 +4425,7 @@
 									}
 								},
 								{
-									"id": 235,
+									"id": 224,
 									"name": "iframeUrl",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4648,7 +4433,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 111,
+											"line": 112,
 											"character": 17
 										}
 									],
@@ -4658,7 +4443,7 @@
 									}
 								},
 								{
-									"id": 238,
+									"id": 227,
 									"name": "width",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4666,7 +4451,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 114,
+											"line": 115,
 											"character": 13
 										}
 									],
@@ -4681,11 +4466,11 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										239,
-										236,
-										237,
-										235,
-										238
+										228,
+										225,
+										226,
+										224,
+										227
 									]
 								}
 							]
@@ -4693,7 +4478,7 @@
 					}
 				},
 				{
-					"id": 182,
+					"id": 171,
 					"name": "id",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4701,7 +4486,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 59,
+							"line": 60,
 							"character": 6
 						}
 					],
@@ -4711,7 +4496,7 @@
 					}
 				},
 				{
-					"id": 231,
+					"id": 220,
 					"name": "isFamilySafe",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4719,7 +4504,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 108,
+							"line": 109,
 							"character": 16
 						}
 					],
@@ -4729,7 +4514,7 @@
 					}
 				},
 				{
-					"id": 229,
+					"id": 218,
 					"name": "isLive",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4737,7 +4522,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 106,
+							"line": 107,
 							"character": 10
 						}
 					],
@@ -4747,7 +4532,7 @@
 					}
 				},
 				{
-					"id": 230,
+					"id": 219,
 					"name": "isUnlisted",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4755,7 +4540,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 107,
+							"line": 108,
 							"character": 14
 						}
 					],
@@ -4765,7 +4550,7 @@
 					}
 				},
 				{
-					"id": 228,
+					"id": 217,
 					"name": "keywords",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4773,7 +4558,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 105,
+							"line": 106,
 							"character": 12
 						}
 					],
@@ -4786,7 +4571,7 @@
 					}
 				},
 				{
-					"id": 221,
+					"id": 210,
 					"name": "published",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4794,21 +4579,21 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 98,
+							"line": 99,
 							"character": 13
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 222,
+							"id": 211,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 224,
+									"id": 213,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4816,7 +4601,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 100,
+											"line": 101,
 											"character": 14
 										}
 									],
@@ -4826,7 +4611,7 @@
 									}
 								},
 								{
-									"id": 223,
+									"id": 212,
 									"name": "text",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4834,7 +4619,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 99,
+											"line": 100,
 											"character": 12
 										}
 									],
@@ -4849,8 +4634,8 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										224,
-										223
+										213,
+										212
 									]
 								}
 							]
@@ -4858,7 +4643,7 @@
 					}
 				},
 				{
-					"id": 207,
+					"id": 196,
 					"name": "ratings",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4866,21 +4651,21 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 84,
+							"line": 85,
 							"character": 11
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 208,
+							"id": 197,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 213,
+									"id": 202,
 									"name": "dislikes",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4888,22 +4673,40 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 89,
+											"line": 90,
 											"character": 16
 										}
 									],
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 214,
+											"id": 203,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 216,
+													"id": 205,
 													"name": "pretty",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "lib/videoInfo.ts",
+															"line": 92,
+															"character": 18
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 204,
+													"name": "text",
 													"kind": 1024,
 													"kindString": "Property",
 													"flags": {},
@@ -4911,24 +4714,6 @@
 														{
 															"fileName": "lib/videoInfo.ts",
 															"line": 91,
-															"character": 18
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "string"
-													}
-												},
-												{
-													"id": 215,
-													"name": "text",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "lib/videoInfo.ts",
-															"line": 90,
 															"character": 16
 														}
 													],
@@ -4943,8 +4728,8 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														216,
-														215
+														205,
+														204
 													]
 												}
 											]
@@ -4952,7 +4737,7 @@
 									}
 								},
 								{
-									"id": 209,
+									"id": 198,
 									"name": "likes",
 									"kind": 1024,
 									"kindString": "Property",
@@ -4960,21 +4745,21 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 85,
+											"line": 86,
 											"character": 13
 										}
 									],
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 210,
+											"id": 199,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 212,
+													"id": 201,
 													"name": "pretty",
 													"kind": 1024,
 													"kindString": "Property",
@@ -4982,7 +4767,7 @@
 													"sources": [
 														{
 															"fileName": "lib/videoInfo.ts",
-															"line": 87,
+															"line": 88,
 															"character": 18
 														}
 													],
@@ -4992,7 +4777,7 @@
 													}
 												},
 												{
-													"id": 211,
+													"id": 200,
 													"name": "text",
 													"kind": 1024,
 													"kindString": "Property",
@@ -5000,7 +4785,7 @@
 													"sources": [
 														{
 															"fileName": "lib/videoInfo.ts",
-															"line": 86,
+															"line": 87,
 															"character": 16
 														}
 													],
@@ -5015,8 +4800,8 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														212,
-														211
+														201,
+														200
 													]
 												}
 											]
@@ -5029,8 +4814,8 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										213,
-										209
+										202,
+										198
 									]
 								}
 							]
@@ -5038,7 +4823,7 @@
 					}
 				},
 				{
-					"id": 184,
+					"id": 173,
 					"name": "shortDescription",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5046,7 +4831,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 61,
+							"line": 62,
 							"character": 20
 						}
 					],
@@ -5056,7 +4841,7 @@
 					}
 				},
 				{
-					"id": 240,
+					"id": 229,
 					"name": "streams",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5064,18 +4849,18 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 117,
+							"line": 118,
 							"character": 11
 						}
 					],
 					"type": {
 						"type": "reference",
-						"id": 171,
+						"id": 160,
 						"name": "VideoStream"
 					}
 				},
 				{
-					"id": 202,
+					"id": 191,
 					"name": "thumbnails",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5083,7 +4868,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 79,
+							"line": 80,
 							"character": 14
 						}
 					],
@@ -5092,14 +4877,14 @@
 						"elementType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 203,
+								"id": 192,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
 								"flags": {},
 								"children": [
 									{
-										"id": 206,
+										"id": 195,
 										"name": "height",
 										"kind": 1024,
 										"kindString": "Property",
@@ -5107,7 +4892,7 @@
 										"sources": [
 											{
 												"fileName": "lib/videoInfo.ts",
-												"line": 82,
+												"line": 83,
 												"character": 14
 											}
 										],
@@ -5117,7 +4902,7 @@
 										}
 									},
 									{
-										"id": 204,
+										"id": 193,
 										"name": "url",
 										"kind": 1024,
 										"kindString": "Property",
@@ -5125,7 +4910,7 @@
 										"sources": [
 											{
 												"fileName": "lib/videoInfo.ts",
-												"line": 80,
+												"line": 81,
 												"character": 11
 											}
 										],
@@ -5135,7 +4920,7 @@
 										}
 									},
 									{
-										"id": 205,
+										"id": 194,
 										"name": "width",
 										"kind": 1024,
 										"kindString": "Property",
@@ -5143,7 +4928,7 @@
 										"sources": [
 											{
 												"fileName": "lib/videoInfo.ts",
-												"line": 81,
+												"line": 82,
 												"character": 13
 											}
 										],
@@ -5158,9 +4943,9 @@
 										"title": "Properties",
 										"kind": 1024,
 										"children": [
-											206,
-											204,
-											205
+											195,
+											193,
+											194
 										]
 									}
 								]
@@ -5169,7 +4954,7 @@
 					}
 				},
 				{
-					"id": 181,
+					"id": 170,
 					"name": "title",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5177,7 +4962,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 58,
+							"line": 59,
 							"character": 9
 						}
 					],
@@ -5187,7 +4972,7 @@
 					}
 				},
 				{
-					"id": 225,
+					"id": 214,
 					"name": "uploaded",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5195,21 +4980,21 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 102,
+							"line": 103,
 							"character": 12
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 226,
+							"id": 215,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 227,
+									"id": 216,
 									"name": "text",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5217,7 +5002,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 103,
+											"line": 104,
 											"character": 12
 										}
 									],
@@ -5232,7 +5017,7 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										227
+										216
 									]
 								}
 							]
@@ -5240,7 +5025,7 @@
 					}
 				},
 				{
-					"id": 183,
+					"id": 172,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5248,7 +5033,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 60,
+							"line": 61,
 							"character": 7
 						}
 					],
@@ -5258,7 +5043,7 @@
 					}
 				},
 				{
-					"id": 217,
+					"id": 206,
 					"name": "views",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5266,21 +5051,21 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 94,
+							"line": 95,
 							"character": 9
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 218,
+							"id": 207,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 220,
+									"id": 209,
 									"name": "pretty",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5288,7 +5073,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 96,
+											"line": 97,
 											"character": 14
 										}
 									],
@@ -5298,7 +5083,7 @@
 									}
 								},
 								{
-									"id": 219,
+									"id": 208,
 									"name": "text",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5306,7 +5091,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 95,
+											"line": 96,
 											"character": 12
 										}
 									],
@@ -5321,8 +5106,8 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										220,
-										219
+										209,
+										208
 									]
 								}
 							]
@@ -5335,45 +5120,45 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						232,
-						186,
-						185,
-						199,
-						233,
-						182,
-						231,
-						229,
-						230,
-						228,
 						221,
-						207,
-						184,
-						240,
-						202,
-						181,
-						225,
-						183,
-						217
+						175,
+						174,
+						188,
+						222,
+						171,
+						220,
+						218,
+						219,
+						217,
+						210,
+						196,
+						173,
+						229,
+						191,
+						170,
+						214,
+						172,
+						206
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "lib/videoInfo.ts",
-					"line": 57,
+					"line": 58,
 					"character": 26
 				}
 			]
 		},
 		{
-			"id": 132,
+			"id": 121,
 			"name": "VideoInfoOptions",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 133,
+					"id": 122,
 					"name": "requestOptions",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5383,14 +5168,13 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 4,
+							"line": 5,
 							"character": 18
 						}
 					],
 					"type": {
 						"type": "reference",
-						"id": 8,
-						"name": "getOptions"
+						"name": "AxiosRequestConfig"
 					}
 				}
 			],
@@ -5399,27 +5183,27 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						133
+						122
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "lib/videoInfo.ts",
-					"line": 3,
+					"line": 4,
 					"character": 33
 				}
 			]
 		},
 		{
-			"id": 171,
+			"id": 160,
 			"name": "VideoStream",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 174,
+					"id": 163,
 					"name": "adaptiveFormats",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5427,7 +5211,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 49,
+							"line": 50,
 							"character": 19
 						}
 					],
@@ -5435,13 +5219,13 @@
 						"type": "array",
 						"elementType": {
 							"type": "reference",
-							"id": 134,
+							"id": 123,
 							"name": "VideoStreamEntity"
 						}
 					}
 				},
 				{
-					"id": 175,
+					"id": 164,
 					"name": "dashManifestUrl",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5451,7 +5235,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 50,
+							"line": 51,
 							"character": 19
 						}
 					],
@@ -5461,7 +5245,7 @@
 					}
 				},
 				{
-					"id": 172,
+					"id": 161,
 					"name": "expiresInSeconds",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5469,7 +5253,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 47,
+							"line": 48,
 							"character": 20
 						}
 					],
@@ -5479,7 +5263,7 @@
 					}
 				},
 				{
-					"id": 173,
+					"id": 162,
 					"name": "formats",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5487,7 +5271,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 48,
+							"line": 49,
 							"character": 11
 						}
 					],
@@ -5495,13 +5279,13 @@
 						"type": "array",
 						"elementType": {
 							"type": "reference",
-							"id": 134,
+							"id": 123,
 							"name": "VideoStreamEntity"
 						}
 					}
 				},
 				{
-					"id": 176,
+					"id": 165,
 					"name": "hlsManifestUrl",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5511,7 +5295,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 51,
+							"line": 52,
 							"character": 18
 						}
 					],
@@ -5521,7 +5305,7 @@
 					}
 				},
 				{
-					"id": 177,
+					"id": 166,
 					"name": "player",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5531,21 +5315,21 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 52,
+							"line": 53,
 							"character": 10
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 178,
+							"id": 167,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 179,
+									"id": 168,
 									"name": "url",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5553,7 +5337,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 53,
+											"line": 54,
 											"character": 11
 										}
 									],
@@ -5568,7 +5352,7 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										179
+										168
 									]
 								}
 							]
@@ -5581,32 +5365,32 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						174,
-						175,
-						172,
-						173,
-						176,
-						177
+						163,
+						164,
+						161,
+						162,
+						165,
+						166
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "lib/videoInfo.ts",
-					"line": 46,
+					"line": 47,
 					"character": 28
 				}
 			]
 		},
 		{
-			"id": 134,
+			"id": 123,
 			"name": "VideoStreamEntity",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 156,
+					"id": 145,
 					"name": "approxDurationMs",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5616,7 +5400,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 29,
+							"line": 30,
 							"character": 20
 						}
 					],
@@ -5626,7 +5410,7 @@
 					}
 				},
 				{
-					"id": 165,
+					"id": 154,
 					"name": "audioChannels",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5636,7 +5420,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 38,
+							"line": 39,
 							"character": 17
 						}
 					],
@@ -5646,7 +5430,7 @@
 					}
 				},
 				{
-					"id": 163,
+					"id": 152,
 					"name": "audioQuality",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5656,7 +5440,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 36,
+							"line": 37,
 							"character": 16
 						}
 					],
@@ -5666,7 +5450,7 @@
 					}
 				},
 				{
-					"id": 164,
+					"id": 153,
 					"name": "audioSampleRate",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5676,7 +5460,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 37,
+							"line": 38,
 							"character": 19
 						}
 					],
@@ -5686,7 +5470,7 @@
 					}
 				},
 				{
-					"id": 155,
+					"id": 144,
 					"name": "averageBitrate",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5696,7 +5480,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 28,
+							"line": 29,
 							"character": 18
 						}
 					],
@@ -5706,7 +5490,7 @@
 					}
 				},
 				{
-					"id": 138,
+					"id": 127,
 					"name": "bitrate",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5716,7 +5500,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 11,
+							"line": 12,
 							"character": 11
 						}
 					],
@@ -5726,7 +5510,7 @@
 					}
 				},
 				{
-					"id": 157,
+					"id": 146,
 					"name": "colorInfo",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5736,21 +5520,21 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 30,
+							"line": 31,
 							"character": 13
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 158,
+							"id": 147,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 161,
+									"id": 150,
 									"name": "matrixCoefficients",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5758,7 +5542,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 33,
+											"line": 34,
 											"character": 26
 										}
 									],
@@ -5768,7 +5552,7 @@
 									}
 								},
 								{
-									"id": 159,
+									"id": 148,
 									"name": "primaries",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5776,7 +5560,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 31,
+											"line": 32,
 											"character": 17
 										}
 									],
@@ -5786,7 +5570,7 @@
 									}
 								},
 								{
-									"id": 160,
+									"id": 149,
 									"name": "transferCharacteristics",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5794,7 +5578,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 32,
+											"line": 33,
 											"character": 31
 										}
 									],
@@ -5809,9 +5593,9 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										161,
-										159,
-										160
+										150,
+										148,
+										149
 									]
 								}
 							]
@@ -5819,7 +5603,7 @@
 					}
 				},
 				{
-					"id": 150,
+					"id": 139,
 					"name": "contentLength",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5829,7 +5613,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 23,
+							"line": 24,
 							"character": 17
 						}
 					],
@@ -5839,7 +5623,7 @@
 					}
 				},
 				{
-					"id": 152,
+					"id": 141,
 					"name": "fps",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5849,7 +5633,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 25,
+							"line": 26,
 							"character": 7
 						}
 					],
@@ -5859,7 +5643,7 @@
 					}
 				},
 				{
-					"id": 140,
+					"id": 129,
 					"name": "height",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5869,7 +5653,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 13,
+							"line": 14,
 							"character": 10
 						}
 					],
@@ -5879,7 +5663,7 @@
 					}
 				},
 				{
-					"id": 162,
+					"id": 151,
 					"name": "highReplication",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5889,7 +5673,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 35,
+							"line": 36,
 							"character": 19
 						}
 					],
@@ -5899,7 +5683,7 @@
 					}
 				},
 				{
-					"id": 145,
+					"id": 134,
 					"name": "indexRange",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5909,21 +5693,21 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 18,
+							"line": 19,
 							"character": 14
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 146,
+							"id": 135,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 148,
+									"id": 137,
 									"name": "end",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5931,7 +5715,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 20,
+											"line": 21,
 											"character": 11
 										}
 									],
@@ -5941,7 +5725,7 @@
 									}
 								},
 								{
-									"id": 147,
+									"id": 136,
 									"name": "start",
 									"kind": 1024,
 									"kindString": "Property",
@@ -5949,7 +5733,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 19,
+											"line": 20,
 											"character": 13
 										}
 									],
@@ -5964,8 +5748,8 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										148,
-										147
+										137,
+										136
 									]
 								}
 							]
@@ -5973,7 +5757,7 @@
 					}
 				},
 				{
-					"id": 141,
+					"id": 130,
 					"name": "initRange",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5983,21 +5767,21 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 14,
+							"line": 15,
 							"character": 13
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 142,
+							"id": 131,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 144,
+									"id": 133,
 									"name": "end",
 									"kind": 1024,
 									"kindString": "Property",
@@ -6005,7 +5789,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 16,
+											"line": 17,
 											"character": 11
 										}
 									],
@@ -6015,7 +5799,7 @@
 									}
 								},
 								{
-									"id": 143,
+									"id": 132,
 									"name": "start",
 									"kind": 1024,
 									"kindString": "Property",
@@ -6023,7 +5807,7 @@
 									"sources": [
 										{
 											"fileName": "lib/videoInfo.ts",
-											"line": 15,
+											"line": 16,
 											"character": 13
 										}
 									],
@@ -6038,8 +5822,8 @@
 									"title": "Properties",
 									"kind": 1024,
 									"children": [
-										144,
-										143
+										133,
+										132
 									]
 								}
 							]
@@ -6047,7 +5831,7 @@
 					}
 				},
 				{
-					"id": 170,
+					"id": 159,
 					"name": "isLive",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6057,7 +5841,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 43,
+							"line": 44,
 							"character": 10
 						}
 					],
@@ -6067,7 +5851,7 @@
 					}
 				},
 				{
-					"id": 135,
+					"id": 124,
 					"name": "itag",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6077,7 +5861,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 8,
+							"line": 9,
 							"character": 8
 						}
 					],
@@ -6087,7 +5871,7 @@
 					}
 				},
 				{
-					"id": 149,
+					"id": 138,
 					"name": "lastModified",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6097,7 +5881,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 22,
+							"line": 23,
 							"character": 16
 						}
 					],
@@ -6107,7 +5891,7 @@
 					}
 				},
 				{
-					"id": 166,
+					"id": 155,
 					"name": "loudnessDb",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6117,7 +5901,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 39,
+							"line": 40,
 							"character": 14
 						}
 					],
@@ -6127,8 +5911,128 @@
 					}
 				},
 				{
-					"id": 168,
+					"id": 157,
 					"name": "maxDvrDurationSec",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "lib/videoInfo.ts",
+							"line": 42,
+							"character": 21
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 126,
+					"name": "mimeType",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "lib/videoInfo.ts",
+							"line": 11,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 143,
+					"name": "projectionType",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "lib/videoInfo.ts",
+							"line": 28,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 140,
+					"name": "quality",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "lib/videoInfo.ts",
+							"line": 25,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 142,
+					"name": "qualityLabel",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "lib/videoInfo.ts",
+							"line": 27,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 158,
+					"name": "signatureCipher",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "lib/videoInfo.ts",
+							"line": 43,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 156,
+					"name": "targetDurationSec",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -6147,127 +6051,7 @@
 					}
 				},
 				{
-					"id": 137,
-					"name": "mimeType",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "lib/videoInfo.ts",
-							"line": 10,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 154,
-					"name": "projectionType",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "lib/videoInfo.ts",
-							"line": 27,
-							"character": 18
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 151,
-					"name": "quality",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "lib/videoInfo.ts",
-							"line": 24,
-							"character": 11
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 153,
-					"name": "qualityLabel",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "lib/videoInfo.ts",
-							"line": 26,
-							"character": 16
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 169,
-					"name": "signatureCipher",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "lib/videoInfo.ts",
-							"line": 42,
-							"character": 19
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 167,
-					"name": "targetDurationSec",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "lib/videoInfo.ts",
-							"line": 40,
-							"character": 21
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 136,
+					"id": 125,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6275,7 +6059,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 9,
+							"line": 10,
 							"character": 7
 						}
 					],
@@ -6285,7 +6069,7 @@
 					}
 				},
 				{
-					"id": 139,
+					"id": 128,
 					"name": "width",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6295,7 +6079,7 @@
 					"sources": [
 						{
 							"fileName": "lib/videoInfo.ts",
-							"line": 12,
+							"line": 13,
 							"character": 9
 						}
 					],
@@ -6310,52 +6094,52 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						156,
-						165,
-						163,
-						164,
-						155,
-						138,
-						157,
-						150,
-						152,
-						140,
-						162,
 						145,
-						141,
-						170,
-						135,
-						149,
-						166,
-						168,
-						137,
 						154,
-						151,
+						152,
 						153,
-						169,
-						167,
-						136,
-						139
+						144,
+						127,
+						146,
+						139,
+						141,
+						129,
+						151,
+						134,
+						130,
+						159,
+						124,
+						138,
+						155,
+						157,
+						126,
+						143,
+						140,
+						142,
+						158,
+						156,
+						125,
+						128
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "lib/videoInfo.ts",
-					"line": 7,
+					"line": 8,
 					"character": 34
 				}
 			]
 		},
 		{
-			"id": 375,
+			"id": 364,
 			"name": "getReadableStreamOptions",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 376,
+					"id": 365,
 					"name": "requestOptions",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6365,14 +6149,22 @@
 					"sources": [
 						{
 							"fileName": "lib/generateStream.ts",
-							"line": 128,
+							"line": 142,
 							"character": 18
 						}
 					],
 					"type": {
-						"type": "reference",
-						"id": 8,
-						"name": "getOptions"
+						"type": "intersection",
+						"types": [
+							{
+								"type": "reference",
+								"name": "AxiosRequestConfig"
+							},
+							{
+								"type": "reference",
+								"name": "Options"
+							}
+						]
 					}
 				}
 			],
@@ -6381,14 +6173,14 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						376
+						365
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "lib/generateStream.ts",
-					"line": 127,
+					"line": 141,
 					"character": 41
 				}
 			]
@@ -6418,7 +6210,7 @@
 			"defaultValue": "..."
 		},
 		{
-			"id": 346,
+			"id": 335,
 			"name": "channelInfo",
 			"kind": 64,
 			"kindString": "Function",
@@ -6428,13 +6220,13 @@
 			"sources": [
 				{
 					"fileName": "lib/channelInfo.ts",
-					"line": 77,
+					"line": 78,
 					"character": 24
 				}
 			],
 			"signatures": [
 				{
-					"id": 347,
+					"id": 336,
 					"name": "channelInfo",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6444,7 +6236,7 @@
 					},
 					"parameters": [
 						{
-							"id": 348,
+							"id": 337,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6455,14 +6247,14 @@
 							}
 						},
 						{
-							"id": 349,
+							"id": 338,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 281,
+								"id": 270,
 								"name": "ChannelInfoOptions"
 							},
 							"defaultValue": "{}"
@@ -6473,7 +6265,7 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"id": 310,
+								"id": 299,
 								"name": "ChannelInfo"
 							}
 						],
@@ -6483,7 +6275,7 @@
 			]
 		},
 		{
-			"id": 371,
+			"id": 360,
 			"name": "getFormats",
 			"kind": 64,
 			"kindString": "Function",
@@ -6493,13 +6285,13 @@
 			"sources": [
 				{
 					"fileName": "lib/generateStream.ts",
-					"line": 13,
+					"line": 14,
 					"character": 23
 				}
 			],
 			"signatures": [
 				{
-					"id": 372,
+					"id": 361,
 					"name": "getFormats",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6509,26 +6301,26 @@
 					},
 					"parameters": [
 						{
-							"id": 373,
+							"id": 362,
 							"name": "formats",
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 171,
+								"id": 160,
 								"name": "VideoStream"
 							}
 						},
 						{
-							"id": 374,
+							"id": 363,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 350,
+								"id": 339,
 								"name": "GetFormatsOptions"
 							},
 							"defaultValue": "{}"
@@ -6541,7 +6333,7 @@
 								"type": "array",
 								"elementType": {
 									"type": "reference",
-									"id": 134,
+									"id": 123,
 									"name": "VideoStreamEntity"
 								}
 							}
@@ -6552,7 +6344,7 @@
 			]
 		},
 		{
-			"id": 377,
+			"id": 366,
 			"name": "getReadableStream",
 			"kind": 64,
 			"kindString": "Function",
@@ -6562,13 +6354,13 @@
 			"sources": [
 				{
 					"fileName": "lib/generateStream.ts",
-					"line": 136,
+					"line": 150,
 					"character": 30
 				}
 			],
 			"signatures": [
 				{
-					"id": 378,
+					"id": 367,
 					"name": "getReadableStream",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6579,7 +6371,7 @@
 					},
 					"parameters": [
 						{
-							"id": 379,
+							"id": 368,
 							"name": "streams",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6587,14 +6379,14 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 380,
+									"id": 369,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
 									"flags": {},
 									"children": [
 										{
-											"id": 381,
+											"id": 370,
 											"name": "url",
 											"kind": 1024,
 											"kindString": "Property",
@@ -6602,7 +6394,7 @@
 											"sources": [
 												{
 													"fileName": "lib/generateStream.ts",
-													"line": 137,
+													"line": 151,
 													"character": 18
 												}
 											],
@@ -6617,7 +6409,7 @@
 											"title": "Properties",
 											"kind": 1024,
 											"children": [
-												381
+												370
 											]
 										}
 									]
@@ -6625,14 +6417,14 @@
 							}
 						},
 						{
-							"id": 382,
+							"id": 371,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 375,
+								"id": 364,
 								"name": "getReadableStreamOptions"
 							},
 							"defaultValue": "{}"
@@ -6642,18 +6434,8 @@
 						"type": "reference",
 						"typeArguments": [
 							{
-								"type": "union",
-								"types": [
-									{
-										"type": "reference",
-										"id": 9,
-										"name": "getData"
-									},
-									{
-										"type": "reference",
-										"name": "Stream"
-									}
-								]
+								"type": "intrinsic",
+								"name": "any"
 							}
 						],
 						"name": "Promise"
@@ -6662,7 +6444,7 @@
 			]
 		},
 		{
-			"id": 277,
+			"id": 266,
 			"name": "playlistInfo",
 			"kind": 64,
 			"kindString": "Function",
@@ -6672,13 +6454,13 @@
 			"sources": [
 				{
 					"fileName": "lib/playlistInfo.ts",
-					"line": 44,
+					"line": 45,
 					"character": 25
 				}
 			],
 			"signatures": [
 				{
-					"id": 278,
+					"id": 267,
 					"name": "playlistInfo",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6688,7 +6470,7 @@
 					},
 					"parameters": [
 						{
-							"id": 279,
+							"id": 268,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6699,14 +6481,14 @@
 							}
 						},
 						{
-							"id": 280,
+							"id": 269,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 245,
+								"id": 234,
 								"name": "PlaylistInfoOptions"
 							},
 							"defaultValue": "{}"
@@ -6717,7 +6499,7 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"id": 266,
+								"id": 255,
 								"name": "PlaylistInfo"
 							}
 						],
@@ -6727,7 +6509,7 @@
 			]
 		},
 		{
-			"id": 124,
+			"id": 113,
 			"name": "search",
 			"kind": 64,
 			"kindString": "Function",
@@ -6737,13 +6519,13 @@
 			"sources": [
 				{
 					"fileName": "lib/search.ts",
-					"line": 70,
+					"line": 71,
 					"character": 19
 				}
 			],
 			"signatures": [
 				{
-					"id": 125,
+					"id": 114,
 					"name": "search",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6753,7 +6535,7 @@
 					},
 					"parameters": [
 						{
-							"id": 126,
+							"id": 115,
 							"name": "terms",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6764,14 +6546,14 @@
 							}
 						},
 						{
-							"id": 127,
+							"id": 116,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 68,
+								"id": 57,
 								"name": "SearchOptions"
 							},
 							"defaultValue": "{}"
@@ -6783,14 +6565,14 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 128,
+									"id": 117,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
 									"flags": {},
 									"children": [
 										{
-											"id": 130,
+											"id": 119,
 											"name": "channels",
 											"kind": 1024,
 											"kindString": "Property",
@@ -6798,7 +6580,7 @@
 											"sources": [
 												{
 													"fileName": "lib/search.ts",
-													"line": 139,
+													"line": 144,
 													"character": 16
 												}
 											],
@@ -6806,13 +6588,13 @@
 												"type": "array",
 												"elementType": {
 													"type": "reference",
-													"id": 97,
+													"id": 86,
 													"name": "SearchChannel"
 												}
 											}
 										},
 										{
-											"id": 131,
+											"id": 120,
 											"name": "playlists",
 											"kind": 1024,
 											"kindString": "Property",
@@ -6820,7 +6602,7 @@
 											"sources": [
 												{
 													"fileName": "lib/search.ts",
-													"line": 140,
+													"line": 145,
 													"character": 17
 												}
 											],
@@ -6828,13 +6610,13 @@
 												"type": "array",
 												"elementType": {
 													"type": "reference",
-													"id": 111,
+													"id": 100,
 													"name": "SearchPlaylist"
 												}
 											}
 										},
 										{
-											"id": 129,
+											"id": 118,
 											"name": "videos",
 											"kind": 1024,
 											"kindString": "Property",
@@ -6842,7 +6624,7 @@
 											"sources": [
 												{
 													"fileName": "lib/search.ts",
-													"line": 138,
+													"line": 143,
 													"character": 14
 												}
 											],
@@ -6850,7 +6632,7 @@
 												"type": "array",
 												"elementType": {
 													"type": "reference",
-													"id": 71,
+													"id": 60,
 													"name": "SearchVideo"
 												}
 											}
@@ -6861,9 +6643,9 @@
 											"title": "Properties",
 											"kind": 1024,
 											"children": [
-												130,
-												131,
-												129
+												119,
+												120,
+												118
 											]
 										}
 									]
@@ -6876,7 +6658,7 @@
 			]
 		},
 		{
-			"id": 241,
+			"id": 230,
 			"name": "videoInfo",
 			"kind": 64,
 			"kindString": "Function",
@@ -6886,13 +6668,13 @@
 			"sources": [
 				{
 					"fileName": "lib/videoInfo.ts",
-					"line": 123,
+					"line": 124,
 					"character": 22
 				}
 			],
 			"signatures": [
 				{
-					"id": 242,
+					"id": 231,
 					"name": "videoInfo",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6902,7 +6684,7 @@
 					},
 					"parameters": [
 						{
-							"id": 243,
+							"id": 232,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6913,14 +6695,14 @@
 							}
 						},
 						{
-							"id": 244,
+							"id": 233,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 132,
+								"id": 121,
 								"name": "VideoInfoOptions"
 							},
 							"defaultValue": "{}"
@@ -6931,7 +6713,7 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"id": 180,
+								"id": 169,
 								"name": "VideoInfo"
 							}
 						],
@@ -6953,22 +6735,22 @@
 			"title": "Interfaces",
 			"kind": 256,
 			"children": [
-				310,
-				281,
-				284,
-				350,
-				266,
-				245,
-				247,
-				97,
-				68,
-				111,
-				71,
-				180,
-				132,
-				171,
-				134,
-				375
+				299,
+				270,
+				273,
+				339,
+				255,
+				234,
+				236,
+				86,
+				57,
+				100,
+				60,
+				169,
+				121,
+				160,
+				123,
+				364
 			]
 		},
 		{
@@ -6982,12 +6764,12 @@
 			"title": "Functions",
 			"kind": 64,
 			"children": [
-				346,
-				371,
-				377,
-				277,
-				124,
-				241
+				335,
+				360,
+				366,
+				266,
+				113,
+				230
 			]
 		}
 	],

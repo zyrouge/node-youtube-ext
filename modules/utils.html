@@ -70,19 +70,6 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Interfaces</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/utils.getprops.html" class="tsd-kind-icon">get<wbr>Props</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Type aliases</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="utils.html#getdata" class="tsd-kind-icon">get<wbr>Data</a></li>
-								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="utils.html#getoptions" class="tsd-kind-icon">get<wbr>Options</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-namespace"><a href="utils.html#constants" class="tsd-kind-icon">constants</a></li>
@@ -91,34 +78,10 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="utils.html#get" class="tsd-kind-icon">get</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter"><a href="utils.html#mergeobj" class="tsd-kind-icon">merge<wbr>Obj</a></li>
 							</ul>
 						</section>
 					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Type aliases</h2>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
-					<a name="getdata" class="tsd-anchor"></a>
-					<h3>get<wbr>Data</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">http.IncomingMessage</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/utils.getprops.html" class="tsd-signature-type" data-tsd-kind="Interface">getProps</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/9f33c19/lib/utils.ts#L10">lib/utils.ts:10</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
-					<a name="getoptions" class="tsd-anchor"></a>
-					<h3>get<wbr>Options</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">http.RequestOptions</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">https.RequestOptions</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/9f33c19/lib/utils.ts#L9">lib/utils.ts:9</a></li>
-						</ul>
-					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -129,7 +92,7 @@
 					<div class="tsd-signature tsd-kind-icon">constants<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, expected<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, received<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>headers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>userAgent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>urls<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>base<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>channel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>base<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>playlist<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>base<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>baseUrlRegex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">; </span>getIdRegex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>search<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>base<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>terms<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>filters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>channel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>film<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>playlist<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>programme<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>video<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>video<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>base<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/9f33c19/lib/utils.ts#L51">lib/utils.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/zyrouge/node-youtube-ext/blob/c05abe1/lib/utils.ts#L1">lib/utils.ts:1</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -319,32 +282,6 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
-					<a name="get" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> get</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="utils.html#getoptions" class="tsd-signature-type" data-tsd-kind="Type alias">getOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="utils.html#getdata" class="tsd-signature-type" data-tsd-kind="Type alias">getData</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/9f33c19/lib/utils.ts#L12">lib/utils.ts:12</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>url: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>options: <a href="utils.html#getoptions" class="tsd-signature-type" data-tsd-kind="Type alias">getOptions</a><span class="tsd-signature-symbol"> = {}</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="utils.html#getdata" class="tsd-signature-type" data-tsd-kind="Type alias">getData</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
 					<a name="mergeobj" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> merge<wbr>Obj</h3>
@@ -355,7 +292,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zyrouge/youtube-ext/blob/9f33c19/lib/utils.ts#L104">lib/utils.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/zyrouge/node-youtube-ext/blob/c05abe1/lib/utils.ts#L54">lib/utils.ts:54</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -392,20 +329,8 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/utils.getprops.html" class="tsd-kind-icon">get<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
-						<a href="utils.html#getdata" class="tsd-kind-icon">get<wbr>Data</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
-						<a href="utils.html#getoptions" class="tsd-kind-icon">get<wbr>Options</a>
-					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
 						<a href="utils.html#constants" class="tsd-kind-icon">constants</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-namespace">
-						<a href="utils.html#get" class="tsd-kind-icon">get</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
 						<a href="utils.html#mergeobj" class="tsd-kind-icon">merge<wbr>Obj</a>
