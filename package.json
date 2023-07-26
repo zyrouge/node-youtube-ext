@@ -1,43 +1,46 @@
 {
-  "name": "youtube-ext",
-  "version": "1.0.9",
-  "description": "📼 Simple YouTube scraper and downloader. No key needed!",
-  "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "rimraf dist && tsc",
-    "docs": "typedoc && node ./media/scripts/docs",
-    "test": "npm run build && node media/scripts/test"
-  },
-  "keywords": [
-    "youtube",
-    "scrape",
-    "ytsr",
-    "ytdl",
-    "api",
-    "search",
-    "video",
-    "playlist",
-    "channel",
-    "promise"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zyrouge/youtube-ext.git"
-  },
-  "author": "ZYROUGE",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zyrouge/youtube-ext/issues"
-  },
-  "homepage": "youtube-ext.js.org",
-  "devDependencies": {
-    "@types/node": "^14.14.37",
-    "m3u8stream": "^0.8.3",
-    "rimraf": "^3.0.2",
-    "typedoc": "^0.20.34",
-    "typescript": "^4.2.3"
-  }
+    "name": "youtube-ext",
+    "version": "1.0.11",
+    "description": "📼 Simple YouTube scraper and downloader. No key needed!",
+    "main": "dist/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rimraf dist && tsc",
+        "docs": "typedoc && node ./media/scripts/docs",
+        "test": "npm run build && node media/scripts/test"
+    },
+    "keywords": [
+        "youtube",
+        "scrape",
+        "ytsr",
+        "ytdl",
+        "api",
+        "search",
+        "video",
+        "playlist",
+        "channel",
+        "promise"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zyrouge/youtube-ext.git"
+    },
+    "author": "ZYROUGE",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/zyrouge/youtube-ext/issues"
+    },
+    "homepage": "youtube-ext.js.org",
+    "devDependencies": {
+        "@types/node": "^14.14.37",
+        "m3u8stream": "^0.8.3",
+        "rimraf": "^3.0.2",
+        "typedoc": "^0.20.34",
+        "typescript": "^4.2.3"
+    },
+    "dependencies": {
+        "axios": "^0.21.1"
+    }
 }

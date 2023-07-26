@@ -1,7 +1,8 @@
-import { get, getOptions, constants, mergeObj } from "./utils";
+import axios, { AxiosRequestConfig } from "axios";
+import { constants, mergeObj } from "./utils";
 
 export interface VideoInfoOptions {
-    requestOptions?: getOptions;
+    requestOptions?: AxiosRequestConfig;
 }
 
 export interface VideoStreamEntity {
@@ -147,21 +148,26 @@ export const videoInfo = async (
 
     let res: string;
     try {
-        const gres = await get(url);
-        res = await gres.text();
+        res = (
+            await axios.get<string>(url, {
+                ...options.requestOptions,
+                responseType: "text",
+            })
+        ).data;
     } catch (err) {
         throw new Error(`Failed to fetch site. (${err})`);
     }
 
     let initialData: any, initialPlayer: any;
     try {
+        // TODO
         initialData = JSON.parse(
-            res.split("var ytInitialData = ")[1].split(";</script>")[0]
+            res.split("var ytInitialData = ")[1]!.split(";</script>")[0]!
         );
         initialPlayer = JSON.parse(
             res
-                .split("var ytInitialPlayerResponse = ")[1]
-                .split(";</script>")[0]
+                .split("var ytInitialPlayerResponse = ")[1]!
+                .split(";var meta = ")[0]!
         );
     } catch (err) {
         throw new Error(`Failed to parse script tag content. (${err})`);
@@ -178,14 +184,16 @@ export const videoInfo = async (
 
     let primary: any;
     try {
-        primary = contents?.find((x: any) => x?.videoPrimaryInfoRenderer)
-            ?.videoPrimaryInfoRenderer;
+        primary = contents?.find(
+            (x: any) => x?.videoPrimaryInfoRenderer
+        )?.videoPrimaryInfoRenderer;
     } catch (err) {}
 
     let secondary: any;
     try {
-        secondary = contents?.find((x: any) => x?.videoSecondaryInfoRenderer)
-            ?.videoSecondaryInfoRenderer;
+        secondary = contents?.find(
+            (x: any) => x?.videoSecondaryInfoRenderer
+        )?.videoSecondaryInfoRenderer;
     } catch (err) {}
 
     const info: VideoInfo = {
@@ -201,17 +209,15 @@ export const videoInfo = async (
             ?.join(""),
         channel: {
             name: secondary?.owner?.videoOwnerRenderer?.title?.runs[0]?.text,
-            id:
-                secondary?.owner?.videoOwnerRenderer?.title?.runs[0]
-                    ?.navigationEndpoint?.browseEndpoint?.browseId,
+            id: secondary?.owner?.videoOwnerRenderer?.title?.runs[0]
+                ?.navigationEndpoint?.browseEndpoint?.browseId,
             url:
                 constants.urls.base +
                 secondary?.owner?.videoOwnerRenderer?.title?.runs[0]
                     ?.navigationEndpoint?.browseEndpoint?.canonicalBaseUrl,
             subscribers: {
-                pretty:
-                    secondary?.owner?.videoOwnerRenderer?.subscriberCountText
-                        ?.simpleText,
+                pretty: secondary?.owner?.videoOwnerRenderer
+                    ?.subscriberCountText?.simpleText,
             },
             icons: secondary?.owner?.videoOwnerRenderer?.thumbnail?.thumbnails,
         },
@@ -248,23 +254,19 @@ export const videoInfo = async (
             },
         },
         views: {
-            text:
-                primary?.viewCount?.videoViewCountRenderer?.viewCount
-                    ?.simpleText,
-            pretty:
-                primary?.viewCount?.videoViewCountRenderer?.shortViewCount
-                    ?.simpleText,
+            text: primary?.viewCount?.videoViewCountRenderer?.viewCount
+                ?.simpleText,
+            pretty: primary?.viewCount?.videoViewCountRenderer?.shortViewCount
+                ?.simpleText,
         },
         published: {
             pretty: primary?.dateText?.simpleText,
-            text:
-                initialPlayer?.microformat?.playerMicroformatRenderer
-                    ?.publishDate,
+            text: initialPlayer?.microformat?.playerMicroformatRenderer
+                ?.publishDate,
         },
         uploaded: {
-            text:
-                initialPlayer?.microformat?.playerMicroformatRenderer
-                    ?.uploadDate,
+            text: initialPlayer?.microformat?.playerMicroformatRenderer
+                ?.uploadDate,
         },
         keywords: initialPlayer?.videoDetails?.keywords,
         isLive: initialPlayer?.videoDetails?.isLiveContent,
