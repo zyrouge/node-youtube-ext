@@ -14,7 +14,7 @@ A simple [YouTube](https://youtube.com) scraper.
 -   Supports YouTube channel information.
 -   No key required!
 
-## 💻 Installation
+## Installation
 
 ```bash
 npm install youtube-ext
