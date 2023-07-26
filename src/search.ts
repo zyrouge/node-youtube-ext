@@ -69,13 +69,14 @@ export interface SearchPlaylist {
  * Search for videos, channels, playlists, etc...
  */
 export const search = async (terms: string, options: SearchOptions = {}) => {
-    if (typeof terms !== "string")
+    if (typeof terms !== "string") {
         throw new Error(constants.err.type("terms", "string", typeof terms));
-
-    if (typeof options !== "object")
+    }
+    if (typeof options !== "object") {
         throw new Error(
             constants.err.type("options", "object", typeof options)
         );
+    }
 
     options = mergeObj(
         {
@@ -89,54 +90,35 @@ export const search = async (terms: string, options: SearchOptions = {}) => {
     );
 
     let url = constants.urls.search.base(terms);
-    if (options.filterType) {
-        const expectedFilterType = Object.keys(constants.urls.search.filters);
-
-        if (typeof options.filterType !== "string")
-            throw new Error(
-                constants.err.type(
-                    "filterType",
-                    expectedFilterType.join(" | "),
-                    typeof options.filterType
-                )
-            );
-
-        if (!expectedFilterType.includes(options.filterType))
-            throw new Error(
-                constants.err.type(
-                    "filterType",
-                    expectedFilterType.join(" | "),
-                    options.filterType
-                )
-            );
-
+    if (
+        options.filterType &&
+        constants.urls.search.filters[options.filterType]
+    ) {
         url += constants.urls.search.filters[options.filterType];
     }
 
-    let res: string;
+    let data: string;
     try {
-        res = (
-            await axios.get<string>(url, {
-                ...options.requestOptions,
-                responseType: "text",
-            })
-        ).data;
+        const resp = await axios.get<string>(url, {
+            ...options.requestOptions,
+            responseType: "text",
+        });
+        data = resp.data;
     } catch (err) {
-        throw new Error(`Failed to fetch site. (${err})`);
+        throw new Error(`Failed to fetch url "${url}". (${err})`);
     }
 
     let contents: any;
     try {
-        contents = JSON.parse(
-            res.substring(
-                res.lastIndexOf(
-                    '"sectionListRenderer":{"contents":[{"itemSectionRenderer":'
-                ) + 58,
-                res.lastIndexOf('},{"continuationItemRenderer"')
-            )
-        )?.contents;
+        const raw = data.substring(
+            data.lastIndexOf(
+                '"sectionListRenderer":{"contents":[{"itemSectionRenderer":'
+            ) + 58,
+            data.lastIndexOf('},{"continuationItemRenderer"')
+        );
+        contents = JSON.parse(raw)?.contents;
     } catch (err) {
-        throw new Error(`Failed to parse contents from script tag. (${err})`);
+        throw new Error(`Failed to parse contents from data. (${err})`);
     }
 
     const result: {
@@ -149,9 +131,13 @@ export const search = async (terms: string, options: SearchOptions = {}) => {
         playlists: [],
     };
 
-    contents
-        ?.filter((x: any) => x.videoRenderer)
-        ?.forEach(({ videoRenderer: x }: any) => {
+    for (const {
+        videoRenderer,
+        channelRenderer,
+        playlistRenderer,
+    } of contents) {
+        if (videoRenderer) {
+            const x = videoRenderer;
             const video: SearchVideo = {
                 title: x?.title?.runs[0]?.text,
                 id: x?.videoId,
@@ -161,9 +147,8 @@ export const search = async (terms: string, options: SearchOptions = {}) => {
                         ?.url,
                 channel: {
                     name: x?.ownerText?.runs[0]?.text,
-                    id:
-                        x?.ownerText?.runs[0]?.navigationEndpoint
-                            ?.browseEndpoint?.browseId,
+                    id: x?.ownerText?.runs[0]?.navigationEndpoint
+                        ?.browseEndpoint?.browseId,
                     url:
                         constants.urls.base +
                         x?.ownerText?.runs[0]?.navigationEndpoint
@@ -171,8 +156,8 @@ export const search = async (terms: string, options: SearchOptions = {}) => {
                 },
                 duration: {
                     text: x?.lengthText?.simpleText,
-                    pretty:
-                        x?.lengthText?.accessibility?.accessibilityData?.label,
+                    pretty: x?.lengthText?.accessibility?.accessibilityData
+                        ?.label,
                 },
                 published: {
                     pretty: x?.publishedTimeText?.simpleText,
@@ -187,11 +172,10 @@ export const search = async (terms: string, options: SearchOptions = {}) => {
                 thumbnails: x?.thumbnail?.thumbnails,
             };
             result.videos.push(video);
-        });
+        }
 
-    contents
-        ?.filter((x: any) => x?.channelRenderer)
-        ?.forEach(({ channelRenderer: x }: any) => {
+        if (channelRenderer) {
+            const x = channelRenderer;
             const channel: SearchChannel = {
                 name: x?.title?.simpleText,
                 id: x?.channelId,
@@ -199,9 +183,8 @@ export const search = async (terms: string, options: SearchOptions = {}) => {
                     constants.urls.base +
                     x?.navigationEndpoint?.browseEndpoint?.canonicalBaseUrl,
                 subscribers: {
-                    text:
-                        x?.subscriberCountText?.accessibility?.accessibilityData
-                            ?.label,
+                    text: x?.subscriberCountText?.accessibility
+                        ?.accessibilityData?.label,
                     pretty: x?.subscriberCountText?.simpleText,
                 },
                 videoCount:
@@ -210,11 +193,10 @@ export const search = async (terms: string, options: SearchOptions = {}) => {
                 icons: x?.thumbnail?.thumbnails,
             };
             result.channels.push(channel);
-        });
+        }
 
-    contents
-        ?.filter((x: any) => x?.playlistRenderer)
-        ?.forEach(({ playlistRenderer: x }: any) => {
+        if (playlistRenderer) {
+            const x = playlistRenderer;
             const playlist: SearchPlaylist = {
                 name: x?.title?.simpleText,
                 id: x?.playlistId,
@@ -231,7 +213,8 @@ export const search = async (terms: string, options: SearchOptions = {}) => {
                 },
             };
             result.playlists.push(playlist);
-        });
+        }
+    }
 
     return result;
 };

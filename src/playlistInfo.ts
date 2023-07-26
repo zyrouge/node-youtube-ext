@@ -1,5 +1,5 @@
 import axios, { AxiosRequestConfig } from "axios";
-import { constants, mergeObj } from "./utils";
+import { constants, contentBetween, mergeObj } from "./utils";
 
 export interface PlaylistInfoOptions {
     requestOptions?: AxiosRequestConfig;
@@ -46,13 +46,14 @@ export const playlistInfo = async (
     url: string,
     options: PlaylistInfoOptions = {}
 ) => {
-    if (typeof url !== "string")
+    if (typeof url !== "string") {
         throw new Error(constants.err.type("url", "string", typeof url));
-
-    if (typeof options !== "object")
+    }
+    if (typeof options !== "object") {
         throw new Error(
             constants.err.type("options", "object", typeof options)
         );
+    }
 
     options = mergeObj(
         {
@@ -65,49 +66,52 @@ export const playlistInfo = async (
         options
     );
 
-    const id = constants.urls.playlist.baseUrlRegex.test(url)
-        ? url.match(constants.urls.playlist.getIdRegex)?.[2] || url
-        : url;
-    if (!url.startsWith("http")) url = constants.urls.playlist.base(id);
-
-    let res: string;
-    try {
-        res = (
-            await axios.get<string>(url, {
-                ...options.requestOptions,
-                responseType: "text",
-            })
-        ).data;
-    } catch (err) {
-        throw new Error(`Failed to fetch site. (${err})`);
+    const id = url.match(constants.urls.playlist.getIdRegex)?.[2] ?? url;
+    if (!url.startsWith("http")) {
+        url = constants.urls.playlist.base(id);
     }
 
-    const script = res.split("var ytInitialData = ")[1]?.split(";</script>")[0];
-    if (!script) throw new Error("Failed to parse data from script tag.");
+    let data: string;
+    try {
+        const resp = await axios.get<string>(url, {
+            ...options.requestOptions,
+            responseType: "text",
+        });
+        data = resp.data;
+    } catch (err) {
+        throw new Error(`Failed to fetch url "${url}". (${err})`);
+    }
+
+    let initialData: any;
+    try {
+        const raw = contentBetween(data, "var ytInitialData = ", ";</script>");
+        initialData = JSON.parse(raw);
+    } catch (err) {
+        throw new Error(`Failed to parse data from webpage. (${err})`);
+    }
 
     let contents: any;
     try {
-        contents = JSON.parse(
-            script.substring(
-                script.lastIndexOf('"playlistVideoListRenderer":{"contents":') +
-                    40,
-                script.lastIndexOf('],"playlistId"') + 1
-            )
+        const raw = initialData.substring(
+            initialData.lastIndexOf(
+                '"playlistVideoListRenderer":{"contents":'
+            ) + 40,
+            initialData.lastIndexOf('],"playlistId"') + 1
         );
+        contents = JSON.parse(raw);
     } catch (err) {
-        throw new Error(`Failed to parse contents from script tag. (${err})`);
+        throw new Error(`Failed to parse contents from data. (${err})`);
     }
 
     let microformat: any;
     try {
-        microformat = JSON.parse(
-            script.substring(
-                script.lastIndexOf('"microformat":') + 14,
-                script.lastIndexOf(',"sidebar"')
-            )
+        const raw = initialData.substring(
+            initialData.lastIndexOf('"microformat":') + 14,
+            initialData.lastIndexOf(',"sidebar"')
         );
+        microformat = JSON.parse(raw);
     } catch (err) {
-        throw new Error(`Failed to parse contents from script tag. (${err})`);
+        throw new Error(`Failed to parse micro-formats from data. (${err})`);
     }
 
     const playlist: PlaylistInfo = {
@@ -119,9 +123,9 @@ export const playlistInfo = async (
         thumbnails: microformat?.microformatDataRenderer?.thumbnail?.thumbnails,
     };
 
-    contents
-        ?.filter((x: any) => x?.playlistVideoRenderer)
-        ?.forEach(({ playlistVideoRenderer: x }: any) => {
+    for (const { playlistVideoRenderer } of contents) {
+        if (playlistVideoRenderer) {
+            const x = playlistVideoRenderer;
             const video: PlaylistVideo = {
                 title: x?.title?.runs[0]?.text,
                 id: x?.videoId,
@@ -131,9 +135,8 @@ export const playlistInfo = async (
                         ?.url,
                 channel: {
                     name: x?.shortBylineText?.runs[0]?.text,
-                    id:
-                        x?.shortBylineText?.runs[0]?.navigationEndpoint
-                            ?.commandMetadata?.webCommandMetadata?.url,
+                    id: x?.shortBylineText?.runs[0]?.navigationEndpoint
+                        ?.commandMetadata?.webCommandMetadata?.url,
                     url:
                         constants.urls.base +
                         x?.shortBylineText?.runs[0]?.navigationEndpoint
@@ -142,14 +145,14 @@ export const playlistInfo = async (
                 thumbnails: x?.thumbnail?.thumbnails,
                 duration: {
                     pretty: x?.lengthText?.simpleText,
-                    text:
-                        x?.lengthText?.accessibility?.accessibilityData?.label,
+                    text: x?.lengthText?.accessibility?.accessibilityData
+                        ?.label,
                     lengthSec: x?.lengthSeconds,
                 },
             };
-
             playlist.videos.push(video);
-        });
+        }
+    }
 
     return playlist;
 };

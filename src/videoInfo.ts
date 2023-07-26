@@ -1,5 +1,5 @@
 import axios, { AxiosRequestConfig } from "axios";
-import { constants, mergeObj } from "./utils";
+import { constants, contentBetween, mergeObj } from "./utils";
 
 export interface VideoInfoOptions {
     requestOptions?: AxiosRequestConfig;
@@ -125,13 +125,14 @@ export const videoInfo = async (
     url: string,
     options: VideoInfoOptions = {}
 ) => {
-    if (typeof url !== "string")
+    if (typeof url !== "string") {
         throw new Error(constants.err.type("url", "string", typeof url));
-
-    if (typeof options !== "object")
+    }
+    if (typeof options !== "object") {
         throw new Error(
             constants.err.type("options", "object", typeof options)
         );
+    }
 
     options = mergeObj(
         {
@@ -144,33 +145,35 @@ export const videoInfo = async (
         options
     );
 
-    if (!url.startsWith("http")) url = constants.urls.video.base(url);
+    if (!url.startsWith("http")) {
+        url = constants.urls.video.base(url);
+    }
 
-    let res: string;
+    let data: string;
     try {
-        res = (
-            await axios.get<string>(url, {
-                ...options.requestOptions,
-                responseType: "text",
-            })
-        ).data;
+        const resp = await axios.get<string>(url, {
+            ...options.requestOptions,
+            responseType: "text",
+        });
+        data = resp.data;
     } catch (err) {
-        throw new Error(`Failed to fetch site. (${err})`);
+        throw new Error(`Failed to fetch url "${url}". (${err})`);
     }
 
     let initialData: any, initialPlayer: any;
     try {
-        // TODO
         initialData = JSON.parse(
-            res.split("var ytInitialData = ")[1]!.split(";</script>")[0]!
+            contentBetween(data, "var ytInitialData = ", ";</script>")
         );
         initialPlayer = JSON.parse(
-            res
-                .split("var ytInitialPlayerResponse = ")[1]!
-                .split(";var meta = ")[0]!
+            contentBetween(
+                data,
+                "var ytInitialPlayerResponse = ",
+                ";var meta = "
+            )
         );
     } catch (err) {
-        throw new Error(`Failed to parse script tag content. (${err})`);
+        throw new Error(`Failed to parse data from webpage. (${err})`);
     }
 
     let contents: any[];
@@ -179,7 +182,7 @@ export const videoInfo = async (
             initialData?.contents?.twoColumnWatchNextResults?.results?.results
                 ?.contents;
     } catch (err) {
-        throw new Error(`Failed to get contents from script tag. (${err})`);
+        throw new Error(`Failed to parse contents from webpage. (${err})`);
     }
 
     let primary: any;
@@ -280,7 +283,7 @@ export const videoInfo = async (
         streams: initialPlayer?.streamingData,
     };
 
-    const playerJsURL = res?.split('"PLAYER_JS_URL":"')[1]?.split('"')[0];
+    const playerJsURL = data?.split('"PLAYER_JS_URL":"')[1]?.split('"')[0];
     if (playerJsURL) {
         info.streams.player = {
             url: constants.urls.base + playerJsURL,

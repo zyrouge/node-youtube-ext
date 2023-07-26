@@ -8,8 +8,7 @@
     ],
     "scripts": {
         "build": "rimraf dist && tsc",
-        "docs": "typedoc && node ./media/scripts/docs",
-        "test": "npm run build && node media/scripts/test"
+        "docs": "typedoc && ts-node ./scripts/docs"
     },
     "keywords": [
         "youtube",
@@ -25,22 +24,23 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/zyrouge/youtube-ext.git"
+        "url": "git+https://github.com/zyrouge/node-youtube-ext.git"
     },
     "author": "ZYROUGE",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/zyrouge/youtube-ext/issues"
+        "url": "https://github.com/zyrouge/node-youtube-ext/issues"
     },
     "homepage": "youtube-ext.js.org",
     "devDependencies": {
-        "@types/node": "^14.14.37",
-        "m3u8stream": "^0.8.3",
-        "rimraf": "^3.0.2",
-        "typedoc": "^0.20.34",
-        "typescript": "^4.2.3"
+        "@types/node": "^20.4.5",
+        "m3u8stream": "^0.8.6",
+        "rimraf": "^5.0.1",
+        "ts-node": "^10.9.1",
+        "typedoc": "^0.24.8",
+        "typescript": "^5.1.6"
     },
     "dependencies": {
-        "axios": "^0.21.1"
+        "axios": "^1.4.0"
     }
 }

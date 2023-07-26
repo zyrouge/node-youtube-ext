@@ -1,0 +1,6 @@
+{
+    "name": "YouTube Extractor",
+    "entryPoints": ["src/index.ts"],
+    "out": "./docs-dist",
+    "json": "./docs-dist/docs.json"
+}

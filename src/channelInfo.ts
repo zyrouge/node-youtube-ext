@@ -1,5 +1,5 @@
 import axios, { AxiosRequestConfig } from "axios";
-import { constants, mergeObj } from "./utils";
+import { constants, contentBetween, mergeObj } from "./utils";
 
 export interface ChannelInfoOptions {
     requestOptions?: AxiosRequestConfig;
@@ -79,13 +79,14 @@ export const channelInfo = async (
     url: string,
     options: ChannelInfoOptions = {}
 ) => {
-    if (typeof url !== "string")
+    if (typeof url !== "string") {
         throw new Error(constants.err.type("url", "string", typeof url));
-
-    if (typeof options !== "object")
+    }
+    if (typeof options !== "object") {
         throw new Error(
             constants.err.type("options", "object", typeof options)
         );
+    }
 
     options = mergeObj(
         {
@@ -98,29 +99,27 @@ export const channelInfo = async (
         },
         options
     );
+    if (!url.startsWith("http")) {
+        url = constants.urls.channel.base(url);
+    }
 
-    if (!url.startsWith("http")) url = constants.urls.channel.base(url);
-
-    let res: string;
+    let data: string;
     try {
-        res = (
-            await axios.get<string>(url, {
-                ...options.requestOptions,
-                responseType: "text",
-            })
-        ).data;
+        const resp = await axios.get<string>(url, {
+            ...options.requestOptions,
+            responseType: "text",
+        });
+        data = resp.data;
     } catch (err) {
-        throw new Error(`Failed to fetch site. (${err})`);
+        throw new Error(`Failed to fetch url "${url}". (${err})`);
     }
 
     let initialData: any;
     try {
-        initialData = JSON.parse(
-            // TODO
-            res.split("var ytInitialData = ")[1]?.split(";</script>")[0]!
-        );
+        const raw = contentBetween(data, "var ytInitialData = ", ";</script>");
+        initialData = JSON.parse(raw);
     } catch (err) {
-        throw new Error(`Failed to parse data from script tag. (${err})`);
+        throw new Error(`Failed to parse data from webpage. (${err})`);
     }
 
     const channel: ChannelInfo = {

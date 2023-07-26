@@ -40,18 +40,33 @@ export const constants = {
     },
 };
 
-const merge2Obj = <T>(one: T, two: T) => {
+export const mergeObj = <T>(one: T, two: T) => {
     for (const key in two) {
         if (Object.prototype.hasOwnProperty.call(two, key)) {
             const ele = two[key];
-            if (typeof ele === "object") one[key] = merge2Obj(one[key], ele);
+            if (typeof ele === "object") one[key] = mergeObj(one[key], ele);
             else one[key] = ele;
         }
     }
     return one;
 };
 
-export const mergeObj = <T>(res: T, ...objs: T[]) => {
-    objs.forEach((obj) => merge2Obj(res, obj));
-    return res;
+export const contentBetween = (data: string, start: string, end: string) => {
+    return data.split(start)[1]!.split(end)[0]!;
+};
+
+export const parseQueryString = (data: string) => {
+    const params: Record<string, string> = {};
+    data.split("&").forEach((x) => {
+        const [k, v] = x.split("=") as [string, string];
+        params[k] = decodeURIComponent(v);
+    });
+    return params;
+};
+
+export const parseNumberOr = (data: string | undefined | null, def: number) => {
+    if (typeof data === "string") {
+        return parseInt(data);
+    }
+    return def;
 };
