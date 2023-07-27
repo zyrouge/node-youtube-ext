@@ -1,7 +1,7 @@
 {
     "name": "youtube-ext",
     "version": "1.1.1",
-    "description": "📼 Simple YouTube scraper and downloader. No key needed!",
+    "description": "A simple YouTube scraper and downloader.",
     "main": "dist/index.js",
     "files": [
         "dist"
@@ -41,6 +41,7 @@
         "typescript": "^5.1.6"
     },
     "dependencies": {
-        "axios": "^1.4.0"
+        "axios": "^1.4.0",
+        "isolated-vm": "^4.6.0"
     }
 }
