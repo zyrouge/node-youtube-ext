@@ -25,7 +25,7 @@
 							"fileName": "utils.ts",
 							"line": 3,
 							"character": 13,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L3"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L3"
 						}
 					],
 					"type": {
@@ -48,7 +48,7 @@
 											"fileName": "utils.ts",
 											"line": 39,
 											"character": 4,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L39"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L39"
 										}
 									],
 									"type": {
@@ -71,7 +71,7 @@
 															"fileName": "utils.ts",
 															"line": 40,
 															"character": 8,
-															"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L40"
+															"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L40"
 														}
 													],
 													"type": {
@@ -87,7 +87,7 @@
 																	"fileName": "utils.ts",
 																	"line": 40,
 																	"character": 14,
-																	"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L40"
+																	"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L40"
 																}
 															],
 															"signatures": [
@@ -102,7 +102,7 @@
 																			"fileName": "utils.ts",
 																			"line": 40,
 																			"character": 14,
-																			"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L40"
+																			"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L40"
 																		}
 																	],
 																	"parameters": [
@@ -164,7 +164,7 @@
 													"fileName": "utils.ts",
 													"line": 39,
 													"character": 9,
-													"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L39"
+													"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L39"
 												}
 											]
 										}
@@ -182,7 +182,7 @@
 											"fileName": "utils.ts",
 											"line": 35,
 											"character": 4,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L35"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L35"
 										}
 									],
 									"type": {
@@ -205,7 +205,7 @@
 															"fileName": "utils.ts",
 															"line": 36,
 															"character": 8,
-															"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L36"
+															"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L36"
 														}
 													],
 													"type": {
@@ -228,7 +228,7 @@
 													"fileName": "utils.ts",
 													"line": 35,
 													"character": 13,
-													"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L35"
+													"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L35"
 												}
 											]
 										}
@@ -246,7 +246,7 @@
 											"fileName": "utils.ts",
 											"line": 4,
 											"character": 4,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L4"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L4"
 										}
 									],
 									"type": {
@@ -269,7 +269,7 @@
 															"fileName": "utils.ts",
 															"line": 5,
 															"character": 8,
-															"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L5"
+															"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L5"
 														}
 													],
 													"type": {
@@ -289,7 +289,7 @@
 															"fileName": "utils.ts",
 															"line": 31,
 															"character": 8,
-															"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L31"
+															"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L31"
 														}
 													],
 													"type": {
@@ -312,7 +312,7 @@
 																			"fileName": "utils.ts",
 																			"line": 32,
 																			"character": 12,
-																			"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L32"
+																			"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L32"
 																		}
 																	],
 																	"type": {
@@ -328,7 +328,7 @@
 																					"fileName": "utils.ts",
 																					"line": 32,
 																					"character": 18,
-																					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L32"
+																					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L32"
 																				}
 																			],
 																			"signatures": [
@@ -343,7 +343,7 @@
 																							"fileName": "utils.ts",
 																							"line": 32,
 																							"character": 18,
-																							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L32"
+																							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L32"
 																						}
 																					],
 																					"parameters": [
@@ -383,7 +383,7 @@
 																	"fileName": "utils.ts",
 																	"line": 31,
 																	"character": 17,
-																	"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L31"
+																	"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L31"
 																}
 															]
 														}
@@ -401,7 +401,7 @@
 															"fileName": "utils.ts",
 															"line": 23,
 															"character": 8,
-															"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L23"
+															"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L23"
 														}
 													],
 													"type": {
@@ -424,7 +424,7 @@
 																			"fileName": "utils.ts",
 																			"line": 24,
 																			"character": 12,
-																			"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L24"
+																			"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L24"
 																		}
 																	],
 																	"type": {
@@ -440,7 +440,7 @@
 																					"fileName": "utils.ts",
 																					"line": 24,
 																					"character": 18,
-																					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L24"
+																					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L24"
 																				}
 																			],
 																			"signatures": [
@@ -455,7 +455,7 @@
 																							"fileName": "utils.ts",
 																							"line": 24,
 																							"character": 18,
-																							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L24"
+																							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L24"
 																						}
 																					],
 																					"parameters": [
@@ -492,7 +492,7 @@
 																			"fileName": "utils.ts",
 																			"line": 28,
 																			"character": 12,
-																			"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L28"
+																			"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L28"
 																		}
 																	],
 																	"type": {
@@ -517,7 +517,7 @@
 																			"fileName": "utils.ts",
 																			"line": 29,
 																			"character": 12,
-																			"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L29"
+																			"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L29"
 																		}
 																	],
 																	"type": {
@@ -547,7 +547,7 @@
 																	"fileName": "utils.ts",
 																	"line": 23,
 																	"character": 18,
-																	"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L23"
+																	"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L23"
 																}
 															]
 														}
@@ -565,7 +565,7 @@
 															"fileName": "utils.ts",
 															"line": 6,
 															"character": 8,
-															"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L6"
+															"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L6"
 														}
 													],
 													"type": {
@@ -588,7 +588,7 @@
 																			"fileName": "utils.ts",
 																			"line": 7,
 																			"character": 12,
-																			"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L7"
+																			"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L7"
 																		}
 																	],
 																	"type": {
@@ -604,7 +604,7 @@
 																					"fileName": "utils.ts",
 																					"line": 7,
 																					"character": 18,
-																					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L7"
+																					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L7"
 																				}
 																			],
 																			"signatures": [
@@ -619,7 +619,7 @@
 																							"fileName": "utils.ts",
 																							"line": 7,
 																							"character": 18,
-																							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L7"
+																							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L7"
 																						}
 																					],
 																					"parameters": [
@@ -656,7 +656,7 @@
 																			"fileName": "utils.ts",
 																			"line": 11,
 																			"character": 12,
-																			"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L11"
+																			"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L11"
 																		}
 																	],
 																	"type": {
@@ -679,7 +679,7 @@
 																							"fileName": "utils.ts",
 																							"line": 13,
 																							"character": 16,
-																							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L13"
+																							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L13"
 																						}
 																					],
 																					"type": {
@@ -699,7 +699,7 @@
 																							"fileName": "utils.ts",
 																							"line": 15,
 																							"character": 16,
-																							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L15"
+																							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L15"
 																						}
 																					],
 																					"type": {
@@ -719,7 +719,7 @@
 																							"fileName": "utils.ts",
 																							"line": 14,
 																							"character": 16,
-																							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L14"
+																							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L14"
 																						}
 																					],
 																					"type": {
@@ -739,7 +739,7 @@
 																							"fileName": "utils.ts",
 																							"line": 16,
 																							"character": 16,
-																							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L16"
+																							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L16"
 																						}
 																					],
 																					"type": {
@@ -759,7 +759,7 @@
 																							"fileName": "utils.ts",
 																							"line": 12,
 																							"character": 16,
-																							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L12"
+																							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L12"
 																						}
 																					],
 																					"type": {
@@ -786,7 +786,7 @@
 																					"fileName": "utils.ts",
 																					"line": 11,
 																					"character": 21,
-																					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L11"
+																					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L11"
 																				}
 																			]
 																		}
@@ -808,7 +808,7 @@
 																	"fileName": "utils.ts",
 																	"line": 6,
 																	"character": 16,
-																	"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L6"
+																	"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L6"
 																}
 															]
 														}
@@ -826,7 +826,7 @@
 															"fileName": "utils.ts",
 															"line": 19,
 															"character": 8,
-															"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L19"
+															"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L19"
 														}
 													],
 													"type": {
@@ -849,7 +849,7 @@
 																			"fileName": "utils.ts",
 																			"line": 20,
 																			"character": 12,
-																			"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L20"
+																			"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L20"
 																		}
 																	],
 																	"type": {
@@ -865,7 +865,7 @@
 																					"fileName": "utils.ts",
 																					"line": 20,
 																					"character": 18,
-																					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L20"
+																					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L20"
 																				}
 																			],
 																			"signatures": [
@@ -880,7 +880,7 @@
 																							"fileName": "utils.ts",
 																							"line": 20,
 																							"character": 18,
-																							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L20"
+																							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L20"
 																						}
 																					],
 																					"parameters": [
@@ -920,7 +920,7 @@
 																	"fileName": "utils.ts",
 																	"line": 19,
 																	"character": 15,
-																	"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L19"
+																	"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L19"
 																}
 															]
 														}
@@ -945,7 +945,7 @@
 													"fileName": "utils.ts",
 													"line": 4,
 													"character": 10,
-													"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L4"
+													"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L4"
 												}
 											]
 										}
@@ -968,7 +968,7 @@
 									"fileName": "utils.ts",
 									"line": 3,
 									"character": 25,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L3"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L3"
 								}
 							]
 						}
@@ -986,7 +986,7 @@
 							"fileName": "utils.ts",
 							"line": 56,
 							"character": 13,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L56"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L56"
 						}
 					],
 					"signatures": [
@@ -1001,7 +1001,7 @@
 									"fileName": "utils.ts",
 									"line": 56,
 									"character": 30,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L56"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L56"
 								}
 							],
 							"parameters": [
@@ -1057,7 +1057,7 @@
 							"fileName": "utils.ts",
 							"line": 76,
 							"character": 13,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L76"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L76"
 						}
 					],
 					"signatures": [
@@ -1072,7 +1072,7 @@
 									"fileName": "utils.ts",
 									"line": 76,
 									"character": 32,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L76"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L76"
 								}
 							],
 							"parameters": [
@@ -1106,7 +1106,7 @@
 							"fileName": "utils.ts",
 							"line": 45,
 							"character": 13,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L45"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L45"
 						}
 					],
 					"signatures": [
@@ -1121,7 +1121,7 @@
 									"fileName": "utils.ts",
 									"line": 45,
 									"character": 24,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L45"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L45"
 								}
 							],
 							"typeParameter": [
@@ -1181,7 +1181,7 @@
 							"fileName": "utils.ts",
 							"line": 69,
 							"character": 13,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L69"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L69"
 						}
 					],
 					"signatures": [
@@ -1196,7 +1196,7 @@
 									"fileName": "utils.ts",
 									"line": 69,
 									"character": 29,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L69"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L69"
 								}
 							],
 							"parameters": [
@@ -1254,7 +1254,7 @@
 							"fileName": "utils.ts",
 							"line": 60,
 							"character": 13,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L60"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L60"
 						}
 					],
 					"signatures": [
@@ -1269,7 +1269,7 @@
 									"fileName": "utils.ts",
 									"line": 60,
 									"character": 32,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L60"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L60"
 								}
 							],
 							"parameters": [
@@ -1331,7 +1331,7 @@
 					"fileName": "utils.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/utils.ts#L1"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/utils.ts#L1"
 				}
 			]
 		},
@@ -1353,7 +1353,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 68,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L68"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L68"
 						}
 					],
 					"type": {
@@ -1375,7 +1375,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 53,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L53"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L53"
 						}
 					],
 					"type": {
@@ -1400,7 +1400,7 @@
 												"fileName": "channelInfo.ts",
 												"line": 56,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L56"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L56"
 											}
 										],
 										"type": {
@@ -1419,7 +1419,7 @@
 												"fileName": "channelInfo.ts",
 												"line": 54,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L54"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L54"
 											}
 										],
 										"type": {
@@ -1438,7 +1438,7 @@
 												"fileName": "channelInfo.ts",
 												"line": 55,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L55"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L55"
 											}
 										],
 										"type": {
@@ -1462,7 +1462,7 @@
 										"fileName": "channelInfo.ts",
 										"line": 53,
 										"character": 12,
-										"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L53"
+										"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L53"
 									}
 								]
 							}
@@ -1480,7 +1480,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 43,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L43"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L43"
 						}
 					],
 					"type": {
@@ -1499,7 +1499,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 72,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L72"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L72"
 						}
 					],
 					"type": {
@@ -1518,7 +1518,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 39,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L39"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L39"
 						}
 					],
 					"type": {
@@ -1537,7 +1537,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 63,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L63"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L63"
 						}
 					],
 					"type": {
@@ -1562,7 +1562,7 @@
 												"fileName": "channelInfo.ts",
 												"line": 66,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L66"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L66"
 											}
 										],
 										"type": {
@@ -1581,7 +1581,7 @@
 												"fileName": "channelInfo.ts",
 												"line": 64,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L64"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L64"
 											}
 										],
 										"type": {
@@ -1600,7 +1600,7 @@
 												"fileName": "channelInfo.ts",
 												"line": 65,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L65"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L65"
 											}
 										],
 										"type": {
@@ -1624,7 +1624,7 @@
 										"fileName": "channelInfo.ts",
 										"line": 63,
 										"character": 18,
-										"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L63"
+										"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L63"
 									}
 								]
 							}
@@ -1642,7 +1642,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 38,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L38"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L38"
 						}
 					],
 					"type": {
@@ -1661,7 +1661,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 41,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L41"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L41"
 						}
 					],
 					"type": {
@@ -1680,7 +1680,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 44,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L44"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L44"
 						}
 					],
 					"type": {
@@ -1703,7 +1703,7 @@
 											"fileName": "channelInfo.ts",
 											"line": 45,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L45"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L45"
 										}
 									],
 									"type": {
@@ -1722,7 +1722,7 @@
 											"fileName": "channelInfo.ts",
 											"line": 46,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L46"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L46"
 										}
 									],
 									"type": {
@@ -1745,7 +1745,7 @@
 									"fileName": "channelInfo.ts",
 									"line": 44,
 									"character": 17,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L44"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L44"
 								}
 							]
 						}
@@ -1762,7 +1762,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 69,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L69"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L69"
 						}
 					],
 					"type": {
@@ -1784,7 +1784,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 48,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L48"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L48"
 						}
 					],
 					"type": {
@@ -1809,7 +1809,7 @@
 												"fileName": "channelInfo.ts",
 												"line": 51,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L51"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L51"
 											}
 										],
 										"type": {
@@ -1828,7 +1828,7 @@
 												"fileName": "channelInfo.ts",
 												"line": 49,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L49"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L49"
 											}
 										],
 										"type": {
@@ -1847,7 +1847,7 @@
 												"fileName": "channelInfo.ts",
 												"line": 50,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L50"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L50"
 											}
 										],
 										"type": {
@@ -1871,7 +1871,7 @@
 										"fileName": "channelInfo.ts",
 										"line": 48,
 										"character": 16,
-										"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L48"
+										"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L48"
 									}
 								]
 							}
@@ -1889,7 +1889,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 58,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L58"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L58"
 						}
 					],
 					"type": {
@@ -1914,7 +1914,7 @@
 												"fileName": "channelInfo.ts",
 												"line": 61,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L61"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L61"
 											}
 										],
 										"type": {
@@ -1933,7 +1933,7 @@
 												"fileName": "channelInfo.ts",
 												"line": 59,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L59"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L59"
 											}
 										],
 										"type": {
@@ -1952,7 +1952,7 @@
 												"fileName": "channelInfo.ts",
 												"line": 60,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L60"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L60"
 											}
 										],
 										"type": {
@@ -1976,7 +1976,7 @@
 										"fileName": "channelInfo.ts",
 										"line": 58,
 										"character": 14,
-										"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L58"
+										"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L58"
 									}
 								]
 							}
@@ -1994,7 +1994,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 71,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L71"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L71"
 						}
 					],
 					"type": {
@@ -2013,7 +2013,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 40,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L40"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L40"
 						}
 					],
 					"type": {
@@ -2032,7 +2032,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 42,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L42"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L42"
 						}
 					],
 					"type": {
@@ -2051,7 +2051,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 70,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L70"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L70"
 						}
 					],
 					"type": {
@@ -2093,7 +2093,7 @@
 					"fileName": "channelInfo.ts",
 					"line": 37,
 					"character": 17,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L37"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L37"
 				}
 			]
 		},
@@ -2117,7 +2117,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 6,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L6"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L6"
 						}
 					],
 					"type": {
@@ -2138,7 +2138,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 5,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L5"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L5"
 						}
 					],
 					"type": {
@@ -2172,7 +2172,7 @@
 					"fileName": "channelInfo.ts",
 					"line": 4,
 					"character": 17,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L4"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L4"
 				}
 			]
 		},
@@ -2194,7 +2194,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 13,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L13"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L13"
 						}
 					],
 					"type": {
@@ -2217,7 +2217,7 @@
 											"fileName": "channelInfo.ts",
 											"line": 15,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L15"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L15"
 										}
 									],
 									"type": {
@@ -2236,7 +2236,7 @@
 											"fileName": "channelInfo.ts",
 											"line": 14,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L14"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L14"
 										}
 									],
 									"type": {
@@ -2255,7 +2255,7 @@
 											"fileName": "channelInfo.ts",
 											"line": 16,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L16"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L16"
 										}
 									],
 									"type": {
@@ -2279,7 +2279,7 @@
 									"fileName": "channelInfo.ts",
 									"line": 13,
 									"character": 13,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L13"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L13"
 								}
 							]
 						}
@@ -2296,7 +2296,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 23,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L23"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L23"
 						}
 					],
 					"type": {
@@ -2319,7 +2319,7 @@
 											"fileName": "channelInfo.ts",
 											"line": 24,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L24"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L24"
 										}
 									],
 									"type": {
@@ -2338,7 +2338,7 @@
 											"fileName": "channelInfo.ts",
 											"line": 25,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L25"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L25"
 										}
 									],
 									"type": {
@@ -2361,7 +2361,7 @@
 									"fileName": "channelInfo.ts",
 									"line": 23,
 									"character": 14,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L23"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L23"
 								}
 							]
 						}
@@ -2378,7 +2378,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 11,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L11"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L11"
 						}
 					],
 					"type": {
@@ -2397,7 +2397,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 32,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L32"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L32"
 						}
 					],
 					"type": {
@@ -2420,7 +2420,7 @@
 											"fileName": "channelInfo.ts",
 											"line": 33,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L33"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L33"
 										}
 									],
 									"type": {
@@ -2442,7 +2442,7 @@
 									"fileName": "channelInfo.ts",
 									"line": 32,
 									"character": 15,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L32"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L32"
 								}
 							]
 						}
@@ -2459,7 +2459,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 18,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L18"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L18"
 						}
 					],
 					"type": {
@@ -2484,7 +2484,7 @@
 												"fileName": "channelInfo.ts",
 												"line": 21,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L21"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L21"
 											}
 										],
 										"type": {
@@ -2503,7 +2503,7 @@
 												"fileName": "channelInfo.ts",
 												"line": 19,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L19"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L19"
 											}
 										],
 										"type": {
@@ -2522,7 +2522,7 @@
 												"fileName": "channelInfo.ts",
 												"line": 20,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L20"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L20"
 											}
 										],
 										"type": {
@@ -2546,7 +2546,7 @@
 										"fileName": "channelInfo.ts",
 										"line": 18,
 										"character": 16,
-										"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L18"
+										"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L18"
 									}
 								]
 							}
@@ -2564,7 +2564,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 10,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L10"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L10"
 						}
 					],
 					"type": {
@@ -2583,7 +2583,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 12,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L12"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L12"
 						}
 					],
 					"type": {
@@ -2602,7 +2602,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 27,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L27"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L27"
 						}
 					],
 					"type": {
@@ -2625,7 +2625,7 @@
 											"fileName": "channelInfo.ts",
 											"line": 29,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L29"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L29"
 										}
 									],
 									"type": {
@@ -2644,7 +2644,7 @@
 											"fileName": "channelInfo.ts",
 											"line": 30,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L30"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L30"
 										}
 									],
 									"type": {
@@ -2663,7 +2663,7 @@
 											"fileName": "channelInfo.ts",
 											"line": 28,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L28"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L28"
 										}
 									],
 									"type": {
@@ -2687,7 +2687,7 @@
 									"fileName": "channelInfo.ts",
 									"line": 27,
 									"character": 11,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L27"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L27"
 								}
 							]
 						}
@@ -2714,7 +2714,7 @@
 					"fileName": "channelInfo.ts",
 					"line": 9,
 					"character": 17,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L9"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L9"
 				}
 			]
 		},
@@ -2738,7 +2738,7 @@
 							"fileName": "generateStream.ts",
 							"line": 16,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/generateStream.ts#L16"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/generateStream.ts#L16"
 						}
 					],
 					"type": {
@@ -2754,7 +2754,7 @@
 									"fileName": "generateStream.ts",
 									"line": 16,
 									"character": 15,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/generateStream.ts#L16"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/generateStream.ts#L16"
 								}
 							],
 							"signatures": [
@@ -2769,7 +2769,7 @@
 											"fileName": "generateStream.ts",
 											"line": 16,
 											"character": 15,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/generateStream.ts#L16"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/generateStream.ts#L16"
 										}
 									],
 									"parameters": [
@@ -2836,7 +2836,7 @@
 							"fileName": "generateStream.ts",
 							"line": 15,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/generateStream.ts#L15"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/generateStream.ts#L15"
 						}
 					],
 					"type": {
@@ -2870,7 +2870,7 @@
 					"fileName": "generateStream.ts",
 					"line": 14,
 					"character": 17,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/generateStream.ts#L14"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/generateStream.ts#L14"
 				}
 			]
 		},
@@ -2894,7 +2894,7 @@
 							"fileName": "generateStream.ts",
 							"line": 132,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/generateStream.ts#L132"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/generateStream.ts#L132"
 						}
 					],
 					"type": {
@@ -2921,7 +2921,7 @@
 							"fileName": "generateStream.ts",
 							"line": 131,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/generateStream.ts#L131"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/generateStream.ts#L131"
 						}
 					],
 					"type": {
@@ -2955,7 +2955,7 @@
 					"fileName": "generateStream.ts",
 					"line": 130,
 					"character": 17,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/generateStream.ts#L130"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/generateStream.ts#L130"
 				}
 			]
 		},
@@ -2977,7 +2977,7 @@
 							"fileName": "playlistInfo.ts",
 							"line": 33,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L33"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L33"
 						}
 					],
 					"type": {
@@ -2996,7 +2996,7 @@
 							"fileName": "playlistInfo.ts",
 							"line": 31,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L31"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L31"
 						}
 					],
 					"type": {
@@ -3015,7 +3015,7 @@
 							"fileName": "playlistInfo.ts",
 							"line": 35,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L35"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L35"
 						}
 					],
 					"type": {
@@ -3040,7 +3040,7 @@
 												"fileName": "playlistInfo.ts",
 												"line": 38,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L38"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L38"
 											}
 										],
 										"type": {
@@ -3059,7 +3059,7 @@
 												"fileName": "playlistInfo.ts",
 												"line": 36,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L36"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L36"
 											}
 										],
 										"type": {
@@ -3078,7 +3078,7 @@
 												"fileName": "playlistInfo.ts",
 												"line": 37,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L37"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L37"
 											}
 										],
 										"type": {
@@ -3102,7 +3102,7 @@
 										"fileName": "playlistInfo.ts",
 										"line": 35,
 										"character": 16,
-										"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L35"
+										"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L35"
 									}
 								]
 							}
@@ -3120,7 +3120,7 @@
 							"fileName": "playlistInfo.ts",
 							"line": 30,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L30"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L30"
 						}
 					],
 					"type": {
@@ -3139,7 +3139,7 @@
 							"fileName": "playlistInfo.ts",
 							"line": 32,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L32"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L32"
 						}
 					],
 					"type": {
@@ -3158,7 +3158,7 @@
 							"fileName": "playlistInfo.ts",
 							"line": 34,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L34"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L34"
 						}
 					],
 					"type": {
@@ -3190,7 +3190,7 @@
 					"fileName": "playlistInfo.ts",
 					"line": 29,
 					"character": 17,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L29"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L29"
 				}
 			]
 		},
@@ -3214,7 +3214,7 @@
 							"fileName": "playlistInfo.ts",
 							"line": 5,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L5"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L5"
 						}
 					],
 					"type": {
@@ -3247,7 +3247,7 @@
 					"fileName": "playlistInfo.ts",
 					"line": 4,
 					"character": 17,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L4"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L4"
 				}
 			]
 		},
@@ -3269,7 +3269,7 @@
 							"fileName": "playlistInfo.ts",
 							"line": 12,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L12"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L12"
 						}
 					],
 					"type": {
@@ -3292,7 +3292,7 @@
 											"fileName": "playlistInfo.ts",
 											"line": 14,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L14"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L14"
 										}
 									],
 									"type": {
@@ -3311,7 +3311,7 @@
 											"fileName": "playlistInfo.ts",
 											"line": 13,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L13"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L13"
 										}
 									],
 									"type": {
@@ -3330,7 +3330,7 @@
 											"fileName": "playlistInfo.ts",
 											"line": 15,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L15"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L15"
 										}
 									],
 									"type": {
@@ -3354,7 +3354,7 @@
 									"fileName": "playlistInfo.ts",
 									"line": 12,
 									"character": 13,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L12"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L12"
 								}
 							]
 						}
@@ -3371,7 +3371,7 @@
 							"fileName": "playlistInfo.ts",
 							"line": 22,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L22"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L22"
 						}
 					],
 					"type": {
@@ -3394,7 +3394,7 @@
 											"fileName": "playlistInfo.ts",
 											"line": 25,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L25"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L25"
 										}
 									],
 									"type": {
@@ -3413,7 +3413,7 @@
 											"fileName": "playlistInfo.ts",
 											"line": 23,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L23"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L23"
 										}
 									],
 									"type": {
@@ -3432,7 +3432,7 @@
 											"fileName": "playlistInfo.ts",
 											"line": 24,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L24"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L24"
 										}
 									],
 									"type": {
@@ -3456,7 +3456,7 @@
 									"fileName": "playlistInfo.ts",
 									"line": 22,
 									"character": 14,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L22"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L22"
 								}
 							]
 						}
@@ -3473,7 +3473,7 @@
 							"fileName": "playlistInfo.ts",
 							"line": 10,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L10"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L10"
 						}
 					],
 					"type": {
@@ -3492,7 +3492,7 @@
 							"fileName": "playlistInfo.ts",
 							"line": 17,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L17"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L17"
 						}
 					],
 					"type": {
@@ -3517,7 +3517,7 @@
 												"fileName": "playlistInfo.ts",
 												"line": 20,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L20"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L20"
 											}
 										],
 										"type": {
@@ -3536,7 +3536,7 @@
 												"fileName": "playlistInfo.ts",
 												"line": 18,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L18"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L18"
 											}
 										],
 										"type": {
@@ -3555,7 +3555,7 @@
 												"fileName": "playlistInfo.ts",
 												"line": 19,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L19"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L19"
 											}
 										],
 										"type": {
@@ -3579,7 +3579,7 @@
 										"fileName": "playlistInfo.ts",
 										"line": 17,
 										"character": 16,
-										"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L17"
+										"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L17"
 									}
 								]
 							}
@@ -3597,7 +3597,7 @@
 							"fileName": "playlistInfo.ts",
 							"line": 9,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L9"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L9"
 						}
 					],
 					"type": {
@@ -3616,7 +3616,7 @@
 							"fileName": "playlistInfo.ts",
 							"line": 11,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L11"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L11"
 						}
 					],
 					"type": {
@@ -3643,7 +3643,7 @@
 					"fileName": "playlistInfo.ts",
 					"line": 8,
 					"character": 17,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L8"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L8"
 				}
 			]
 		},
@@ -3665,7 +3665,7 @@
 							"fileName": "search.ts",
 							"line": 46,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L46"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L46"
 						}
 					],
 					"type": {
@@ -3690,7 +3690,7 @@
 												"fileName": "search.ts",
 												"line": 49,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L49"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L49"
 											}
 										],
 										"type": {
@@ -3709,7 +3709,7 @@
 												"fileName": "search.ts",
 												"line": 47,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L47"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L47"
 											}
 										],
 										"type": {
@@ -3728,7 +3728,7 @@
 												"fileName": "search.ts",
 												"line": 48,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L48"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L48"
 											}
 										],
 										"type": {
@@ -3752,7 +3752,7 @@
 										"fileName": "search.ts",
 										"line": 46,
 										"character": 11,
-										"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L46"
+										"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L46"
 									}
 								]
 							}
@@ -3770,7 +3770,7 @@
 							"fileName": "search.ts",
 							"line": 39,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L39"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L39"
 						}
 					],
 					"type": {
@@ -3789,7 +3789,7 @@
 							"fileName": "search.ts",
 							"line": 38,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L38"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L38"
 						}
 					],
 					"type": {
@@ -3808,7 +3808,7 @@
 							"fileName": "search.ts",
 							"line": 41,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L41"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L41"
 						}
 					],
 					"type": {
@@ -3831,7 +3831,7 @@
 											"fileName": "search.ts",
 											"line": 43,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L43"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L43"
 										}
 									],
 									"type": {
@@ -3850,7 +3850,7 @@
 											"fileName": "search.ts",
 											"line": 42,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L42"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L42"
 										}
 									],
 									"type": {
@@ -3873,7 +3873,7 @@
 									"fileName": "search.ts",
 									"line": 41,
 									"character": 17,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L41"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L41"
 								}
 							]
 						}
@@ -3890,7 +3890,7 @@
 							"fileName": "search.ts",
 							"line": 40,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L40"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L40"
 						}
 					],
 					"type": {
@@ -3909,7 +3909,7 @@
 							"fileName": "search.ts",
 							"line": 45,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L45"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L45"
 						}
 					],
 					"type": {
@@ -3936,7 +3936,7 @@
 					"fileName": "search.ts",
 					"line": 37,
 					"character": 17,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L37"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L37"
 				}
 			]
 		},
@@ -3960,7 +3960,7 @@
 							"fileName": "search.ts",
 							"line": 6,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L6"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L6"
 						}
 					],
 					"type": {
@@ -4002,7 +4002,7 @@
 							"fileName": "search.ts",
 							"line": 5,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L5"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L5"
 						}
 					],
 					"type": {
@@ -4036,7 +4036,7 @@
 					"fileName": "search.ts",
 					"line": 4,
 					"character": 17,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L4"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L4"
 				}
 			]
 		},
@@ -4058,7 +4058,7 @@
 							"fileName": "search.ts",
 							"line": 55,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L55"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L55"
 						}
 					],
 					"type": {
@@ -4077,7 +4077,7 @@
 							"fileName": "search.ts",
 							"line": 54,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L54"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L54"
 						}
 					],
 					"type": {
@@ -4096,7 +4096,7 @@
 							"fileName": "search.ts",
 							"line": 63,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L63"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L63"
 						}
 					],
 					"type": {
@@ -4121,7 +4121,7 @@
 											"fileName": "search.ts",
 											"line": 64,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L64"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L64"
 										}
 									],
 									"type": {
@@ -4143,7 +4143,7 @@
 									"fileName": "search.ts",
 									"line": 63,
 									"character": 15,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L63"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L63"
 								}
 							]
 						}
@@ -4160,7 +4160,7 @@
 							"fileName": "search.ts",
 							"line": 57,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L57"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L57"
 						}
 					],
 					"type": {
@@ -4185,7 +4185,7 @@
 												"fileName": "search.ts",
 												"line": 60,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L60"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L60"
 											}
 										],
 										"type": {
@@ -4204,7 +4204,7 @@
 												"fileName": "search.ts",
 												"line": 58,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L58"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L58"
 											}
 										],
 										"type": {
@@ -4223,7 +4223,7 @@
 												"fileName": "search.ts",
 												"line": 59,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L59"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L59"
 											}
 										],
 										"type": {
@@ -4247,7 +4247,7 @@
 										"fileName": "search.ts",
 										"line": 57,
 										"character": 16,
-										"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L57"
+										"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L57"
 									}
 								]
 							}
@@ -4265,7 +4265,7 @@
 							"fileName": "search.ts",
 							"line": 56,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L56"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L56"
 						}
 					],
 					"type": {
@@ -4284,7 +4284,7 @@
 							"fileName": "search.ts",
 							"line": 62,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L62"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L62"
 						}
 					],
 					"type": {
@@ -4311,7 +4311,7 @@
 					"fileName": "search.ts",
 					"line": 53,
 					"character": 17,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L53"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L53"
 				}
 			]
 		},
@@ -4333,7 +4333,7 @@
 							"fileName": "search.ts",
 							"line": 13,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L13"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L13"
 						}
 					],
 					"type": {
@@ -4356,7 +4356,7 @@
 											"fileName": "search.ts",
 											"line": 15,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L15"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L15"
 										}
 									],
 									"type": {
@@ -4375,7 +4375,7 @@
 											"fileName": "search.ts",
 											"line": 14,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L14"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L14"
 										}
 									],
 									"type": {
@@ -4394,7 +4394,7 @@
 											"fileName": "search.ts",
 											"line": 16,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L16"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L16"
 										}
 									],
 									"type": {
@@ -4418,7 +4418,7 @@
 									"fileName": "search.ts",
 									"line": 13,
 									"character": 13,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L13"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L13"
 								}
 							]
 						}
@@ -4435,7 +4435,7 @@
 							"fileName": "search.ts",
 							"line": 18,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L18"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L18"
 						}
 					],
 					"type": {
@@ -4458,7 +4458,7 @@
 											"fileName": "search.ts",
 											"line": 20,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L20"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L20"
 										}
 									],
 									"type": {
@@ -4477,7 +4477,7 @@
 											"fileName": "search.ts",
 											"line": 19,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L19"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L19"
 										}
 									],
 									"type": {
@@ -4500,7 +4500,7 @@
 									"fileName": "search.ts",
 									"line": 18,
 									"character": 14,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L18"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L18"
 								}
 							]
 						}
@@ -4517,7 +4517,7 @@
 							"fileName": "search.ts",
 							"line": 11,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L11"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L11"
 						}
 					],
 					"type": {
@@ -4536,7 +4536,7 @@
 							"fileName": "search.ts",
 							"line": 22,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L22"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L22"
 						}
 					],
 					"type": {
@@ -4559,7 +4559,7 @@
 											"fileName": "search.ts",
 											"line": 23,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L23"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L23"
 										}
 									],
 									"type": {
@@ -4581,7 +4581,7 @@
 									"fileName": "search.ts",
 									"line": 22,
 									"character": 15,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L22"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L22"
 								}
 							]
 						}
@@ -4598,7 +4598,7 @@
 							"fileName": "search.ts",
 							"line": 30,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L30"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L30"
 						}
 					],
 					"type": {
@@ -4623,7 +4623,7 @@
 												"fileName": "search.ts",
 												"line": 33,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L33"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L33"
 											}
 										],
 										"type": {
@@ -4642,7 +4642,7 @@
 												"fileName": "search.ts",
 												"line": 31,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L31"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L31"
 											}
 										],
 										"type": {
@@ -4661,7 +4661,7 @@
 												"fileName": "search.ts",
 												"line": 32,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L32"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L32"
 											}
 										],
 										"type": {
@@ -4685,7 +4685,7 @@
 										"fileName": "search.ts",
 										"line": 30,
 										"character": 16,
-										"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L30"
+										"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L30"
 									}
 								]
 							}
@@ -4703,7 +4703,7 @@
 							"fileName": "search.ts",
 							"line": 10,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L10"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L10"
 						}
 					],
 					"type": {
@@ -4722,7 +4722,7 @@
 							"fileName": "search.ts",
 							"line": 12,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L12"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L12"
 						}
 					],
 					"type": {
@@ -4741,7 +4741,7 @@
 							"fileName": "search.ts",
 							"line": 25,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L25"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L25"
 						}
 					],
 					"type": {
@@ -4764,7 +4764,7 @@
 											"fileName": "search.ts",
 											"line": 27,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L27"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L27"
 										}
 									],
 									"type": {
@@ -4783,7 +4783,7 @@
 											"fileName": "search.ts",
 											"line": 28,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L28"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L28"
 										}
 									],
 									"type": {
@@ -4802,7 +4802,7 @@
 											"fileName": "search.ts",
 											"line": 26,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L26"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L26"
 										}
 									],
 									"type": {
@@ -4826,7 +4826,7 @@
 									"fileName": "search.ts",
 									"line": 25,
 									"character": 11,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L25"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L25"
 								}
 							]
 						}
@@ -4853,7 +4853,7 @@
 					"fileName": "search.ts",
 					"line": 9,
 					"character": 17,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L9"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L9"
 				}
 			]
 		},
@@ -4875,7 +4875,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 110,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L110"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L110"
 						}
 					],
 					"type": {
@@ -4894,7 +4894,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 64,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L64"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L64"
 						}
 					],
 					"type": {
@@ -4917,7 +4917,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 71,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L71"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L71"
 										}
 									],
 									"type": {
@@ -4942,7 +4942,7 @@
 																"fileName": "videoInfo.ts",
 																"line": 74,
 																"character": 12,
-																"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L74"
+																"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L74"
 															}
 														],
 														"type": {
@@ -4961,7 +4961,7 @@
 																"fileName": "videoInfo.ts",
 																"line": 72,
 																"character": 12,
-																"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L72"
+																"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L72"
 															}
 														],
 														"type": {
@@ -4980,7 +4980,7 @@
 																"fileName": "videoInfo.ts",
 																"line": 73,
 																"character": 12,
-																"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L73"
+																"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L73"
 															}
 														],
 														"type": {
@@ -5004,7 +5004,7 @@
 														"fileName": "videoInfo.ts",
 														"line": 71,
 														"character": 15,
-														"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L71"
+														"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L71"
 													}
 												]
 											}
@@ -5022,7 +5022,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 66,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L66"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L66"
 										}
 									],
 									"type": {
@@ -5041,7 +5041,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 65,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L65"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L65"
 										}
 									],
 									"type": {
@@ -5060,7 +5060,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 68,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L68"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L68"
 										}
 									],
 									"type": {
@@ -5083,7 +5083,7 @@
 															"fileName": "videoInfo.ts",
 															"line": 69,
 															"character": 12,
-															"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L69"
+															"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L69"
 														}
 													],
 													"type": {
@@ -5105,7 +5105,7 @@
 													"fileName": "videoInfo.ts",
 													"line": 68,
 													"character": 21,
-													"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L68"
+													"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L68"
 												}
 											]
 										}
@@ -5122,7 +5122,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 67,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L67"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L67"
 										}
 									],
 									"type": {
@@ -5148,7 +5148,7 @@
 									"fileName": "videoInfo.ts",
 									"line": 64,
 									"character": 13,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L64"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L64"
 								}
 							]
 						}
@@ -5165,7 +5165,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 63,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L63"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L63"
 						}
 					],
 					"type": {
@@ -5184,7 +5184,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 77,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L77"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L77"
 						}
 					],
 					"type": {
@@ -5207,7 +5207,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 78,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L78"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L78"
 										}
 									],
 									"type": {
@@ -5229,7 +5229,7 @@
 									"fileName": "videoInfo.ts",
 									"line": 77,
 									"character": 14,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L77"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L77"
 								}
 							]
 						}
@@ -5246,7 +5246,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 111,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L111"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L111"
 						}
 					],
 					"type": {
@@ -5269,7 +5269,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 116,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L116"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L116"
 										}
 									],
 									"type": {
@@ -5288,7 +5288,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 113,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L113"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L113"
 										}
 									],
 									"type": {
@@ -5307,7 +5307,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 114,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L114"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L114"
 										}
 									],
 									"type": {
@@ -5326,7 +5326,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 112,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L112"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L112"
 										}
 									],
 									"type": {
@@ -5345,7 +5345,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 115,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L115"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L115"
 										}
 									],
 									"type": {
@@ -5371,7 +5371,7 @@
 									"fileName": "videoInfo.ts",
 									"line": 111,
 									"character": 11,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L111"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L111"
 								}
 							]
 						}
@@ -5388,7 +5388,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 60,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L60"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L60"
 						}
 					],
 					"type": {
@@ -5407,7 +5407,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 109,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L109"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L109"
 						}
 					],
 					"type": {
@@ -5426,7 +5426,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 107,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L107"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L107"
 						}
 					],
 					"type": {
@@ -5445,7 +5445,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 108,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L108"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L108"
 						}
 					],
 					"type": {
@@ -5464,7 +5464,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 106,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L106"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L106"
 						}
 					],
 					"type": {
@@ -5486,7 +5486,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 99,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L99"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L99"
 						}
 					],
 					"type": {
@@ -5509,7 +5509,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 101,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L101"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L101"
 										}
 									],
 									"type": {
@@ -5528,7 +5528,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 100,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L100"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L100"
 										}
 									],
 									"type": {
@@ -5551,7 +5551,7 @@
 									"fileName": "videoInfo.ts",
 									"line": 99,
 									"character": 15,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L99"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L99"
 								}
 							]
 						}
@@ -5568,7 +5568,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 85,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L85"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L85"
 						}
 					],
 					"type": {
@@ -5591,7 +5591,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 90,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L90"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L90"
 										}
 									],
 									"type": {
@@ -5614,7 +5614,7 @@
 															"fileName": "videoInfo.ts",
 															"line": 92,
 															"character": 12,
-															"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L92"
+															"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L92"
 														}
 													],
 													"type": {
@@ -5633,7 +5633,7 @@
 															"fileName": "videoInfo.ts",
 															"line": 91,
 															"character": 12,
-															"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L91"
+															"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L91"
 														}
 													],
 													"type": {
@@ -5656,7 +5656,7 @@
 													"fileName": "videoInfo.ts",
 													"line": 90,
 													"character": 18,
-													"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L90"
+													"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L90"
 												}
 											]
 										}
@@ -5673,7 +5673,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 86,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L86"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L86"
 										}
 									],
 									"type": {
@@ -5696,7 +5696,7 @@
 															"fileName": "videoInfo.ts",
 															"line": 88,
 															"character": 12,
-															"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L88"
+															"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L88"
 														}
 													],
 													"type": {
@@ -5715,7 +5715,7 @@
 															"fileName": "videoInfo.ts",
 															"line": 87,
 															"character": 12,
-															"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L87"
+															"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L87"
 														}
 													],
 													"type": {
@@ -5738,7 +5738,7 @@
 													"fileName": "videoInfo.ts",
 													"line": 86,
 													"character": 15,
-													"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L86"
+													"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L86"
 												}
 											]
 										}
@@ -5759,7 +5759,7 @@
 									"fileName": "videoInfo.ts",
 									"line": 85,
 									"character": 13,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L85"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L85"
 								}
 							]
 						}
@@ -5776,7 +5776,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 62,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L62"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L62"
 						}
 					],
 					"type": {
@@ -5795,7 +5795,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 118,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L118"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L118"
 						}
 					],
 					"type": {
@@ -5816,7 +5816,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 80,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L80"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L80"
 						}
 					],
 					"type": {
@@ -5841,7 +5841,7 @@
 												"fileName": "videoInfo.ts",
 												"line": 83,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L83"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L83"
 											}
 										],
 										"type": {
@@ -5860,7 +5860,7 @@
 												"fileName": "videoInfo.ts",
 												"line": 81,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L81"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L81"
 											}
 										],
 										"type": {
@@ -5879,7 +5879,7 @@
 												"fileName": "videoInfo.ts",
 												"line": 82,
 												"character": 8,
-												"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L82"
+												"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L82"
 											}
 										],
 										"type": {
@@ -5903,7 +5903,7 @@
 										"fileName": "videoInfo.ts",
 										"line": 80,
 										"character": 16,
-										"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L80"
+										"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L80"
 									}
 								]
 							}
@@ -5921,7 +5921,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 59,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L59"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L59"
 						}
 					],
 					"type": {
@@ -5940,7 +5940,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 103,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L103"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L103"
 						}
 					],
 					"type": {
@@ -5963,7 +5963,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 104,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L104"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L104"
 										}
 									],
 									"type": {
@@ -5985,7 +5985,7 @@
 									"fileName": "videoInfo.ts",
 									"line": 103,
 									"character": 14,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L103"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L103"
 								}
 							]
 						}
@@ -6002,7 +6002,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 61,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L61"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L61"
 						}
 					],
 					"type": {
@@ -6021,7 +6021,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 95,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L95"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L95"
 						}
 					],
 					"type": {
@@ -6044,7 +6044,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 97,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L97"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L97"
 										}
 									],
 									"type": {
@@ -6063,7 +6063,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 96,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L96"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L96"
 										}
 									],
 									"type": {
@@ -6086,7 +6086,7 @@
 									"fileName": "videoInfo.ts",
 									"line": 95,
 									"character": 11,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L95"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L95"
 								}
 							]
 						}
@@ -6124,7 +6124,7 @@
 					"fileName": "videoInfo.ts",
 					"line": 58,
 					"character": 17,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L58"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L58"
 				}
 			]
 		},
@@ -6148,7 +6148,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 5,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L5"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L5"
 						}
 					],
 					"type": {
@@ -6181,7 +6181,7 @@
 					"fileName": "videoInfo.ts",
 					"line": 4,
 					"character": 17,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L4"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L4"
 				}
 			]
 		},
@@ -6203,7 +6203,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 50,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L50"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L50"
 						}
 					],
 					"type": {
@@ -6229,7 +6229,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 51,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L51"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L51"
 						}
 					],
 					"type": {
@@ -6248,7 +6248,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 48,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L48"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L48"
 						}
 					],
 					"type": {
@@ -6267,7 +6267,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 49,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L49"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L49"
 						}
 					],
 					"type": {
@@ -6293,7 +6293,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 52,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L52"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L52"
 						}
 					],
 					"type": {
@@ -6314,7 +6314,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 53,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L53"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L53"
 						}
 					],
 					"type": {
@@ -6337,7 +6337,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 54,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L54"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L54"
 										}
 									],
 									"type": {
@@ -6359,7 +6359,7 @@
 									"fileName": "videoInfo.ts",
 									"line": 53,
 									"character": 13,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L53"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L53"
 								}
 							]
 						}
@@ -6384,7 +6384,7 @@
 					"fileName": "videoInfo.ts",
 					"line": 47,
 					"character": 17,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L47"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L47"
 				}
 			]
 		},
@@ -6408,7 +6408,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 30,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L30"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L30"
 						}
 					],
 					"type": {
@@ -6429,7 +6429,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 39,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L39"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L39"
 						}
 					],
 					"type": {
@@ -6450,7 +6450,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 37,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L37"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L37"
 						}
 					],
 					"type": {
@@ -6471,7 +6471,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 38,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L38"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L38"
 						}
 					],
 					"type": {
@@ -6492,7 +6492,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 29,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L29"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L29"
 						}
 					],
 					"type": {
@@ -6513,7 +6513,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 12,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L12"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L12"
 						}
 					],
 					"type": {
@@ -6534,7 +6534,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 31,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L31"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L31"
 						}
 					],
 					"type": {
@@ -6557,7 +6557,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 34,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L34"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L34"
 										}
 									],
 									"type": {
@@ -6576,7 +6576,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 32,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L32"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L32"
 										}
 									],
 									"type": {
@@ -6595,7 +6595,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 33,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L33"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L33"
 										}
 									],
 									"type": {
@@ -6619,7 +6619,7 @@
 									"fileName": "videoInfo.ts",
 									"line": 31,
 									"character": 16,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L31"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L31"
 								}
 							]
 						}
@@ -6638,7 +6638,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 24,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L24"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L24"
 						}
 					],
 					"type": {
@@ -6659,7 +6659,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 26,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L26"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L26"
 						}
 					],
 					"type": {
@@ -6680,7 +6680,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 14,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L14"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L14"
 						}
 					],
 					"type": {
@@ -6701,7 +6701,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 36,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L36"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L36"
 						}
 					],
 					"type": {
@@ -6722,7 +6722,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 19,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L19"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L19"
 						}
 					],
 					"type": {
@@ -6745,7 +6745,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 21,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L21"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L21"
 										}
 									],
 									"type": {
@@ -6764,7 +6764,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 20,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L20"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L20"
 										}
 									],
 									"type": {
@@ -6787,7 +6787,7 @@
 									"fileName": "videoInfo.ts",
 									"line": 19,
 									"character": 17,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L19"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L19"
 								}
 							]
 						}
@@ -6806,7 +6806,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 15,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L15"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L15"
 						}
 					],
 					"type": {
@@ -6829,7 +6829,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 17,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L17"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L17"
 										}
 									],
 									"type": {
@@ -6848,7 +6848,7 @@
 											"fileName": "videoInfo.ts",
 											"line": 16,
 											"character": 8,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L16"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L16"
 										}
 									],
 									"type": {
@@ -6871,7 +6871,7 @@
 									"fileName": "videoInfo.ts",
 									"line": 15,
 									"character": 16,
-									"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L15"
+									"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L15"
 								}
 							]
 						}
@@ -6890,7 +6890,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 44,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L44"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L44"
 						}
 					],
 					"type": {
@@ -6911,7 +6911,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 9,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L9"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L9"
 						}
 					],
 					"type": {
@@ -6932,7 +6932,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 23,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L23"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L23"
 						}
 					],
 					"type": {
@@ -6953,7 +6953,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 40,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L40"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L40"
 						}
 					],
 					"type": {
@@ -6974,7 +6974,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 42,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L42"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L42"
 						}
 					],
 					"type": {
@@ -6995,7 +6995,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 11,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L11"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L11"
 						}
 					],
 					"type": {
@@ -7016,7 +7016,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 28,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L28"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L28"
 						}
 					],
 					"type": {
@@ -7037,7 +7037,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 25,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L25"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L25"
 						}
 					],
 					"type": {
@@ -7058,7 +7058,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 27,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L27"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L27"
 						}
 					],
 					"type": {
@@ -7079,7 +7079,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 43,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L43"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L43"
 						}
 					],
 					"type": {
@@ -7100,7 +7100,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 41,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L41"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L41"
 						}
 					],
 					"type": {
@@ -7119,7 +7119,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 10,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L10"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L10"
 						}
 					],
 					"type": {
@@ -7140,7 +7140,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 13,
 							"character": 4,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L13"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L13"
 						}
 					],
 					"type": {
@@ -7187,7 +7187,7 @@
 					"fileName": "videoInfo.ts",
 					"line": 8,
 					"character": 17,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L8"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L8"
 				}
 			]
 		},
@@ -7212,7 +7212,7 @@
 					"fileName": "index.ts",
 					"line": 11,
 					"character": 13,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/index.ts#L11"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/index.ts#L11"
 				}
 			],
 			"type": {
@@ -7232,7 +7232,7 @@
 					"fileName": "channelInfo.ts",
 					"line": 78,
 					"character": 13,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L78"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L78"
 				}
 			],
 			"signatures": [
@@ -7255,7 +7255,7 @@
 							"fileName": "channelInfo.ts",
 							"line": 78,
 							"character": 27,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/channelInfo.ts#L78"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/channelInfo.ts#L78"
 						}
 					],
 					"parameters": [
@@ -7316,7 +7316,7 @@
 					"fileName": "generateStream.ts",
 					"line": 26,
 					"character": 13,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/generateStream.ts#L26"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/generateStream.ts#L26"
 				}
 			],
 			"signatures": [
@@ -7339,7 +7339,7 @@
 							"fileName": "generateStream.ts",
 							"line": 26,
 							"character": 26,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/generateStream.ts#L26"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/generateStream.ts#L26"
 						}
 					],
 					"parameters": [
@@ -7405,7 +7405,7 @@
 					"fileName": "generateStream.ts",
 					"line": 140,
 					"character": 13,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/generateStream.ts#L140"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/generateStream.ts#L140"
 				}
 			],
 			"signatures": [
@@ -7436,7 +7436,7 @@
 							"fileName": "generateStream.ts",
 							"line": 140,
 							"character": 33,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/generateStream.ts#L140"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/generateStream.ts#L140"
 						}
 					],
 					"parameters": [
@@ -7466,7 +7466,7 @@
 													"fileName": "generateStream.ts",
 													"line": 141,
 													"character": 15,
-													"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/generateStream.ts#L141"
+													"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/generateStream.ts#L141"
 												}
 											],
 											"type": {
@@ -7488,7 +7488,7 @@
 											"fileName": "generateStream.ts",
 											"line": 141,
 											"character": 13,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/generateStream.ts#L141"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/generateStream.ts#L141"
 										}
 									]
 								}
@@ -7559,7 +7559,7 @@
 					"fileName": "playlistInfo.ts",
 					"line": 45,
 					"character": 13,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L45"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L45"
 				}
 			],
 			"signatures": [
@@ -7582,7 +7582,7 @@
 							"fileName": "playlistInfo.ts",
 							"line": 45,
 							"character": 28,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/playlistInfo.ts#L45"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/playlistInfo.ts#L45"
 						}
 					],
 					"parameters": [
@@ -7643,7 +7643,7 @@
 					"fileName": "search.ts",
 					"line": 71,
 					"character": 13,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L71"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L71"
 				}
 			],
 			"signatures": [
@@ -7666,7 +7666,7 @@
 							"fileName": "search.ts",
 							"line": 71,
 							"character": 22,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L71"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L71"
 						}
 					],
 					"parameters": [
@@ -7723,7 +7723,7 @@
 													"fileName": "search.ts",
 													"line": 126,
 													"character": 8,
-													"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L126"
+													"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L126"
 												}
 											],
 											"type": {
@@ -7747,7 +7747,7 @@
 													"fileName": "search.ts",
 													"line": 127,
 													"character": 8,
-													"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L127"
+													"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L127"
 												}
 											],
 											"type": {
@@ -7771,7 +7771,7 @@
 													"fileName": "search.ts",
 													"line": 125,
 													"character": 8,
-													"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L125"
+													"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L125"
 												}
 											],
 											"type": {
@@ -7800,7 +7800,7 @@
 											"fileName": "search.ts",
 											"line": 124,
 											"character": 18,
-											"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/search.ts#L124"
+											"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/search.ts#L124"
 										}
 									]
 								}
@@ -7823,7 +7823,7 @@
 					"fileName": "videoInfo.ts",
 					"line": 124,
 					"character": 13,
-					"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L124"
+					"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L124"
 				}
 			],
 			"signatures": [
@@ -7846,7 +7846,7 @@
 							"fileName": "videoInfo.ts",
 							"line": 124,
 							"character": 25,
-							"url": "https://github.com/zyrouge/node-youtube-ext/blob/eb0221a/src/videoInfo.ts#L124"
+							"url": "https://github.com/zyrouge/node-youtube-ext/blob/bd3a0cf/src/videoInfo.ts#L124"
 						}
 					],
 					"parameters": [
@@ -7947,7 +7947,7 @@
 	"readme": [
 		{
 			"kind": "text",
-			"text": "# YouTube Extractor\n\nA simple [YouTube](https://youtube.com) scraper.\n\n[![Documentation](https://github.com/zyrouge/node-youtube-ext/actions/workflows/docs.yml/badge.svg)](https://github.com/zyrouge/node-youtube-ext/actions/workflows/docs.yml)\n\n## Features\n\n-   Faster and Better! ([comparison](https://runkit.com/zyrouge/606dd634af4a29001a4be694))\n-   Supports YouTube stream generation.\n-   Supports YouTube search.\n-   Supports YouTube video information.\n-   Supports YouTube playlist information.\n-   Supports YouTube channel information.\n-   No key required!\n\n## Installation\n\n"
+			"text": "# YouTube Extractor\n\nA simple [YouTube](https://youtube.com) scraper.\n\n[![Documentation](https://github.com/zyrouge/node-youtube-ext/actions/workflows/docs.yml/badge.svg)](https://github.com/zyrouge/node-youtube-ext/actions/workflows/docs.yml)\n\n> ⚠️ YouTube stream data is decoded by evaling JavaScript code in an isolated vm. You have been warned.\n\n## Features\n\n-   Faster and Better! ([comparison](https://runkit.com/zyrouge/606dd634af4a29001a4be694))\n-   Supports YouTube stream generation.\n-   Supports YouTube search.\n-   Supports YouTube video information.\n-   Supports YouTube playlist information.\n-   Supports YouTube channel information.\n-   No key required!\n\n## Installation\n\n"
 		},
 		{
 			"kind": "code",
