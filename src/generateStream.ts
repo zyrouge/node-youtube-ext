@@ -1,10 +1,10 @@
 import type { PassThrough } from "stream";
 import axios, { AxiosRequestConfig } from "axios";
+import ivm from "isolated-vm";
 import type m3u8stream from "m3u8stream";
 import {
     constants,
     contentBetween,
-    evalInIsolatedVM,
     mergeObj,
     parseNumberOr,
     parseQueryString,
@@ -63,25 +63,35 @@ export const getFormats = async (
         streams = streams.filter(options.filterBy);
     }
 
-    let decipher: ((sig: string) => string) | undefined;
-    for (const stream of streams) {
-        if (formats.player?.url && stream.signatureCipher) {
-            decipher ??= await getCipherFunction(formats.player.url, {
-                requestOptions: options.requestOptions,
-            });
+    let decipher: CipherFunctionResult | undefined;
+    try {
+        for (const stream of streams) {
+            if (formats.player?.url && stream.signatureCipher) {
+                decipher ??= await getCipherFunction(formats.player.url, {
+                    requestOptions: options.requestOptions,
+                });
 
-            if (stream.signatureCipher) {
-                const cipherData = parseQueryString(stream.signatureCipher) as {
-                    url: string;
-                    sp: string;
-                    s: string;
-                };
-                stream.url = `${cipherData.url}&${cipherData.sp}=${decipher(
-                    cipherData.s
-                )}`;
+                if (stream.signatureCipher) {
+                    const cipherData = parseQueryString(
+                        stream.signatureCipher
+                    ) as {
+                        url: string;
+                        sp: string;
+                        s: string;
+                    };
+                    stream.url = `${cipherData.url}&${
+                        cipherData.sp
+                    }=${decipher.decoder(cipherData.s)}`;
+                }
             }
+            stream.isLive = !!formats.hlsManifestUrl;
         }
-        stream.isLive = !!formats.hlsManifestUrl;
+        decipher?.dispose();
+    } catch (err) {
+        if (decipher && !decipher.isDisposed()) {
+            decipher.dispose();
+        }
+        throw err;
     }
 
     if (formats.hlsManifestUrl) {
@@ -185,12 +195,18 @@ export const getReadableStream = async (
     return resp.data;
 };
 
+interface CipherFunctionResult {
+    decoder: (a: string) => string;
+    isDisposed: () => boolean;
+    dispose: () => void;
+}
+
 const getCipherFunction = async (
     url: string,
     options: {
         requestOptions?: AxiosRequestConfig;
     } = {}
-) => {
+): Promise<CipherFunctionResult> => {
     const { data } = await axios.get<string>(url, options.requestOptions);
 
     const aFuncStart = 'a=a.split("")';
@@ -204,6 +220,16 @@ const getCipherFunction = async (
     const bFuncBody = contentBetween(data, bVarStart, bVarEnd);
     const bFunc = bVarStart + bFuncBody + bVarEnd;
 
-    const decoder = aFunc + "\n" + bFunc;
-    return evalInIsolatedVM(decoder) as (a: string) => string;
+    const decoderCode = aFunc + "\n" + bFunc;
+    const isolate = new ivm.Isolate({ memoryLimit: 8 });
+    const context = isolate.createContextSync();
+
+    return {
+        decoder: await context.eval(decoderCode),
+        isDisposed: () => isolate.isDisposed,
+        dispose: () => {
+            if (isolate.isDisposed) return;
+            isolate.dispose();
+        },
+    };
 };

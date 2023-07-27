@@ -1,5 +1,3 @@
-import ivm from "isolated-vm";
-
 export const constants = {
     urls: {
         base: "https://www.youtube.com",
@@ -71,10 +69,4 @@ export const parseNumberOr = (data: string | undefined | null, def: number) => {
         return parseInt(data);
     }
     return def;
-};
-
-export const evalInIsolatedVM = (code: string) => {
-    const isolate = new ivm.Isolate({ memoryLimit: 8 });
-    const context = isolate.createContextSync();
-    return context.evalSync(code);
 };
