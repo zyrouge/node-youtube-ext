@@ -34,6 +34,7 @@
     "homepage": "youtube-ext.js.org",
     "devDependencies": {
         "@types/node": "^20.4.5",
+        "isolated-vm": "^4.6.0",
         "m3u8stream": "^0.8.6",
         "rimraf": "^5.0.1",
         "ts-node": "^10.9.1",
@@ -41,7 +42,6 @@
         "typescript": "^5.1.6"
     },
     "dependencies": {
-        "axios": "^1.4.0",
-        "isolated-vm": "^4.6.0"
+        "axios": "^1.4.0"
     }
 }
