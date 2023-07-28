@@ -13,6 +13,7 @@ import {
 import { VideoStream, VideoStreamEntity } from "./videoInfo";
 
 export type GetFormatsEvaluator =
+    | "auto"
     | "eval"
     | "vm"
     | "isolated-vm"
@@ -231,7 +232,10 @@ const getCipherFunction = async (
     let evaluator: GetFormatsCustomEvaluator;
     if (typeof options.evaluator === "function") {
         evaluator = options.evaluator;
-    } else if (typeof options.evaluator === "string") {
+    } else if (
+        typeof options.evaluator === "string" &&
+        options.evaluator !== "auto"
+    ) {
         switch (options.evaluator) {
             case "isolated-vm":
                 evaluator = evalInIsolatedVM;
