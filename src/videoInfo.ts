@@ -283,7 +283,7 @@ export const videoInfo = async (
         streams: initialPlayer?.streamingData,
     };
 
-    const playerJsURL = data?.split('"PLAYER_JS_URL":"')[1]?.split('"')[0];
+    const playerJsURL = contentBetween(data, '"PLAYER_JS_URL":"', '"');
     if (playerJsURL) {
         info.streams.player = {
             url: constants.urls.base + playerJsURL,
