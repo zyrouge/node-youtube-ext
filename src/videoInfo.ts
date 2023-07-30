@@ -162,16 +162,18 @@ export const videoInfo = async (
 
     let initialData: any, initialPlayer: any;
     try {
-        initialData = JSON.parse(
-            contentBetween(data, "var ytInitialData = ", ";</script>")
+        const initialDataRaw = contentBetween(
+            data,
+            "var ytInitialData = ",
+            ";</script>"
         );
-        initialPlayer = JSON.parse(
-            contentBetween(
-                data,
-                "var ytInitialPlayerResponse = ",
-                ";var meta = "
-            )
+        initialData = JSON.parse(initialDataRaw);
+        const initialPlayerRaw = contentBetween(
+            data,
+            "var ytInitialPlayerResponse = ",
+            ";var meta = "
         );
+        initialPlayer = JSON.parse(initialPlayerRaw);
     } catch (err) {
         throw new Error(`Failed to parse data from webpage. (${err})`);
     }

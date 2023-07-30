@@ -82,21 +82,24 @@ export const playlistInfo = async (
         throw new Error(`Failed to fetch url "${url}". (${err})`);
     }
 
-    let initialData: any;
+    let initialDataRaw: string;
     try {
-        const raw = contentBetween(data, "var ytInitialData = ", ";</script>");
-        initialData = JSON.parse(raw);
+        initialDataRaw = contentBetween(
+            data,
+            "var ytInitialData = ",
+            ";</script>"
+        );
     } catch (err) {
         throw new Error(`Failed to parse data from webpage. (${err})`);
     }
 
     let contents: any;
     try {
-        const raw = initialData.substring(
-            initialData.lastIndexOf(
+        const raw = initialDataRaw.substring(
+            initialDataRaw.lastIndexOf(
                 '"playlistVideoListRenderer":{"contents":'
             ) + 40,
-            initialData.lastIndexOf('],"playlistId"') + 1
+            initialDataRaw.lastIndexOf('],"playlistId"') + 1
         );
         contents = JSON.parse(raw);
     } catch (err) {
@@ -105,9 +108,9 @@ export const playlistInfo = async (
 
     let microformat: any;
     try {
-        const raw = initialData.substring(
-            initialData.lastIndexOf('"microformat":') + 14,
-            initialData.lastIndexOf(',"sidebar"')
+        const raw = initialDataRaw.substring(
+            initialDataRaw.lastIndexOf('"microformat":') + 14,
+            initialDataRaw.lastIndexOf(',"sidebar"')
         );
         microformat = JSON.parse(raw);
     } catch (err) {

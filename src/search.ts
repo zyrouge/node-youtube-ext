@@ -42,7 +42,6 @@ export interface SearchChannel {
         text: string;
         pretty: string;
     };
-    videoCount: string;
     icons: {
         url: string;
         width: number;
@@ -182,14 +181,12 @@ export const search = async (terms: string, options: SearchOptions = {}) => {
                 url:
                     constants.urls.base +
                     x?.navigationEndpoint?.browseEndpoint?.canonicalBaseUrl,
+                // TODO: ensure if its `videoCountText` or `subscriberCountText`
                 subscribers: {
-                    text: x?.subscriberCountText?.accessibility
-                        ?.accessibilityData?.label,
-                    pretty: x?.subscriberCountText?.simpleText,
+                    text: x?.videoCountText?.accessibility?.accessibilityData
+                        ?.label,
+                    pretty: x?.videoCountText?.simpleText,
                 },
-                videoCount:
-                    x?.videoCountText?.runs[0]?.text +
-                    x?.videoCountText?.runs[1]?.text,
                 icons: x?.thumbnail?.thumbnails,
             };
             result.channels.push(channel);

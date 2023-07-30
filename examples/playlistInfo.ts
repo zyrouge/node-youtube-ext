@@ -1,7 +1,7 @@
 import { playlistInfo } from "../src";
 
 const query =
-    "https://www.youtube.com/playlist?list=PLzkuLC6Yvumv_Rd5apfPRWEcjf9b1JRnq&index=1";
+    "https://www.youtube.com/playlist?list=PLNKs8mJ6MlqAx7nqsUi6tRJFDFBJxuLiV";
 
 const start = async () => {
     const result = await playlistInfo(query);
