@@ -31,7 +31,7 @@ const start = async () => {
                 console.log(`Downloaded ${downloaded / 1000}kb`);
             });
             stream.pipe(file);
-            stream.on("end", () => {
+            stream.on("close", () => {
                 console.log(
                     `Downloaded in ${(Date.now() - started) / 1000} seconds!`
                 );
