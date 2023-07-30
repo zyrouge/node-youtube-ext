@@ -4,7 +4,7 @@ A simple [YouTube](https://youtube.com) scraper.
 
 [![Documentation](https://github.com/zyrouge/node-youtube-ext/actions/workflows/docs.yml/badge.svg)](https://github.com/zyrouge/node-youtube-ext/actions/workflows/docs.yml)
 
-> ⚠️ YouTube stream data is decoded by evaling JavaScript code in an isolated vm. You have been warned.
+> ⚠️ YouTube stream data is decoded by evaling JavaScript code. You have been warned.
 
 ## Features
 
