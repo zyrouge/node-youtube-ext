@@ -47,6 +47,7 @@ export interface SearchChannel {
         width: number;
         height: number;
     }[];
+    badges: string[];
 }
 
 export interface SearchPlaylist {
@@ -188,6 +189,11 @@ export const search = async (terms: string, options: SearchOptions = {}) => {
                     pretty: x?.videoCountText?.simpleText,
                 },
                 icons: x?.thumbnail?.thumbnails,
+                badges: ((x?.ownerBadges ?? []) as any[])?.reduce((pv, cv) => {
+                    const name = cv?.metadataBadgeRenderer?.tooltip;
+                    if (name) pv.push(name);
+                    return pv;
+                }, [] as string[]),
             };
             result.channels.push(channel);
         }
