@@ -6,7 +6,7 @@ export class MockQueries {
     static videoID = "Sn1rJbZ8nI4";
     static videoURL = `https://www.youtube.com/watch?v=${this.videoID}`;
 
-    static playlistID = "PLNKs8mJ6MlqAx7nqsUi6tRJFDFBJxuLiV";
+    static playlistID = "PL8F6B0753B2CCA128";
     static playlistURL = `https://www.youtube.com/playlist?list=${this.playlistID}`;
 
     static channelID = "UCBUK-I-ILqsQoqIe8i6zrVg";

@@ -6,6 +6,8 @@ export const name = "ytpl";
 
 export const tasks: BenchmarkTasks = {
     playlist: async () => {
-        await ytpl(MockQueries.playlistURL);
+        await ytpl(MockQueries.playlistURL, {
+            limit: Infinity,
+        });
     },
 };
