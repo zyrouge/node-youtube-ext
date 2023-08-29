@@ -3,6 +3,7 @@ export * from "./videoInfo";
 export * from "./playlistInfo";
 export * from "./channelInfo";
 export * from "./generateStream";
+export * from "./extractStreamInfo";
 export * as utils from "./utils";
 
 /**

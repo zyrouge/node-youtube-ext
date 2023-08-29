@@ -123,7 +123,7 @@ export const getFormats = async (
             }
         );
         const hlsStreams = hlsData.matchAll(
-            /#EXT-X-STREAM-INF:([^\n]*)\n([^\n]+)/
+            /#EXT-X-STREAM-INF:([^\n]*)\n([^\n]+)/g
         );
         for (const x of hlsStreams) {
             const [, tagsRaw, url] = x;
@@ -131,7 +131,7 @@ export const getFormats = async (
 
             const tags: Record<string, string> = {};
             if (tagsRaw) {
-                for (const x of tagsRaw.matchAll(/(\w+)=([^,\n]+)/)) {
+                for (const x of tagsRaw.matchAll(/(\w+)=([^,\n]+)/g)) {
                     const [, k, v] = x;
                     if (k && v) {
                         tags[k] = v;
@@ -168,13 +168,11 @@ export interface GetReadableStreamOptions {
  * **Info:** Install "m3u8stream" using `npm install m3u8stream` for livestream support
  */
 export const getReadableStream = async (
-    streams: { url: string },
+    stream: { url: string },
     options: GetReadableStreamOptions = {}
 ) => {
-    if (typeof streams !== "object") {
-        throw new Error(
-            constants.err.type("streams", "object", typeof streams)
-        );
+    if (typeof stream !== "object") {
+        throw new Error(constants.err.type("streams", "object", typeof stream));
     }
     if (typeof options !== "object") {
         throw new Error(
@@ -193,14 +191,14 @@ export const getReadableStream = async (
         options
     );
 
-    if (streams.url.endsWith(".m3u8")) {
+    if (stream.url.endsWith(".m3u8")) {
         const m3u8stream: typeof M3U8Stream = requireOrThrow("m3u8stream");
-        return m3u8stream(streams.url, {
+        return m3u8stream(stream.url, {
             requestOptions: options.m3u8streamRequestOptions,
         });
     }
 
-    const resp = await axios.get<PassThrough>(streams.url, {
+    const resp = await axios.get<PassThrough>(stream.url, {
         ...options.requestOptions,
         responseType: "stream",
     });

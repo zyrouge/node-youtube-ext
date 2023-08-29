@@ -1,5 +1,6 @@
 import axios, { AxiosRequestConfig } from "axios";
 import { constants, contentBetween, mergeObj } from "./utils";
+import { prepareStreamInfo } from "./extractStreamInfo";
 
 export interface VideoInfoOptions {
     requestOptions?: AxiosRequestConfig;
@@ -7,6 +8,9 @@ export interface VideoInfoOptions {
 
 export interface VideoStreamEntity {
     itag?: number;
+    /**
+     * This will be `undefined`, if `generateStream()` is not called upon this.
+     */
     url: string;
     mimeType?: string;
     bitrate?: number;
@@ -115,7 +119,7 @@ export interface VideoInfo {
         width: number;
         flashSecureUrl: string;
     };
-    streams: VideoStream;
+    stream: VideoStream;
 }
 
 /**
@@ -282,15 +286,9 @@ export const videoInfo = async (
         category:
             initialPlayer?.microformat?.playerMicroformatRenderer?.category,
         embed: initialPlayer?.microformat?.playerMicroformatRenderer?.embed,
-        streams: initialPlayer?.streamingData,
+        stream: initialPlayer?.streamingData,
     };
-
-    const playerJsURL = contentBetween(data, '"PLAYER_JS_URL":"', '"');
-    if (playerJsURL) {
-        info.streams.player = {
-            url: constants.urls.base + playerJsURL,
-        };
-    }
+    prepareStreamInfo(data, info.stream);
 
     return info;
 };

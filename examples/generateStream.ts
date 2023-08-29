@@ -8,7 +8,7 @@ const start = async () => {
     await new Promise<void>(async (resolve, reject) => {
         try {
             const info = await videoInfo(query);
-            const formats = await getFormats(info.streams);
+            const formats = await getFormats(info.stream);
             // Dont use this condition for livestreams
             const format = formats.find((x) => x.fps && x.audioChannels);
             const stream = await getReadableStream(format!);
