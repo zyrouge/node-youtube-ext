@@ -15,10 +15,7 @@ export class MockQueries {
 
 export const consumeStream = async (stream: Readable) => {
     return new Promise<void>((resolve, reject) => {
-        let i = 0;
-        stream.on("data", () => {
-            console.log("data " + i++);
-        });
+        stream.on("data", () => {});
         stream.on("error", (err) => {
             reject(err);
         });

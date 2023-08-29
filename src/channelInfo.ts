@@ -73,7 +73,7 @@ export interface ChannelInfo {
 }
 
 /**
- * Get full information about a YouTube channel
+ * Get full information about a YouTube channel.
  */
 export const channelInfo = async (
     url: string,

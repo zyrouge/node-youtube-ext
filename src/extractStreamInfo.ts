@@ -7,7 +7,9 @@ export interface ExtractStreamInfoOptions {
 }
 
 /**
- * Get only stream information about a YouTube video
+ * Get only stream information about a YouTube video.
+ *
+ * Note: This might break often.
  */
 export const extractStreamInfo = async (
     url: string,
@@ -50,11 +52,8 @@ export const extractStreamInfo = async (
 
     let streamingData: any;
     try {
-        const streamingDataRaw = contentBetween(
-            data,
-            '"streamingData":',
-            ',"playerAds":'
-        );
+        const streamingDataRaw =
+            contentBetween(data, '"streamingData":', "}]},") + "}]}";
         streamingData = JSON.parse(streamingDataRaw);
     } catch (err) {
         throw new Error(`Failed to parse data from webpage. (${err})`);

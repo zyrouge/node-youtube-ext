@@ -123,7 +123,7 @@ export interface VideoInfo {
 }
 
 /**
- * Get full information about a YouTube video
+ * Get full information about a YouTube video.
  */
 export const videoInfo = async (
     url: string,

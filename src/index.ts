@@ -7,6 +7,6 @@ export * from "./extractStreamInfo";
 export * as utils from "./utils";
 
 /**
- * Package version
+ * Package version.
  */
 export const version: string = require("../package.json").version;

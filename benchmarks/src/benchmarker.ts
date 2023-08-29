@@ -37,6 +37,7 @@ export const benchmark = async (
         let success: boolean;
         let time: number;
         const started = Date.now();
+        let error;
         try {
             await fn();
             time = Date.now() - started;
@@ -44,9 +45,12 @@ export const benchmark = async (
         } catch (err) {
             time = Date.now() - started;
             success = false;
-            console.error(`${name}/${x}: ${err}`);
+            error = err;
         }
-        console.log(`${name}/${x}: ${success ? "Pass" : "Fail"} (${time}ms)`);
+        console.log(`* ${name}/${x}: ${success ? "Pass" : "Fail"} (${time}ms)`);
+        if (error) {
+            console.error(`  ${name}/${x}: ${error}`);
+        }
         result[x] = { success, time };
     }
     return result;

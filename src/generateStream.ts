@@ -36,7 +36,9 @@ export interface GetFormatsOptions {
 }
 
 /**
- * Generates Stream URL(s). Always use this to get streams before getting readable streams!
+ * Generates Stream URL(s).
+ *
+ * Always use this to get streams before getting readable streams!
  */
 export const getFormats = async (
     formats: VideoStream,
@@ -163,9 +165,9 @@ export interface GetReadableStreamOptions {
 }
 
 /**
- * Returns a YouTube stream
+ * Returns a YouTube stream.
  *
- * **Info:** Install "m3u8stream" using `npm install m3u8stream` for livestream support
+ * **Info:** Install "m3u8stream" using `npm install m3u8stream` for livestream support.
  */
 export const getReadableStream = async (
     stream: { url: string },

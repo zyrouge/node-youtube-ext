@@ -27,6 +27,7 @@ export const start = async () => {
             }[]
         >
     > = {};
+    console.log("Testing:");
     for (const [name, tasks] of recordEntries(packages)) {
         const result = await benchmark(name, tasks);
         for (const [x, y] of partialRecordEntries(result)) {
@@ -38,6 +39,7 @@ export const start = async () => {
             });
         }
     }
+    console.log();
     console.log("Results:");
     for (const [k, x] of partialRecordEntries(results)) {
         const sorted = x.sort((a, b) => a.result.time - b.result.time);
