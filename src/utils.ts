@@ -25,6 +25,8 @@ export const constants = {
                 )}`,
             baseUrlRegex: /^(http|https:\/\/).*\/playlist?.*list=\w+/,
             getIdRegex: /^(http|https:\/\/).*list=(\w+)/,
+            continuation: (key: string) =>
+                `${constants.urls.base}/youtubei/v1/browse?key=${key}`,
         },
         channel: {
             base: (id: string) => `${constants.urls.base}/channel/${id}`,

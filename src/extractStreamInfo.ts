@@ -53,7 +53,7 @@ export const extractStreamInfo = async (
     let streamingData: any;
     try {
         const streamingDataRaw =
-            contentBetween(data, '"streamingData":', "}]},") + "}]}";
+            contentBetween(data, '"streamingData":', '}]},"') + "}]}";
         streamingData = JSON.parse(streamingDataRaw);
     } catch (err) {
         throw new Error(`Failed to parse data from webpage. (${err})`);

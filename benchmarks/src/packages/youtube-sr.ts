@@ -12,6 +12,8 @@ export const tasks: BenchmarkTasks = {
         await youtubeSr.getVideo(MockQueries.videoURL);
     },
     playlist: async () => {
-        await youtubeSr.getPlaylist(MockQueries.playlistURL);
+        await youtubeSr.getPlaylist(MockQueries.playlistURL, {
+            fetchAll: true,
+        });
     },
 };

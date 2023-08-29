@@ -6,6 +6,8 @@ export const name = "ytsr";
 
 export const tasks: BenchmarkTasks = {
     search: async () => {
-        await ytsr(MockQueries.searchText);
+        await ytsr(MockQueries.searchText, {
+            limit: 25,
+        });
     },
 };

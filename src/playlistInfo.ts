@@ -128,36 +128,98 @@ export const playlistInfo = async (
 
     for (const { playlistVideoRenderer } of contents) {
         if (playlistVideoRenderer) {
-            const x = playlistVideoRenderer;
-            const video: PlaylistVideo = {
-                title: x?.title?.runs[0]?.text,
-                id: x?.videoId,
-                url:
-                    constants.urls.base +
-                    x?.navigationEndpoint?.commandMetadata?.webCommandMetadata
-                        ?.url,
-                channel: {
-                    name: x?.shortBylineText?.runs[0]?.text,
-                    id: x?.shortBylineText?.runs[0]?.navigationEndpoint
-                        ?.commandMetadata?.webCommandMetadata?.url,
-                    url:
-                        constants.urls.base +
-                        x?.shortBylineText?.runs[0]?.navigationEndpoint
-                            ?.browseEndpoint?.browseId,
-                },
-                thumbnails: x?.thumbnail?.thumbnails,
-                duration: {
-                    pretty: x?.lengthText?.simpleText,
-                    text: x?.lengthText?.accessibility?.accessibilityData
-                        ?.label,
-                    lengthSec: x?.lengthSeconds,
-                },
-            };
+            const video = parsePlaylistVideo(playlistVideoRenderer);
             playlist.videos.push(video);
         }
     }
+
+    try {
+        const initialContinuationToken = contentBetween(
+            data,
+            '"continuationCommand":{"token":"',
+            '","'
+        );
+        const innerTubeRaw = contentBetween(
+            data,
+            '"INNERTUBE_API_KEY":',
+            ',"INNERTUBE_CONTEXT":'
+        );
+        const { INNERTUBE_API_KEY, INNERTUBE_CLIENT_VERSION } = JSON.parse(
+            '{"INNERTUBE_API_KEY":' + innerTubeRaw + "}"
+        );
+        let continuationToken: string | undefined = initialContinuationToken;
+        while (continuationToken) {
+            const { data } = await axios.post<any>(
+                constants.urls.playlist.continuation(INNERTUBE_API_KEY),
+                {
+                    continuation: continuationToken,
+                    context: {
+                        client: {
+                            utcOffsetMinutes: 0,
+                            gl: "US",
+                            hl: "en",
+                            clientName: "WEB",
+                            clientVersion: INNERTUBE_CLIENT_VERSION,
+                        },
+                        user: {},
+                        request: {},
+                    },
+                },
+                {
+                    ...options.requestOptions,
+                    responseType: "json",
+                }
+            );
+            continuationToken = undefined;
+            for (const x of data?.onResponseReceivedActions ?? []) {
+                for (const {
+                    playlistVideoRenderer,
+                    continuationItemRenderer,
+                } of x?.appendContinuationItemsAction?.continuationItems) {
+                    if (playlistVideoRenderer) {
+                        const video = parsePlaylistVideo(playlistVideoRenderer);
+                        playlist.videos.push(video);
+                    }
+                    if (continuationItemRenderer) {
+                        const nextContinuationToken: string | undefined =
+                            continuationItemRenderer?.continuationEndpoint
+                                ?.continuationCommand?.token as
+                                | string
+                                | undefined;
+                        continuationToken = nextContinuationToken;
+                    }
+                }
+            }
+        }
+    } catch (err) {}
 
     return playlist;
 };
 
 export default playlistInfo;
+
+const parsePlaylistVideo = (x: any) => {
+    const video: PlaylistVideo = {
+        title: x?.title?.runs[0]?.text,
+        id: x?.videoId,
+        url:
+            constants.urls.base +
+            x?.navigationEndpoint?.commandMetadata?.webCommandMetadata?.url,
+        channel: {
+            name: x?.shortBylineText?.runs[0]?.text,
+            id: x?.shortBylineText?.runs[0]?.navigationEndpoint?.commandMetadata
+                ?.webCommandMetadata?.url,
+            url:
+                constants.urls.base +
+                x?.shortBylineText?.runs[0]?.navigationEndpoint?.browseEndpoint
+                    ?.browseId,
+        },
+        thumbnails: x?.thumbnail?.thumbnails,
+        duration: {
+            pretty: x?.lengthText?.simpleText,
+            text: x?.lengthText?.accessibility?.accessibilityData?.label,
+            lengthSec: x?.lengthSeconds,
+        },
+    };
+    return video;
+};
