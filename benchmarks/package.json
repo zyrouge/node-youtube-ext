@@ -4,13 +4,13 @@
     "version": "0.0.0",
     "description": "",
     "scripts": {
-        "start": "ts-node ./src/index.ts"
+        "start": "tsx ./src/index.ts"
     },
     "keywords": [],
     "author": "Zyrouge",
     "license": "ISC",
     "devDependencies": {
-        "ts-node": "^10.9.1",
+        "tsx": "^3.12.8",
         "typescript": "^5.2.2"
     },
     "dependencies": {

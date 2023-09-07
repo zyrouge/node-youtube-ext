@@ -1,5 +1,10 @@
 import axios, { AxiosRequestConfig } from "axios";
-import { constants, contentBetween, mergeObj } from "./utils";
+import {
+    constants,
+    contentBetween,
+    contentBetweenEnds,
+    mergeObj,
+} from "./utils";
 import { VideoStream } from "./videoInfo";
 
 export interface ExtractStreamInfoOptions {
@@ -52,8 +57,10 @@ export const extractStreamInfo = async (
 
     let streamingData: any;
     try {
-        const streamingDataRaw =
-            contentBetween(data, '"streamingData":', '}]},"') + "}]}";
+        const streamingDataRaw = contentBetweenEnds(data, '"streamingData":', [
+            ['},"heartbeatParams":{', "}"],
+            ['}]},"', "}]}"],
+        ]);
         streamingData = JSON.parse(streamingDataRaw);
     } catch (err) {
         throw new Error(`Failed to parse data from webpage. (${err})`);

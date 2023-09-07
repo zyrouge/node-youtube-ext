@@ -91,21 +91,21 @@ export const getFormats = async (
                 decipher ??= await getCipherFunction(formats.player.url, {
                     requestOptions: options.requestOptions,
                 });
-
-                if (stream.signatureCipher) {
-                    const cipherData = parseQueryString(
-                        stream.signatureCipher
-                    ) as {
-                        url: string;
-                        sp: string;
-                        s: string;
-                    };
-                    stream.url = `${cipherData.url}&${
-                        cipherData.sp
-                    }=${decipher.decoder(cipherData.s)}`;
-                }
+                const cipherData = parseQueryString(stream.signatureCipher) as {
+                    url: string;
+                    sp: string;
+                    s: string;
+                };
+                stream.url = `${cipherData.url}&${
+                    cipherData.sp
+                }=${decipher.decoder(cipherData.s)}`;
+                stream.__processed = true;
             }
-            stream.isLive = !!formats.hlsManifestUrl;
+            // not really sure about this.
+            if (stream.url?.startsWith("https://")) {
+                stream.__processed = true;
+            }
+            stream.isLive = isLiveContentURL(stream.url);
             streams.push(stream);
         }
         decipher?.dispose();
@@ -146,12 +146,14 @@ export const getFormats = async (
 
             streams.push({
                 itag: parseNumberOr(url.match(/itag\/(\d+)\//)?.[1], 0),
+                url,
                 mimeType: codecs ? `codes=${codecs[1]}` : "",
                 contentLength: tags["BANDWIDTH"] ?? "0",
-                fps: parseNumberOr(tags["FRAME-RATE"], 0),
-                height: parseNumberOr(resolution[0], 0),
-                width: parseNumberOr(resolution[1], 0),
-                url,
+                fps: parseNumberOr(tags["RATE"], 0),
+                height: parseNumberOr(resolution[1], 0),
+                width: parseNumberOr(resolution[0], 0),
+                isLive: isLiveContentURL(url),
+                __processed: true,
             });
         }
     }
@@ -193,7 +195,7 @@ export const getReadableStream = async (
         options
     );
 
-    if (stream.url.endsWith(".m3u8")) {
+    if (isDashContentURL(stream.url) || isHlsContentURL(stream.url)) {
         const m3u8stream: typeof M3U8Stream = requireOrThrow("m3u8stream");
         return m3u8stream(stream.url, {
             requestOptions: options.m3u8streamRequestOptions,
@@ -206,6 +208,10 @@ export const getReadableStream = async (
     });
     return resp.data;
 };
+
+const isLiveContentURL = (url?: string) => url?.includes("/yt_live_broadcast/");
+const isDashContentURL = (url?: string) => url?.includes("/dash/");
+const isHlsContentURL = (url?: string) => url?.includes("/hls_playlist/");
 
 const getCipherFunction = async (
     url: string,

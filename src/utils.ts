@@ -54,7 +54,24 @@ export const mergeObj = <T>(one: T, two: T) => {
 };
 
 export const contentBetween = (data: string, start: string, end: string) => {
-    return data.split(start)[1]!.split(end)[0]!;
+    return data.split(start, 1)[1]!.split(end, 1)[0]!;
+};
+
+export const contentBetweenEnds = (
+    data: string,
+    start: string,
+    ends: [string, string][]
+) => {
+    const first = data.split(start)[1]!;
+    for (const [x, y] of ends) {
+        const second = first.split(x, 1)[0]!;
+        console.log(first.length, second.length);
+        if (second.length !== first.length) {
+            return second + y;
+        }
+    }
+    // should i return first?
+    return first;
 };
 
 export const parseQueryString = (data: string) => {

@@ -8,7 +8,7 @@
     ],
     "scripts": {
         "build": "rimraf dist && tsc",
-        "docs": "typedoc && ts-node ./scripts/docs"
+        "docs": "typedoc && tsx ./scripts/docs"
     },
     "keywords": [
         "youtube",
@@ -37,7 +37,7 @@
         "isolated-vm": "^4.6.0",
         "m3u8stream": "^0.8.6",
         "rimraf": "^5.0.1",
-        "ts-node": "^10.9.1",
+        "tsx": "^3.12.8",
         "typedoc": "^0.24.8",
         "typescript": "^5.1.6"
     },

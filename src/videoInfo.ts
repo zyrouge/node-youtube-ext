@@ -7,9 +7,13 @@ export interface VideoInfoOptions {
 }
 
 export interface VideoStreamEntity {
+    /**
+     * Used to check if stream was passed through `getFormats()`.
+     * */
+    __processed?: boolean;
     itag?: number;
     /**
-     * This will be `undefined`, if `generateStream()` is not called upon this.
+     * This will be `undefined`, if `getFormats()` is not called upon this.
      */
     url: string;
     mimeType?: string;
