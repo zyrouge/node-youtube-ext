@@ -14,7 +14,7 @@
         "typescript": "^5.2.2"
     },
     "dependencies": {
-        "youtube-ext": "^1.1.9",
+        "youtube-ext": "^1.1.12",
         "youtube-sr": "^4.3.4",
         "ytdl-core": "^4.11.5",
         "ytpl": "^2.3.0",
