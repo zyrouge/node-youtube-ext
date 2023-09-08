@@ -168,7 +168,7 @@ export const videoInfo = async (
         throw new Error(`Failed to fetch url "${url}". (${err})`);
     }
 
-    let initialData: any, initialPlayer: any;
+    let initialData: any;
     try {
         const initialDataRaw = contentBetween(
             data,
@@ -176,6 +176,12 @@ export const videoInfo = async (
             ";</script>"
         );
         initialData = JSON.parse(initialDataRaw);
+    } catch (err) {
+        throw new Error(`Failed to parse data from webpage. (${err})`);
+    }
+
+    let initialPlayer: any;
+    try {
         const initialPlayerRaw = contentBetween(
             data,
             "var ytInitialPlayerResponse = ",
@@ -183,7 +189,7 @@ export const videoInfo = async (
         );
         initialPlayer = JSON.parse(initialPlayerRaw);
     } catch (err) {
-        throw new Error(`Failed to parse data from webpage. (${err})`);
+        throw new Error(`Failed to parse player data from webpage. (${err})`);
     }
 
     let contents: any[];
