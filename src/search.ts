@@ -1,5 +1,6 @@
 import axios, { AxiosRequestConfig } from "axios";
-import { constants, mergeObj } from "./utils";
+import { constants } from "./utils/constants";
+import { mergeObj } from "./utils/common";
 
 export interface SearchOptions {
     requestOptions?: AxiosRequestConfig;
@@ -70,11 +71,11 @@ export interface SearchPlaylist {
  */
 export const search = async (terms: string, options: SearchOptions = {}) => {
     if (typeof terms !== "string") {
-        throw new Error(constants.err.type("terms", "string", typeof terms));
+        throw new Error(constants.errors.type("terms", "string", typeof terms));
     }
     if (typeof options !== "object") {
         throw new Error(
-            constants.err.type("options", "object", typeof options)
+            constants.errors.type("options", "object", typeof options)
         );
     }
 

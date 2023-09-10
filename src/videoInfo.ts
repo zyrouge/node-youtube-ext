@@ -1,16 +1,18 @@
 import axios, { AxiosRequestConfig } from "axios";
-import { constants, contentBetween, mergeObj } from "./utils";
+import { constants } from "./utils/constants";
+import { contentBetween, mergeObj } from "./utils/common";
 import { prepareStreamInfo } from "./extractStreamInfo";
 
 export interface VideoInfoOptions {
     requestOptions?: AxiosRequestConfig;
 }
 
-export interface VideoStreamEntity {
+export interface VideoFormat {
     /**
      * Used to check if stream was passed through `getFormats()`.
-     * */
-    __processed?: boolean;
+     */
+    __decoded?: boolean;
+
     itag?: number;
     /**
      * This will be `undefined`, if `getFormats()` is not called upon this.
@@ -49,13 +51,12 @@ export interface VideoStreamEntity {
     targetDurationSec?: number;
     maxDvrDurationSec?: number;
     signatureCipher?: string;
-    isLive?: boolean;
 }
 
 export interface VideoStream {
     expiresInSeconds: string;
-    formats: VideoStreamEntity[];
-    adaptiveFormats: VideoStreamEntity[];
+    formats: VideoFormat[];
+    adaptiveFormats: VideoFormat[];
     dashManifestUrl?: string;
     hlsManifestUrl?: string;
     player?: {
@@ -134,11 +135,11 @@ export const videoInfo = async (
     options: VideoInfoOptions = {}
 ) => {
     if (typeof url !== "string") {
-        throw new Error(constants.err.type("url", "string", typeof url));
+        throw new Error(constants.errors.type("url", "string", typeof url));
     }
     if (typeof options !== "object") {
         throw new Error(
-            constants.err.type("options", "object", typeof options)
+            constants.errors.type("options", "object", typeof options)
         );
     }
 

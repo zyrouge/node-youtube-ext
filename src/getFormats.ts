@@ -1,16 +1,16 @@
-import type { PassThrough } from "stream";
-import axios, { AxiosRequestConfig } from "axios";
-import type M3U8Stream from "m3u8stream";
 import type NodeVM from "vm";
 import type IsolatedVM from "isolated-vm";
+import axios, { AxiosRequestConfig } from "axios";
+import { constants } from "./utils/constants";
 import {
-    constants,
     contentBetween,
+    isModuleInstalled,
     mergeObj,
     parseNumberOr,
     parseQueryString,
-} from "./utils";
-import { VideoStream, VideoStreamEntity } from "./videoInfo";
+    requireOrThrow,
+} from "./utils/common";
+import { VideoStream, VideoFormat } from "./videoInfo";
 
 export type GetFormatsEvaluator =
     | "auto"
@@ -31,7 +31,7 @@ interface GetFormatsEvaluatorResult {
 
 export interface GetFormatsOptions {
     requestOptions?: AxiosRequestConfig;
-    filterBy?: (value: VideoStreamEntity) => boolean;
+    filterBy?: (value: VideoFormat) => boolean;
     evaluator?: GetFormatsEvaluator;
 }
 
@@ -41,17 +41,17 @@ export interface GetFormatsOptions {
  * Always use this to get streams before getting readable streams!
  */
 export const getFormats = async (
-    formats: VideoStream,
+    stream: VideoStream,
     options: GetFormatsOptions = {}
 ) => {
-    if (typeof formats !== "object") {
+    if (typeof stream !== "object") {
         throw new Error(
-            constants.err.type("formats", "object", typeof formats)
+            constants.errors.type("formats", "object", typeof stream)
         );
     }
     if (typeof options !== "object") {
         throw new Error(
-            constants.err.type("options", "object", typeof options)
+            constants.errors.type("options", "object", typeof options)
         );
     }
 
@@ -66,11 +66,11 @@ export const getFormats = async (
         options
     );
 
-    const streams: VideoStreamEntity[] = [];
+    const resolved: VideoFormat[] = [];
 
-    let directStreams = [
-        ...(formats.formats || []),
-        ...(formats.adaptiveFormats || []),
+    let directFormats = [
+        ...(stream.formats || []),
+        ...(stream.adaptiveFormats || []),
     ].sort(
         (a, b) =>
             (a.bitrate ? +a.bitrate : 0) -
@@ -79,34 +79,34 @@ export const getFormats = async (
             (b.audioSampleRate ? parseInt(b.audioSampleRate) : 0)
     );
     if (typeof options.filterBy === "function") {
-        directStreams = directStreams.filter(options.filterBy);
+        directFormats = directFormats.filter(options.filterBy);
     }
+
     let decipher: GetFormatsEvaluatorResult | undefined;
     try {
-        for (const stream of directStreams) {
-            if (!(options.filterBy?.(stream) ?? true)) {
+        for (const x of directFormats) {
+            if (!(options.filterBy?.(x) ?? true)) {
                 continue;
             }
-            if (formats.player?.url && stream.signatureCipher) {
-                decipher ??= await getCipherFunction(formats.player.url, {
+            if (stream.player?.url && x.signatureCipher) {
+                decipher ??= await getCipherFunction(stream.player.url, {
                     requestOptions: options.requestOptions,
                 });
-                const cipherData = parseQueryString(stream.signatureCipher) as {
+                const cipherData = parseQueryString(x.signatureCipher) as {
                     url: string;
                     sp: string;
                     s: string;
                 };
-                stream.url = `${cipherData.url}&${
-                    cipherData.sp
-                }=${decipher.decoder(cipherData.s)}`;
-                stream.__processed = true;
+                x.url = `${cipherData.url}&${cipherData.sp}=${decipher.decoder(
+                    cipherData.s
+                )}`;
+                x.__decoded = true;
             }
             // not really sure about this.
-            if (stream.url?.startsWith("https://")) {
-                stream.__processed = true;
+            if (x.url?.startsWith("https://")) {
+                x.__decoded = true;
             }
-            stream.isLive = isLiveContentURL(stream.url);
-            streams.push(stream);
+            resolved.push(x);
         }
         decipher?.dispose();
     } catch (err) {
@@ -116,9 +116,9 @@ export const getFormats = async (
         throw err;
     }
 
-    if (formats.hlsManifestUrl) {
+    if (stream.hlsManifestUrl) {
         const { data: hlsData } = await axios.get<string>(
-            formats.hlsManifestUrl,
+            stream.hlsManifestUrl,
             {
                 ...options.requestOptions,
                 responseType: "text",
@@ -144,7 +144,7 @@ export const getFormats = async (
             const codecs = tags["CODECS"];
             const resolution = tags["RESOLUTION"]?.split("x") ?? [];
 
-            streams.push({
+            resolved.push({
                 itag: parseNumberOr(url.match(/itag\/(\d+)\//)?.[1], 0),
                 url,
                 mimeType: codecs ? `codes=${codecs[1]}` : "",
@@ -152,66 +152,13 @@ export const getFormats = async (
                 fps: parseNumberOr(tags["RATE"], 0),
                 height: parseNumberOr(resolution[1], 0),
                 width: parseNumberOr(resolution[0], 0),
-                isLive: isLiveContentURL(url),
-                __processed: true,
+                __decoded: true,
             });
         }
     }
 
-    return streams;
+    return resolved;
 };
-
-export interface GetReadableStreamOptions {
-    requestOptions?: AxiosRequestConfig;
-    m3u8streamRequestOptions?: M3U8Stream.Options["requestOptions"];
-}
-
-/**
- * Returns a YouTube stream.
- *
- * **Info:** Install "m3u8stream" using `npm install m3u8stream` for livestream support.
- */
-export const getReadableStream = async (
-    stream: { url: string },
-    options: GetReadableStreamOptions = {}
-) => {
-    if (typeof stream !== "object") {
-        throw new Error(constants.err.type("streams", "object", typeof stream));
-    }
-    if (typeof options !== "object") {
-        throw new Error(
-            constants.err.type("options", "object", typeof options)
-        );
-    }
-
-    options = mergeObj(
-        {
-            requestOptions: {
-                headers: {
-                    "User-Agent": constants.headers.userAgent,
-                },
-            },
-        },
-        options
-    );
-
-    if (isDashContentURL(stream.url) || isHlsContentURL(stream.url)) {
-        const m3u8stream: typeof M3U8Stream = requireOrThrow("m3u8stream");
-        return m3u8stream(stream.url, {
-            requestOptions: options.m3u8streamRequestOptions,
-        });
-    }
-
-    const resp = await axios.get<PassThrough>(stream.url, {
-        ...options.requestOptions,
-        responseType: "stream",
-    });
-    return resp.data;
-};
-
-const isLiveContentURL = (url?: string) => url?.includes("/yt_live_broadcast/");
-const isDashContentURL = (url?: string) => url?.includes("/dash/");
-const isHlsContentURL = (url?: string) => url?.includes("/hls_playlist/");
 
 const getCipherFunction = async (
     url: string,
@@ -276,25 +223,6 @@ const evalInEval: GetFormatsCustomEvaluator = async (code: string) => {
         dispose: () => {},
     };
 };
-
-const requireOrThrow = <T>(moduleName: string): T => {
-    try {
-        const module: T = require(moduleName);
-        return module;
-    } catch (_) {
-        throw new Error(`Couldn't access "${moduleName}". Did you install it?`);
-    }
-};
-
-const isModuleInstalled = (moduleName: string) => {
-    try {
-        require(moduleName);
-        return true;
-    } catch (_) {
-        return false;
-    }
-};
-
 const evalInNodeVM: GetFormatsCustomEvaluator = async (code: string) => {
     const vm: typeof NodeVM = requireOrThrow("vm");
     return {

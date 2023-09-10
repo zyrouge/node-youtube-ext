@@ -1,4 +1,4 @@
-import { extractStreamInfo, getFormats } from "../src";
+import { extractStreamInfo } from "../src";
 
 const query = "https://www.youtube.com/watch?v=Sn1rJbZ8nI4";
 

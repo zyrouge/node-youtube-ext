@@ -1,5 +1,6 @@
 import axios, { AxiosRequestConfig } from "axios";
-import { constants, contentBetween, mergeObj } from "./utils";
+import { constants } from "./utils/constants";
+import { contentBetween, mergeObj } from "./utils/common";
 
 export interface ChannelInfoOptions {
     requestOptions?: AxiosRequestConfig;
@@ -80,11 +81,11 @@ export const channelInfo = async (
     options: ChannelInfoOptions = {}
 ) => {
     if (typeof url !== "string") {
-        throw new Error(constants.err.type("url", "string", typeof url));
+        throw new Error(constants.errors.type("url", "string", typeof url));
     }
     if (typeof options !== "object") {
         throw new Error(
-            constants.err.type("options", "object", typeof options)
+            constants.errors.type("options", "object", typeof options)
         );
     }
 

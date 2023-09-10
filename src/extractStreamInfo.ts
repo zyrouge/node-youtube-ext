@@ -1,10 +1,6 @@
 import axios, { AxiosRequestConfig } from "axios";
-import {
-    constants,
-    contentBetween,
-    contentBetweenEnds,
-    mergeObj,
-} from "./utils";
+import { constants } from "./utils/constants";
+import { contentBetween, contentBetweenEnds, mergeObj } from "./utils/common";
 import { VideoStream } from "./videoInfo";
 
 export interface ExtractStreamInfoOptions {
@@ -21,11 +17,11 @@ export const extractStreamInfo = async (
     options: ExtractStreamInfoOptions = {}
 ) => {
     if (typeof url !== "string") {
-        throw new Error(constants.err.type("url", "string", typeof url));
+        throw new Error(constants.errors.type("url", "string", typeof url));
     }
     if (typeof options !== "object") {
         throw new Error(
-            constants.err.type("options", "object", typeof options)
+            constants.errors.type("options", "object", typeof options)
         );
     }
 
