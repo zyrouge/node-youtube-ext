@@ -1,9 +1,10 @@
-import axios, { AxiosRequestConfig } from "axios";
+import { request } from "undici";
 import { constants } from "./utils/constants";
 import { contentBetween, mergeObj } from "./utils/common";
+import { UndiciRequestOptions } from "./utils/undici";
 
 export interface PlaylistInfoOptions {
-    requestOptions?: AxiosRequestConfig;
+    requestOptions?: UndiciRequestOptions;
 }
 
 export interface PlaylistVideo {
@@ -74,11 +75,8 @@ export const playlistInfo = async (
 
     let data: string;
     try {
-        const resp = await axios.get<string>(url, {
-            ...options.requestOptions,
-            responseType: "text",
-        });
-        data = resp.data;
+        const resp = await request(url, options.requestOptions);
+        data = await resp.body.text();
     } catch (err) {
         throw new Error(`Failed to fetch url "${url}". (${err})`);
     }
@@ -150,27 +148,28 @@ export const playlistInfo = async (
         );
         let continuationToken: string | undefined = initialContinuationToken;
         while (continuationToken) {
-            const { data } = await axios.post<any>(
+            const resp = await request(
                 constants.urls.playlist.continuation(INNERTUBE_API_KEY),
                 {
-                    continuation: continuationToken,
-                    context: {
-                        client: {
-                            utcOffsetMinutes: 0,
-                            gl: "US",
-                            hl: "en",
-                            clientName: "WEB",
-                            clientVersion: INNERTUBE_CLIENT_VERSION,
-                        },
-                        user: {},
-                        request: {},
-                    },
-                },
-                {
                     ...options.requestOptions,
-                    responseType: "json",
+                    method: "POST",
+                    body: JSON.stringify({
+                        continuation: continuationToken,
+                        context: {
+                            client: {
+                                utcOffsetMinutes: 0,
+                                gl: "US",
+                                hl: "en",
+                                clientName: "WEB",
+                                clientVersion: INNERTUBE_CLIENT_VERSION,
+                            },
+                            user: {},
+                            request: {},
+                        },
+                    }),
                 }
             );
+            const data = (await resp.body.json()) as any;
             continuationToken = undefined;
             for (const x of data?.onResponseReceivedActions ?? []) {
                 for (const {

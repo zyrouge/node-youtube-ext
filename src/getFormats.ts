@@ -1,6 +1,6 @@
 import type NodeVM from "vm";
 import type IsolatedVM from "isolated-vm";
-import axios, { AxiosRequestConfig } from "axios";
+import { request } from "undici";
 import { constants } from "./utils/constants";
 import {
     contentBetween,
@@ -11,6 +11,7 @@ import {
     requireOrThrow,
 } from "./utils/common";
 import { VideoStream, VideoFormat } from "./videoInfo";
+import { UndiciRequestOptions } from "./utils/undici";
 
 export type GetFormatsEvaluator =
     | "auto"
@@ -30,7 +31,7 @@ interface GetFormatsEvaluatorResult {
 }
 
 export interface GetFormatsOptions {
-    requestOptions?: AxiosRequestConfig;
+    requestOptions?: UndiciRequestOptions;
     filterBy?: (value: VideoFormat) => boolean;
     evaluator?: GetFormatsEvaluator;
 }
@@ -117,13 +118,11 @@ export const getFormats = async (
     }
 
     if (stream.hlsManifestUrl) {
-        const { data: hlsData } = await axios.get<string>(
+        const hlsResp = await request(
             stream.hlsManifestUrl,
-            {
-                ...options.requestOptions,
-                responseType: "text",
-            }
+            options.requestOptions
         );
+        const hlsData = await hlsResp.body.text();
         const hlsStreams = hlsData.matchAll(
             /#EXT-X-STREAM-INF:([^\n]*)\n([^\n]+)/g
         );
@@ -163,11 +162,12 @@ export const getFormats = async (
 const getCipherFunction = async (
     url: string,
     options: {
-        requestOptions?: AxiosRequestConfig;
+        requestOptions?: UndiciRequestOptions;
         evaluator?: GetFormatsEvaluator;
     } = {}
 ): Promise<GetFormatsEvaluatorResult> => {
-    const { data } = await axios.get<string>(url, options.requestOptions);
+    const resp = await request(url, options.requestOptions);
+    const data = await resp.body.text();
 
     const aFuncStart = 'a=a.split("")';
     const aFuncEnd = "};";

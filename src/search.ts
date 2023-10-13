@@ -1,9 +1,10 @@
-import axios, { AxiosRequestConfig } from "axios";
+import { request } from "undici";
 import { constants } from "./utils/constants";
 import { mergeObj } from "./utils/common";
+import { UndiciRequestOptions } from "./utils/undici";
 
 export interface SearchOptions {
-    requestOptions?: AxiosRequestConfig;
+    requestOptions?: UndiciRequestOptions;
     filterType?: keyof typeof constants.urls.search.filters;
 }
 
@@ -100,11 +101,8 @@ export const search = async (terms: string, options: SearchOptions = {}) => {
 
     let data: string;
     try {
-        const resp = await axios.get<string>(url, {
-            ...options.requestOptions,
-            responseType: "text",
-        });
-        data = resp.data;
+        const resp = await request(url, options.requestOptions);
+        data = await resp.body.text();
     } catch (err) {
         throw new Error(`Failed to fetch url "${url}". (${err})`);
     }

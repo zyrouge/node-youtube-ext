@@ -1,12 +1,13 @@
-import type { PassThrough } from "stream";
+import type { Readable } from "stream";
 import type M3U8Stream from "m3u8stream";
-import axios, { AxiosRequestConfig } from "axios";
+import { request } from "undici";
 import { constants } from "./utils/constants";
 import { mergeObj, requireOrThrow } from "./utils/common";
 import { isDashContentURL, isHlsContentURL } from "./utils/youtube";
+import { UndiciRequestOptions } from "./utils/undici";
 
 export interface GetReadableStreamOptions {
-    requestOptions?: AxiosRequestConfig;
+    requestOptions?: UndiciRequestOptions;
     m3u8streamRequestOptions?: M3U8Stream.Options["requestOptions"];
 }
 
@@ -18,7 +19,7 @@ export interface GetReadableStreamOptions {
 export const getReadableStream = async (
     stream: { url: string },
     options: GetReadableStreamOptions = {}
-) => {
+): Promise<Readable> => {
     if (typeof stream !== "object") {
         throw new Error(
             constants.errors.type("streams", "object", typeof stream)
@@ -53,9 +54,6 @@ export const getReadableStream = async (
         });
     }
 
-    const resp = await axios.get<PassThrough>(stream.url, {
-        ...options.requestOptions,
-        responseType: "stream",
-    });
-    return resp.data;
+    const resp = await request(stream.url, options.requestOptions);
+    return resp.body;
 };

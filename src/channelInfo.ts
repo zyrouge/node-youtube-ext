@@ -1,9 +1,10 @@
-import axios, { AxiosRequestConfig } from "axios";
+import { request } from "undici";
 import { constants } from "./utils/constants";
 import { contentBetween, mergeObj } from "./utils/common";
+import { UndiciRequestOptions } from "./utils/undici";
 
 export interface ChannelInfoOptions {
-    requestOptions?: AxiosRequestConfig;
+    requestOptions?: UndiciRequestOptions;
     includeVideos?: boolean;
 }
 
@@ -106,11 +107,8 @@ export const channelInfo = async (
 
     let data: string;
     try {
-        const resp = await axios.get<string>(url, {
-            ...options.requestOptions,
-            responseType: "text",
-        });
-        data = resp.data;
+        const resp = await request(url, options.requestOptions);
+        data = await resp.body.text();
     } catch (err) {
         throw new Error(`Failed to fetch url "${url}". (${err})`);
     }
