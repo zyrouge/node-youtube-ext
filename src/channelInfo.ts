@@ -2,6 +2,7 @@ import { request } from "undici";
 import { constants } from "./utils/constants";
 import { contentBetween, mergeObj } from "./utils/common";
 import { UndiciRequestOptions } from "./utils/undici";
+import { parseYoutubeKeywords } from "./utils";
 
 export interface ChannelInfoOptions {
     requestOptions?: UndiciRequestOptions;
@@ -147,8 +148,8 @@ export const channelInfo = async (
             ?.filter((x: string) => x),
         thumbnails:
             initialData?.metadata?.channelMetadataRenderer?.avatar?.thumbnails,
-        tags: initialData?.metadata?.channelMetadataRenderer?.keywords.split(
-            " "
+        tags: parseYoutubeKeywords(
+            initialData?.metadata?.channelMetadataRenderer?.keywords ?? ""
         ),
         videos: [],
         unlisted: initialData?.microformat?.microformatDataRenderer?.unlisted,

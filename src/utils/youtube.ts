@@ -36,3 +36,17 @@ export const isYoutubePlaylistURL = (url?: string) =>
 
 const hasMatch = (regex: RegExp, value: string | undefined) =>
     !!value?.match(regex);
+
+const keywordsRegex = /("[^"]+"|[^\s]+)/g;
+
+export const parseYoutubeKeywords = (value: string) => {
+    const keywords: string[] = [];
+    for (const x of value.matchAll(keywordsRegex)) {
+        let v = x[1]!;
+        if (v[0] === '"') {
+            v = v.substring(1, v.length - 1);
+        }
+        keywords.push(v);
+    }
+    return keywords;
+};
