@@ -3,7 +3,6 @@ import { constants } from "./utils/constants";
 import { contentBetween, mergeObj } from "./utils/common";
 import { prepareStreamInfo } from "./extractStreamInfo";
 import { UndiciRequestOptions } from "./utils/undici";
-import { parseYoutubeKeywords } from "./utils";
 
 export interface VideoInfoOptions {
     requestOptions?: UndiciRequestOptions;
@@ -287,9 +286,7 @@ export const videoInfo = async (
             text: initialPlayer?.microformat?.playerMicroformatRenderer
                 ?.uploadDate,
         },
-        keywords: parseYoutubeKeywords(
-            initialPlayer?.videoDetails?.keywords ?? ""
-        ),
+        keywords: initialPlayer?.videoDetails?.keywords,
         isLive: initialPlayer?.videoDetails?.isLiveContent,
         isUnlisted:
             initialPlayer?.microformat?.playerMicroformatRenderer?.isUnlisted,
