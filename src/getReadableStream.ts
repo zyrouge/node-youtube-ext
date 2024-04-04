@@ -1,8 +1,9 @@
 import type { Readable } from "stream";
 import type M3U8Stream from "m3u8stream";
+import type Miniget from "miniget";
 import { request } from "undici";
 import { constants } from "./utils/constants";
-import { mergeObj, requireOrThrow } from "./utils/common";
+import { isModuleInstalled, mergeObj, requireOrThrow } from "./utils/common";
 import {
     isDashContentURL,
     isHlsContentURL,
@@ -12,14 +13,17 @@ import { UndiciRequestOptions } from "./utils/undici";
 
 export interface GetReadableStreamOptions {
     begin?: number;
+    ignoreMiniget?: boolean;
     requestOptions?: UndiciRequestOptions;
+    minigetRequestOptions?: Miniget.Options;
     m3u8streamRequestOptions?: M3U8Stream.Options["requestOptions"];
 }
 
 /**
  * Returns a YouTube stream.
  *
- * **Info:** Install "m3u8stream" using `npm install m3u8stream` for livestream support.
+ * - Install "m3u8stream" using `npm install m3u8stream` for livestream support.
+ * - Install "miniget" using `npm install miniget` for auto-retried streams.
  */
 export const getReadableStream = async (
     stream: { url: string },
@@ -67,6 +71,10 @@ export const getReadableStream = async (
     let streamURL = stream.url;
     if (typeof options.begin === "number") {
         streamURL += `&begin=${options.begin}`;
+    }
+    if (!options.ignoreMiniget && isModuleInstalled("miniget")) {
+        const miniget: typeof Miniget = requireOrThrow("miniget");
+        return miniget(streamURL, options.minigetRequestOptions);
     }
     const resp = await request(streamURL, options.requestOptions);
     return resp.body;
