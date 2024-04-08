@@ -12,6 +12,7 @@ import {
 } from "./utils/common";
 import { VideoStream, VideoFormat } from "./videoInfo";
 import { UndiciRequestOptions } from "./utils/undici";
+import { cookieJar } from "./cookies";
 
 export type GetFormatsEvaluator =
     | "auto"
@@ -61,6 +62,7 @@ export const getFormats = async (
             requestOptions: {
                 headers: {
                     "User-Agent": constants.headers.userAgent,
+                    Cookie: cookieJar.cookieHeaderValue(),
                 },
             },
         },
@@ -123,6 +125,8 @@ export const getFormats = async (
             options.requestOptions
         );
         const hlsData = await hlsResp.body.text();
+        cookieJar.utilizeResponseHeaders(hlsResp.headers);
+
         const hlsStreams = hlsData.matchAll(
             /#EXT-X-STREAM-INF:([^\n]*)\n([^\n]+)/g
         );

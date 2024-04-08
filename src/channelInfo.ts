@@ -3,6 +3,7 @@ import { constants } from "./utils/constants";
 import { contentBetween, mergeObj } from "./utils/common";
 import { UndiciRequestOptions } from "./utils/undici";
 import { parseYoutubeKeywords } from "./utils";
+import { cookieJar } from "./cookies";
 
 export interface ChannelInfoOptions {
     requestOptions?: UndiciRequestOptions;
@@ -96,6 +97,7 @@ export const channelInfo = async (
             requestOptions: {
                 headers: {
                     "User-Agent": constants.headers.userAgent,
+                    Cookie: cookieJar.cookieHeaderValue(),
                 },
             },
             includeVideos: false,
@@ -110,6 +112,7 @@ export const channelInfo = async (
     try {
         const resp = await request(url, options.requestOptions);
         data = await resp.body.text();
+        cookieJar.utilizeResponseHeaders(resp.headers);
     } catch (err) {
         throw new Error(`Failed to fetch url "${url}". (${err})`);
     }

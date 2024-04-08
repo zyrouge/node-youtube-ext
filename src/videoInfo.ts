@@ -3,6 +3,7 @@ import { constants } from "./utils/constants";
 import { contentBetween, mergeObj } from "./utils/common";
 import { prepareStreamInfo } from "./extractStreamInfo";
 import { UndiciRequestOptions } from "./utils/undici";
+import { cookieJar } from "./cookies";
 
 export interface VideoInfoOptions {
     requestOptions?: UndiciRequestOptions;
@@ -149,6 +150,7 @@ export const videoInfo = async (
             requestOptions: {
                 headers: {
                     "User-Agent": constants.headers.userAgent,
+                    Cookie: cookieJar.cookieHeaderValue(),
                 },
             },
         },
@@ -163,6 +165,7 @@ export const videoInfo = async (
     try {
         const resp = await request(url, options.requestOptions);
         data = await resp.body.text();
+        cookieJar.utilizeResponseHeaders(resp.headers);
     } catch (err) {
         throw new Error(`Failed to fetch url "${url}". (${err})`);
     }
