@@ -5,6 +5,7 @@ export * from "./channelInfo";
 export * from "./getReadableStream";
 export * from "./extractStreamInfo";
 export * from "./getFormats";
+export * from "./cookies";
 export * as utils from "./utils";
 
 /**
