@@ -55,7 +55,7 @@ export const extractStreamInfo = async (
     let streamingData: any;
     try {
         const streamingDataRaw = contentBetweenEnds(data, '"streamingData":', [
-            ['},"heartbeatParams":{', "}"],
+            ['},"playbackTracking":{', "}"],
             ['}]},"', "}]}"],
         ]);
         streamingData = JSON.parse(streamingDataRaw);

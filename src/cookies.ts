@@ -1,7 +1,9 @@
 export class CookieJar {
     cookieMap: Record<string, string> = {};
+    disabled = false;
 
     cookieHeaderValue() {
+        if (this.disabled) return;
         return CookieJar.stringifyCookieMap(this.cookieMap);
     }
 
@@ -17,7 +19,7 @@ export class CookieJar {
 
     static stringifyCookieMap(cookies: Record<string, string>) {
         return Object.entries(cookies)
-            .map((x) => x.join("="))
+            .map(([k, v]) => `${k}=${encodeURIComponent(v)}`)
             .join("; ");
     }
 
@@ -34,7 +36,7 @@ export class CookieJar {
             if (!k || !v || options?.ignoredKeys?.includes(k.toLowerCase())) {
                 return pv;
             }
-            pv[k] = v;
+            pv[k] = decodeURIComponent(v);
             return pv;
         }, cookieMap);
     }
@@ -48,6 +50,7 @@ export class CookieJar {
         "path",
         "domain",
         "gps",
+        "priority",
     ];
 
     static parseSetCookie(

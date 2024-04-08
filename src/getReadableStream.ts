@@ -10,7 +10,6 @@ import {
     isLiveContentURL,
 } from "./utils/youtube";
 import { UndiciRequestOptions } from "./utils/undici";
-import { cookieJar } from "./cookies";
 
 export interface GetReadableStreamOptions {
     begin?: number;
@@ -44,7 +43,6 @@ export const getReadableStream = async (
     const commonRequestOptions = {
         headers: {
             "User-Agent": constants.headers.userAgent,
-            Cookie: cookieJar.cookieHeaderValue(),
         },
     };
     options = mergeObj(
