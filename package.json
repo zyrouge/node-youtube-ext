@@ -1,6 +1,6 @@
 {
     "name": "youtube-ext",
-    "version": "1.1.21",
+    "version": "1.1.22",
     "description": "A simple YouTube scraper and downloader.",
     "main": "dist/index.js",
     "files": [
