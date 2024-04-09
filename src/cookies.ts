@@ -66,7 +66,6 @@ export class CookieJar {
     static shouldIgnoreCookie(key: string, value: string) {
         return (
             value === "EXPIRED" ||
-            key.startsWith("__Secure-") ||
             CookieJar.ignoredCookieKeys.includes(key.toLowerCase())
         );
     }
