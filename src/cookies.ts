@@ -25,15 +25,11 @@ export class CookieJar {
 
     static parseCookieString(
         cookie: string,
-        options?: {
-            ignoredKeys?: string[];
-            cookieMap?: Record<string, string>;
-        }
+        cookieMap: Record<string, string> = {}
     ) {
-        const cookieMap = options?.cookieMap ?? ({} as Record<string, string>);
         return cookie.split(";").reduce((pv, cv) => {
             const [k, v] = cv.trim().split("=");
-            if (!k || !v || options?.ignoredKeys?.includes(k.toLowerCase())) {
+            if (!k || !v || CookieJar.shouldIgnoreCookie(k, v)) {
                 return pv;
             }
             pv[k] = decodeURIComponent(v);
@@ -41,7 +37,20 @@ export class CookieJar {
         }, cookieMap);
     }
 
-    static setCookieIgnoredKeys = [
+    static parseSetCookie(
+        cookies: string | string[],
+        cookieMap: Record<string, string> = {}
+    ) {
+        if (Array.isArray(cookies)) {
+            for (const x of cookies) {
+                CookieJar.parseCookieString(x, cookieMap);
+            }
+            return cookieMap;
+        }
+        return CookieJar.parseCookieString(cookies, cookieMap);
+    }
+
+    static ignoredCookieKeys = [
         "expires",
         "max-age",
         "secure",
@@ -51,25 +60,15 @@ export class CookieJar {
         "domain",
         "gps",
         "priority",
+        "login_info",
     ];
 
-    static parseSetCookie(
-        cookies: string | string[],
-        cookieMap: Record<string, string> = {}
-    ) {
-        if (Array.isArray(cookies)) {
-            for (const x of cookies) {
-                CookieJar.parseCookieString(x, {
-                    ignoredKeys: CookieJar.setCookieIgnoredKeys,
-                    cookieMap,
-                });
-            }
-            return cookieMap;
-        }
-        return CookieJar.parseCookieString(cookies, {
-            ignoredKeys: CookieJar.setCookieIgnoredKeys,
-            cookieMap,
-        });
+    static shouldIgnoreCookie(key: string, value: string) {
+        return (
+            value === "EXPIRED" ||
+            key.startsWith("__Secure-") ||
+            CookieJar.ignoredCookieKeys.includes(key.toLowerCase())
+        );
     }
 }
 
