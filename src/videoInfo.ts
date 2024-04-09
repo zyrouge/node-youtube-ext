@@ -1,9 +1,13 @@
 import { request } from "undici";
-import { constants } from "./utils/constants";
-import { contentBetween, mergeObj } from "./utils/common";
-import { prepareStreamInfo } from "./extractStreamInfo";
-import { UndiciRequestOptions } from "./utils/undici";
+import {
+    UndiciRequestOptions,
+    assertUndiciOkResponse,
+    constants,
+    contentBetween,
+    mergeObj,
+} from "./utils";
 import { cookieJar } from "./cookies";
+import { prepareStreamInfo } from "./extractStreamInfo";
 
 export interface VideoInfoOptions {
     requestOptions?: UndiciRequestOptions;
@@ -164,6 +168,7 @@ export const videoInfo = async (
     let data: string;
     try {
         const resp = await request(url, options.requestOptions);
+        assertUndiciOkResponse(resp);
         data = await resp.body.text();
         cookieJar.utilizeResponseHeaders(resp.headers);
     } catch (err) {

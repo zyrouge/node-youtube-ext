@@ -1,8 +1,12 @@
 import { request } from "undici";
-import { constants } from "./utils/constants";
-import { contentBetween, mergeObj } from "./utils/common";
-import { UndiciRequestOptions } from "./utils/undici";
 import { cookieJar } from "./cookies";
+import {
+    UndiciRequestOptions,
+    assertUndiciOkResponse,
+    constants,
+    contentBetween,
+    mergeObj,
+} from "./utils";
 
 export interface PlaylistInfoOptions {
     requestOptions?: UndiciRequestOptions;
@@ -78,6 +82,7 @@ export const playlistInfo = async (
     let data: string;
     try {
         const resp = await request(url, options.requestOptions);
+        assertUndiciOkResponse(resp);
         data = await resp.body.text();
         cookieJar.utilizeResponseHeaders(resp.headers);
     } catch (err) {
@@ -172,6 +177,7 @@ export const playlistInfo = async (
                     }),
                 }
             );
+            assertUndiciOkResponse(resp);
             const data = (await resp.body.json()) as any;
             continuationToken = undefined;
             for (const x of data?.onResponseReceivedActions ?? []) {

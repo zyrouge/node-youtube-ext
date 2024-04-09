@@ -1,8 +1,11 @@
 import { request } from "undici";
-import { constants } from "./utils/constants";
-import { mergeObj } from "./utils/common";
-import { UndiciRequestOptions } from "./utils/undici";
 import { cookieJar } from "./cookies";
+import {
+    UndiciRequestOptions,
+    assertUndiciOkResponse,
+    constants,
+    mergeObj,
+} from "./utils";
 
 export interface SearchOptions {
     requestOptions?: UndiciRequestOptions;
@@ -104,6 +107,7 @@ export const search = async (terms: string, options: SearchOptions = {}) => {
     let data: string;
     try {
         const resp = await request(url, options.requestOptions);
+        assertUndiciOkResponse(resp);
         data = await resp.body.text();
         cookieJar.utilizeResponseHeaders(resp.headers);
     } catch (err) {

@@ -10,7 +10,15 @@ export const mergeObj = <T>(one: T, two: T) => {
 };
 
 export const contentBetween = (data: string, start: string, end: string) => {
-    return data.split(start, 2)[1]!.split(end, 1)[0]!;
+    const first = data.split(start, 2)[1];
+    if (typeof first !== "string") {
+        throw new Error(`Unable to match prefix (${first})`);
+    }
+    const second = first.split(end, 1)[0];
+    if (typeof second !== "string") {
+        throw new Error(`Unable to match suffix (${second})`);
+    }
+    return second;
 };
 
 export const contentBetweenEnds = (
@@ -25,8 +33,9 @@ export const contentBetweenEnds = (
             return second + y;
         }
     }
-    // should i return first?
-    return first;
+    throw new Error(
+        `Unable to match any of the suffixes (${JSON.stringify(ends)})`
+    );
 };
 
 export const parseQueryString = (data: string) => {

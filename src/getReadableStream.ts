@@ -2,14 +2,16 @@ import type { Readable } from "stream";
 import type M3U8Stream from "m3u8stream";
 import type Miniget from "miniget";
 import { request } from "undici";
-import { constants } from "./utils/constants";
-import { isModuleInstalled, mergeObj, requireOrThrow } from "./utils/common";
 import {
+    UndiciRequestOptions,
+    constants,
+    isModuleInstalled,
+    mergeObj,
+    requireOrThrow,
     isDashContentURL,
     isHlsContentURL,
     isLiveContentURL,
-} from "./utils/youtube";
-import { UndiciRequestOptions } from "./utils/undici";
+} from "./utils";
 
 export interface GetReadableStreamOptions {
     begin?: number;

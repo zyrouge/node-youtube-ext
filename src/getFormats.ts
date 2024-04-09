@@ -1,18 +1,19 @@
 import type NodeVM from "vm";
 import type IsolatedVM from "isolated-vm";
 import { request } from "undici";
-import { constants } from "./utils/constants";
+import { VideoStream, VideoFormat } from "./videoInfo";
+import { cookieJar } from "./cookies";
 import {
+    UndiciRequestOptions,
+    assertUndiciOkResponse,
+    constants,
     contentBetween,
     isModuleInstalled,
     mergeObj,
     parseNumberOr,
     parseQueryString,
     requireOrThrow,
-} from "./utils/common";
-import { VideoStream, VideoFormat } from "./videoInfo";
-import { UndiciRequestOptions } from "./utils/undici";
-import { cookieJar } from "./cookies";
+} from "./utils";
 
 export type GetFormatsEvaluator =
     | "auto"
@@ -124,6 +125,7 @@ export const getFormats = async (
             stream.hlsManifestUrl,
             options.requestOptions
         );
+        assertUndiciOkResponse(hlsResp);
         const hlsData = await hlsResp.body.text();
         cookieJar.utilizeResponseHeaders(hlsResp.headers);
 
@@ -171,6 +173,7 @@ const getCipherFunction = async (
     } = {}
 ): Promise<GetFormatsEvaluatorResult> => {
     const resp = await request(url, options.requestOptions);
+    assertUndiciOkResponse(resp);
     const data = await resp.body.text();
 
     const aFuncStart = 'a=a.split("")';

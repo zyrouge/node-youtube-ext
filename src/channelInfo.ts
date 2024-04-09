@@ -1,9 +1,13 @@
 import { request } from "undici";
-import { constants } from "./utils/constants";
-import { contentBetween, mergeObj } from "./utils/common";
-import { UndiciRequestOptions } from "./utils/undici";
-import { parseYoutubeKeywords } from "./utils";
 import { cookieJar } from "./cookies";
+import {
+    UndiciRequestOptions,
+    assertUndiciOkResponse,
+    constants,
+    contentBetween,
+    mergeObj,
+    parseYoutubeKeywords,
+} from "./utils";
 
 export interface ChannelInfoOptions {
     requestOptions?: UndiciRequestOptions;
@@ -111,6 +115,7 @@ export const channelInfo = async (
     let data: string;
     try {
         const resp = await request(url, options.requestOptions);
+        assertUndiciOkResponse(resp);
         data = await resp.body.text();
         cookieJar.utilizeResponseHeaders(resp.headers);
     } catch (err) {
