@@ -1,4 +1,5 @@
 import type NodeVM from "vm";
+import type OhMyVm from "@ohmyvm/vm";
 import type IsolatedVM from "isolated-vm";
 import { request } from "undici";
 import { VideoStream, VideoFormat } from "./videoInfo";
@@ -20,6 +21,7 @@ export type GetFormatsEvaluator =
     | "eval"
     | "vm"
     | "isolated-vm"
+    | "ohmyvm"
     | GetFormatsCustomEvaluator;
 
 export type GetFormatsCustomEvaluator = (
@@ -197,6 +199,10 @@ const getCipherFunction = async (
         options.evaluator !== "auto"
     ) {
         switch (options.evaluator) {
+            case "ohmyvm":
+                evaluator = evalInOhMyVM;
+                break;
+
             case "isolated-vm":
                 evaluator = evalInIsolatedVM;
                 break;
@@ -210,7 +216,9 @@ const getCipherFunction = async (
                 break;
         }
     } else {
-        if (isModuleInstalled("isolated-vm")) {
+        if (isModuleInstalled("@ohmyvm/vm")) {
+            evaluator = evalInOhMyVM;
+        } else if (isModuleInstalled("isolated-vm")) {
             evaluator = evalInIsolatedVM;
         } else if (isModuleInstalled("vm")) {
             evaluator = evalInNodeVM;
@@ -234,6 +242,25 @@ const evalInNodeVM: GetFormatsCustomEvaluator = async (code: string) => {
     const vm: typeof NodeVM = requireOrThrow("vm");
     return {
         decoder: vm.runInNewContext(code),
+        isDisposed: () => true,
+        dispose: () => {},
+    };
+};
+
+const evalInOhMyVM: GetFormatsCustomEvaluator = async (code: string) => {
+    const vm: typeof OhMyVm = requireOrThrow("@ohmyvm/vm");
+    const context = new vm.OhMyVm();
+
+    return {
+        decoder: (str: string): string => {
+            const src = `var __cafeBabe__ = ${code}${
+                code.endsWith(";") ? "" : ";"
+            }__cafeBabe__("${str}");`;
+
+            const output = context.eval(Buffer.from(src));
+
+            return output.replace(/"/g, "");
+        },
         isDisposed: () => true,
         dispose: () => {},
     };
