@@ -4,7 +4,7 @@ A simple [YouTube](https://youtube.com) scraper.
 
 [![Documentation](https://github.com/zyrouge/node-youtube-ext/actions/workflows/docs.yml/badge.svg)](https://github.com/zyrouge/node-youtube-ext/actions/workflows/docs.yml)
 
-> ⚠️ YouTube stream data is decoded by evaling JavaScript code. You have been warned.
+> ⚠️ YouTube stream data is decoded by evaluating arbitrary JavaScript code. By default, youtube-ext uses `eval` or `node:vm`. Please install [isolated-vm](https://www.npmjs.com/package/isolated-vm) or [@ohmyvm/vm](https://www.npmjs.com/package/@ohmyvm/vm) to prevent security issues.
 
 ## Features
 
