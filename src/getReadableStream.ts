@@ -1,11 +1,9 @@
-import type { Readable } from "stream";
+import { PassThrough, type Readable } from "stream";
 import type M3U8Stream from "m3u8stream";
-import type Miniget from "miniget";
 import { request } from "undici";
 import {
     UndiciRequestOptions,
     constants,
-    isModuleInstalled,
     mergeObj,
     requireOrThrow,
     isDashContentURL,
@@ -15,9 +13,8 @@ import {
 
 export interface GetReadableStreamOptions {
     begin?: number;
-    ignoreMiniget?: boolean;
+    end?: number;
     requestOptions?: UndiciRequestOptions;
-    minigetRequestOptions?: Miniget.Options;
     m3u8streamRequestOptions?: M3U8Stream.Options["requestOptions"];
 }
 
@@ -25,10 +22,9 @@ export interface GetReadableStreamOptions {
  * Returns a YouTube stream.
  *
  * - Install "m3u8stream" using `npm install m3u8stream` for livestream support.
- * - Install "miniget" using `npm install miniget` for auto-retried streams.
  */
 export const getReadableStream = async (
-    stream: { url: string },
+    stream: { url: string; contentLength?: number | string },
     options: GetReadableStreamOptions = {}
 ): Promise<Readable> => {
     if (typeof stream !== "object") {
@@ -51,7 +47,6 @@ export const getReadableStream = async (
         {
             requestOptions: commonRequestOptions,
             m3u8streamRequestOptions: commonRequestOptions,
-            minigetRequestOptions: commonRequestOptions,
         },
         options
     );
@@ -68,14 +63,40 @@ export const getReadableStream = async (
         });
     }
 
+    let contentLength =
+        typeof stream.contentLength === "string"
+            ? parseInt(stream.contentLength)
+            : stream.contentLength;
     let streamURL = stream.url;
     if (typeof options.begin === "number") {
         streamURL += `&begin=${options.begin}`;
     }
-    if (!options.ignoreMiniget && isModuleInstalled("miniget")) {
-        const miniget: typeof Miniget = requireOrThrow("miniget");
-        return miniget(streamURL, options.minigetRequestOptions);
-    }
-    const resp = await request(streamURL, options.requestOptions);
-    return resp.body;
+    const output = new PassThrough();
+    let received = 0;
+    const requestData = async (): Promise<void> => {
+        mergeObj(options.requestOptions, {
+            headers: {
+                range: `bytes=${received}-${contentLength ?? ""}`,
+            },
+        });
+        const resp = await request(streamURL, options.requestOptions);
+        if (typeof resp.headers["content-length"] === "string") {
+            contentLength = parseInt(resp.headers["content-length"]!);
+        }
+        resp.body.pause();
+        resp.body.on("data", (data) => {
+            received += data.length;
+        });
+        resp.body.pipe(output, { end: false });
+        resp.body.once("end", (): void => {
+            if (output.destroyed) return;
+            if (received < (contentLength ?? -1)) {
+                requestData();
+                return;
+            }
+            output.push(null);
+        });
+    };
+    requestData();
+    return output;
 };

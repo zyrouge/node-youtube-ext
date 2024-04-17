@@ -1,49 +1,48 @@
 {
-  "name": "youtube-ext",
-  "version": "1.1.23",
-  "description": "A simple YouTube scraper and downloader.",
-  "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "rimraf dist && tsc",
-    "docs": "typedoc && tsx ./scripts/docs"
-  },
-  "keywords": [
-    "youtube",
-    "scrape",
-    "ytsr",
-    "ytdl",
-    "api",
-    "search",
-    "video",
-    "playlist",
-    "channel",
-    "promise"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zyrouge/node-youtube-ext.git"
-  },
-  "author": "ZYROUGE",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zyrouge/node-youtube-ext/issues"
-  },
-  "homepage": "youtube-ext.js.org",
-  "devDependencies": {
-    "@ohmyvm/vm": "^0.1.0",
-    "@types/node": "^20.12.4",
-    "isolated-vm": "^4.7.2",
-    "m3u8stream": "^0.8.6",
-    "miniget": "^4.2.3",
-    "rimraf": "^5.0.5",
-    "tsx": "^4.7.2",
-    "typedoc": "^0.25.12",
-    "typescript": "^5.4.3"
-  },
-  "dependencies": {
-    "undici": "^6.11.1"
-  }
+    "name": "youtube-ext",
+    "version": "1.1.23",
+    "description": "A simple YouTube scraper and downloader.",
+    "main": "dist/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rimraf dist && tsc",
+        "docs": "typedoc && tsx ./scripts/docs"
+    },
+    "keywords": [
+        "youtube",
+        "scrape",
+        "ytsr",
+        "ytdl",
+        "api",
+        "search",
+        "video",
+        "playlist",
+        "channel",
+        "promise"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zyrouge/node-youtube-ext.git"
+    },
+    "author": "ZYROUGE",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/zyrouge/node-youtube-ext/issues"
+    },
+    "homepage": "youtube-ext.js.org",
+    "devDependencies": {
+        "@ohmyvm/vm": "^0.1.0",
+        "@types/node": "^20.12.4",
+        "isolated-vm": "^4.7.2",
+        "m3u8stream": "^0.8.6",
+        "rimraf": "^5.0.5",
+        "tsx": "^4.7.2",
+        "typedoc": "^0.25.12",
+        "typescript": "^5.4.3"
+    },
+    "dependencies": {
+        "undici": "^6.11.1"
+    }
 }
