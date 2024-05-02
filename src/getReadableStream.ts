@@ -40,8 +40,9 @@ export const getReadableStream = async (
 
     const commonRequestOptions = {
         headers: {
-            "User-Agent": constants.headers.userAgent,
+            "User-Agent": constants.requestOptions.userAgent,
         },
+        maxRedirections: constants.requestOptions.maxRedirections,
     };
     options = mergeObj(
         {

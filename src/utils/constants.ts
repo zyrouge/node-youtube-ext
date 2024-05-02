@@ -32,9 +32,10 @@ export const constants = {
             base: (id: string) => `${constants.urls.base}/channel/${id}`,
         },
     },
-    headers: {
+    requestOptions: {
         userAgent:
-            "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0",
+            "Mozilla/5.0 (X11; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0",
+        maxRedirections: 5,
     },
     errors: {
         type: (key: string, expected: string, received: string) =>

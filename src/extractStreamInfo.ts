@@ -36,9 +36,10 @@ export const extractStreamInfo = async (
         {
             requestOptions: {
                 headers: {
-                    "User-Agent": constants.headers.userAgent,
+                    "User-Agent": constants.requestOptions.userAgent,
                     Cookie: cookieJar.cookieHeaderValue(),
                 },
+                maxRedirections: constants.requestOptions.maxRedirections,
             },
         },
         options
